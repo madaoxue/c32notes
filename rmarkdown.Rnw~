@@ -1,0 +1,554 @@
+\section{Reports and R Markdown}
+
+\frame{\sectionpage}
+
+\begin{frame}[fragile]{Communicating your results}
+
+  Being a statistician means being able to do several things:
+  
+  \begin{enumerate}
+  \item Obtain and process the data for analysis
+  \item Do a suitable analysis
+  \item Check that the analysis was reasonable
+  \item Communicate your findings to the world
+  \end{enumerate}
+  
+  The last part is perhaps the \emph{most} important, because analyses
+  do not exist in isolation; you do an analysis to answer a question, 
+  and the answer to the question is the most important thing.
+  
+  This is true whether you are in the corporate world, answering to a
+  boss, or in graduate school, where you will eventually have to
+  convince your thesis committee (and, by extension, the academic
+  world) that what you have done is interesting, statistically sound
+  \emph{and} important.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reports}
+  
+  \begin{itemize}
+  \item Final step of your process is to write a report. This is a
+    sales job, because you have to convince your readers
+    that what you have done is worth their time reading.
+  \item Writing a report requires good language skills. You cannot
+    become a good statistician without that.
+  \item This is why so many of my questions end ``explain
+    briefly''. You need to learn to provide a complete \emph{and
+      concise} explanation of what your results tell you and why.
+  \item Reports are usually structured in a similar way, as shown on
+    next page.
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Report structure}
+
+  \begin{description}
+    \item[Introduction:] tell your readers about your problem and what
+      you hope to find out. You need to provide enough explanation for 
+      the reader to know what you're trying to achieve. You might also
+      want to refer to what other people have done.
+    \item[Methods:] Where the data came from, and how it was collected
+      (describing the technology that was used, if any). Scientific
+      people call this section ``Methods''. If you needed to do any
+      work to get the data into the right form, this is also the place
+      to describe that.
+    \item[Analysis and results:] It is not enough to \emph{give} the
+      analysis; you have to explain what you are doing and what made
+      you do it. The results should be described in a matter-of-fact
+      way (the opinions come in the next section).
+    \item[Conclusions:] What does the analysis tell you about your
+      problem? Place the results in context. Offer (supported)
+      opinions about what the results mean, to you and the world.
+    \end{description}
+
+\end{frame}
+
+\begin{frame}[fragile]{A typical journal article}
+  
+  \url{http://jap.physiology.org/content/100/3/839}
+  
+\includegraphics[width=\textwidth]{titlebar}  
+
+Tix#tle and authors, with journal and page numbers, so that you have
+everything you need to refer to it.
+
+\end{frame}
+
+\begin{frame}[fragile]{Abstract}
+  
+  Journal articles typically begin with Abstract that summarizes
+  question and gives highlights of results and conclusion:
+  
+\includegraphics[width=0.7\textwidth]{abstract}  
+  
+Abstract tells you whether paper is worth reading.
+\end{frame}
+
+\begin{frame}[fragile]{Introduction}
+  
+  \includegraphics[width=\textwidth]{intro}
+  
+Introduction begins with plain-English first sentence. The numbers in
+brackets are references to what other people have said.  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Materials and methods}
+  
+\includegraphics[width=0.8\textwidth]{matmeth}  
+
+The subjects. Experiments on humans require ``ethical approval'' and
+certain procedures need to be followed.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Taking measurements}
+  
+\includegraphics[width=0.9\textwidth]{measurements}
+
+\ldots
+
+\includegraphics[width=0.9\textwidth]{measurementb}  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Results (a)}
+
+  \includegraphics[width=\textwidth]{resultsa}  
+
+  \ldots noting that the two groups were not significantly different
+  before the study, but changed in important respects over time.
+  
+  Results also shown in table.
+\end{frame}
+
+\begin{frame}[fragile]{Results (b)}
+  
+  \includegraphics[width=0.8\textwidth]{resultsb}  
+
+  Graph showing that bone mass density has changed greatly as a result
+  of the jumping. (Graphs are always good.)
+\end{frame}
+
+\begin{frame}[fragile]{Conclusions (selected)}
+  
+  \includegraphics[width=0.8\textwidth]{conc1}  
+  
+  \ldots
+
+  \includegraphics[width=0.8\textwidth]{conc2} 
+  
+  \ldots
+  
+  \includegraphics[width=0.8\textwidth]{conc3}  
+
+Note use of (relatively) plain English, description of most important
+findings, comparisons to other work, and admission of limitations.
+  
+\end{frame}
+
+\begin{frame}[fragile]{References to other work (some)}
+  
+  \includegraphics[width=0.9\textwidth]{refs}  
+
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reproducibility}
+  
+  \begin{itemize}
+  \item The paper we just looked at contained a lot of information.
+  \item Partly, this was to show that the researchers followed proper
+    procedure (important with human subjects).
+  \item Also allows anyone to do analysis on same data and get same
+    results (\textbf{reproducible}).
+  \item Allows anyone to follow same procedure on own data and see if
+    results same (\textbf{replication}). 
+  \item As statisticians, we need our \emph{own} reports to be
+    reproducible, and to be able to replicate them on different data.
+  \item Strategy for this: write reports so that they \emph{include
+      the code} and a way of running it.
+  \item This can be done in R (R Markdown). Can also be done in SAS
+    with more trouble (machinery called Statrep).
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{R Markdown introduction}
+  
+  \begin{itemize}
+  \item R Studio: File, New File, R Markdown. Give it a title
+    (anything) and put your name in as Author. Click OK (accepting
+    other defaults).
+  \item A template document opens up. This is R Markdown code.
+  \item R Markdown is a ``markup language'' like HTML: it contains a
+    mixture of actual text and instructions to format text.
+  \item To see what the final document looks like, click Knit. You'll
+    be invited to save the Markdown document somewhere. Do so.
+  \item In R Studio, a ``preview'' window will open with the actual
+    formatted report. It has text, a hyperlink, some boldface text, R
+    code and output, and a graph. Go back to the R Markdown code, and
+    see if you can figure out how those things appeared in the output.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{R Markdown text formatting}
+  
+  \begin{itemize}
+  \item To make a section heading, put \texttt{\#\#} before the title:
+    
+\begin{verbatim}
+## Section heading
+\end{verbatim}
+    Can use more or fewer \texttt{\#}: more of them makes a lower level
+    subheading (H1 through H6 in HTML).  
+  \item To make \emph{italic} text, do this:
+    
+\begin{verbatim}
+*This text is in italics*.
+\end{verbatim}
+    
+    \item To make \textbf{boldface} text:
+      
+\begin{verbatim}
+**Bold text**.
+\end{verbatim}
+      
+      \item To start a new paragraph, leave a blank line or end a line
+        with \emph{two} spaces.
+        \item More at \url{https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf}.
+  \end{itemize}
+  
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Code Chunks}
+  
+  \begin{itemize}
+  \item The ``magic'' of R Markdown is that you can include code, and
+    in output you will see \textbf{code plus output the code
+      produced}.
+  \item This means that in your report, \emph{the output must be
+      up-to-date} because it was literally produced from that code
+    when the document was knitted.
+  \item To insert a code chunk, Click Insert and select R. (You can
+    also use other languages if they are installed on your computer.)
+    You see this in your document:
+    
+\begin{verbatim}
+```{r}
+
+```
+\end{verbatim}
+    
+  \item In between the two lines with ``backticks'', insert any R code
+    you like. It will be run and the code plus output inserted in your
+    document. 
+  \item To not show the code, only the output, change the top line to read
+    
+\begin{verbatim}
+```{r,echo=F}
+\end{verbatim}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Why this is better than copy-and-paste}
+  
+  \begin{itemize}
+  \item This seems like more trouble than copying-and-pasting the code
+    and output into a Word document. Why should I do it?
+  \item You are \emph{guaranteed} to get code and output that matches
+    up. If you copy-and-paste, how do you know you remembered to copy
+    the most recent run of your code? (When you change your code, you
+    have to remember to run it again, \emph{and} to re-copy the
+    output.)
+  \item Anyone else, or you yourself later, can make the document
+    again from the R Markdown file (and the data files), or run the
+    same code on a new data file. This makes the analysis
+    reproducible. Any procedure that depends on copy-pasting the right
+    thing is not reproducible.
+  \item Bosses have a habit of asking for small changes to a
+    document. You make those small changes in the R Markdown file,
+    knit again, and you have your results with minimal fuss.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Other output formats}
+  
+  \begin{itemize}
+  \item The basic (and fastest) form of output is HTML. This is best
+    for while you're writing the report, or if you want to put it on a
+    web site.
+  \item Word \texttt{.doc} output: when you think you've finished
+    writing (slow). If you want to make changes, \emph{edit the R
+      Markdown}, close the Word doc and re-knit.
+  \item PDF, if you have \LaTeX\ installed (looks like \LaTeX\
+    without any \LaTeX\ coding)
+  \item Presentations of various flavours (makes suitable HTML out of
+    the R Markdown).
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Markdown and \LaTeX}
+
+  \begin{itemize}
+\item Presentation, or Knit to PDF: can use
+  \LaTeX\ formulas, like
+
+\begin{verbatim}
+$$x = { -b \pm \sqrt{b^2-4ac} \over 2a }$$
+\end{verbatim}
+
+which comes out as
+
+$$x = { -b \pm \sqrt{b^2-4ac} \over 2a }$$
+
+
+\item I encourage you to learn \LaTeX! Much better than Word for
+  mathematical, scientific (and for that matter academic) documents.
+
+
+\item Include SAS in \LaTeX\ using \texttt{statrep}. More in a moment.
+
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Sweave}
+  \begin{itemize}
+  \item A more sophisticated R/\LaTeX\ connection via Sweave: can
+    embed R code chunks in \LaTeX\ document. In R Studio, File-New-R
+    Sweave. This produces a skeleton \LaTeX\ document. Insert code
+    chunk in usual way (looks different).
+  \item File extension is \texttt{.Rnw}.
+  \item Go to Tools, Global Options, Sweave, and make sure top option
+    says ``weave Rnw files using knitr'' (should only need to do this
+    once). 
+  \item Knit in R Studio as usual, or at command line via
+<<eval=F>>=
+Rscript -e 'knitr::knit("filename.Rnw")'
+@     
+\item This produces \texttt{.tex} file, which is then processed as
+  usual (two steps altogether).
+\item Make any changes to the \texttt{.Rnw} file and run both steps
+  again.  
+\item Command-line version works with Makefile.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Statrep}
+  
+  \begin{itemize}
+  \item SAS's version of Sweave: include SAS code in \LaTeX\ document,
+    run when document produced.
+  \item Uses SAS Studio run on virtual machine on your computer (not
+    on online SAS Studio unless you want extra difficulty).
+  \item Setup:
+    \begin{itemize}
+    \item SAS Studio running on virtual machine on your computer (or
+      full-version SAS on your computer).
+    \item Folder on your computer linked to virtual machine (the
+      folder you refer to as \texttt{/folders/myfolders} on virtual
+      machine), if using virtual-machine SAS.
+    \item Construct document on your computer in that linked folder.
+    \item Link: \url{http://support.sas.com/rnd/app/papers/statrep.html}.
+    \end{itemize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Workflow (1/3)}
+  \begin{itemize}
+  \item Get template \LaTeX\ document with right headers (over) in
+    correct folder.
+  \item Code: \LaTeX\ as usual. Code chunks and output separated (since SAS
+    output usually rather long). 
+  \item Insert \texttt{data} step or \texttt{proc import} by enclosing SAS code
+    in \verb+\begin{Datastep}+ and \verb+\end{Datastep}+. (Can be used
+    for anything that produces no output.)
+  \item Insert \texttt{proc} step (running a procedure to do analysis,
+    whose output you want) by enclosing SAS code in \texttt{Sascode}
+    environment like this. Choose a label name for \texttt{store=} by
+    which to grab output (use any label name you like):
+    
+\begin{verbatim}
+\begin{Sascode}[store=labelx]
+  proc means;
+\end{Sascode}
+\end{verbatim}
+    
+    
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Extra \LaTeX\ headers}
+  
+  Put these above your \verb+\begin{document}+:
+    
+\begin{verbatim}
+\usepackage{statrep}
+\usepackage{parskip,xspace}
+\newcommand*{\Statrep}{\mbox{\textsf{StatRep}}\xspace}
+\newcommand*{\Code}[1]{\texttt{\textbf{#1}}}
+\newcommand*{\cs}[1]{\texttt{\textbf{\textbackslash#1}}}
+\def\SRrootdir{/folders/myfolders}
+\def\SRmacropath{/folders/myfolders/statrep_macros.sas}
+\end{verbatim}
+
+You may not need all of these, but try them first. The last two tell
+Statrep where to put/find SAS code generated.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Workflow (2/3)}
+  
+  \begin{itemize}
+  \item Output of two kinds: text output (tables of numbers) and
+    graphics output (graphs/plots).
+  \item Specify \emph{which} output you want by using the label you
+    created thus, plus create an extra label as shown:
+    
+\begin{verbatim}
+\Listing[store=labelx]{labelxx}
+\Graphic[store=labelx]{labelxy}
+\end{verbatim}
+  \item \texttt{Listing} and \texttt{Graphic} are \emph{both singular}
+    and \emph{both start with capital letter}.
+    
+    
+  \item The \texttt{store=} is the same label as in the
+    \texttt{Sascode} (how Statrep knows which output to grab). Label
+    at the end \emph{must be distinct} (names of files created in
+    background). 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Workflow (3/3)}
+  
+  \begin{itemize}
+  \item To produce \texttt{.pdf}, run \LaTeX\ \emph{twice}, with a run
+    of SAS in between:
+  \item First time: if you look at \texttt{.pdf}, you see placeholders
+    for SAS output (when it is produced). Also a file ending in
+    \texttt{\_SR.sas}, which is SAS code to produce output.
+  \item Go to SAS Studio (on virtual machine); see this file in list
+    of files. Open this file.
+  \item ``Submit'' it. This won't produce any visible output, but its
+    output will be saved in files. If there are errors, fix them
+    \emph{in the \LaTeX\ document} and run \LaTeX\ again.
+  \item Second time: run \LaTeX\ again. In the \texttt{.pdf}, the SAS
+    output placeholders are replaced by actual output. Done. (If you
+    don't like anything, eg.\ there are SAS errors/no SAS output,
+    \emph{change the \LaTeX} and repeat.)
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Grabbing only some of the output}
+
+  \begin{itemize}
+  \item SAS output tends to be long. It is divided into sections (each
+    containing one table or graph). Each one has a name.
+  \item To find out what the names are, after you have run the
+    \texttt{\_SR.sas} file in SAS Studio, look in the Log tab. Look
+    for the code whose output you want only part of, like this:
+    
+\includegraphics[width=0.7\textwidth]{W1090}    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{\ldots Continued}
+  
+  \begin{itemize}
+  \item Scroll down in Log tab until you see something like this:
+    
+    \includegraphics[width=0.6\textwidth]{W1091}
+    \item Note the \texttt{store=} at the top, and the table of
+      ``objects'' at the bottom.
+  \item In the ``objects'' table, each object you can select has a
+    3-part name (left column). You need only \emph{last} part.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Grabbing what you want}
+  
+  \begin{itemize}
+  \item The ``type'' column says whether it's a table of numbers (use
+    \texttt{Listing}) or a graph (use \texttt{Graphic}). 
+  \item Note that I got this via
+    \verb+\begin{Sascode}[store=id]+.
+  \item To get just the confidence intervals, do this:
+\begin{verbatim}
+\Listing[store=id,objects=conflimits]{idd}
+\end{verbatim}
+    
+  \item To get just the normal quantile plot, this:
+\begin{verbatim}
+\Graphic[store=id,objects=qqplot]{ide}
+\end{verbatim}
+    
+  \item     To get more than one object (of same type), separate by \textbf{space}:
+    
+\begin{verbatim}
+\Listing[store=id,objects=statistics ttests]{idf}
+\end{verbatim}
+    which gets both summary statistics and $t$-tests, but nothing else.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Using the Log tab to find errors}
+  
+  \begin{itemize}
+  \item Sometimes SAS output unexpectedly missing in final
+    document. Usually because of a SAS error somewhere.
+  \item To find, go to Log tab in SAS Studio.
+  \item Search for text \texttt{ERROR:}, the first occurrence. This is
+    the first place that SAS got confused (there may be others). You
+    might find that SAS Studio has opened this for you.
+  \item Fix this, in \texttt{.tex} document, and run again.
+  \item Repeat as necessary.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Processing R and SAS in same document}
+  
+  \begin{itemize}
+  \item You might have a document that contains both R and SAS code to
+    be run (and output inserted). How to handle \emph{both}?
+  \item Process (most easily with \texttt{Makefile}):
+    \begin{itemize}
+    \item Create Sweave document with name like \texttt{test.Rnw}
+      (with \texttt{.Rnw} extension), \emph{in the folder attached to
+        the SAS virtual machine}. Add R
+      code chunks with \verb+<<>>=+ format and SAS code chunks in
+      Statrep style.
+      
+    \item Use \texttt{knitr} to process the R. This makes file
+      \texttt{test.tex} with R code run and output inserted.
+    \item Run \LaTeX\ once to produce \texttt{test\_SR.sas}.
+    \item Run \texttt{test\_SR.sas} in SAS Studio (on virtual
+      machine).
+    \item Run \LaTeX\ again to grab SAS output.
+    \item Check final \texttt{test.pdf}: should have both R and SAS
+      output.
+    \item Make any changes \underline{to \texttt{test.Rnw}} and repeat whole process.
+    \end{itemize}
+
+  \end{itemize}
+  
+\end{frame}

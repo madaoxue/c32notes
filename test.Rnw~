@@ -1,0 +1,14 @@
+\documentclass[unknownkeysallowed]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{multicol}
+
+\title{STAC32}
+\subtitle{Applications of Statistical Methods}
+
+\begin{document}
+
+\end{document}

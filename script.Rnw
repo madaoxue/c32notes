@@ -1,0 +1,73 @@
+\section{R Studio scripts and projects}
+
+\frame{\sectionpage}
+
+\begin{frame}[fragile]{The console and the script}
+  
+  \begin{itemize}
+  \item You can always type R commands at the console, next to the
+    \texttt{>}.
+  \item But if you want to use those commands again, or modify them,
+    you have to find them first (up/down arrow keys)
+  \item plus you have no record of what you did.
+  \item Better: create a \emph{script}. File - New File - R Script,
+    opens a window top left, into which you can type commands.
+  \item To run commands in a script:
+    \begin{itemize}
+    \item move to or click on the line containing what you want to
+      run, then click Run above script window. Runs that line, and
+      moves cursor down to next line.
+    \item select one or more lines of code, then click Run: runs all
+      those lines.
+    \end{itemize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Advantages of a script}
+  
+  \begin{itemize}
+  \item A script can be \emph{saved} and re-opened later.
+  \item This gives you a record of what you did (``reproducible
+    research'') 
+  \item If something in the script doesn't work, you can fix just
+    that part without worrying about the part of the script that works
+  \item If you want to run the same code on different data, or
+    slightly different code, you can use your script as a starting
+    point. (For example, you can keep a bunch of scripts that make
+    example plots that you use often.)
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Projects}
+  
+  \begin{itemize}
+  \item A project is a ``container'' for code and data that belong
+    together.
+  \item Goes with a folder on your computer.
+  \item File, New Project. You have option to create the new project
+    in a new folder, or in a folder that already exists.
+  \item Use a project for a collection of work that belongs together,
+    eg.\ data files and code scripts for an assignment. Putting data
+    files in a project folder makes it easier to find them.
+  \item Later, when we learn about R Markdown, see how to write
+    reports that include code. These can go in project folder too.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comparison with SAS}
+  
+  \begin{itemize}
+  \item SAS code in SAS Studio \emph{is} a script: some code that is
+    saved in a file and can be reloaded and used again.
+  \item You can create subfolders under your main folder on SAS
+    Studio. These serve the same purpose as R Studio projects: you can
+    use them as containers for code, data etc.
+  \item Looking ahead, SAS does not have a nice report-writing
+    mechanism as R Studio does. (It does have one, \texttt{statrep},
+    but that is based on \LaTeX.)
+  \end{itemize}
+  
+\end{frame}

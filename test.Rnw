@@ -1,0 +1,39 @@
+\documentclass[unknownkeysallowed]{beamer}
+
+\usetheme{default}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{headline}{}
+
+\usepackage{statrep}
+\usepackage{parskip,xspace}
+\newcommand*{\Statrep}{\mbox{\textsf{StatRep}}\xspace}
+\newcommand*{\Code}[1]{\texttt{\textbf{#1}}}
+\newcommand*{\cs}[1]{\texttt{\textbf{\textbackslash#1}}}
+\setcounter{secnumdepth}{0}
+\def\SRrootdir{.}
+\def\SRmacropath{./statrep_macros.sas}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{00D7}{$\times$}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{pbox}
+
+\title{STAC32}
+\subtitle{Applications of Statistical Methods}
+\author{Ken Butler}
+
+\begin{document}
+
+\maketitle
+
+
+<<rstuff, child="rstuff.Rnw">>=
+@ 
+
+<<sasstuff, child="sasstuff.Rnw">>=
+@ 
+
+\end{document}

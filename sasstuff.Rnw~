@@ -1,0 +1,53 @@
+\begin{frame}[fragile]{and now in SAS}
+  
+Read in data:  
+  
+\begin{Datastep}
+proc import
+  datafile='/folders/myfolders/jumping.txt'
+    dbms=dlm
+    out=rats
+    replace;
+  delimiter=' ';
+  getnames=yes;
+\end{Datastep}
+%$ %$ %$  
+  
+\end{frame}
+
+\begin{frame}[fragile]{The dataset}
+  
+  \begin{Sascode}[store=ac]
+    proc print;
+  \end{Sascode}
+  
+\Listing[store=ac,fontsize=tiny]{acc}  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Mean density by group}
+  
+\begin{Sascode}[store=aa]
+proc means;
+  var density;
+  class group;
+\end{Sascode}
+
+\Listing[fontsize=scriptsize,store=aa]{aaa}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Code for boxplot}
+  
+  \begin{Sascode}[store=ab]
+proc sgplot;
+  vbox density / category=group;
+  \end{Sascode}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The boxplot}
+  
+\Graphic[store=ab,scale=0.5]{abb}  
+  
+\end{frame}

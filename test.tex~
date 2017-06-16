@@ -1,0 +1,175 @@
+\documentclass[unknownkeysallowed]{beamer}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usetheme{default}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[frame number]
+\usepackage{statrep}
+\usepackage{parskip,xspace}
+\newcommand*{\Statrep}{\mbox{\textsf{StatRep}}\xspace}
+\newcommand*{\Code}[1]{\texttt{\textbf{#1}}}
+\newcommand*{\cs}[1]{\texttt{\textbf{\textbackslash#1}}}
+\setcounter{secnumdepth}{0}
+\def\SRrootdir{.}
+\def\SRmacropath{./statrep_macros.sas}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{pbox}
+
+\title{STAC32}
+\subtitle{Applications of Statistical Methods}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\begin{frame}[fragile]
+  \frametitle{Preamble}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(tidyverse)}
+\end{alltt}
+
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Loading tidyverse: ggplot2\\\#\# Loading tidyverse: tibble\\\#\# Loading tidyverse: tidyr\\\#\# Loading tidyverse: readr\\\#\# Loading tidyverse: purrr\\\#\# Loading tidyverse: dplyr}}
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Conflicts with tidy packages ----------------------------------------------}}
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# filter(): dplyr, stats\\\#\# lag():\ \ \ \ dplyr, stats}}\end{kframe}
+\end{knitrout}
+\end{frame}
+
+\begin{frame}[fragile]{Some R stuff}
+
+\begin{knitrout}\footnotesize
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{x}\hlkwb{=}\hlkwd{rnorm}\hlstd{(}\hlnum{50}\hlstd{)}
+\hlstd{x}
+\end{alltt}
+\begin{verbatim}
+##  [1]  1.078610778 -1.719229843  0.775539614 -0.469191957  1.595445121
+##  [6] -0.056547237 -1.801352332 -0.291264156  0.895775205 -0.270201134
+## [11]  1.584770231  0.231752224 -0.890388787 -0.596557457  0.917214742
+## [16]  0.260324571 -0.610707815  0.378717735 -1.055182480  0.790713030
+## [21]  1.449705783 -1.334524036 -2.994719894  0.674072732 -0.715437602
+## [26] -1.941538910  0.608749761 -1.445012682 -0.642018603 -0.115252216
+## [31] -0.780033120 -1.057050280 -1.422779078 -0.964384186 -0.551456540
+## [36] -0.357495988 -0.359527177 -0.505259365  2.460171595 -2.458844360
+## [41]  1.618607031  0.388733266  1.324985849 -2.027569986  0.001835159
+## [46]  0.127701407  2.854896331  0.596651145 -0.702659050  0.197300906
+\end{verbatim}
+\begin{alltt}
+\hlstd{d}\hlkwb{=}\hlkwd{data.frame}\hlstd{(x)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+\end{frame}
+
+\begin{frame}[fragile]{A histogram}
+  
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(d,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
+
+\end{knitrout}
+  
+\end{frame}
+
+\begin{frame}[fragile]{and now in SAS}
+  
+Read in data:  
+  
+\begin{Datastep}
+data rats;
+  infile '/folders/myfolders/jumping.txt' firstobs=2;
+  input group $ density;  
+\end{Datastep}
+%$ %$ %$  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Mean density by group}
+  
+\begin{Sascode}[store=aa]
+proc means;
+  var density;
+  class group;
+\end{Sascode}
+
+\Listing[store=aa]{aaa}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Code for boxplot}
+  
+  \begin{Sascode}[store=ab]
+proc sgplot;
+  vbox density / class=group;
+  \end{Sascode}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The boxplot}
+  
+\Graphic[store=ab,scale=0.5]{abb}  
+  
+\end{frame}
+
+\end{document}

@@ -1,0 +1,433 @@
+\documentclass{beamer}
+\usetheme{default}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[frame number]
+\usepackage{statrep}
+\usepackage{parskip,xspace}
+\newcommand*{\Statrep}{\mbox{\textsf{StatRep}}\xspace}
+\newcommand*{\Code}[1]{\texttt{\textbf{#1}}}
+\newcommand*{\cs}[1]{\texttt{\textbf{\textbackslash#1}}}
+\setcounter{secnumdepth}{0}
+\def\SRrootdir{.}
+\def\SRmacropath{./statrep_macros.sas}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{pbox}
+
+\begin{document}
+
+
+\begin{frame}[plain,c]
+  \begin{center}
+    {\Huge Dates and times}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Packages for this chapter}
+  
+<<>>=
+library(lubridate)
+@   
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Dates}
+  
+  \begin{itemize}
+  \item Dates are represented on computers as ``days since an
+    origin'', typically Jan 1, 1970, with a negative date  being
+    before the origin: 
+    
+<<>>=
+dates=c("1970-01-01","2007-09-04","1940-04-15")
+d=as.Date(dates) ; d
+as.numeric(d)
+@     
+\item This means that we can do arithmetic with dates, eg.\
+<<>>=
+d[2]+30
+d[2]-d[3]
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading in dates in R}
+  
+  \begin{itemize}
+  \item Preceding slide shows that dates should be read in as text,
+    and converted using \texttt{as.Date}, which expects dates in
+    format \texttt{yyyy-mm-dd} (ISO standard).
+  \item To deal with dates in other formats, use package
+    \texttt{lubridate} and convert. For example, dates in US format
+    with month first:
+<<>>=
+usdates=c("05/27/2012","01/03/2016","12/31/2015")
+mdy(usdates)
+@     
+\item For UK-format dates with month \emph{second}, one of these dates
+  is legit, but the other two make no sense:
+  
+<<>>=
+dmy(usdates)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading dates in SAS}
+  
+  \begin{itemize}
+  \item Idea is similar to R, but you specify ``informat'' to say that
+    you're not reading in text but a date in a certain format:
+    
+    \begin{Datastep}
+      data mydates;
+        input date: yymmdd10.;
+        cards;
+        1970-01-01
+        2007-09-04
+        1940-04-15
+        ;
+    \end{Datastep}
+    
+    
+  \item ``Informat'' says dates are year, month, day in that order,
+    with 4-digit years. An 8 says ``two-digit years'', as in 230914
+    (September 23, 2014) read in using \texttt{ddmmyy8.}.
+  \item Dashes between are optional (or could use slashes
+    \texttt{/}). 
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{What that reads in}
+  
+    \begin{Sascode}[store=da]
+      proc print;
+    \end{Sascode}
+    
+    \Listing[store=da]{daa}
+    
+    \begin{itemize}
+    \item SAS's ``origin'' is January 1st, \emph{1960}, so the first
+      date is 10 years after that.
+    \item Note that SAS displays days-since-origin unless you ask for
+      different. 
+    \item To do \emph{that}, ask for ``format''; similar to
+      ``informat''; see over.
+    \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Display formatted dates in SAS}
+  
+  \begin{Sascode}[store=db]
+proc print;
+  format date mmddyy8.;
+  \end{Sascode}
+  
+  \Listing[store=db]{dbb}
+  
+  \begin{itemize}
+  \item   Even though dates were originally in ISO year-month-day format, they
+  can be output in any format (eg.\ US format here).
+\item SAS can input/output dates in many formats; you just have to
+  find name of one you need. See eg.\ \url{https://v8doc.sas.com/sashtml/lrcon/zenid-63.htm}.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Constructing dates from year, month and day}
+  
+  \begin{itemize}
+    
+  \item You might have separate columns containing year, month, day.
+  \item Strategy (both R and SAS): glue them together into something
+    that can be recogized as date:
+    \begin{Datastep}
+data makedates;
+  input year month day;
+  sasdate=mdy(month,day,year);
+  cards;
+  1970 1 1
+  2007 9 4
+  1940 4 15
+  ;
+    \end{Datastep}
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The resulting data set}
+
+    \begin{Sascode}[store=dd]
+proc print;
+  format sasdate ddmmyy10.;
+    \end{Sascode}
+
+\Listing[store=dd]{ddd}    
+
+The \texttt{format} displays the dates in UK format with day before month.
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{In R}
+  
+<<>>=
+years=c("1970","2007","1940")
+months=c("1","9","4")
+days=c("1","4","15")
+dates=paste(days,months,years,sep=".")
+dates
+d=dmy(dates) ; d
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Extracting information from dates}
+  
+  \begin{itemize}
+  \item Have seen how to construct dates from ingredients.
+  \item If we have a date, how to extract those ingredients?
+  \item \texttt{lubridate} has tools for that, eg.\ using the dates we
+    just made:
+<<>>=
+d
+month(d)
+day(d)
+wday(d,label=T)
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Extracting things in SAS}
+  
+Recall:
+
+\begin{Sascode}[store=dm]
+proc print data=mydates;
+  format date ddmmyy10.;
+\end{Sascode}
+
+\Listing[store=dm,fontsize=small]{dmm}
+
+Extract day, month, year thus:
+
+\begin{Datastep}
+data newdates;
+  set mydates;
+  d=day(date);
+  m=month(date);
+  y=year(date);
+\end{Datastep}
+
+
+\end{frame}
+
+\begin{frame}[fragile]{The results}
+
+\begin{Sascode}[store=dn]
+proc print;  
+  format date yymmdd10.;
+\end{Sascode}
+
+\Listing[store=dn,fontsize=small]{dnn}
+
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Dates and times in SAS}
+  
+  \begin{itemize}
+  \item Strategy seems to be: read date and time into separate
+    variables (with informats), then make a SAS ``datetime'' object:
+    \begin{Datastep}
+data datetime;
+  input date: yymmdd10. time: time8.;
+  dt=dhms(date,0,0,time);
+  cards;
+  1970-01-01 07:50:01
+  2007-09-04 15:30:00
+  1940-04-15 06:45:10
+  2016-02-10 12:26:40
+  ;
+    \end{Datastep}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Resulting data set}
+  
+  \begin{Sascode}[store=dp]
+proc print;
+  format date mmddyy10. time time6. dt dateampm22.;
+  \end{Sascode}
+  
+  \Listing[store=dp,fontsize=small]{dpp}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Dates and times in R}
+  
+  \begin{itemize}
+  \item Standard format for times is to put the time after the
+    date, hours, minutes, seconds:
+  
+    \begin{footnotesize}
+<<>>=
+dd=c("1970-01-01 07:50:01","2007-09-04 15:30:00",
+"1940-04-15 06:45:10","2016-02-10 12:26:40") ; dd
+@     
+      
+    \end{footnotesize}
+\item Then read in using \verb+ymd_hms+:
+  \begin{footnotesize}
+<<>>=
+dt=ymd_hms(dd) ; dt
+@       
+  \end{footnotesize}
+\item Default timezone is ``Universal Coordinated Time''. Change it
+  via \texttt{tz=} and the name of a timezone:
+  \begin{footnotesize}
+<<>>=
+dt=ymd_hms(dd,tz="America/Toronto") ; dt
+@   
+    
+  \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Extracting time parts}
+  
+  \begin{itemize}
+  \item As you would expect:
+    \begin{small}
+<<>>=
+dt
+@ 
+
+\begin{multicols}{2}
+<<>>=
+hour(dt)
+minute(dt)
+@     
+
+<<>>=
+second(dt)
+tz(dt)
+@ 
+
+\end{multicols}
+
+
+    \end{small}
+\item Same times, but different time zone:
+  \begin{small}
+<<>>=
+with_tz(dt,"Australia/Sydney")
+@       
+  \end{small}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Subtracting date-times}
+  
+  \begin{itemize}
+  \item We may need to calculate the time \emph{between} two
+    events. For example, this:
+<<>>=
+admit=c("1981-12-10 22:00:00","2014-03-07 14:00:00",
+  "2016-08-31 21:00:00")
+discharge=c("1982-01-03 14:00:00","2014-03-08 09:30:00",
+  "2016-09-02 17:00:00")
+admit.dt=ymd_hms(admit,tz="America/Toronto")
+discharge.dt=ymd_hms(discharge,tz="America/Toronto")
+stay=(discharge.dt-admit.dt)/ddays(1)
+data.frame(admit.dt,discharge.dt,stay)
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+  
+  \begin{itemize}
+  \item Date-times are stored internally as seconds-since-something,
+    so that subtracting two of them will give a number of seconds (not
+    useful).
+  \item Functions \texttt{ddays(x)}, \texttt{dminutes(y)} etc.\ will
+    give number of seconds in \texttt{x} days or \texttt{y} minutes,
+    thus dividing by them will give (fractional) days, minutes etc.
+  \item This idea useful for calculating time from a start point until
+    an event happens (in this case, a patient being discharged from
+    hospital). 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{In SAS}
+  
+  \begin{itemize}
+  \item In SAS, date-times are \emph{seconds since midnight Jan 1,
+      1960}.
+  \item Thus, subtracting date-times gives a number of seconds, which
+    we might then have to translate into something useful:
+
+    \begin{footnotesize}
+    \begin{Datastep}
+data hospitalstay;
+  input admitdate: yymmdd10. admittime: time8.
+    dischargedate: yymmdd10. dischargetime: time8.;
+  admit=dhms(admitdate,0,0,admittime);
+  discharge=dhms(dischargedate,0,0,dischargetime);
+  stay=(discharge-admit)/60/60/24;
+  keep admit discharge stay;
+  cards;
+1981-12-10 22:00:00 1982-01-03 14:00:00
+2014-03-07 14:00:00 2014-03-08 09:30:00
+2016-08-31 21:00:00 2016-09-02 17:00:00
+;
+    \end{Datastep}
+    \begin{Sascode}[store=dq]
+proc print;          
+  format admit: dateampm22. discharge: dateampm22.;
+    \end{Sascode}
+      
+    \end{footnotesize}
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments; the results}
+  
+  \begin{itemize}
+  \item Input dates and times need proper informat to be read
+    properly.
+  \item Use \texttt{dhms} to convert them into date-times.
+  \item \texttt{stay} is number of seconds; to convert to days, divide by
+    number of seconds in day. (Let SAS find that.)
+  \item Keep only our final variables; discard intermediate ones.
+  \item The date-times need an output format (or else will display as
+    seconds). 
+  \item Output below. Length of \texttt{stay} agrees with R:
+\Listing[store=dq,fontsize=scriptsize]{dqq}  
+
+  \end{itemize}
+  
+  
+\end{frame}
+
+\end{document}

@@ -1,0 +1,37 @@
+\section{Some R stuff}
+
+\frame{\sectionpage}
+
+\begin{frame}[fragile]
+  \frametitle{Preamble}
+<<>>=
+library(tidyverse)
+@   
+\end{frame}
+
+
+\begin{frame}[fragile]{Reading the data}
+
+<<size="footnotesize">>=
+jumping=read_delim("/folders/myfolders/jumping.txt"," ")
+glimpse(jumping)
+@ 
+\end{frame}
+
+\begin{frame}[fragile]{A boxplot}
+  
+<<fig.height=3.5>>=
+ggplot(jumping,aes(x=group,y=density))+geom_boxplot()
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Mean density by group}
+  
+<<>>=
+jumping %>%
+  group_by(group) %>%
+  summarize(m=mean(density), sd=sd(density))
+@   
+  
+\end{frame}

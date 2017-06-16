@@ -1,0 +1,2667 @@
+\section{Miscellaneous stuff in R and SAS}
+
+\frame{\sectionpage}
+
+
+
+
+%5%%%%%%% sas
+
+\begin{frame}[fragile]{SAS: More than one observation per line of data file}
+  
+  \begin{itemize}
+  \item Suppose you have a data file like this:
+    
+\verbatiminput{many.txt}
+
+but the data are \emph{all} values of one variable \texttt{x} (so
+there are 12 values altogether).
+\item How to get \emph{one} column called \texttt{x}?
+\item Strategy: read values in the usual way, then process.
+\item Here there are no variable names, so:
+
+  \begin{footnotesize}
+  \begin{Datastep}
+proc import
+  datafile='/home/ken/many.txt'
+    dbms=dlm out=many replace;
+  delimiter=' ';
+  getnames=no;
+  \end{Datastep}
+    
+  \end{footnotesize}
+
+\item Note last line, not the usual.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{So far}
+  
+  \begin{Sascode}[store=ma]
+proc print;    
+  \end{Sascode}
+  
+  \Listing[store=ma,fontsize=scriptsize]{maa}
+
+We have six variables with names like \texttt{VAR2}, each ``variable''
+having two values (two lines of data file).
+
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Solution for this}
+
+  Solution very like the SAS version of \texttt{gather}, using an array:
+
+  \begin{Datastep}
+data one;
+  set many;
+  array x_array VAR1-VAR6;
+  do i=1 to 6;
+    x=x_array[i];
+    output;
+  end;
+  keep x;
+  \end{Datastep}
+
+\end{frame}
+
+\begin{frame}[fragile]{Did it work?}
+    
+    \begin{Sascode}[store=mb]
+proc print;      
+    \end{Sascode}
+    
+\Listing[store=mb,fontsize=scriptsize]{mbb}
+    
+\end{frame}
+
+\begin{frame}[fragile]{Same data file as values of \texttt{x} and \texttt{y}}
+  
+  \begin{itemize}
+  \item   Recall:
+  
+\verbatiminput{many.txt}
+\item Suppose now a value of \texttt{x} and a value of \texttt{y}, then
+another \texttt{x} and another \texttt{y}, and so on, so 3 is
+\texttt{x}, 4 is \texttt{y}, 5 is \texttt{x}, 6 is \texttt{y} and so on.
+
+\item Read in as before using \texttt{proc import} to get data set
+  with \texttt{VAR1} through \texttt{VAR6}, then loop from 1 to
+  \emph{3} (3 \texttt{x-y} pairs), pulling out the right things.
+  \end{itemize}
+
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making \texttt{x} and \texttt{y}}
+
+  \begin{itemize}
+  \item This code, adapted from previous:
+        \begin{Datastep}
+data two;
+  set many;
+  array xy_array VAR1-VAR6;
+  do i=1 to 3;
+    x=xy_array[2*i-1];
+    y=xy_array[2*i];
+    output;
+  end;
+  keep x y;
+  \end{Datastep}
+  
+  \item Tricky part: when $i=1$, want items 1 and 2 from the array;
+    when $i=2$, want items 3 and 4, etc. 
+  \item Twice the value of $i$ will
+    give the second value we want (the one for \texttt{y}), so one
+    less than that will give the value we want for \texttt{x}.
+
+  \end{itemize}
+
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Did it work?}
+  
+      We seem to have been successful. You can check that the right values
+  got assigned to \texttt{x} and \texttt{y} in the right order.
+
+  
+  \begin{Sascode}[store=mc]
+proc print;    
+  \end{Sascode}
+  
+\Listing[store=mc]{mcc}  
+
+\end{frame}
+
+\begin{frame}[fragile]{Permanent data sets}
+  \begin{itemize}
+  \item Can we read in data set \emph{once} and not every time?
+  \item Yes, use \emph{this mechanism} when creating, for
+    example pigs data:
+
+\begin{Datastep}
+libname mydata V9 '/home/ken';
+proc import
+  datafile='/home/ken/pigs1.txt'
+    dbms=dlm 
+    out=mydata.pigs1
+    replace;
+  delimiter=' ';
+  getnames=yes;
+\end{Datastep}
+
+\item First, define a \texttt{libname} that tells SAS which folder
+  this dataset will go in.
+\item Then, on \texttt{out=}, use a two-part name: the
+  \texttt{libname}, then dataset name.
+
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+  \begin{itemize}
+  \item In folder defined by \texttt{libname}, will be a file called
+    \texttt{pigs1.sas7bdat} (!) on SAS Studio. In my case, in my main
+    SAS Studio folder.
+\item Can use subfolders, using \texttt{/} forward slash syntax, in
+  \texttt{libname}. 
+
+\item Whenever you need to use it, add
+  \texttt{data='/home/username/pigs1'} to a \texttt{proc} line
+  (replacing \texttt{username} with your username, and replacing
+  \texttt{pigs1} with your data set name).
+\item Closing SAS breaks connection with temporary (ie.\
+  \emph{non}-permanent) data sets. To get those back, need to run
+  \texttt{proc import} lines again. 
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{proc means} without reading in data}
+  
+  \begin{itemize}
+  \item Imagine we closed down SAS Studio and opened it up again. Then:
+    
+    \begin{Sascode}[store=md]
+proc means data='/home/ken/pigs1';      
+    \end{Sascode}
+    
+    
+  \item with output
+    
+    \Listing[store=md,fontsize=scriptsize]{mdd}
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Saving permanent data sets other ways}
+  
+  \begin{itemize}
+  \item If you run a \texttt{proc} that has an \texttt{out=} option,
+    create permanent data set same way as from \texttt{proc import}:
+    define a \texttt{libname} and put a two-part name on \texttt{out=}
+    with the \texttt{libname} first.
+  \item Can also create a new data set, using \texttt{data} step, and
+    make \emph{that} permanent. For example, suppose we take data set
+    \texttt{two} from before (containing variables \texttt{x} and
+    \texttt{y}) and add a variable \texttt{z} to it, saving in
+    permanent data set \texttt{three}.
+  \item Same idea: define \texttt{libname}, and use
+    two-part data set name:
+    
+    \begin{footnotesize}
+  \begin{Datastep}
+libname mydata V9 '/home/ken';    
+data mydata.three; /* permanent data set to save in */
+  set two; /* this has variables x and y in it */
+  z=x+y;
+  \end{Datastep}
+      
+    \end{footnotesize}
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The new permanent data set}
+  
+  \begin{itemize}
+  \item Imagine I closed down SAS Studio and opened it up again:
+    
+    \begin{Sascode}[store=me]
+proc print data='/home/ken/three';
+    \end{Sascode}
+    
+\Listing[store=me,fontsize=scriptsize]{mee}    
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Why permanent data sets?}
+  
+  \begin{itemize}
+  \item It is a lot of work (for us) to read in data sets from file
+    every time. I can never remember the syntax for \texttt{proc
+      import} (I usually copy an old one).
+  \item It can take a lot of effort to get data in the right format
+    for analysis. Rather than do that every time, we can save a
+    permanent data set once the dataset is in the right shape.
+  \item For big data, we don't want to repeat the effort of reading
+    and processing more than once. (This can take a \emph{long} time.)
+    Better to create one permanent dataset and use it for each of our
+    analyses. 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{How does SAS know which data set to use?}
+
+Two rules:
+
+\begin{enumerate}
+\item Any \texttt{proc} can have \texttt{data=} on it. Tells SAS to
+  use that data set. Can be
+  \begin{itemize}
+  \item unquoted dataset name (created by \texttt{proc import} or by
+    processing a dataset read in that way)
+  \item quoted data set name (permanent one on disk created as above)
+  \end{itemize}
+\item Without \texttt{data=}, \emph{most recently created data
+    set}. Typically data set created by \texttt{proc import} or
+  \texttt{data} step.  Also, data set created by \texttt{out=} counts.
+\end{enumerate}
+Does permanent data set count as ``most recently created''? No,
+  or at least not always. If unsure, use \texttt{data=}.  
+\end{frame}
+
+
+\begin{frame}[fragile]{Embellishments to plots}
+  
+  \begin{itemize}
+  \item Histogram with kernel density curve
+  \item Smooth trend on scatterplot
+  \item Plotting several series of data
+  \item Labelling points on plots
+  \item both SAS and R (eventually).
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Use Australian athletes data}
+  
+    \begin{Datastep}
+proc import 
+  datafile='/home/ken/ais.txt'
+  dbms=dlm
+  out=sports
+  replace;
+  delimiter='09'x;
+  getnames=yes;
+    \end{Datastep}
+  
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Kernel density curve on histogram}
+
+  \begin{itemize}
+  \item A kernel density curve smooths out a histogram and gives sense
+    of shape of distribution.
+  \item Athlete heights:
+\begin{Sascode}[store=mix]
+proc sgplot;
+  histogram Ht;
+  density Ht / type=kernel;
+\end{Sascode}
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Histogram of heights with kernel density}
+
+\Graphic[store=mix,scale=0.5]{mixx}
+
+More or less symmetric.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Kernel density for BMI}
+  
+\begin{Sascode}[store=miy]
+proc sgplot;
+  histogram BMI;
+  density BMI / type=kernel;
+\end{Sascode}
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Histogram with kernel density}
+
+  \Graphic[store=miy,scale=0.5]{miyy}
+
+Rather more clearly skewed right.  
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Loess curve}
+
+  \begin{itemize}
+  \item Smooth curve through scatterplot called \emph{Loess curve}  in SAS: Code like this:
+\begin{Sascode}[store=mjc]
+proc sgplot;
+  scatter x=Ht y=Wt;
+  loess x=Ht y=Wt;
+\end{Sascode}
+
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Loess curve on plot}
+  
+  \Graphic[store=mjc,scale=0.5]{mjcc}
+  
+  Loess curve says this is as straight as you could wish for.
+\end{frame}
+
+\begin{frame}[fragile]{Loess curve for windmill data}
+  
+  \begin{itemize}
+  \item Read into SAS thus:
+    
+  \begin{Datastep}
+proc import
+  datafile='/home/ken/windmill.csv'
+    dbms=csv
+    out=windmill
+    replace;
+  getnames=yes;
+  \end{Datastep}
+  
+  \begin{Sascode}[store=ng]
+proc means;    
+  \end{Sascode}
+  
+  \Listing[store=ng,fontsize=scriptsize]{ngg}
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{To make the scatterplot with loess curve}
+  
+\begin{Sascode}[store=mje]
+proc sgplot;
+  scatter x=wind_velocity y=DC_output;
+  loess x=wind_velocity y=DC_output;
+\end{Sascode}
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot with curve}
+  
+  \Graphic[store=mje,scale=0.5]{mjee}
+  
+  This time, relationship is definitely curved.
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Multiple series on one plot: the oranges data}
+
+  \begin{itemize}
+  \item Data file like this (circumferences of 5 trees each at 7
+    times):
+    
+\verbatiminput{oranges.txt}
+
+\item Columns don't line up because the delimiter is ``exactly one
+  space'', and some of the values are longer than others.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading the data}
+  
+    \begin{Datastep}
+proc import
+  datafile='/home/ken/oranges.txt'
+    dbms=dlm
+    out=trees
+    replace;
+  delimiter=' ';
+  getnames=yes;
+    \end{Datastep}
+
+  
+\end{frame}
+
+\begin{frame}[fragile]{Did it work?}
+  
+  \begin{Sascode}[store=ora]
+proc print;    
+  \end{Sascode}
+  
+  \Listing[store=ora,fontsize=scriptsize]{oraa}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Multiple series}
+
+  \begin{itemize}
+  \item Growth curve for \emph{each} tree, joined by lines.
+  \item \texttt{series} joins points by lines.
+  \item \texttt{markers} displays actual data points too.
+  \item Do each series one at a time.
+\begin{Sascode}[store=mjd]
+proc sgplot;
+  series x=age y=a / markers;
+  series x=age y=b / markers;
+  series x=age y=c / markers;
+  series x=age y=d / markers;
+  series x=age y=e / markers;
+\end{Sascode}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The growth curves}
+
+\Graphic[store=mjd,scale=0.6]{mjdd}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Labelling points on a plot}
+  
+  \begin{itemize}
+    \item Often, a data set comes with an identifier variable.
+    \item We would like to label each point on a plot with its
+      identifier, to see which individual is which.
+    \item Commonly (but not only) done on scatterplot.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Example: the cars data}
+  
+  \begin{itemize}
+  \item 38 cars. For each: 
+    \begin{itemize}
+    \item Name of car (identifier)
+    \item Gas mileage (miles per US gallon)
+    \item Weight (US tons)
+    \item Number of cylinders in engine
+    \item Horsepower of engine
+    \item Country of origin
+    \end{itemize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading in}
+  
+  \texttt{.csv} file, so:
+  
+    \begin{Datastep}
+proc import 
+  datafile='/home/ken/cars.csv'
+  dbms=csv
+  out=cars
+  replace;
+  getnames=yes;
+    \end{Datastep}
+  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Adding labels to scatterplot}
+  
+  \begin{itemize}
+  \item Expect heavier car to have worse (lower) gas mileage, so make
+    scatterplot of gas mileage ($y$) against weight ($x$).
+  \item Want to see which car is which, so label points. 
+  \item The magic word is \texttt{datalabel}:
+    
+    \begin{Sascode}[store=muggins]
+proc sgplot;
+  scatter y=mpg x=weight / datalabel=car;
+    \end{Sascode}
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{The plot}
+  
+\Graphic[store=muggins,scale=0.6]{mugginss}  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+  
+  \begin{itemize}
+  \item Each car labelled with its name, either left, right, above or
+    below, whichever makes it clearest. (Some intelligence applied to
+    placement.) 
+  \item Cars top left are ``nimble'': light in weight, good gas
+    mileage.
+  \item Cars bottom right are ``boats'': heavy, with terrible gas mileage.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Labelling by country}
+  
+  Same idea:
+  
+  \begin{Sascode}[store=mka]
+proc sgplot;
+  scatter x=weight y=mpg / datalabel=country;
+  \end{Sascode}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Labelled by country}
+
+\Graphic[store=mka,scale=0.7]{mkaa}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Labelling only some of the observations}
+
+  \begin{itemize}
+  \item Create a new data set with all the old variables plus a new
+    one that contains the text to plot.
+  \item For example, label most fuel-efficient car (\#4) and heaviest
+    car (\#9).
+  \item ``Observation number'' given by SAS special variable \texttt{\_n\_}.
+  \item Note the syntax: ``if then do'' followed by ``end''.
+    \begin{small}
+    \begin{Datastep}
+data cars2;
+  set cars;
+  if (_n_=4 or _n_=9) then do;
+    newtext=car;
+  end;
+    \end{Datastep}      
+    \end{small}
+  \item For any cars not selected, \texttt{newtext} will be
+    blank. Then, using the new data set that we just created:
+    \begin{small}
+    \begin{Sascode}[store=mwa]
+proc sgplot;
+  scatter x=weight y=mpg / datalabel=newtext;
+    \end{Sascode}      
+    \end{small}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot}
+  
+\Graphic[store=mwa, scale=0.6]{mwaa}  
+  
+\end{frame}
+
+\begin{frame}[fragile]{Or label cars with \texttt{mpg} greater than
+    34}
+
+  \begin{Datastep}
+data cars3;
+  set cars;
+  if mpg>34 then do;
+     newtext=car;
+  end;
+    
+  \end{Datastep}
+  \begin{Sascode}[store=mjk]
+proc sgplot;
+  scatter x=weight y=mpg / datalabel=newtext;
+  \end{Sascode}
+
+  
+\end{frame}
+
+\begin{frame}{High-\texttt{mpg} cars}
+
+\Graphic[store=mjk,scale=0.6]{mjkk}
+  
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%% R
+
+
+
+\begin{frame}[fragile]{More R stuff}
+
+  \begin{itemize}
+  \item R has a thousand tiny parts, all working together, but to use
+    them, need to know their \emph{names}.
+    
+  \item Sometimes you \emph{do} know the name, but you forget how it
+    works. Then (at Console) type eg.\ \texttt{?median} or
+    \texttt{help(median)}. 
+    Help appears in R Studio bottom right.
+% \item Read in the cars data to use for examples later:
+%   \begin{small}
+% <<>>=
+% cars=read.csv("cars.csv")
+% str(cars)
+% @     
+%   \end{small}
+% 
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Structure of help file}
+
+All R's help files laid out the same way:
+
+\begin{itemize}
+\item \textbf{Purpose}: what the function does
+\item \textbf{Usage}: how you make it go
+\item \textbf{Arguments}: what you need to feed in. Arguments with a \texttt{=}
+  have \emph{default} values. If the default is OK (it often is), you
+  don't need to specify it.
+\item \textbf{Details}: more information about how the function works.
+\item \textbf{Value}: what comes back from the function.
+\item \textbf{References} to the literature, so that you can find out exactly
+  how everything was calculated.
+\item \textbf{Examples}. Run these using eg.\ \texttt{example(median)}.
+  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{If you don't know the name}
+  
+  \begin{itemize}
+  \item Then you have to find it out!
+  \item If you know what it might be, \texttt{apropos(name)}:
+
+    \begin{small}
+<<>>=
+apropos("read_")
+@       
+    \end{small}
+and then you investigate more via \texttt{help()}.
+\item Google-searching, eg: \texttt{r ggplot add horizontal
+    line}. Often turns up questions on \texttt{stackexchange.com},
+  which might be adapted to your needs.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{That Google search}
+  
+  \includegraphics[height=0.7\textheight]{/home/ken/Pictures/W1_010}
+  
+  \begin{itemize}
+  \item Looks like \verb+geom_hline()+.
+    
+  \item Look up in help as \verb+?ggplot2::geom_hline+.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{I never heard of \texttt{read\_fwf}!}
+  
+  \begin{itemize}
+  \item Often \texttt{apropos} turns up things you never heard of.
+  \item But now you have the name, you can look up the help:
+    
+\includegraphics[width=0.7\textwidth]{read-fwf}
+
+\item What does a fixed-width file look like?
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The original oranges data}
+  
+\verbatiminput{oranges-orig.txt}
+
+\begin{itemize}
+\item The columns \emph{line up}, so they are easy to read.
+\item That means that sometimes you have more
+than one space between them, and \texttt{read\_delim} won't work.
+\item But each column is \emph{a fixed number of characters}
+  wide.
+\item No variable names, so have to supply them also when reading in.
+
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Guessing columns based on spaces}
+  
+<<>>=
+fname="oranges-orig.txt"
+oranges2=read_fwf(fname,
+  fwf_empty(fname,col_names=c("age","A","B","C","D","E")))
+@   
+
+Note that we have to supply file name \emph{twice}, so define it into
+variable to save typing.
+  
+\end{frame}
+
+\begin{frame}[fragile]{The data}
+  
+<<>>=
+oranges2
+@   
+
+That worked.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading columns based on widths}
+  
+  Here, there are 6 columns each 4 characters wide (including
+  preceding space(s)), so:
+  
+<<>>=
+oranges3=read_fwf(fname,fwf_widths(c(4,4,4,4,4,4),
+           c("age","A","B","C","D","E")))
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{The data}
+  
+<<>>=
+oranges3
+@   
+
+That worked also.
+  
+\end{frame}
+
+\begin{frame}[fragile]{No delimiters}
+  
+  The advantage to reading by width is that \emph{you don't need any
+    delimiters}. For example, this file \texttt{rats7.txt}:
+  
+\verbatiminput{rats7.txt}
+
+has a rat identifier in the first 4 columns, a group T or C in the
+next 1 column, and then a response variable \texttt{y} in the next 2.
+
+Delimiterless files used to be very common, because they take up
+  very little disk space:
+  
+<<engine="bash">>=
+ls -l rats7.txt
+@   
+
+40 bytes: $7+1=8$ for each line, times 5 lines.
+
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading in delimiterless data}
+  
+  \begin{itemize}
+  \item Read in with \texttt{read\_fwf} and vector of widths:
+    
+<<>>=
+rat7=read_fwf("rats7.txt",fwf_widths(c(4,1,2),
+       c("id","group","y")))
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The ``rat7'' data}
+  
+<<>>=
+rat7
+@   
+
+\begin{itemize}
+\item That worked too. Note that \texttt{read\_fwf} determined that
+\texttt{y} was a number and the other things were text.
+\item You need to have a separate document telling you how many
+  characters each column is.
+\end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Plotting series with R}
+
+  \begin{itemize}
+  \item The oranges data:
+
+<<>>=
+oranges2
+@ 
+\item Want to plot orange circumferences against age for each orange
+  tree.
+\item Recall \texttt{ggplot} wants one column of $x$ values and one
+  column of $y$ values, which we do not have.
+  
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making right format and plot}
+  
+Use \texttt{gather} to create columns we need, and then plot:
+
+<<>>=
+g=oranges2 %>% gather(tree,circumf,A:E) %>%
+    ggplot(aes(x=age,y=circumf,colour=tree))+
+      geom_point()+geom_line()
+@   
+
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot}
+  
+<<fig.height=4>>=
+g
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Data for other plots}
+  
+  \begin{itemize}
+  \item Re-use data on Australian athletes and cars to get
+    corresponding plots to SAS's.
+<<>>=
+cars=read_csv("cars.csv")
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Histogram with kernel density}
+  
+  \begin{itemize}
+  \item Athletes height and BMI, height first.
+  \item Two things: 
+    \begin{itemize}
+    \item     use density scale on histogram (0--1 or fraction
+    of whole, rather than count)
+  \item add kernel density.
+    \end{itemize}
+
+<<>>=
+g=ggplot(athletes,aes(x=Ht))+
+    geom_histogram(aes(y=..density..),bins=10)+
+    geom_density()
+@ 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The histogram}
+  
+<<fig.height=4>>=
+g
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Same idea for BMI}
+
+<<fig.height=4>>=
+ggplot(athletes,aes(x=BMI))+
+  geom_histogram(aes(y=..density..),bins=10)+
+  geom_density()
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{Too many bins}
+  
+  Kernel density still works for inappropriate number of bins:
+  
+<<fig.height=3.5>>=
+ggplot(athletes,aes(x=BMI))+
+  geom_histogram(aes(y=..density..),bins=50)+
+  geom_density()
+@ 
+  
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Smooth trends}
+  
+  \begin{itemize}
+  \item Done by \texttt{geom\_smooth} without \texttt{method}.
+  \item Athletes height vs.\ weight:
+<<fig.height=3>>=
+ggplot(athletes,aes(x=Ht,y=Wt))+
+  geom_point()+geom_smooth()
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{And with windmill data}
+  
+
+<<echo=F,message=F>>=
+windmill=read_csv("windmill.csv")
+@ 
+
+<<fig.height=3.5>>=
+ggplot(windmill,aes(x=wind_velocity,y=DC_output))+
+  geom_point()+geom_smooth()
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Labelling observations}
+  
+  \begin{itemize}
+  \item There is a bad way and a good way.
+  \item Bad way: \texttt{geom\_text}
+  \item Good way: \texttt{geom\_text\_repel} from package
+    \texttt{ggrepel}.
+  \item Illustrate on cars data with MPG vs.\ weight.
+  \item Worst way first:
+    
+<<>>=
+g=ggplot(cars,aes(x=Weight,y=MPG,label=Car))+
+  geom_point()+geom_text()
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The worst plot}
+  
+<<fig.height=3.5>>=
+g
+@   
+  
+\end{frame}
+  
+  
+\begin{frame}[fragile]{Next}
+  
+  \begin{itemize}
+  \item multiple obs per line
+  \item two variables ditto
+  \item permanence
+  \item labelling cars by name on mpg vs weight
+  \item labelling cars for obs 4 and 9
+  \item labelling cars where mpg>34
+  \end{itemize}
+  
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% needs editing
+
+\begin{frame}[fragile]{Adding labels to plot}
+  
+  
+
+<<fig.height=4>>=
+g+geom_text(aes(label=Car),hjust=-0.1,size=2)+
+  xlim(1.8,5.0)
+@   
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+  
+  \begin{itemize}
+  \item \verb+geom_text+ needs a \texttt{label} aesthetic to say what
+    text to plot. It inherits the \texttt{x} and \texttt{y} from the
+    \texttt{ggplot}. 
+  \item \texttt{hjust} says where to put the labels relative to the
+    points: 0.5 is centred over them, negative is on the right,
+    greater than 1 is on the left.
+  \item \texttt{vjust} similar to move labels up and down (less than
+    0, greater than 1 for above or below points).
+  \item \texttt{size} controls size of text: 5 is default (so this is
+    smaller).
+  \item Not an obvious way to stop labels overlapping! But see over
+    for a solution.
+    
+  \item \texttt{xlim} changes limits of $x$-axis (to stop labels going
+    off side). Likewise \texttt{ylim}.
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Non-overlapping labels}
+  
+  \begin{itemize}
+  \item Key is to use package \texttt{ggrepel} and
+    \verb+geom_text_repel+ from that package instead of \verb+geom_text+:
+
+<<eval=F>>=
+library(ggrepel) # if not done already
+@     
+<<fig.height=3.5>>=
+g+geom_text_repel(aes(label=Car),size=2)
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Labelling only some points}
+  
+  \begin{itemize}
+  \item Same idea as SAS: create a new variable in the data frame with
+    the labels to plot, or empty, eg.\ using \texttt{mutate} from
+    \texttt{dplyr}: 
+    
+<<fig.height=3.5>>=
+cars2=dplyr::mutate(cars,
+  newlabel=ifelse(MPG>34,as.character(Car),""))
+g2=ggplot(cars2,aes(x=Weight,y=MPG))+geom_point()+
+  geom_text(aes(label=newlabel),size=2,hjust=-0.1)
+@     
+
+\item \texttt{ifelse} takes three things: something that can be true
+  or false, the value if true, the value if false (like \texttt{IF} in
+  a spreadsheet). 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot}
+  
+<<fig.height=4>>=
+g2
+@   
+  
+\end{frame}
+
+
+
+%%%%%%%%%%%%  get stuff from after here
+
+\begin{frame}[fragile]{Gas mileage against weight, basic}  
+  
+<<fig.height=3.5>>=
+g=ggplot(cars,aes(x=Weight,y=MPG))+geom_point() ; g
+@     
+  
+\end{frame}
+
+\begin{frame}[fragile]{Add regression line}
+  
+<<fig.height=4>>=
+g+geom_smooth(method="lm",se=F)
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Calculate and plot means}
+  
+<<fig.height=3>>=
+mean.weight=mean(cars$Weight)
+mean.MPG=mean(cars$MPG)
+g2=g+geom_smooth(method="lm",se=F)+
+  geom_hline(yintercept=mean.MPG,colour="red")+
+  geom_vline(xintercept=mean.weight,colour="darkgreen")
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot}
+  
+<<fig.height=4>>=
+g2
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{With title}
+  
+<<fig.height=4>>=
+g+ggtitle("Gas mileage against weight")
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Axis labels}
+  
+<<fig.height=4>>=
+g+xlab("Weight (tons)")+ylab("MPG (miles per US gallon)")
+@   
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Labelling points by group}
+  
+<<fig.height=3.6>>=
+g3=ggplot(cars,aes(x=Weight,y=MPG,colour=Cylinders))+
+  geom_point() ; g3
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Fixing it up}
+  
+  \begin{itemize}
+  \item Only that isn't right: cylinders isn't really on a
+    \emph{continuous} scale; it should be treated as factor:
+<<fig.height=3.5>>=
+g3=ggplot(cars,aes(x=Weight,y=MPG,
+  colour=as.factor(Cylinders)))+ geom_point() ; g3
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Adding new data: averages by cylinders}
+
+  \begin{itemize}
+  \item First make data frame of new data to add:
+
+\begin{small}
+<<>>=
+tmp1=group_by(cars,Cylinders)
+summ=summarize(tmp1,mw=mean(Weight),mm=mean(MPG)) ; summ
+@       
+\end{small}
+\item then to plot averages on graph, add a new \verb=geom_point=
+  \emph{with a new data frame}:
+  
+<<fig.height=3>>=
+g4=g3+geom_point(data=summ,aes(x=mw,y=mm,
+  colour=as.factor(Cylinders)),shape=3)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot, group mean marked by +}
+  
+<<fig.height=4>>=
+g4
+@   
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Multiple series on one plot}
+  \begin{itemize}
+  \item Oranges data frame
+<<>>=
+oranges=read.table("oranges.txt",header=T)
+oranges      
+@ 
+\item Each column is circumference at given time. Want to plot each
+  column against time, labelled.
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Organizing the data}
+  
+  \begin{itemize}
+\item \texttt{ggplot} way is to put all the circumferences in
+  \emph{one} column, labelled by which tree they come from, and then
+  plot them using \texttt{tree} as group.
+\item This uses \texttt{gather} from \texttt{tidyr}:
+  \begin{footnotesize}
+<<>>=
+orange.long=gather(oranges,tree,circum,A:E)
+head(orange.long,8)
+@   
+    
+  \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot, joining points by lines}
+  
+<<fig.height=3.5>>=
+g5=ggplot(orange.long,aes(x=ages,y=circum,colour=tree))+
+  geom_point()+geom_line(); g5
+@   
+
+\end{frame}
+
+\begin{frame}[fragile]{Faceting}
+  \begin{itemize}
+  \item Another way to plot the orange tree growth curves is each on a
+    separate plot.
+  \item In \texttt{ggplot} the separate graphs are called
+    \textbf{facets}, and to get them, you add \verb+facet_wrap+ to the
+    plot, with, inside, what distinguishes the facets, thus:
+    
+<<>>=
+g6=g5+facet_wrap(~tree)
+@
+\item Or, for the car data, plot gas mileage against weight for each
+  country separately:
+  
+<<fig.height=4>>=
+g7=ggplot(cars,aes(x=Weight,y=MPG))+geom_point()+
+  facet_wrap(~Country)
+@   
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Growth curves by tree}
+  
+<<fig.height=4>>=
+g6
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Car MPG by weight for each country}
+  
+<<fig.height=4>>=
+g7
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Plotting against several variables}
+  
+  \begin{itemize}
+  \item Another use for faceting is to plot one $y$-variable (say
+    \texttt{MPG}) against several $x$-variables at once. (Did this
+    for asphalt data before.) Here we plot \texttt{MPG} against
+    \texttt{Weight}, \texttt{Cylinders} and \texttt{Horsepower}.
+  \item Strategy: put all $x$'s in \emph{one} column (using
+    \texttt{gather}) and keep another column with names of $x$'s.
+  \item Plot $y$ against combined $x$'s, \emph{faceted by names of
+      $x$'s}.
+  \item $x$'s will be on different scales; account for this:
+    
+<<>>=
+cars.3=gather(cars,xname,x,Weight:Horsepower)
+g8=ggplot(cars.3,aes(x=x,y=MPG))+geom_point()+
+  facet_wrap(~xname,scales="free_x")
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot(s): all negative correlations}
+  
+<<fig.height=4>>=
+g8
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{With regression lines}
+  
+<<fig.height=3.5>>=
+g8+geom_smooth(method="lm",se=F)
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{A last variation: separate graphs for levels of
+    a factor}
+  
+  \begin{itemize}
+  \item The same faceting idea allows us to produce an array of plots,
+    one for each combination of levels of factors.
+  \item Here we plot \texttt{MPG} against \texttt{Weight} for each
+    combo of \texttt{Country} (across) and number of
+    \texttt{Cylinders} (up, treated as factor):
+    
+<<>>=
+g9=ggplot(cars,aes(x=Weight,y=MPG))+geom_point()+
+  facet_grid(Cylinders~Country)
+@     
+\item Can also put only \emph{one} factor in \verb+facet_grid+ to arrange
+  facets up and down or across. With \verb+facet_wrap+, don't control
+  structure of display.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The plot}
+  
+<<fig.height=4>>=
+g9
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Kernel density curve}
+  
+  \begin{itemize}
+  \item As we saw in SAS, this is a way of smoothing a histogram to
+    understand underlying shape.
+  \item \texttt{ggplot} histogram has ``bin width'' all wrong:
+    
+<<fig.height=2>>=
+ggplot(cars,aes(x=MPG))+geom_histogram()
+@     
+\item Fix up bin width, add kernel density with
+  \verb+geom_density()+. Also note that $y$-scale will be the
+  (computed) density, not count:
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Histogram of MPG with kernel density}
+  
+<<fig.height=4>>=
+ggplot(cars,aes(x=MPG))+
+  geom_histogram(aes(y=..density..),
+    binwidth=2.5)+geom_density()
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Histogram of weight with density curve}
+  
+  \begin{itemize}
+  \item Histogram of \texttt{MPG} is clearly bimodal. What about
+    weight? Not so much.
+    
+<<fig.height=3>>=
+ggplot(cars,aes(x=Weight))+
+  geom_histogram(aes(y=..density..),
+    binwidth=0.5)+geom_density()
+@     
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Normal quantile plot}
+
+  \begin{itemize}
+  \item Histogram, (especially) boxplot don't give focused assessment
+    of whether a distribution is normal.
+  \item Need \emph{normal quantile plot}.
+  \item Plot data values against \emph{what you'd expect if normal
+      distribution correct}.
+  \item If normal \emph{is} correct, get straight line. If not, get a
+    curve.
+  \item \texttt{ggplot} has \verb+stat_qq+ for this, which goes this
+    way (car weights):
+<<>>=
+qq=ggplot(cars,aes(sample=Weight))+stat_qq()
+@ 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Normal quantile plot for \texttt{Weight}}
+
+<<fig.height=4>>=
+qq
+@ 
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Comments}
+
+  \begin{itemize}
+    
+  \item Plot has no \texttt{qqline}!
+  \item If data were perfectly normal, values exactly straight.
+  \item Data stray off straight a bit at the ends: low values
+    especially are too big/bunched up for normal.
+  \item Weights are not normal.
+    
+  \item But line makes it much easier to judge. How might we draw one?
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Figuring out ``qqline''}
+  
+  \begin{itemize}
+  \item The \texttt{qqline} on R's other normal quantile plot goes
+    through observed and 
+    theoretical \emph{quartiles}.
+  \item \texttt{quantile} gets percentiles of data, for example:
+<<>>=
+y=quantile(cars$Weight,c(0.25,0.75)) ; y
+@     
+%$ %$
+\item \texttt{qnorm} gets percentiles of standard normal:
+<<>>=
+x=qnorm(c(0.25,0.75)) ; x
+@   
+%$ %$ %$ 
+\item I used \texttt{y} for data and \texttt{x} for theoretical since
+  that's how they appear on the graph.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Figuring out ``qqline'' (2)}
+  
+  \begin{itemize}
+\item Slope of line joining these is
+<<>>=
+slope=(y[2]-y[1])/(x[2]-x[1]) ; slope
+@   
+\item Intercept is
+<<>>=
+int=y[1]-slope*x[1] ; int
+@   
+\item \verb+geom_abline()+ draws a line with specified intercept and slope.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making this into a function}
+  
+  \begin{itemize}
+  \item Make this into function so that we can use
+    repeatedly. Generous use of copy/paste!
+<<>>=
+qqplot=function(vals) {
+  y=quantile(vals,c(0.25,0.75)) 
+  x=qnorm(c(0.25,0.75)) 
+  slope=(y[2]-y[1])/(x[2]-x[1]) 
+  int=y[1]-slope*x[1]
+  d=data.frame(vals=vals)
+  ggplot(d,aes(sample=vals))+stat_qq()+
+    geom_abline(slope=slope,intercept=int)
+}
+@     
+\item Make sure you understand what each line of the function does,
+  and why it's there.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Testing on car weights}
+  
+<<fig.height=4>>=
+qqplot(cars$Weight)
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making normal quantile plot of actually normal data}
+  \begin{itemize}
+  \item How much deviation from the line might there be if data
+    \emph{really} normal?
+  \item Generate some random normal data and find out:
+<<echo=F>>=
+set.seed(457299)
+@     
+<<>>=
+z=rnorm(100)
+qq=qqplot(z)
+@ 
+\item See (over) that:
+  \begin{itemize}
+  \item overall pattern of points is straight, not curved
+  \item points at extremes are not ``drifting away'' from line.
+
+  \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Normal quantile plot for genuinely normal data}
+
+<<fig.height=4>>=
+qq
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{Right-skewed data}
+
+  \begin{itemize}
+  \item The \emph{gamma distribution} is skewed to right:
+<<fig.height=2.5>>=
+g=rgamma(1000,2,2)
+gam=data.frame(g=g)
+ggplot(gam,aes(x=g))+geom_histogram(binwidth=0.2)
+@ 
+
+Assess normality thus:
+
+<<>>=
+qq=qqplot(g)
+@ 
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Normal quantile plot for gamma data}
+
+<<fig.height=4>>=
+qq
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+
+  \begin{itemize}
+  \item \emph{Seriously} non-normal!
+  \item Big-time curve on plot; points don't follow a line at all.
+  \item Observations at top end \emph{too spread out} for normal.
+  \item Observations at bottom end \emph{bunched up} for normal.
+  \item Skewness in direction of spread-out values: skewed \emph{right}.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Car MPGs}
+
+  \begin{itemize}
+  \item Distribution had ``hole'' in middle --- some low MPGs, and
+    some high ones: not normal.
+  \item How does this show up on normal quantile plot?
+<<>>=
+qq=qqplot(cars$MPG)
+@ 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Normal quantile plot for car MPG}
+
+<<fig.height=4>>=
+qq
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+
+  \begin{itemize}
+  \item ``Hole'' shows up as vertical gap.
+  \item Almost S-bend in data values.
+  \item High ones not high enough.
+  \item Low ones not low enough.
+  \item Data too \emph{bunched up} to be normal (short tails).
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Functions: the geometric distribution}
+
+  \begin{itemize}
+  \item Recall \emph{binomial distribution}, eg.\ toss coin 10 times
+    and count how many heads ($W$).
+  \item In general, prob.\ of success $=p$ on every independent
+    trial. Fixed \# trials, $W$ is \#successes.
+  \item Another angle: \emph{how many trials to get my first success?}
+  \item Random variable now \#trials (denote $X$); \#successes fixed ($=1$).
+  \item \emph{Geometric distribution}.
+  \item $P(X=1)=p$ (success first time).
+  \item $P(X=2)=(1-p)p$ (fail, then succeed).
+  \item $P(X=3)=(1-p)^2p$ (fail 2 times, then succeed).
+  \item $P(X=n)=(1-p)^{n-1}p$ (fail $n-1$ times, then succeed).
+  \item Implement in R.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Writing a geometric probability function}
+
+  \begin{itemize}
+  \item Input: \#trials whose prob.\ we want \texttt{x}, single-trial
+    success prob.\ \texttt{p}. Output: probability of succeeding for
+    1st time after exactly \texttt{x} trials (number).
+  \item One-liner:
+    \begin{small}
+<<>>=
+geometric=function(x,p) p*(1-p)^(x-1)
+@       
+    \end{small}
+\item Or with curly brackets:
+  \begin{small}
+<<>>=
+geometric=function(x,p)
+  {
+    p*(1-p)^(x-1)
+  }
+@     
+  \end{small}
+
+\item Testing:
+  \begin{small}
+<<>>=
+geometric(1,0.4)  
+@     
+  \end{small}
+Prob.\ of succeeding first time same as $p$: good.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Errors}
+
+  \begin{itemize}
+\item Chance of first success on second trial? Fail, then succeed:
+<<>>=
+geometric(2,0.4)  
+@ 
+$(0.6)(0.4)=0.24$.
+\item What if user gives \texttt{p} outside of $[0,1]$, or \texttt{x}
+  less than 1?
+\item Function dies with error. Or gives nonsense answer.
+\item Catch that first:
+  \begin{small}
+<<>>=
+geometric(0,0.5)  
+geometric(2,1.1)  
+@     
+  \end{small}
+
+\item Ugh!
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Catching errors}
+
+  \begin{itemize}
+  \item \texttt{stopifnot}: feed it some logical conditions, stops
+    operation of function if any condition false. (If all true,
+    nothing happens).
+  \item If any condition false, R tells you which one.
+  \item 3 things to check: $p$ 0 or bigger, $p$ 1 or smaller, $x$ 1 or
+    bigger:
+<<>>=
+geometric=function(x,p)
+{
+  stopifnot(p>=0,p<=1,x>=1)
+  p*(1-p)^(x-1)
+}
+@ 
+
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Testing}
+  \begin{itemize}
+\item Test:
+\begin{multicols}{2}
+<<>>=
+geometric(2,0.5)  
+geometric(0,0.5)
+geometric(2,1.1)  
+@ 
+
+Last two fail, and \texttt{stopifnot} tells you why.
+\end{multicols}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Calling \texttt{geometric} with vector
+    \texttt{x}}
+
+  \begin{itemize}
+  \item What happens?
+  \item Try it and see.
+<<>>=
+geometric(1:5,0.5)  
+@ 
+\item Probabilities of first success taking $1, 2, 3, \ldots$ trials.
+\item Works because of how R handles vector arithmetic.
+\item R freebie: often get vector output from vector input with no
+  extra coding.
+\item Above gives ingredients for ``first success in 5 trials
+  \emph{or less}'': calculate prob of 1 to 5, then add up:
+<<>>=
+sum(geometric(1:5,0.5))
+@ 
+\item Might know this as ``cumulative probability''.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Function input}
+  
+  \begin{itemize}
+  \item If we use function as above, have to get inputs in \emph{right
+    order}:
+<<>>=
+geometric(2,0.8)
+geometric(0.8,2)
+@   
+\item Second one fails because it thinks 2 is success probability.
+\item But if we \emph{use the names}, can do any order:
+<<>>=
+geometric(x=2,p=0.8)
+geometric(p=0.8,x=2)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Defaults}
+  
+  \begin{itemize}
+  \item What if I write the function like this?
+<<>>=
+geometric=function(x,p=0.5)
+{
+  stopifnot(p>=0,p<=1,x>=1)
+  p*(1-p)^(x-1)
+}
+@ 
+\item If I call it without a value of \texttt{p}, shouldn't I get an error?
+<<>>=
+geometric(x=3)
+@   
+\item 
+It works, because if I don't give a value for \texttt{p}, it uses the
+one in the \texttt{function} line, a \textbf{default}. 
+\item Many R functions have defaults, that give reasonable behaviour
+  without having to worry about details.
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Cumulative probabilities as function}
+
+  \begin{itemize}
+  \item Might be useful to have function for cumulative probabilities.
+  \item Strategy: get individual probs as far as you wish to go, then
+    add up. Eg.\ probability of 4 or less: need 1 through 4. In
+    general, \texttt{x} or less with success prob.\ \texttt{p}:
+<<>>=
+c.geometric=function(x,p)
+  {
+    probs=geometric(1:x,p)
+    sum(probs)
+  }
+@ 
+\item Easy to write, using our \texttt{geometric} function and stuff
+  in R.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Testing \texttt{c.geometric}}
+
+  \begin{itemize}
+  \item Try the one we just did:
+<<>>=
+c.geometric(5,0.5)  
+@ 
+Answer we had before.
+\item How about this:
+<<>>=
+c.geometric(20,0.1)  
+@ 
+If success probability only 0.1, might even take longer than 20 trials
+to get first success. So this is reasonable.
+\item Mean number of trials until 1st success is
+  $1/p$:
+  \begin{itemize}
+  \item $p=0.5$, mean \#trials is $1/0.5=2$.
+  \item $p=0.1$, mean \#trials is $1/0.1=10$.
+  \end{itemize}
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Using R's geometric calculator}
+
+  \begin{itemize}
+  \item Called \texttt{pgeom}:
+\begin{multicols}{2}
+<<>>=
+c.geometric(5,0.5)  
+c.geometric(20,0.1)  
+@ 
+<<>>=
+pgeom(5,0.5)  
+pgeom(20,0.1)  
+@ 
+\end{multicols}
+\item Oh. Not the same.
+\item Look in help for \texttt{pgeom}: this is \emph{other} version of
+  geometric, where you count \emph{how many failures} happened before
+  1st success (\#trials minus 1). So we need (compare
+  \texttt{c.geometric} on \emph{left}  above):
+  
+  \begin{footnotesize}
+\begin{multicols}{2}
+<<>>=
+pgeom(4,0.5)  
+@ 
+<<>>=
+pgeom(19,0.1)  
+@ 
+\end{multicols}
+  \end{footnotesize}
+and \emph{that} works.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Another way of writing cumulative geometric}
+
+  \begin{itemize}
+  \item Suppose we hadn't thought to try a vector for \texttt{x}. What then?
+  \item Calculate each probability in turn, add on to a running total,
+    return total at end.
+  \item Uses a \textbf{loop}:
+<<>>=
+c2.geometric=function(x,p)
+  {
+    total=0
+    for (i in 1:x)
+      {
+        prob=geometric(i,p)
+        total=total+prob
+      }
+    total
+  }  
+@ 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Checking}
+  
+<<>>=
+c2.geometric(5,0.5)  
+c.geometric(5,0.5)
+c2.geometric(20,0.1)
+c.geometric(20,0.1)
+@ 
+
+Same as before.
+
+  
+\end{frame}
+
+\begin{frame}[plain,c]
+  \begin{center}
+    {\Huge Selecting stuff in R}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Use ``dplyr''}
+  
+  Easiest way to select parts of data frame is to use \texttt{dplyr}
+  tools. Use cars data for example:
+  
+<<>>=
+str(cars)
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Selecting columns}
+  
+  \begin{multicols}{2}
+    The ``base R'' way:
+<<echo=F>>=
+w=getOption("width")
+options(width=20)
+@     
+<<>>=
+cars$Cylinders
+@     
+
+<<echo=F>>=
+options(width=w)
+@ 
+%$ %$ %$
+
+The  \texttt{dplyr} way:
+
+\begin{scriptsize}
+<<>>=
+select(cars,Cylinders)
+@ 
+  
+\end{scriptsize}
+  \end{multicols}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Columns by number}
+  
+  \begin{itemize}
+  \item \texttt{select} also takes a column \emph{number}. For
+    example, \texttt{Cylinders} is column number 4:
+    
+    \begin{footnotesize}
+<<>>=
+select(cars,4)
+@     
+    \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Selecting rows}
+  
+  \begin{itemize}
+  \item By \emph{logical condition} using \texttt{filter}, eg.\ cars
+    with \texttt{MPG} 
+    greater than 34:
+
+    \begin{footnotesize}
+<<>>=
+filter(cars,MPG>34)
+@           
+    \end{footnotesize}
+
+\item By row number(s) using \texttt{slice}, eg.\ Fiat Strada, row 4:
+
+  \begin{footnotesize}
+<<>>=
+slice(cars,4)
+@       
+  \end{footnotesize}
+
+\item or rows 3 and 5:
+  
+  \begin{footnotesize}
+<<>>=
+slice(cars,c(3,5))
+@       
+  \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Rows and columns, the base R way}
+  
+  \begin{itemize}
+  \item Use an ``empty'' row or column number to select a whole row or
+    column (by number):
+  \item 4th row:
+    \begin{footnotesize}
+<<>>=
+cars[4,]
+@       
+    \end{footnotesize}
+\item 2nd column (all the \texttt{MPG} values):
+  \begin{footnotesize}
+<<>>=
+cars[,2]
+@       
+  \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Multiple selections}
+  
+  \begin{itemize}
+  \item for example, names and MPGs of cars with MPG over 34:
+<<>>=
+tmp=filter(cars,MPG>34)
+select(tmp,c(Car,MPG))
+@     
+(two selections one after the other, with first stored in temporary
+data frame)
+\item Order here does not matter, but if we wanted name and MPG of
+  \emph{cars with 6 cylinders}, must do \texttt{filter} first; else, after
+  \texttt{select}, no column called \texttt{Cylinders} left.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Or, this way}
+  
+  \begin{itemize}
+\item or like this (same selection):
+<<>>=
+cars %>% filter(MPG>34) %>% select(c(Car,MPG))
+@   
+\item Symbol \verb+%>%+ called ``pipe''. Read above as ``take
+  \texttt{cars}, and then take the rows where \texttt{MPG} bigger than
+  34, and then take columns called \texttt{Car} and \texttt{MPG}''.
+  
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comparing code with and without pipe}
+  
+  \begin{itemize}
+  \item Without pipe (original way):
+<<eval=F>>=
+tmp=filter(cars,MPG>34)
+select(tmp,c(Car,MPG))
+@     
+\item With pipe:
+<<eval=F>>=
+cars %>% filter(MPG>34) %>% select(c(Car,MPG))
+@   
+
+\item In a pipe, the first data frame argument of function
+  \emph{disappears}. Data frame used is \emph{whatever came out of the
+  previous step}. 
+\item Code with pipe more concise and uses no temporary variables.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Another example}
+  
+  \begin{itemize}
+  \item Pipe way of selecting gas mileage (column 2) of Fiat Strada
+    (row 4):
+<<>>=
+cars %>% select(2) %>% slice(4)
+@     
+\item Pipe comes with \texttt{dplyr} and can be used with any function
+  that takes a data frame first:
+  
+  \begin{footnotesize}
+<<>>=
+cars %>% filter(MPG<30) %>% head()
+@       
+  \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{``And'', ``or''}
+  
+  \begin{itemize}
+  \item Combine multiple conditions in \texttt{filter} using \verb+&+
+    for ``and'' and \verb+|+ for ``or''.
+  \item Cars that weigh more than 4 tons and have gas mileage less
+    than 20:
+    
+    \begin{footnotesize}
+<<>>=
+filter(cars,Weight>4 & MPG<20)
+@           
+    \end{footnotesize}
+\item Can also do ``and'' as two \texttt{filter}s, one after the other:
+  \begin{footnotesize}
+<<>>=
+cars %>% filter(Weight>4) %>% filter(MPG<20)
+@     
+  \end{footnotesize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{``Or'' example}
+  
+  \begin{itemize}
+\item Cars that either weigh more than 4 tons \emph{or} have gas
+  mileage less than 20:
+  
+  \begin{scriptsize}
+<<>>=
+filter(cars,Weight>4 | MPG<20)
+@   
+  \end{scriptsize}
+  \end{itemize}
+  
+\end{frame}
+
+
+
+\begin{frame}[fragile]{More selections}
+
+  \begin{itemize}
+  \item Which countries do the 8-cylinder cars come from?
+<<>>=
+cars %>% filter(Cylinders==8) %>% select(Country)
+@ 
+All from the US.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Yet more selections}
+  
+  \begin{itemize}
+\item Gas mileages of 8-cylinder cars?
+<<>>=
+cars %>% filter(Cylinders==8) %>% select(MPG)
+@ 
+All bad.
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{How many cylinders do the high-MPG cars have?}
+  
+  \begin{itemize}
+  \item Define ``high'' as ``30 or more'':
+    
+    \begin{small}
+<<>>=
+cars %>% filter(MPG>=30) %>% select(Cylinders)
+@       
+    \end{small}
+
+\item All 4. Not a surprise. (Conditional distribution of number of
+cylinders given that \texttt{MPG} 30 or more.)
+
+  \end{itemize}
+
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{``Not''}
+  
+  \begin{itemize}
+  \item How many cars \emph{not} from the US? This is a
+    \texttt{filter} too, but we have an extra step to count them:
+    
+    \begin{footnotesize}
+<<>>=
+cars %>% filter(Country!="U.S.") %>% summarize(n=n())
+@       
+    \end{footnotesize}
+16 of 38 cars are not from US.
+
+\item Or see which other countries we have, and how many of each:
+  
+  \begin{footnotesize}
+<<>>=
+cars %>% filter(Country!="U.S.") %>% group_by(Country) %>%
+  summarize(n=n())
+@     
+  \end{footnotesize}
+
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[plain,c]
+  \begin{center}
+    {\Huge Doing things all at once using ``dplyr''}
+  \end{center}
+\end{frame}
+
+ 
+\begin{frame}[fragile]{Doing things all at once}
+
+  \begin{itemize}
+  \item R very good at ``applying'' things to entire data frames, vectors.
+  \item For example, calculating means by rows or columns.
+  \item If you're a programmer, might do these tasks using loops.
+  \item But no need in R: \texttt{dplyr} has all you need.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The orange trees again}
+
+    \begin{itemize}
+    \item Go back to orange tree circumferences:
+
+<<>>=
+oranges
+@ 
+
+
+
+    \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Row means}
+  
+  \begin{itemize}
+\item Row means: \texttt{dplyr}, group by rows (there are \texttt{n()}
+  of them, then calculate the means of columns A through E for each
+  ``group'' (row):
+
+  \begin{footnotesize}
+<<>>=
+oranges %>% group_by(1:n()) %>% mutate(m=mean(A:E)) 
+@     
+  \end{footnotesize}
+
+\item Extra column \texttt{m} contains row means (mean circumference
+  at each time).
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Column medians}
+  
+  \begin{itemize}
+\item Column medians: use \verb+summarize_each+ thus:
+  
+<<>>=
+oranges %>% summarize_each(funs(median),A:E) 
+@   
+
+\item The function to calculate for each column goes inside
+  \texttt{funs}, and the columns to find the median for go after that.
+\item Column medians are actually 4th number in each column, since values
+  in order.
+\item Same method for column-anything.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{A more tricky one}
+
+  \begin{itemize}
+  \item The first quartile Q1 for each row:
+    
+{\small
+<<>>=
+oranges %>% group_by(1:n()) %>% 
+  mutate(q1=quantile(A:E,probs=0.25))
+@ 
+}
+\item Feed all the variables you want quartiles for into
+  \texttt{quantile}, and then say which quantile you want. 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Means etc.\ by groups}
+
+  \begin{itemize}
+  \item Back to cars: mean \texttt{MPG} (quantitative) for each
+    \texttt{Country} (categorical).
+  \item \texttt{aggregate} will do this, but so will \texttt{dplyr}:
+<<>>=
+cars %>% group_by(Country) %>% 
+  summarize(m=mean(MPG),
+            s=sd(MPG))
+@ 
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Means by groups (2)}
+  
+  \begin{itemize}
+\item For combination of categorical variables, put them all in the \verb+group_by+,
+  eg.\ by \texttt{Country} and \texttt{Cylinders}:
+  
+  \begin{scriptsize}
+<<>>=
+cars %>% group_by(Country,Cylinders) %>%
+  summarize(n=n(),m=mean(MPG),s=sd(MPG))
+@ 
+    
+  \end{scriptsize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{What happens with function returning
+    several values?}
+
+  \begin{itemize}
+  \item Function \texttt{quantile} returns 5-number summary by
+    default:
+    
+<<>>=
+quantile(cars$MPG)
+@     
+    
+    
+  \item What happens with \texttt{summarize} then?
+
+{\footnotesize
+<<>>=
+cars %>% group_by(Country) %>% summarize(q=quantile(MPG))
+@   
+}
+
+\item We have to work around this, as shown on next page.
+
+
+
+
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Handling function returning several values}
+  
+  \begin{itemize}
+  \item This arcane code:
+    
+    \begin{scriptsize}
+<<>>=
+cars %>% group_by(Country) %>%
+  do(q=quantile(.$MPG)) %>% 
+  do(data.frame(
+    ctry=.$Country,which=names(.$q),value=.$q
+  ))
+@           
+    \end{scriptsize}
+
+\item Idea: in \verb+.$MPG+, the starting \texttt{.} means ``the data
+  frame that came out of the previous step'', so the thing inside
+  \texttt{quantile} is ``the \texttt{MPG} column of the data frame
+  that came out of the previous step''.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments}
+  
+  \begin{itemize}
+  \item Key part of code is to use \texttt{do} twice:
+  \item first time to construct a variable holding all the quantiles
+      (5 of them), which does this:
+      
+      \begin{scriptsize}
+<<>>=
+cars %>% group_by(Country) %>%
+  do(q=quantile(.$MPG)) 
+@               
+      \end{scriptsize}
+      
+    
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Comments (2)}
+  
+  \begin{itemize}
+    \item second time to pull out those values, by constructing a data
+      frame containing their ``names'' (which percentile) and their
+      values, labelled by country, producing this (summary):
+      
+      \begin{footnotesize}
+<<>>=
+cars %>% group_by(Country) %>%
+  do(q=quantile(.$MPG)) %>% 
+  do(data.frame(
+    ctry=.$Country,which=names(.$q),value=.$q
+  )) %>% str()
+@               
+      \end{footnotesize}
+    \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Displaying it better}
+  
+  \begin{itemize}
+  \item Not the clearest display. We could put the percentiles
+    in columns. This is the inverse of ``gather'', which is ``spread'':
+    
+    \begin{scriptsize}
+<<>>=
+cars %>% group_by(Country) %>%
+  do(q=quantile(.$MPG)) %>% 
+  do(data.frame(
+    ctry=.$Country,which=names(.$q),value=.$q
+  )) %>%
+  spread(which,value)
+@           
+    \end{scriptsize}
+    
+  \item \texttt{spread} seems to have put the percentiles in the wrong
+    order. This is more trouble than it's worth to fix!
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{And even\ldots}
+
+Five-number summary of \texttt{MPG} by \texttt{Country-Cylinders}
+combo:
+
+\begin{scriptsize}
+<<>>=
+cars %>% group_by(Country,Cylinders) %>%
+  do(q=quantile(.$MPG)) %>%
+  do(data.frame(
+    ctry=.$Country,
+    cyl=.$Cylinders,
+    which=names(.$q),
+    value=.$q)) %>%
+  spread(which,value)
+@   
+\end{scriptsize}
+
+\end{frame}
+
+
+\begin{frame}[plain,c]
+  \begin{center}
+    {\Huge Vector and matrix algebra in R}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Vector addition}
+
+  \begin{itemize}
+  \item Define a vector, then ``add 2'' to it:
+<<>>=
+u=c(2,3,6,5,7)
+k=2
+u+k
+@ 
+Adds 2 to each element.
+\item Adding vectors:
+<<>>=
+u
+v=c(1,8,3,4,2)
+u+v  
+@ 
+Elementwise addition. (MAT A23: vector addition.)
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Scalar multiplication}
+
+As per A23:
+
+<<>>=
+k
+u
+k*u
+@ 
+
+Each element of vector multiplied by 2.
+  
+\end{frame}
+
+\begin{frame}[fragile]{``Vector multiplication''}
+
+What about this?
+
+<<>>=
+u
+v
+u*v
+@ 
+
+Each element of \texttt{u} multiplied by \emph{corresponding} element
+of \texttt{v}. Could be called \emph{elementwise multiplication}. (Not
+to be confused with ``outer'' or ``vector'' product from A23.)
+  
+\end{frame}
+
+\begin{frame}[fragile]{Combining different-length vectors}
+
+  \begin{itemize}
+  \item No error here. What happens?
+<<>>=
+u
+w=c(1,2)
+u+w  
+@ 
+\item Add 1 to first element of \texttt{u}, add 2 to second.
+\item Go back to beginning of \texttt{w} to find something to add: add
+  1 to 3rd element of \texttt{u}, 2 to 4th element.
+\item Keep re-using shorter vector until reach length of longer one.
+\item R: ``recycling''.
+\item Same idea is used when multiply a vector by a number: the number
+  keeps getting recycled.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Matrices}
+
+  \begin{itemize}
+  \item Create matrix like this:
+    
+    \begin{footnotesize}
+<<>>=
+A=matrix(1:4,nrow=2,ncol=2)
+A  
+@       
+    \end{footnotesize}
+
+\item First: stuff to make matrix from, then how many rows and columns.
+\item R goes \emph{down columns} by default. To go along rows instead:
+  
+  \begin{footnotesize}
+<<>>=
+B=matrix(5:8,nrow=2,ncol=2,byrow=T)
+B    
+@ 
+    
+  \end{footnotesize}
+  
+\item One of \texttt{nrow} and \texttt{ncol} enough, since R knows how
+  many things in the matrix.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Adding matrices}
+
+What happens if you add two matrices?
+
+\begin{multicols}{2}
+<<>>=
+A
+B
+@ 
+
+<<>>=
+A+B
+@   
+\end{multicols}
+
+
+Nothing surprising here. This is matrix addition as we (and A23) know it.
+
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Multiplying matrices}
+
+  \begin{itemize}
+  \item Now, what has happened here?
+
+    \begin{multicols}{2}
+<<>>=
+A
+B
+@       
+
+<<>>=
+A*B
+@ 
+    \end{multicols}
+\item \emph{Not} matrix multiplication (as per A23).
+\item Elementwise multiplication. Also called \emph{Hadamard product}
+  of \texttt{A} and \texttt{B}.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Legit matrix multiplication}
+
+Like this:
+
+\begin{multicols}{2}
+<<>>=
+A
+B
+@ 
+
+<<>>=
+A %*% B
+@ 
+\end{multicols}
+
+
+  
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Linear algebra stuff}
+
+\begin{multicols}{2}
+  \begin{itemize}
+  \item To solve system of equations $Ax=w$ for $x$:
+<<>>=
+A
+w
+solve(A,w)
+@ 
+
+\columnbreak
+
+\item To find the inverse of \texttt{A}:
+<<>>=
+A
+solve(A)
+@ 
+\item You can check that these are correct.
+  \end{itemize}
+\end{multicols}
+  
+\end{frame}
+
+

@@ -1,0 +1,104 @@
+\documentclass[unknownkeysallowed]{beamer}
+
+\usetheme{default}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{headline}{}
+
+\usepackage{statrep}
+\usepackage{parskip,xspace}
+\newcommand*{\Statrep}{\mbox{\textsf{StatRep}}\xspace}
+\newcommand*{\Code}[1]{\texttt{\textbf{#1}}}
+\newcommand*{\cs}[1]{\texttt{\textbf{\textbackslash#1}}}
+\setcounter{secnumdepth}{0}
+\def\SRrootdir{.}
+\def\SRmacropath{./statrep_macros.sas}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{00D7}{$\times$}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{pbox}
+\usepackage{verbatim}
+
+\title{STAC32}
+\subtitle{Applications of Statistical Methods}
+\author{Ken Butler}
+
+\begin{document}
+
+\maketitle
+
+% introduction and course outline
+
+<<intro, child="intro.Rnw">>=
+@ 
+ 
+% installing our software
+
+<<install, child="install.Rnw">>=
+@
+
+% reading in datafiles
+
+<<readfile, child="readfile.Rnw">>=
+@
+
+% making graphs
+
+<<graphs, child="graphs.Rnw">>=
+@  
+
+% R scripts
+
+<<script, child="script.Rnw">>=
+@  
+% numerical summaries
+
+<<numsum, child="numsum.Rnw">>=
+@  
+
+% statistical inference
+
+<<inference, child="inference.Rnw">>=
+@  
+
+% R Markdown and reports with R
+<<rmarkdown, child="rmarkdown.Rnw">>= 
+@ 
+ 
+% tidying and organizing data
+<<tidying, child="tidying.Rnw">>=
+@ 
+
+% case studies
+
+<<case1, child="case1.Rnw">>=
+@ 
+
+% functions in R, figure out where it goes
+
+<<functions, child="functions.Rnw">>=
+@ 
+
+
+% dates and times
+
+<<datetime, child="datetime.Rnw">>=
+@ 
+
+
+% miscellanea in R and SAS
+
+<<miscellanea, child="miscellanea.Rnw">>=
+@ 
+
+
+% vector-matrix algebra in R and maybe SAS proc IML?
+
+<<vecmat, child="vecmat.Rnw">>=
+@ 
+
+
+\end{document}

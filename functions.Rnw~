@@ -1,0 +1,800 @@
+\section{Functions in R}
+
+\frame{\sectionpage} 
+
+\begin{frame}[fragile]{Don't repeat yourself}
+  
+  \begin{itemize}
+    
+<<echo=F,message=F>>=
+require(tidyverse)
+@     
+
+  \item See this:
+    
+<<>>=
+a=50 ; b=11 ; d=3
+as=sqrt(a-1)
+as
+bs=sqrt(b-1)
+bs
+ds=sqrt(d-1)
+ds
+@     
+
+\item Same calculation done three different times, by copying, pasting
+  and editing.
+\item \emph{Dangerous}: what if you forget to change something after
+  you pasted?
+\item Programming principle: ``don't repeat yourself''.
+\item Hadley Wickham: don't copy-paste more than twice.
+\item Instead: \emph{write a function}.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Anatomy of function}
+  
+  \begin{itemize}
+  \item \emph{Header line}  with function name and input value(s).
+  \item \emph{Body} with calculation of values to return.
+  \item \emph{Return value}: the output from function.
+  \end{itemize}
+  
+  In our case:
+  
+<<>>=
+sqrt_minus_1=function(x) {
+  ans=sqrt(x-1)
+  return(ans)
+}  
+@   
+
+or more simply
+
+<<>>=
+sqrt_minus_1=function(x) {
+  sqrt(x-1)
+}  
+@ 
+
+If last line of function calculates value without saving it,
+\emph{that} value is returned.  
+
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{About the input; testing}
+  
+  \begin{itemize}
+  \item The input to a function can be called \emph{anything}. Here we
+    called it \texttt{x}. This is the name used \emph{inside} the
+    function.
+  \item The function is a ``machine'' for calculating
+    square-root-minus-1. It doesn't do anything until you \emph{call} it:
+    
+<<>>=
+sqrt_minus_1(50)
+sqrt_minus_1(11)
+sqrt_minus_1(3)
+@     
+\item It works!
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Vectorization}
+  
+  \begin{itemize}
+  \item We conceived our function to work on numbers:
+    
+<<>>=
+sqrt_minus_1(3.25)
+@     
+
+\item but it actually works on vectors too, as a free bonus of R:
+  
+<<>>=
+sqrt_minus_1(c(50,11,3))
+@   
+
+\item or even data frames:
+  
+<<>>=
+d=data.frame(x=1:2,y=3:4)
+sqrt_minus_1(d)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{More than one input}
+  
+  \begin{itemize}
+  \item Allow the value to be subtracted, before taking square root,
+    to be input to function as well, thus:
+    
+<<>>=
+sqrt_minus_value=function(x,d) {
+  sqrt(x-d)
+}  
+@
+\item Call the function with the \texttt{x} and \texttt{d} inputs in
+  the right order:
+  
+<<>>=
+sqrt_minus_value(51,2)
+@   
+
+\item or give the inputs names, \emph{in which case they can be in any
+  order}:
+
+<<>>=
+sqrt_minus_value(d=2,x=51)
+@ 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Defaults 1/2}
+  
+  \begin{itemize}
+  \item Many R functions have values that you can change if you want
+    to, but usually you don't want to, for example:
+    
+<<>>=
+x=c(3,4,5,NA,6,7)
+mean(x)
+mean(x,na.rm=T)
+@  
+\item By default, the mean of data with a missing value is missing,
+  but if you specify \texttt{na.rm=T}, the missing values are removed
+  before the mean is calculated. 
+\item That is, \texttt{na.rm} has a default value of \texttt{F}:
+  that's what it will be unless you change it.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Defaults 2/2}
+  
+  \begin{itemize}
+\item In our function, set a default value for \texttt{d} like this:
+  
+<<>>=
+sqrt_minus_value=function(x,d=1) {
+  sqrt(x-d)
+}  
+@   
+\item If you don't specify a value for \texttt{d}, 1 will be used:
+  
+<<>>=
+sqrt_minus_value(51,2)
+sqrt_minus_value(51)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Catching errors before they happen}
+  
+  \begin{itemize}
+  \item What happened here?
+    
+<<>>=
+sqrt_minus_value(6,8)
+@     
+\item Message not helpful. \emph{Actually}, function tried to take
+  square root of negative number.
+\item In fact, not even error, just warning.
+\item \emph{Check} that the square root will be OK
+  first. Here's how:
+  
+<<>>=
+sqrt_minus_value=function(x,d=1) {
+  stopifnot(x-d>=0)
+  sqrt(x-d)
+}  
+@   
+  
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{What happens with \texttt{stopifnot}}
+  
+  \begin{itemize}
+  \item This should be good, and is:
+    
+<<>>=
+sqrt_minus_value(8,6)
+@     
+
+\item This should fail, and see how it does:
+  
+<<>>=
+sqrt_minus_value(6,8)
+@   
+\item Where the function fails, we get informative error, but if
+  everything good, the \texttt{stopifnot} does nothing.
+\item \texttt{stopifnot} contains one or more logical conditions, and
+  \emph{all of them} have to be true for function to work. So put in
+  everything that you want to be \emph{true}.
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Using R's built-ins}
+  
+  \begin{itemize}
+  \item When you write a function, you can use \emph{anything}
+    built-in to R, or even any functions that you defined before.
+  \item For example, if you will be calculating a lot of regression-line
+    slopes, you don't have to do this from scratch: you can use R's
+    regression calculations, like this:
+    
+<<>>=
+xx=1:4
+yy=c(10,11,10,14)
+yy.1=lm(yy~xx)
+coef(yy.1)
+@     
+\item These are the intercept and the slope, in that order.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Is this the right thing?}
+  
+  Check by looking at the \texttt{summary} output from the regression:
+  
+<<size="footnotesize">>=
+summary(yy.1)
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making this into a function}
+  
+  \begin{itemize}
+  \item First step: make sure you have it working without a
+    function. 
+  \item We do: fit an \texttt{lm} and take the second thing out of
+    \texttt{coef}. 
+  \item Two inputs, the \texttt{x} and the \texttt{y}, which I take in
+    \emph{that order}.
+  \item Output: just the slope (we throw away intercept). Thus:
+    
+<<>>=
+slope=function(x,y) {
+  y.1=lm(y~x)
+  ans=coef(y.1)
+  ans[2]
+}
+@     
+\item Check using our data from before: correct:
+  
+<<>>=
+slope(xx,yy)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Passing things on}
+  
+  \begin{itemize}
+  \item \texttt{lm} has  a lot of options, with defaults, that we
+    might want to change. Instead of intercepting all the
+    possibilities and passing them on, we can do this:
+    
+<<>>=
+slope=function(x,y,...) {
+  y.1=lm(y~x,...)
+  ans=coef(y.1)
+  ans[2]
+}
+@     
+\item The \texttt{...} in the header line means ``accept any other
+  input'', and the \texttt{...} in the \texttt{lm} line means ``pass
+  anything other than \texttt{x} and \texttt{y} straight on to \texttt{lm}''. 
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Using \texttt{...}}
+  
+  \begin{itemize}
+  \item One of the things \texttt{lm} will accept is a vector called
+    \texttt{subset} containing the list of observations to include in
+    the regression.
+  \item So we should be able to do this:
+    
+<<>>=
+xx
+yy
+slope(xx,yy,subset=1:2)
+@     
+\item Just uses the first two observations in \texttt{xx} and
+  \texttt{yy}, so the slope should be $(11-10)/(2-1)=1$ and is.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Running a function for each of several inputs}
+  
+  \begin{itemize}
+  \item Suppose we have a data frame containing several different
+    \texttt{x}'s to use in regressions:
+    
+<<>>=
+d=data.frame(x1=1:4,x2=c(8,7,6,5),x3=c(2,4,6,9))
+d
+@ 
+\item Want to use these as different $x$'s for a regression with our
+  \texttt{yy} as the response, and collect together the three
+  different slopes.
+\item Python-like way: a \texttt{for} loop.
+\item R-like way: \texttt{map\_dbl}: less coding, but more thinking.    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The loop way}
+  
+  
+  \begin{itemize}
+  \item Get column \texttt{i} of data frame \texttt{d} as
+    \texttt{d[,i]}.
+  \item Create empty vector \texttt{slopes} to store the slopes.
+  \item Looping variable \texttt{i} goes from 1 to 3 (3 columns, thus
+    3 slopes):
+    
+<<>>=
+slopes=numeric(3)
+for (i in 1:3) {
+  xx=d[,i]
+  slopes[i]=slope(xx,yy)
+}
+slopes
+@     
+\item Check this by doing the three \texttt{lm}'s, one at a time.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{The \texttt{map\_dbl} way}
+  
+  \begin{itemize}
+  \item ``for each of these (columns of \texttt{d)}, run this function
+    (\texttt{slope}), with constant extra input (\texttt{yy}), and
+    collect together the answers''.
+  \item Since \texttt{slope} returns a decimal number (a
+    \texttt{dbl}), appropriate function-running function is \texttt{map\_dbl}:
+    
+<<>>=
+map_dbl(d,slope,yy)
+@     
+\item Same as loop, with a lot less coding.
+\item ``Find the square roots of each of the numbers 1 through 10'':
+  
+<<size="footnotesize">>=
+map_dbl(1:10,sqrt)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Summarizing all columns of a data frame}
+  
+<<>>=
+d
+map_dbl(d,mean)
+@   
+
+The mean of each column, with the columns labelled.
+  
+\end{frame}
+
+\begin{frame}[fragile]{What if summary returns more than one thing?}
+  
+  \begin{itemize}
+  \item For example:
+    
+<<>>=
+quartiles=function(x) {
+  quantile(x,c(0.25,0.75))
+}
+quartiles(1:5)
+@     
+
+\item When function returns more than one thing, \texttt{map} instead
+  of \texttt{map\_dbl}.
+
+  
+  
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{map} results}
+  
+  \begin{itemize}
+\item Try:
+<<size="scriptsize">>=
+map(d,quartiles)
+@   
+\item A \texttt{list}. Better:
+  
+<<size="footnotesize">>=
+map(d,quartiles) %>% bind_rows()
+@   
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Or even}
+  
+<<>>=
+d %>% map(quartiles) %>% bind_rows()
+@   
+
+This works because the implicit first thing in \texttt{map} is (the
+columns of) the data frame that came out of the previous step.
+
+These are 1st and 3rd quartiles of each column of \texttt{d},
+according to R's default definition (see help for \texttt{quantile}). 
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Another example: the geometric distribution}
+
+  \begin{itemize}
+  \item Recall \emph{binomial distribution}, eg.\ toss coin 10 times
+    and count how many heads ($W$).
+  \item In general, prob.\ of success $=p$ on every independent
+    trial. Fixed \# trials, $W$ is \#successes.
+  \item Another angle: \emph{how many trials to get my first success?}
+  \item Random variable now \#trials (denote $X$); \#successes fixed ($=1$).
+  \item \emph{Geometric distribution}.
+  \item $P(X=1)=p$ (success first time).
+  \item $P(X=2)=(1-p)p$ (fail, then succeed).
+  \item $P(X=3)=(1-p)^2p$ (fail 2 times, then succeed).
+  \item $P(X=n)=(1-p)^{n-1}p$ (fail $n-1$ times, then succeed).
+  \item Implement in R.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Writing a geometric probability function}
+
+  \begin{itemize}
+  \item Input: \#trials whose prob.\ we want \texttt{x}, single-trial
+    success prob.\ \texttt{p}. Output: probability of succeeding for
+    1st time after exactly \texttt{x} trials (number).
+\item This:
+  \begin{small}
+<<>>=
+geometric=function(x,p)
+  {
+    p*(1-p)^(x-1)
+  }
+@     
+  \end{small}
+
+\item Testing:
+  \begin{small}
+<<>>=
+geometric(1,0.4)  
+geometric(2,0.4)  
+@     
+  \end{small}
+Prob.\ of succeeding first time same as $p$: good; chance of first success on second trial? Fail, then succeed:
+$(0.6)(0.4)=0.24$.
+
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Errors}
+
+  \begin{itemize}
+\item What if user gives \texttt{p} outside of $[0,1]$, or \texttt{x}
+  less than 1?
+  \item Function actually gives answer, but it is nonsense!
+<<>>=
+geometric(0,0.5)  
+geometric(2,1.1)  
+@     
+
+\item Ugh!
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Catching errors: \texttt{stopifnot}}
+
+  \begin{itemize}
+  \item 3 things to check: $p$ 0 or bigger, $p$ 1 or smaller, $x$ 1 or
+    bigger:
+<<>>=
+geometric=function(x,p)
+{
+  stopifnot(p>=0,p<=1,x>=1)
+  p*(1-p)^(x-1)
+}
+@ 
+
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Testing}
+  \begin{itemize}
+\item Test:
+  
+<<>>=
+geometric(2,0.5)  
+geometric(0,0.5)
+geometric(2,1.1)  
+@ 
+
+Last two fail, and \texttt{stopifnot} tells you why.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Another way}
+  
+  \begin{itemize}
+  \item $P(X=1)=p, P(X=k)=(1-p)^{k-1} p$.
+  \item After first trial, each probability is $1-p$ times the one
+    before.
+  \item Thus, this actually works, even though it appears to define a
+    function in terms of itself:
+    
+<<>>=
+geometric2=function(x,p) {
+  stopifnot(p>=0,p<=1,x>=1)
+  if (x==1) {
+    p
+  } else {
+    (1-p)*geometric2(x-1,p)
+  }
+}
+@     
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Testing version 2}
+  
+<<>>=
+geometric2(1,0.4)
+geometric2(2,0.4)
+geometric2(2,0.5)
+@   
+
+Same as before.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Calling \texttt{geometric} with vector
+    \texttt{x}}
+
+  \begin{itemize}
+  \item What happens?
+  \item Try it and see.
+<<>>=
+geometric(1:5,0.5)  
+@ 
+\item Probabilities of first success taking $1, 2, 3, \ldots$ trials.
+\item Works because of how R handles vector arithmetic.
+\item R freebie: often get vector output from vector input with no
+  extra coding.
+\item Above gives ingredients for ``first success in 5 trials
+  \emph{or less}'': calculate prob of 1 to 5, then add up:
+<<>>=
+sum(geometric(1:5,0.5))
+@ 
+\item Might know this as ``cumulative probability''.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Function input}
+  
+  \begin{itemize}
+  \item If we use function as above, have to get inputs in \emph{right
+    order}:
+<<>>=
+geometric(2,0.8)
+geometric(0.8,2)
+@   
+\item Second one fails because it thinks 2 is success probability.
+\item But if we \emph{use the names}, can do any order:
+<<>>=
+geometric(x=2,p=0.8)
+geometric(p=0.8,x=2)
+@   
+  \end{itemize}
+  
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Cumulative probabilities as function}
+
+  \begin{itemize}
+  \item Might be useful to have function for cumulative probabilities.
+  \item Strategy: get individual probs as far as you wish to go, then
+    add up. Eg.\ probability of 4 or less: need 1 through 4. In
+    general, \texttt{x} or less with success prob.\ \texttt{p}:
+<<>>=
+c.geometric=function(x,p)
+  {
+    probs=geometric(1:x,p)
+    sum(probs)
+  }
+@ 
+\item Easy to write, using our \texttt{geometric} function and stuff
+  in R.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Testing \texttt{c.geometric}}
+
+  \begin{itemize}
+  \item Try the one we just did:
+<<>>=
+c.geometric(5,0.5)  
+@ 
+Answer we had before.
+\item How about this:
+<<>>=
+c.geometric(20,0.1)  
+@ 
+If success probability only 0.1, might even take longer than 20 trials
+to get first success. So this is reasonable.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Digression: mean trials until 1st success}
+  
+  \begin{itemize}
+\item Mean number of trials until 1st success is
+  $1/p$:
+  \begin{itemize}
+  \item $p=0.5$, mean \#trials is $1/0.5=2$.
+  \item $p=0.1$, mean \#trials is $1/0.1=10$.
+  \end{itemize}
+  
+  \item Can we calculate this? Get all the probabilities, multiply
+    each probability by its number of trials, add up.
+  \item Might need to wait a large number of trials, so go up a long way:
+    
+<<>>=
+sum(1:100*geometric(1:100,0.5))
+sum(1:100*geometric(1:100,0.1))
+@     
+\item Second one not quite 10, because there is a tiny probability of
+  taking more than 100 trials.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Using R's geometric calculator}
+
+  \begin{itemize}
+  \item Called \texttt{pgeom}:
+\begin{multicols}{2}
+<<>>=
+c.geometric(5,0.5)  
+c.geometric(20,0.1)  
+@ 
+<<>>=
+pgeom(5,0.5)  
+pgeom(20,0.1)  
+@ 
+\end{multicols}
+\item Oh. Not the same.
+\item Look in help for \texttt{pgeom}: this is \emph{other} version of
+  geometric, where you count \emph{how many failures} happened before
+  1st success (\#trials minus 1). So we need (compare
+  \texttt{c.geometric} on \emph{left}  above):
+  
+  \begin{footnotesize}
+\begin{multicols}{2}
+<<>>=
+pgeom(4,0.5)  
+@ 
+<<>>=
+pgeom(19,0.1)  
+@ 
+\end{multicols}
+  \end{footnotesize}
+and \emph{that} works.
+
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Another way of writing cumulative geometric}
+
+  \begin{itemize}
+  \item Suppose we hadn't thought to try a vector for \texttt{x}. What then?
+  \item Calculate each probability in turn, add on to a running total,
+    return total at end.
+  \item Uses a \textbf{loop}:
+<<>>=
+c2.geometric=function(x,p)
+  {
+    total=0
+    for (i in 1:x)
+      {
+        prob=geometric(i,p)
+        total=total+prob
+      }
+    total
+  }  
+@ 
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Checking}
+  
+<<>>=
+c2.geometric(5,0.5)  
+c.geometric(5,0.5)
+c2.geometric(20,0.1)
+c.geometric(20,0.1)
+@ 
+
+Same as before.
+
+  
+\end{frame}
+
+\begin{frame}[fragile]{Yet another way}
+  
+  \begin{itemize}
+  \item ``for each number of trials from 1 to \texttt{x}, compute the
+    probability of taking exactly that many trials, then add'':
+    
+<<>>=
+probs=map_dbl(1:5,geometric,0.5)
+sum(probs)
+@     
+\item thus:
+  
+<<>>=
+c3.geometric=function(x,p) {
+  probs=map_dbl(1:x,geometric,p)
+  sum(probs)
+}
+@   
+
+\item testing:
+  
+  \begin{multicols}{2}
+<<>>=
+c3.geometric(5,0.5)
+@ 
+<<>>=
+c3.geometric(20,0.1)
+@   
+    
+  \end{multicols}
+  \end{itemize}
+  
+\end{frame}
