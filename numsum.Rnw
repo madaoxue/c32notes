@@ -102,20 +102,22 @@ athletes %>% group_by(Sex) %>%
   
 \end{frame}
 
-\begin{frame}[fragile]{Another summary for all columns}
+\begin{frame}[fragile]{Summarizing several columns}
   
   \begin{itemize}
-  \item Standard deviation of each column:
-<<size="footnotesize">>=
-athletes %>% map_dbl(sd)
-@   
-\item The \texttt{map\_dbl} says ``get this summary for each column''.
-  
-\item Warnings: cannot calculate the SD for
-  \texttt{Sex} and \texttt{Sport} because these are categorical
-  variables.
-\item The notation \texttt{NA}  means ``missing value''.
+  \item Standard deviation of each (numeric) column:
     
+<<size="footnotesize">>=
+athletes %>% summarize_if(is.numeric,funs(sd))
+@   
+
+\item Median and IQR of all columns whose name starts with H:
+  
+<<>>=
+athletes %>% summarize_at(vars(starts_with("H")),
+  funs(median,IQR))
+@   
+      
   \end{itemize}
   
 

@@ -1,9 +1,9 @@
-1                                                          The SAS System                                11:45 Monday, June 12, 2017
+1                                                          The SAS System                                16:32 Sunday, July 23, 2017
 
 NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
 NOTE: SAS (r) Proprietary Software 9.4 (TS1M3) 
       Licensed to UNIVERSITY OF TORONTO/COMPUTING & COMMUNICATIONS, Site 70117891.
-NOTE: This session is executing on the Linux 4.4.0-79-generic (LIN X64) platform.
+NOTE: This session is executing on the Linux 4.4.0-83-generic (LIN X64) platform.
 
 
 
@@ -17,7 +17,7 @@ NOTE: Updated analytical products:
 
 NOTE: Additional host information:
 
- Linux LIN X64 4.4.0-79-generic #100-Ubuntu SMP Wed May 17 19:58:14 UTC 2017 x86_64 Unrecognized Linux Distribution 
+ Linux LIN X64 4.4.0-83-generic #106-Ubuntu SMP Mon Jun 26 17:54:43 UTC 2017 x86_64 Unrecognized Linux Distribution 
 
 You are running SAS 9. Some SAS 8 files will be automatically converted 
 by the V9 engine; others are incompatible.  Please see 
@@ -38,7 +38,7 @@ The command line option "-nonews" will prevent this display.
 
 
 NOTE: SAS initialization used:
-      real time           0.32 seconds
+      real time           0.21 seconds
       cpu time            0.02 seconds
       
 1          /*
@@ -76,7 +76,7 @@ NOTE: SAS initialization used:
 1586        *   PRODUCT:   SAS
 1587        *   VERSION:   9.4
 1588        *   CREATOR:   External File Interface
-1589        *   DATE:      12JUN17
+1589        *   DATE:      23JUL17
 1590        *   DESC:      Generated SAS Datastep Code
 1591        *   TEMPLATE SOURCE:  (None Specified.)
 1592        ********************************************************************
@@ -126,8 +126,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.MYDATA data set was successfully created.
 NOTE: The data set WORK.MYDATA has 6 observations and 4 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.04 seconds
+      real time           0.06 seconds
+      cpu time            0.06 seconds
       
 
 1612       proc print;
@@ -137,7 +137,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 6 observations read from the data set WORK.MYDATA.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 1615       
@@ -149,7 +149,7 @@ NOTE: PROCEDURE PRINT used (Total process time):
 NOTE: There were 6 observations read from the data set WORK.MYDATA.
 NOTE: PROCEDURE MEANS used (Total process time):
       real time           0.01 seconds
-      cpu time            0.02 seconds
+      cpu time            0.00 seconds
       
 
 1620       
@@ -180,7 +180,7 @@ Means.Summary   Table Selected   1
 1636        *   PRODUCT:   SAS
 1637        *   VERSION:   9.4
 1638        *   CREATOR:   External File Interface
-1639        *   DATE:      12JUN17
+1639        *   DATE:      23JUL17
 1640        *   DESC:      Generated SAS Datastep Code
 1641        *   TEMPLATE SOURCE:  (None Specified.)
 1642        ********************************************************************
@@ -217,8 +217,8 @@ NOTE: 10 records were read from the infile MYURL.
       The maximum record length was 11.
 NOTE: The data set WORK.GLOBAL has 10 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.25 seconds
-      cpu time            0.02 seconds
+      real time           0.44 seconds
+      cpu time            0.01 seconds
       
 
 10 rows created in WORK.GLOBAL from MYURL.
@@ -228,7 +228,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.GLOBAL data set was successfully created.
 NOTE: The data set WORK.GLOBAL has 10 observations and 3 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           1.26 seconds
+      real time           2.27 seconds
       cpu time            0.06 seconds
       
 
@@ -238,7 +238,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 10 observations read from the data set WORK.GLOBAL.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 1661       
@@ -267,7 +267,7 @@ Print.Print   Report Selected   1
 1675        *   PRODUCT:   SAS
 1676        *   VERSION:   9.4
 1677        *   CREATOR:   External File Interface
-1678        *   DATE:      12JUN17
+1678        *   DATE:      23JUL17
 1679        *   DESC:      Generated SAS Datastep Code
 1680        *   TEMPLATE SOURCE:  (None Specified.)
 1681        ********************************************************************
@@ -300,7 +300,7 @@ NOTE: 32 records were read from the infile '/home/ken/coffee.txt'.
       The maximum record length was 14.
 NOTE: The data set WORK.COFFEE has 32 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
 
@@ -311,8 +311,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.COFFEE data set was successfully created.
 NOTE: The data set WORK.COFFEE has 32 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.05 seconds
-      cpu time            0.06 seconds
+      real time           0.08 seconds
+      cpu time            0.07 seconds
       
 
 1695       proc print data=coffee(obs=15);
@@ -322,7 +322,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 15 observations read from the data set WORK.COFFEE.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 1698       
@@ -354,7 +354,7 @@ Print.Print   Report Selected   1
 1715        *   PRODUCT:   SAS
 1716        *   VERSION:   9.4
 1717        *   CREATOR:   External File Interface
-1718        *   DATE:      12JUN17
+1718        *   DATE:      23JUL17
 1719        *   DESC:      Generated SAS Datastep Code
 1720        *   TEMPLATE SOURCE:  (None Specified.)
 1721        ********************************************************************
@@ -394,7 +394,7 @@ NOTE: 27 records were read from the infile MYURL.
       The maximum record length was 12.
 NOTE: The data set WORK.SOAP has 27 observations and 4 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.44 seconds
+      real time           0.43 seconds
       cpu time            0.01 seconds
       
 
@@ -405,8 +405,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.SOAP data set was successfully created.
 NOTE: The data set WORK.SOAP has 27 observations and 4 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           1.54 seconds
-      cpu time            0.06 seconds
+      real time           2.14 seconds
+      cpu time            0.05 seconds
       
 
 1741       
@@ -416,7 +416,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 10 observations read from the data set WORK.SOAP.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 1744       
@@ -444,7 +444,7 @@ NOTE: The import data set has 6 observations and 4 variables.
 NOTE: WORK.MYDATA data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 1757       proc print;
@@ -454,7 +454,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 6 observations read from the data set WORK.MYDATA.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 1760       
@@ -484,7 +484,7 @@ Print.Print   Report Selected   1
 1775        *   PRODUCT:   SAS
 1776        *   VERSION:   9.4
 1777        *   CREATOR:   External File Interface
-1778        *   DATE:      12JUN17
+1778        *   DATE:      23JUL17
 1779        *   DESC:      Generated SAS Datastep Code
 1780        *   TEMPLATE SOURCE:  (None Specified.)
 1781        ********************************************************************
@@ -563,7 +563,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.SPORTS data set was successfully created.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
+      real time           0.10 seconds
       cpu time            0.06 seconds
       
 
@@ -594,8 +594,8 @@ Print.Print   Report Selected   1
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: PROCEDURE MEANS used (Total process time):
-      real time           0.01 seconds
-      cpu time            0.02 seconds
+      real time           0.00 seconds
+      cpu time            0.01 seconds
       
 
 1838       
@@ -615,8 +615,8 @@ Means.Summary   Table Selected   1
 1845       %endoutput(gd)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.12 seconds
+      cpu time            0.02 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -636,8 +636,8 @@ SGPlot.SGPlot   Graph Selected   1
 1853       %endoutput(ge)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.03 seconds
+      cpu time            0.01 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -657,8 +657,8 @@ SGPlot.SGPlot   Graph Selected   1
 1861       %endoutput(gf)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.01 seconds
+      cpu time            0.03 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -678,8 +678,8 @@ SGPlot.SGPlot   Graph Selected   1
 1869       %endoutput(gg)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.01 seconds
+      cpu time            0.02 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -700,7 +700,7 @@ SGPlot.SGPlot   Graph Selected   1
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -721,7 +721,7 @@ SGPlot.SGPlot   Graph Selected   1
 1886       %endoutput(gj)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.01 seconds
+      real time           0.05 seconds
       cpu time            0.01 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
@@ -743,7 +743,7 @@ SGPlot.SGPlot   Graph Selected   1
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.01 seconds
-      cpu time            0.01 seconds
+      cpu time            0.02 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -785,8 +785,8 @@ SGPlot.SGPlot   Graph Selected   1
 1911       %endoutput(gl)
 
 NOTE: PROCEDURE SGPANEL used (Total process time):
-      real time           0.07 seconds
-      cpu time            0.03 seconds
+      real time           0.17 seconds
+      cpu time            0.05 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
@@ -851,7 +851,7 @@ Means.Summary   Table Selected   1
 NOTE: There were 202 observations read from the data set WORK.ATH.
 NOTE: PROCEDURE MEANS used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 1933       
@@ -874,7 +874,7 @@ Means.Summary   Table Selected   1
 NOTE: There were 202 observations read from the data set WORK.ATH.
 NOTE: PROCEDURE MEANS used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 1942       
@@ -895,8 +895,8 @@ Means.Summary   Table Selected   1
 
 NOTE: There were 202 observations read from the data set WORK.ATH.
 NOTE: PROCEDURE FREQ used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.03 seconds
+      cpu time            0.01 seconds
       
 
 1950       
@@ -945,7 +945,7 @@ Means.Summary   Table Selected   1
 1970        *   PRODUCT:   SAS
 1971        *   VERSION:   9.4
 1972        *   CREATOR:   External File Interface
-1973        *   DATE:      12JUN17
+1973        *   DATE:      23JUL17
 1974        *   DESC:      Generated SAS Datastep Code
 1975        *   TEMPLATE SOURCE:  (None Specified.)
 1976        ********************************************************************
@@ -1038,7 +1038,7 @@ NOTE: 25 records were read from the infile '/home/ken/jays15-home.csv'.
 NOTE: The data set WORK.JAYS has 25 observations and 21 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 25 rows created in WORK.JAYS from /home/ken/jays15-home.csv.
@@ -1048,8 +1048,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.JAYS data set was successfully created.
 NOTE: The data set WORK.JAYS has 25 observations and 21 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.05 seconds
-      cpu time            0.05 seconds
+      real time           0.07 seconds
+      cpu time            0.04 seconds
       
 
 2047       proc print data=jays(obs=6);
@@ -1059,7 +1059,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 6 observations read from the data set WORK.JAYS.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 2050       
@@ -1079,8 +1079,8 @@ Print.Print   Report Selected   1
 2057       %endoutput(ia)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.14 seconds
-      cpu time            0.08 seconds
+      real time           0.27 seconds
+      cpu time            0.10 seconds
       
 
 2058       
@@ -1107,8 +1107,8 @@ Ttest.attendance.QQPlot         Graph            .
 2065       %endoutput(id)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.02 seconds
+      cpu time            0.02 seconds
       
 NOTE: There were 25 observations read from the data set WORK.JAYS.
 
@@ -1136,7 +1136,7 @@ SGPlot.SGPlot   Graph Selected   1
 2079        *   PRODUCT:   SAS
 2080        *   VERSION:   9.4
 2081        *   CREATOR:   External File Interface
-2082        *   DATE:      12JUN17
+2082        *   DATE:      23JUL17
 2083        *   DESC:      Generated SAS Datastep Code
 2084        *   TEMPLATE SOURCE:  (None Specified.)
 2085        ********************************************************************
@@ -1170,7 +1170,7 @@ NOTE: 44 records were read from the infile '/home/ken/drp.txt'.
 NOTE: The data set WORK.READING has 44 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 44 rows created in WORK.READING from /home/ken/drp.txt.
@@ -1180,8 +1180,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.READING data set was successfully created.
 NOTE: The data set WORK.READING has 44 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
-      cpu time            0.03 seconds
+      real time           0.07 seconds
+      cpu time            0.08 seconds
       
 
 2099         proc print;
@@ -1234,7 +1234,7 @@ Means.Summary   Table Selected   1
 2118       %endoutput(ifx)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
 NOTE: There were 44 observations read from the data set WORK.READING.
@@ -1256,8 +1256,8 @@ SGPlot.SGPlot   Graph Selected   1
 2127       %endoutput(ihy)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.19 seconds
-      cpu time            0.12 seconds
+      real time           0.24 seconds
+      cpu time            0.13 seconds
       
 
 2128       
@@ -1288,8 +1288,8 @@ Ttest.score.QQPlot         Graph            .
 2140       %endoutput(pb)
 
 NOTE: PROCEDURE POWER used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.04 seconds
+      cpu time            0.00 seconds
       
 
 2141       
@@ -1317,7 +1317,7 @@ Power.OneSampleMeans.Output          Table Selected   2
 
 NOTE: PROCEDURE POWER used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2154       
@@ -1347,8 +1347,8 @@ Power.OneSampleMeans.Output          Table Selected   2
 NOTE: Plotting Power on the y-axis, with 20 points per curve between 0.3 and 
       0.95, versus computed N Total on the x-axis.
 NOTE: PROCEDURE POWER used (Total process time):
-      real time           0.01 seconds
-      cpu time            0.01 seconds
+      real time           0.04 seconds
+      cpu time            0.02 seconds
       
 
 2168       
@@ -1378,7 +1378,7 @@ NOTE: Plotting Power on the y-axis, with 20 points per curve between 0.3 and
       0.99, versus computed Mean on the x-axis.
 NOTE: PROCEDURE POWER used (Total process time):
       real time           0.01 seconds
-      cpu time            0.01 seconds
+      cpu time            0.02 seconds
       
 
 2182       
@@ -1400,7 +1400,7 @@ Power.OneSampleMeans.PlotStatement1.PowerMean.PowerPlot   Graph Selected   1
 NOTE: There were 44 observations read from the data set WORK.READING.
 NOTE: PROCEDURE MEANS used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2191       
@@ -1429,8 +1429,8 @@ Means.Summary   Table Selected   1
 NOTE: Plotting Power on the y-axis, with 20 points per curve between 0.2 and 
       0.9, versus computed N Total on the x-axis.
 NOTE: PROCEDURE POWER used (Total process time):
-      real time           2.89 seconds
-      cpu time            2.89 seconds
+      real time           2.68 seconds
+      cpu time            2.68 seconds
       
 
 2206       
@@ -1456,8 +1456,8 @@ PowerPlot
 2219       %endoutput(il)
 
 NOTE: PROCEDURE POWER used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.01 seconds
+      cpu time            0.00 seconds
       
 
 2220       
@@ -1485,8 +1485,8 @@ Power.TwoSampleMeans.Output          Table Selected   2
 2233       %endoutput(im)
 
 NOTE: PROCEDURE POWER used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.01 seconds
+      cpu time            0.02 seconds
       
 
 2234       
@@ -1518,7 +1518,7 @@ Power.TwoSampleMeans.Output          Table Selected   2
 2248        *   PRODUCT:   SAS
 2249        *   VERSION:   9.4
 2250        *   CREATOR:   External File Interface
-2251        *   DATE:      12JUN17
+2251        *   DATE:      23JUL17
 2252        *   DESC:      Generated SAS Datastep Code
 2253        *   TEMPLATE SOURCE:  (None Specified.)
 2254        ********************************************************************
@@ -1562,8 +1562,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.DUALITY data set was successfully created.
 NOTE: The data set WORK.DUALITY has 15 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
-      cpu time            0.04 seconds
+      real time           0.08 seconds
+      cpu time            0.07 seconds
       
 
 2268       proc print;
@@ -1594,8 +1594,8 @@ Print.Print   Report Selected   1
 2279       %endoutput(iu)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.18 seconds
-      cpu time            0.13 seconds
+      real time           0.26 seconds
+      cpu time            0.14 seconds
       
 
 2280       
@@ -1623,8 +1623,8 @@ Ttest.y.QQPlot         Graph            .
 2288       %endoutput(iva)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.18 seconds
-      cpu time            0.12 seconds
+      real time           0.29 seconds
+      cpu time            0.17 seconds
       
 
 2289       
@@ -1659,7 +1659,7 @@ Ttest.y.QQPlot         Graph            .
 2302        *   PRODUCT:   SAS
 2303        *   VERSION:   9.4
 2304        *   CREATOR:   External File Interface
-2305        *   DATE:      12JUN17
+2305        *   DATE:      23JUL17
 2306        *   DESC:      Generated SAS Datastep Code
 2307        *   TEMPLATE SOURCE:  (None Specified.)
 2308        ********************************************************************
@@ -1690,7 +1690,7 @@ NOTE: 30 records were read from the infile '/home/ken/irs.txt'.
 NOTE: The data set WORK.IRS has 30 observations and 1 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.02 seconds
       
 
 30 rows created in WORK.IRS from /home/ken/irs.txt.
@@ -1700,8 +1700,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.IRS data set was successfully created.
 NOTE: The data set WORK.IRS has 30 observations and 1 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
-      cpu time            0.03 seconds
+      real time           0.08 seconds
+      cpu time            0.08 seconds
       
 
 2319       proc print;
@@ -1711,7 +1711,7 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 NOTE: There were 30 observations read from the data set WORK.IRS.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 2322       
@@ -1731,8 +1731,8 @@ Print.Print   Report Selected   1
 2329       %endoutput(ik)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.14 seconds
-      cpu time            0.08 seconds
+      real time           0.33 seconds
+      cpu time            0.18 seconds
       
 
 2330       
@@ -1759,7 +1759,7 @@ Ttest.Time.QQPlot         Graph            .
 2337       %endoutput(il)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.01 seconds
+      real time           0.00 seconds
       cpu time            0.01 seconds
       
 NOTE: There were 30 observations read from the data set WORK.IRS.
@@ -1781,7 +1781,7 @@ SGPlot.SGPlot   Graph Selected   1
 
 NOTE: PROCEDURE UNIVARIATE used (Total process time):
       real time           0.07 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2346       
@@ -1806,7 +1806,7 @@ Univariate.Time.ExtremeObs         Table            .
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 NOTE: There were 30 observations read from the data set WORK.IRS.
 
@@ -1834,7 +1834,7 @@ SGPlot.SGPlot   Graph Selected   1
 2367        *   PRODUCT:   SAS
 2368        *   VERSION:   9.4
 2369        *   CREATOR:   External File Interface
-2370        *   DATE:      12JUN17
+2370        *   DATE:      23JUL17
 2371        *   DESC:      Generated SAS Datastep Code
 2372        *   TEMPLATE SOURCE:  (None Specified.)
 2373        ********************************************************************
@@ -1870,8 +1870,8 @@ NOTE: 12 records were read from the infile '/home/ken/analgesic.txt'.
       The maximum record length was 11.
 NOTE: The data set WORK.PAIN has 12 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.01 seconds
+      cpu time            0.01 seconds
       
 
 12 rows created in WORK.PAIN from /home/ken/analgesic.txt.
@@ -1881,8 +1881,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.PAIN data set was successfully created.
 NOTE: The data set WORK.PAIN has 12 observations and 3 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.04 seconds
+      real time           0.10 seconds
+      cpu time            0.08 seconds
       
 
 2390       proc print;
@@ -1912,8 +1912,8 @@ Print.Print   Report Selected   1
 2400       %endoutput(ic)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.21 seconds
-      cpu time            0.11 seconds
+      real time           0.25 seconds
+      cpu time            0.10 seconds
       
 
 2401       
@@ -1945,7 +1945,7 @@ NOTE: There were 12 observations read from the data set WORK.PAIN.
 NOTE: The data set WORK.PAIN2 has 12 observations and 4 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2409       proc print;
@@ -1975,7 +1975,7 @@ Print.Print   Report Selected   1
 2419       %endoutput(id)
 
 NOTE: PROCEDURE TTEST used (Total process time):
-      real time           0.16 seconds
+      real time           0.18 seconds
       cpu time            0.08 seconds
       
 
@@ -2006,7 +2006,7 @@ Ttest.diff.QQPlot         Graph            .
 
 NOTE: PROCEDURE UNIVARIATE used (Total process time):
       real time           0.02 seconds
-      cpu time            0.03 seconds
+      cpu time            0.02 seconds
       
 
 2428       
@@ -2025,8 +2025,8 @@ Univariate.diff.QQPlot.QQPlot   Graph Selected   1
 2435       %endoutput(if)
 
 NOTE: PROCEDURE UNIVARIATE used (Total process time):
-      real time           0.01 seconds
-      cpu time            0.03 seconds
+      real time           0.02 seconds
+      cpu time            0.02 seconds
       
 
 2436       
@@ -2045,8 +2045,8 @@ Univariate.diff.QQPlot.QQPlot   Graph Selected   1
 2443       %endoutput(ig)
 
 NOTE: PROCEDURE UNIVARIATE used (Total process time):
-      real time           0.01 seconds
-      cpu time            0.01 seconds
+      real time           0.02 seconds
+      cpu time            0.02 seconds
       
 
 2444       
@@ -2065,8 +2065,8 @@ Univariate.diff.QQPlot.QQPlot   Graph Selected   1
 2451       %endoutput(ihx)
 
 NOTE: PROCEDURE UNIVARIATE used (Total process time):
-      real time           0.11 seconds
-      cpu time            0.00 seconds
+      real time           0.04 seconds
+      cpu time            0.01 seconds
       
 
 2452       
@@ -2098,7 +2098,7 @@ Univariate.diff.ExtremeObs         Table            .
 2465        *   PRODUCT:   SAS
 2466        *   VERSION:   9.4
 2467        *   CREATOR:   External File Interface
-2468        *   DATE:      12JUN17
+2468        *   DATE:      23JUL17
 2469        *   DESC:      Generated SAS Datastep Code
 2470        *   TEMPLATE SOURCE:  (None Specified.)
 2471        ********************************************************************
@@ -2132,7 +2132,7 @@ NOTE: 44 records were read from the infile '/home/ken/drp.txt'.
 NOTE: The data set WORK.READING has 44 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 44 rows created in WORK.READING from /home/ken/drp.txt.
@@ -2174,8 +2174,8 @@ Print.Print   Report Selected   1
 2496       %endoutput(iv)
 
 NOTE: PROCEDURE NPAR1WAY used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.01 seconds
+      real time           0.10 seconds
+      cpu time            0.04 seconds
       
 
 2497       
@@ -2218,7 +2218,7 @@ Npar1way.score.Median.MedianPlot       Graph            .
 2512        *   PRODUCT:   SAS
 2513        *   VERSION:   9.4
 2514        *   CREATOR:   External File Interface
-2515        *   DATE:      12JUN17
+2515        *   DATE:      23JUL17
 2516        *   DESC:      Generated SAS Datastep Code
 2517        *   TEMPLATE SOURCE:  (None Specified.)
 2518        ********************************************************************
@@ -2262,8 +2262,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.RATS data set was successfully created.
 NOTE: The data set WORK.RATS has 30 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.04 seconds
+      real time           0.05 seconds
+      cpu time            0.06 seconds
       
 
 2532       proc anova;
@@ -2274,8 +2274,8 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 
 
 NOTE: PROCEDURE ANOVA used (Total process time):
-      real time           0.08 seconds
-      cpu time            0.01 seconds
+      real time           0.18 seconds
+      cpu time            0.03 seconds
       
 
 2537       
@@ -2304,8 +2304,8 @@ ANOVA.ANOVA.density.BoxPlot         Graph            .
 
 
 NOTE: PROCEDURE ANOVA used (Total process time):
-      real time           0.14 seconds
-      cpu time            0.03 seconds
+      real time           0.24 seconds
+      cpu time            0.06 seconds
       
 
 2547       
@@ -2336,7 +2336,7 @@ ANOVA.Means.group.density.MCLines.Tukey.MCLines       Table Selected   1
 2555       %endoutput(ja)
 
 NOTE: PROCEDURE NPAR1WAY used (Total process time):
-      real time           0.04 seconds
+      real time           0.06 seconds
       cpu time            0.01 seconds
       
 
@@ -2372,8 +2372,8 @@ Npar1way.density.Median.MedianPlot       Graph            .
 
 
 NOTE: PROCEDURE ANOVA used (Total process time):
-      real time           0.15 seconds
-      cpu time            0.03 seconds
+      real time           0.17 seconds
+      cpu time            0.04 seconds
       
 
 2568       
@@ -2413,7 +2413,7 @@ ANOVA.Means.group#3.Means             Table Selected   2
 2583        *   PRODUCT:   SAS
 2584        *   VERSION:   9.4
 2585        *   CREATOR:   External File Interface
-2586        *   DATE:      12JUN17
+2586        *   DATE:      23JUL17
 2587        *   DESC:      Generated SAS Datastep Code
 2588        *   TEMPLATE SOURCE:  (None Specified.)
 2589        ********************************************************************
@@ -2480,7 +2480,7 @@ NOTE: 202 records were read from the infile '/home/ken/ais.txt'.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 202 rows created in WORK.SPORTS from /home/ken/ais.txt.
@@ -2490,8 +2490,8 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.SPORTS data set was successfully created.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.03 seconds
+      real time           0.06 seconds
+      cpu time            0.06 seconds
       
 
 2636       proc print data=sports(obs=10);
@@ -2537,7 +2537,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: There were 8 observations read from the data set WORK.SPORTS2.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2651       
@@ -2560,7 +2560,7 @@ Print.Print   Report Selected   1
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS3 has 202 observations and 4 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
 
@@ -2571,7 +2571,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: There were 8 observations read from the data set WORK.SPORTS3.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 2663       
@@ -2595,7 +2595,7 @@ Print.Print   Report Selected   1
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS4 has 202 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
 
@@ -2662,7 +2662,7 @@ Print.Print   Report Selected   1
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS6 has 4 observations and 13 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
 
@@ -2707,7 +2707,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: There were 11 observations read from the data set WORK.SPORTS7.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2711       
@@ -2777,7 +2777,7 @@ NOTE: DATA statement used (Total process time):
 NOTE: There were 66 observations read from the data set WORK.SPORTS9.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 2737       
@@ -2790,10 +2790,34 @@ Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
 2739       
-2740       %output(tj)
-2741       proc sort data=sports;
-2742         by RCC;
-2743       
+2740       %output(zawis)
+2741       proc means;
+2742         where sport="Tennis";
+2743         var BMI;
+2744       
+2745       %endoutput(zawis)
+
+NOTE: There were 11 observations read from the data set WORK.SPORTS9.
+      WHERE sport='Tennis';
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.02 seconds
+      
+
+2746       
+2747       %write(zawiss,store=zawis,type=listing)
+NOTE: Processing document zawis.
+Note: New page for \Means#1\Summary#1
+Note: Writing Listing file  : ./lst/zawiss.lst
+
+Objects         Type  Status   Group
+
+Means.Summary   Table Selected   1
+2748       
+2749       %output(tj)
+2750       proc sort data=sports;
+2751         by RCC;
+2752       
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
@@ -2802,19 +2826,19 @@ NOTE: PROCEDURE SORT used (Total process time):
       cpu time            0.00 seconds
       
 
-2744       proc print;
-2745         var Sex--RCC;
-2746       
-2747       %endoutput(tj)
+2753       proc print;
+2754         var Sex--RCC;
+2755       
+2756       %endoutput(tj)
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-2748       
-2749       %write(tjj,store=tj,type=listing)
+2757       
+2758       %write(tjj,store=tj,type=listing)
 NOTE: Processing document tj.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/tjj.lst
@@ -2822,11 +2846,11 @@ Note: Writing Listing file  : ./lst/tjj.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2750       
-2751       %output(tk)
-2752       proc sort data=sports;
-2753         by RCC BMI;
-2754       
+2759       
+2760       %output(tk)
+2761       proc sort data=sports;
+2762         by RCC BMI;
+2763       
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
@@ -2835,19 +2859,19 @@ NOTE: PROCEDURE SORT used (Total process time):
       cpu time            0.00 seconds
       
 
-2755       proc print;
-2756         var Sex--RCC BMI;
-2757       
-2758       %endoutput(tk)
+2764       proc print;
+2765         var Sex--RCC BMI;
+2766       
+2767       %endoutput(tk)
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-2759       
-2760       %write(tkk,store=tk,type=listing)
+2768       
+2769       %write(tkk,store=tk,type=listing)
 NOTE: Processing document tk.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/tkk.lst
@@ -2855,11 +2879,11 @@ Note: Writing Listing file  : ./lst/tkk.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2761       
-2762       %output(tl)
-2763       proc sort data=sports;
-2764         by descending BMI;
-2765       
+2770       
+2771       %output(tl)
+2772       proc sort data=sports;
+2773         by descending BMI;
+2774       
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
@@ -2868,10 +2892,10 @@ NOTE: PROCEDURE SORT used (Total process time):
       cpu time            0.00 seconds
       
 
-2766       proc print;
-2767         var Sex--RCC BMI;
-2768       
-2769       %endoutput(tl)
+2775       proc print;
+2776         var Sex--RCC BMI;
+2777       
+2778       %endoutput(tl)
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -2879,8 +2903,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.01 seconds
       
 
-2770       
-2771       %write(tll,store=tl,type=listing)
+2779       
+2780       %write(tll,store=tl,type=listing)
 NOTE: Processing document tl.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/tll.lst
@@ -2888,24 +2912,24 @@ Note: Writing Listing file  : ./lst/tll.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2772       
-2773       %output(tm)
-2774       proc sort data=sports;
-2775         by descending Wt;
-2776       
+2781       
+2782       %output(tm)
+2783       proc sort data=sports;
+2784         by descending Wt;
+2785       
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
 NOTE: PROCEDURE SORT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
-2777       data sports10;
-2778         set sports;
-2779         if _N_<=7;
-2780         keep Sport Wt;
-2781       
+2786       data sports10;
+2787         set sports;
+2788         if _N_<=7;
+2789         keep Sport Wt;
+2790       
 
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 NOTE: The data set WORK.SPORTS10 has 7 observations and 2 variables.
@@ -2914,9 +2938,9 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.00 seconds
       
 
-2782       proc print;
-2783       
-2784       %endoutput(tm)
+2791       proc print;
+2792       
+2793       %endoutput(tm)
 
 NOTE: There were 7 observations read from the data set WORK.SPORTS10.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -2924,8 +2948,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-2785       
-2786       %write(tmm,store=tm,type=listing)
+2794       
+2795       %write(tmm,store=tm,type=listing)
 NOTE: Processing document tm.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/tmm.lst
@@ -2933,50 +2957,52 @@ Note: Writing Listing file  : ./lst/tmm.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2787       
-2788       proc import
-2789         datafile='/home/ken/pigs1.txt'
-2790         dbms=dlm out=pigs replace;
-2791         delimiter=' ';
-2792         getnames=yes;
-2793       
-2794       
-2795       %output(tn)
+2796       
+2797       proc import
+2798         datafile='/home/ken/pigs1.txt'
+2799         dbms=dlm out=pigs replace;
+2800         delimiter=' ';
+2801         getnames=yes;
+2802       
+2803       
+2804       %output(tn)
 
-2796        /*******************************************************************
-2796     ! ***
-2797        *   PRODUCT:   SAS
-2798        *   VERSION:   9.4
-2799        *   CREATOR:   External File Interface
-2800        *   DATE:      12JUN17
-2801        *   DESC:      Generated SAS Datastep Code
-2802        *   TEMPLATE SOURCE:  (None Specified.)
-2803        ********************************************************************
-2803     ! ***/
-2804           data WORK.PIGS    ;
-2805           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-2806           infile '/home/ken/pigs1.txt' delimiter = ' ' MISSOVER DSD
-2806     ! lrecl=32767 firstobs=2 ;
-2807              informat pig best32. ;
-2808              informat feed1 best32. ;
-2809              informat feed2 best32. ;
-2810              informat feed3 best32. ;
-2811              informat feed4 best32. ;
-2812              format pig best12. ;
-2813              format feed1 best12. ;
-2814              format feed2 best12. ;
-2815              format feed3 best12. ;
-2816              format feed4 best12. ;
-2817           input
-2818                       pig
-2819                       feed1
-2820                       feed2
-2821                       feed3
-2822                       feed4
-2823           ;
-2824           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-2824     ! detection macro variable */
-2825           run;
+2805        /*******************************************************************
+2805     ! ***
+2806        *   PRODUCT:   SAS
+2807        *   VERSION:   9.4
+2808        *   CREATOR:   External File Interface
+2809        *   DATE:      23JUL17
+2810        *   DESC:      Generated SAS Datastep Code
+2811        *   TEMPLATE SOURCE:  (None Specified.)
+2812        ********************************************************************
+2812     ! ***/
+2813           data WORK.PIGS    ;
+2814           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+2815           infile '/home/ken/pigs1.txt' delimiter = ' ' MISSOVER DSD
+2815     ! lrecl=32767 firstobs=2 ;
+2816              informat pig best32. ;
+2817              informat feed1 best32. ;
+2818              informat feed2 best32. ;
+2819              informat feed3 best32. ;
+2820              informat feed4 best32. ;
+2821              format pig best12. ;
+2822              format feed1 best12. ;
+2823              format feed2 best12. ;
+2824              format feed3 best12. ;
+2825              format feed4 best12. ;
+2826           input
+2827                       pig
+2828                       feed1
+2829                       feed2
+2830                       feed3
+2831                       feed4
+                                 The SAS System
+
+2832           ;
+2833           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+2833     ! detection macro variable */
+2834           run;
 
 NOTE: The infile '/home/ken/pigs1.txt' is:
       Filename=/home/ken/pigs1.txt,
@@ -2997,8 +3023,6 @@ NOTE: DATA statement used (Total process time):
 5 rows created in WORK.PIGS from /home/ken/pigs1.txt.
   
   
-                                 The SAS System
-
   
 NOTE: WORK.PIGS data set was successfully created.
 NOTE: The data set WORK.PIGS has 5 observations and 5 variables.
@@ -3007,18 +3031,18 @@ NOTE: PROCEDURE IMPORT used (Total process time):
       cpu time            0.04 seconds
       
 
-2826       proc print;
-2827       
-2828       %endoutput(tn)
+2835       proc print;
+2836       
+2837       %endoutput(tn)
 
 NOTE: There were 5 observations read from the data set WORK.PIGS.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
-2829       
-2830       %write(tnn,store=tn,type=listing)
+2838       
+2839       %write(tnn,store=tn,type=listing)
 NOTE: Processing document tn.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/tnn.lst
@@ -3026,36 +3050,36 @@ Note: Writing Listing file  : ./lst/tnn.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2831       
-2832       data pigs2;
-2833         set pigs;
-2834         feed='feed1';
-2835         weight=feed1;
-2836         output;
-2837         feed='feed2';
-2838         weight=feed2;
-2839         output;
-2840         feed='feed3';
-2841         weight=feed3;
-2842         output;
-2843         feed='feed4';
-2844         weight=feed4;
+2840       
+2841       data pigs2;
+2842         set pigs;
+2843         feed='feed1';
+2844         weight=feed1;
 2845         output;
-2846         keep pig feed weight;
-2847       
-2848       
-2849       %output(to)
+2846         feed='feed2';
+2847         weight=feed2;
+2848         output;
+2849         feed='feed3';
+2850         weight=feed3;
+2851         output;
+2852         feed='feed4';
+2853         weight=feed4;
+2854         output;
+2855         keep pig feed weight;
+2856       
+2857       
+2858       %output(to)
 
 NOTE: There were 5 observations read from the data set WORK.PIGS.
 NOTE: The data set WORK.PIGS2 has 20 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.00 seconds
       
 
-2850       proc print;
-2851       
-2852       %endoutput(to)
+2859       proc print;
+2860       
+2861       %endoutput(to)
 
 NOTE: There were 20 observations read from the data set WORK.PIGS2.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -3063,8 +3087,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-2853       
-2854       %write(too,store=to,type=listing)
+2862       
+2863       %write(too,store=to,type=listing)
 NOTE: Processing document to.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/too.lst
@@ -3072,19 +3096,19 @@ Note: Writing Listing file  : ./lst/too.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2855       
-2856       data pigs3;
-2857         set pigs;
-2858         array feed_array [4] feed1-feed4;
-2859         do i=1 to 4;
-2860           weight=feed_array[i];
-2861           feed=vname(feed_array[i]);
-2862           output;
-2863         end;
-2864         keep pig feed weight;
-2865       
-2866       
-2867       %output(tp)
+2864       
+2865       data pigs3;
+2866         set pigs;
+2867         array feed_array [4] feed1-feed4;
+2868         do i=1 to 4;
+2869           weight=feed_array[i];
+2870           feed=vname(feed_array[i]);
+2871           output;
+2872         end;
+2873         keep pig feed weight;
+2874       
+2875       
+2876       %output(tp)
 
 NOTE: There were 5 observations read from the data set WORK.PIGS.
 NOTE: The data set WORK.PIGS3 has 20 observations and 3 variables.
@@ -3093,18 +3117,18 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.00 seconds
       
 
-2868       proc print;
-2869       
-2870       %endoutput(tp)
+2877       proc print;
+2878       
+2879       %endoutput(tp)
 
 NOTE: There were 20 observations read from the data set WORK.PIGS3.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
-2871       
-2872       %write(tpp,store=tp,type=listing)
+2880       
+2881       %write(tpp,store=tp,type=listing)
 NOTE: Processing document tp.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/tpp.lst
@@ -3112,23 +3136,23 @@ Note: Writing Listing file  : ./lst/tpp.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2873       
-2874       %output(tr)
-2875       proc anova;
-2876         class feed;
-2877         model weight=feed;
-2878         means feed / tukey;
-2879       
-2880       %endoutput(tr)
+2882       
+2883       %output(tr)
+2884       proc anova;
+2885         class feed;
+2886         model weight=feed;
+2887         means feed / tukey;
+2888       
+2889       %endoutput(tr)
 
 
 NOTE: PROCEDURE ANOVA used (Total process time):
-      real time           0.11 seconds
-      cpu time            0.03 seconds
+      real time           0.21 seconds
+      cpu time            0.04 seconds
       
 
-2881       
-2882       %write(trs,store=tr,objects=overallanova modelanova,type=listing)
+2890       
+2891       %write(trs,store=tr,objects=overallanova modelanova,type=listing)
 NOTE: Processing document tr.
 Note: New page for \ANOVA#1\ANOVA#1\weight#1\OverallANOVA#1
 Note: Writing Listing file  : ./lst/trs.lst
@@ -3146,8 +3170,8 @@ ANOVA.Means.feed.weight.BoxPlot                     Graph            .
 ANOVA.Means.feed.weight.MCLines.Tukey.Note          Note             .
 ANOVA.Means.feed.weight.MCLines.Tukey.MCLinesInfo   Table            .
 ANOVA.Means.feed.weight.MCLines.Tukey.MCLines       Table            .
-2883       
-2884       %write(trr,store=tr,objects=mclines,type=listing)
+2892       
+2893       %write(trr,store=tr,objects=mclines,type=listing)
 NOTE: Processing document tr.
 Note: Writing Listing file  : ./lst/trr.lst
 
@@ -3163,43 +3187,43 @@ ANOVA.Means.feed.weight.BoxPlot                     Graph            .
 ANOVA.Means.feed.weight.MCLines.Tukey.Note          Note             .
 ANOVA.Means.feed.weight.MCLines.Tukey.MCLinesInfo   Table            .
 ANOVA.Means.feed.weight.MCLines.Tukey.MCLines       Table Selected   1
-2885       
-2886       proc import
-2887         datafile='/home/ken/utility.txt'
-2888           dbms=dlm
-2889           out=util
-2890           replace;
-2891         delimiter=' ';
-2892         getnames=yes;
-2893       
 2894       
-2895       %output(ca)
+2895       proc import
+2896         datafile='/home/ken/utility.txt'
+2897           dbms=dlm
+2898           out=util
+2899           replace;
+2900         delimiter=' ';
+2901         getnames=yes;
+2902       
+2903       
+2904       %output(ca)
 
-2896        /*******************************************************************
-2896     ! ***
-2897        *   PRODUCT:   SAS
-2898        *   VERSION:   9.4
-2899        *   CREATOR:   External File Interface
-2900        *   DATE:      12JUN17
-2901        *   DESC:      Generated SAS Datastep Code
-2902        *   TEMPLATE SOURCE:  (None Specified.)
-2903        ********************************************************************
-2903     ! ***/
-2904           data WORK.UTIL    ;
-2905           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-2906           infile '/home/ken/utility.txt' delimiter = ' ' MISSOVER DSD
-2906     ! lrecl=32767 firstobs=2 ;
-2907              informat usage best32. ;
-2908              informat demand best32. ;
-2909              format usage best12. ;
-2910              format demand best12. ;
-2911           input
-2912                       usage
-2913                       demand
-2914           ;
-2915           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-2915     ! detection macro variable */
-2916           run;
+2905        /*******************************************************************
+2905     ! ***
+2906        *   PRODUCT:   SAS
+2907        *   VERSION:   9.4
+2908        *   CREATOR:   External File Interface
+2909        *   DATE:      23JUL17
+2910        *   DESC:      Generated SAS Datastep Code
+2911        *   TEMPLATE SOURCE:  (None Specified.)
+2912        ********************************************************************
+2912     ! ***/
+2913           data WORK.UTIL    ;
+2914           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+2915           infile '/home/ken/utility.txt' delimiter = ' ' MISSOVER DSD
+2915     ! lrecl=32767 firstobs=2 ;
+2916              informat usage best32. ;
+2917              informat demand best32. ;
+2918              format usage best12. ;
+2919              format demand best12. ;
+2920           input
+2921                       usage
+2922                       demand
+2923           ;
+2924           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+2924     ! detection macro variable */
+2925           run;
 
 NOTE: The infile '/home/ken/utility.txt' is:
       Filename=/home/ken/utility.txt,
@@ -3214,7 +3238,7 @@ NOTE: 55 records were read from the infile '/home/ken/utility.txt'.
 NOTE: The data set WORK.UTIL has 55 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 55 rows created in WORK.UTIL from /home/ken/utility.txt.
@@ -3224,22 +3248,22 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.UTIL data set was successfully created.
 NOTE: The data set WORK.UTIL has 55 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.04 seconds
+      real time           0.12 seconds
+      cpu time            0.08 seconds
       
 
-2917       proc print data=util(obs=8);
-2918       
-2919       %endoutput(ca)
+2926       proc print data=util(obs=8);
+2927       
+2928       %endoutput(ca)
 
 NOTE: There were 8 observations read from the data set WORK.UTIL.
 NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.01 seconds
+      cpu time            0.01 seconds
       
 
-2920       
-2921       %write(caa,store=ca,type=listing)
+2929       
+2930       %write(caa,store=ca,type=listing)
 NOTE: Processing document ca.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/caa.lst
@@ -3247,12 +3271,12 @@ Note: Writing Listing file  : ./lst/caa.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-2922       
-2923       %output(dda)
-2924       proc sgplot;
-2925         scatter x=usage y=demand;
-2926       
-2927       %endoutput(dda)
+2931       
+2932       %output(dda)
+2933       proc sgplot;
+2934         scatter x=usage y=demand;
+2935       
+2936       %endoutput(dda)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
@@ -3260,30 +3284,30 @@ NOTE: PROCEDURE SGPLOT used (Total process time):
       
 NOTE: There were 55 observations read from the data set WORK.UTIL.
 
-2928       
-2929       %write(ddaa,store=dda,type=graphic)
+2937       
+2938       %write(ddaa,store=dda,type=graphic)
 NOTE: Processing document dda.
 NOTE: Writing Graph file: ./png/ddaa.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-2930       
-2931       %output(ddb)
-2932       proc reg;
-2933         model demand=usage;
-2934       
-2935       %endoutput(ddb)
+2939       
+2940       %output(ddb)
+2941       proc reg;
+2942         model demand=usage;
+2943       
+2944       %endoutput(ddb)
 
 
 NOTE: PROCEDURE REG used (Total process time):
-      real time           0.14 seconds
-      cpu time            0.08 seconds
+      real time           0.42 seconds
+      cpu time            0.19 seconds
       
 
-2936       
-2937       %write(ddbb,store=ddb,objects=FitStatistics
-2937     ! ParameterEstimates,type=listing)
+2945       
+2946       %write(ddbb,store=ddb,objects=FitStatistics
+2946     ! ParameterEstimates,type=listing)
 NOTE: Processing document ddb.
 Note: New page for \Reg#1\MODEL1#1\Fit#1\demand#1\FitStatistics#1
 Note: Writing Listing file  : ./lst/ddbb.lst
@@ -3300,8 +3324,8 @@ DiagnosticsPanel
 Reg.MODEL1.ObswiseStats.demand.ResidualPlots.             Graph            .
 ResidualPlot                                             
 Reg.MODEL1.ObswiseStats.demand.FitPlot                    Graph            .
-2938       
-2939       %write(ddbd,store=ddb,objects=diagnosticspanel,type=graphic)
+2947       
+2948       %write(ddbd,store=ddb,objects=diagnosticspanel,type=graphic)
 NOTE: Processing document ddb.
 NOTE: Writing Graph file: ./png/ddbd.png
 
@@ -3316,8 +3340,8 @@ DiagnosticsPanel
 Reg.MODEL1.ObswiseStats.demand.ResidualPlots.             Graph            .
 ResidualPlot                                             
 Reg.MODEL1.ObswiseStats.demand.FitPlot                    Graph            .
-2940       
-2941       %write(ddbe,store=ddb,objects=residualplot,type=graphic)
+2949       
+2950       %write(ddbe,store=ddb,objects=residualplot,type=graphic)
 NOTE: Processing document ddb.
 NOTE: Writing Graph file: ./png/ddbe.png
 
@@ -3332,22 +3356,22 @@ DiagnosticsPanel
 Reg.MODEL1.ObswiseStats.demand.ResidualPlots.             Graph Selected   1
 ResidualPlot                                             
 Reg.MODEL1.ObswiseStats.demand.FitPlot                    Graph            .
-2942       
-2943       %output(dde)
-2944       proc transreg;
-2945         model boxcox(demand)=identity(usage);
-2946       
-2947       %endoutput(dde)
+2951       
+2952       %output(dde)
+2953       proc transreg;
+2954         model boxcox(demand)=identity(usage);
+2955       
+2956       %endoutput(dde)
 
 NOTE: 2 observations were deleted from the analysis due to missing values.
 NOTE: Algorithm converged.
 NOTE: PROCEDURE TRANSREG used (Total process time):
-      real time           0.04 seconds
+      real time           0.16 seconds
       cpu time            0.01 seconds
       
 
-2948       
-2949       %write(ddef,store=dde,type=graphic)
+2957       
+2958       %write(ddef,store=dde,type=graphic)
 NOTE: Processing document dde.
 NOTE: Writing Graph file: ./png/ddef.png
 
@@ -3356,28 +3380,28 @@ Objects                                     Type  Status   Group
 Transreg.BoxCox_demand_.BoxCoxPlot          Graph Selected   1
 Transreg.BoxCox_demand_.Univariate          Table            .
 Transreg.BoxCox_demand_.ConvergenceStatus   Table            .
-2950       
-2951       data trans;
-2952         set util;
-2953         rtdemand=sqrt(demand);
-2954       
-2955       %output(ddf)
+2959       
+2960       data trans;
+2961         set util;
+2962         rtdemand=sqrt(demand);
+2963       
+2964       %output(ddf)
 
 NOTE: Missing values were generated as a result of performing an operation on 
       missing values.
       Each place is given by: (Number of times) at (Line):(Column).
-      2 at 2953:12   
+      2 at 2962:12   
 NOTE: There were 55 observations read from the data set WORK.UTIL.
 NOTE: The data set WORK.TRANS has 55 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.03 seconds
+      cpu time            0.00 seconds
       
 
-2956       proc sgplot;
-2957         scatter x=usage y=rtdemand;
-2958       
-2959       %endoutput(ddf)
+2965       proc sgplot;
+2966         scatter x=usage y=rtdemand;
+2967       
+2968       %endoutput(ddf)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
@@ -3385,32 +3409,32 @@ NOTE: PROCEDURE SGPLOT used (Total process time):
       
 NOTE: There were 55 observations read from the data set WORK.TRANS.
 
-2960       
-2961       %write(ddff,store=ddf,type=graphic)
+2969       
+2970       %write(ddff,store=ddf,type=graphic)
 NOTE: Processing document ddf.
 NOTE: Writing Graph file: ./png/ddff.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-2962       
-2963       %output(ddg)
-2964       proc reg;
-2965         model rtdemand=usage;
-2966         output out=outrt r=res p=fit;
-2967       
-2968       %endoutput(ddg)
+2971       
+2972       %output(ddg)
+2973       proc reg;
+2974         model rtdemand=usage;
+2975         output out=outrt r=res p=fit;
+2976       
+2977       %endoutput(ddg)
 
 
 NOTE: The data set WORK.OUTRT has 55 observations and 5 variables.
 NOTE: PROCEDURE REG used (Total process time):
-      real time           0.18 seconds
-      cpu time            0.10 seconds
+      real time           0.25 seconds
+      cpu time            0.14 seconds
       
 
-2969       
-2970       %write(ddgg,store=ddg,objects=FitStatistics
-2970     ! ParameterEstimates,type=listing)
+2978       
+2979       %write(ddgg,store=ddg,objects=FitStatistics
+2979     ! ParameterEstimates,type=listing)
 NOTE: Processing document ddg.
 Note: New page for \Reg#1\MODEL1#1\Fit#1\rtdemand#1\FitStatistics#1
 Note: Writing Listing file  : ./lst/ddgg.lst
@@ -3427,8 +3451,8 @@ DiagnosticsPanel
 Reg.MODEL1.ObswiseStats.rtdemand.ResidualPlots.           Graph            .
 ResidualPlot                                             
 Reg.MODEL1.ObswiseStats.rtdemand.FitPlot                  Graph            .
-2971       
-2972       %write(ddhh,store=ddg,objects=diagnosticspanel,type=graphic)
+2980       
+2981       %write(ddhh,store=ddg,objects=diagnosticspanel,type=graphic)
 NOTE: Processing document ddg.
 NOTE: Writing Graph file: ./png/ddhh.png
 
@@ -3443,8 +3467,8 @@ DiagnosticsPanel
 Reg.MODEL1.ObswiseStats.rtdemand.ResidualPlots.           Graph            .
 ResidualPlot                                             
 Reg.MODEL1.ObswiseStats.rtdemand.FitPlot                  Graph            .
-2973       
-2974       %write(ddii,store=ddg,objects=fitplot,type=graphic)
+2982       
+2983       %write(ddii,store=ddg,objects=fitplot,type=graphic)
 NOTE: Processing document ddg.
 NOTE: Writing Graph file: ./png/ddii.png
 
@@ -3459,47 +3483,47 @@ DiagnosticsPanel
 Reg.MODEL1.ObswiseStats.rtdemand.ResidualPlots.           Graph            .
 ResidualPlot                                             
 Reg.MODEL1.ObswiseStats.rtdemand.FitPlot                  Graph Selected   1
-2975       
-2976       proc import
-2977         datafile='/home/ken/mydates.csv'
-2978           dbms=csv
-2979           out=dates
-2980           replace;
-2981         getnames=yes;
-2982       
-2983       
-2984       %output(da)
+2984       
+2985       proc import
+2986         datafile='/home/ken/mydates.csv'
+2987           dbms=csv
+2988           out=dates
+2989           replace;
+2990         getnames=yes;
+2991       
+2992       
+2993       %output(da)
 
-2985        /*******************************************************************
-2985     ! ***
-2986        *   PRODUCT:   SAS
-2987        *   VERSION:   9.4
-2988        *   CREATOR:   External File Interface
-2989        *   DATE:      12JUN17
-2990        *   DESC:      Generated SAS Datastep Code
-2991        *   TEMPLATE SOURCE:  (None Specified.)
-2992        ********************************************************************
-2992     ! ***/
-2993           data WORK.DATES    ;
-2994           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-2995           infile '/home/ken/mydates.csv' delimiter = ',' MISSOVER DSD
-2995     ! lrecl=32767 firstobs=2 ;
-2996              informat date yymmdd10. ;
-2997              informat status $10. ;
-2998              informat dunno anydtdtm40. ;
-2999              format date yymmdd10. ;
-3000              format status $10. ;
-3001              format dunno datetime. ;
-3002           input
-3003                       date
-3004                       status $
-3005                       dunno
-3006           ;
-3007           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3007     ! detection macro variable */
+2994        /*******************************************************************
+2994     ! ***
+2995        *   PRODUCT:   SAS
                                  The SAS System
 
-3008           run;
+2996        *   VERSION:   9.4
+2997        *   CREATOR:   External File Interface
+2998        *   DATE:      23JUL17
+2999        *   DESC:      Generated SAS Datastep Code
+3000        *   TEMPLATE SOURCE:  (None Specified.)
+3001        ********************************************************************
+3001     ! ***/
+3002           data WORK.DATES    ;
+3003           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3004           infile '/home/ken/mydates.csv' delimiter = ',' MISSOVER DSD
+3004     ! lrecl=32767 firstobs=2 ;
+3005              informat date yymmdd10. ;
+3006              informat status $10. ;
+3007              informat dunno anydtdtm40. ;
+3008              format date yymmdd10. ;
+3009              format status $10. ;
+3010              format dunno datetime. ;
+3011           input
+3012                       date
+3013                       status $
+3014                       dunno
+3015           ;
+3016           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3016     ! detection macro variable */
+3017           run;
 
 NOTE: The infile '/home/ken/mydates.csv' is:
       Filename=/home/ken/mydates.csv,
@@ -3524,35 +3548,13 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.DATES data set was successfully created.
 NOTE: The data set WORK.DATES has 3 observations and 3 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
+      real time           0.04 seconds
       cpu time            0.04 seconds
       
 
-3009       proc print;
-3010       
-3011       %endoutput(da)
-
-NOTE: There were 3 observations read from the data set WORK.DATES.
-NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
-      
-
-3012       
-3013       %write(daa,store=da,type=listing)
-NOTE: Processing document da.
-Note: New page for \Print#1\Print#1
-Note: Writing Listing file  : ./lst/daa.lst
-
-Objects       Type   Status   Group
-
-Print.Print   Report Selected   1
-3014       
-3015       %output(db)
-3016       proc print;
-3017         format date mmddyy8.;
-3018       
-3019       %endoutput(db)
+3018       proc print;
+3019       
+3020       %endoutput(da)
 
 NOTE: There were 3 observations read from the data set WORK.DATES.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -3560,8 +3562,30 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.01 seconds
       
 
-3020       
-3021       %write(dbb,store=db,type=listing)
+3021       
+3022       %write(daa,store=da,type=listing)
+NOTE: Processing document da.
+Note: New page for \Print#1\Print#1
+Note: Writing Listing file  : ./lst/daa.lst
+
+Objects       Type   Status   Group
+
+Print.Print   Report Selected   1
+3023       
+3024       %output(db)
+3025       proc print;
+3026         format date mmddyy8.;
+3027       
+3028       %endoutput(db)
+
+NOTE: There were 3 observations read from the data set WORK.DATES.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+3029       
+3030       %write(dbb,store=db,type=listing)
 NOTE: Processing document db.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/dbb.lst
@@ -3569,45 +3593,45 @@ Note: Writing Listing file  : ./lst/dbb.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3022       
-3023       proc import
-3024         datafile='/home/ken/pieces.txt'
-3025           dbms=dlm
-3026           out=pieces
-3027           replace;
-3028         delimiter=' ';
-3029         getnames=yes;
-3030       
+3031       
+3032       proc import
+3033         datafile='/home/ken/pieces.txt'
+3034           dbms=dlm
+3035           out=pieces
+3036           replace;
+3037         delimiter=' ';
+3038         getnames=yes;
+3039       
 
-3031       data makedates;
-3032        /*******************************************************************
-3032     ! ***
-3033        *   PRODUCT:   SAS
-3034        *   VERSION:   9.4
-3035        *   CREATOR:   External File Interface
-3036        *   DATE:      12JUN17
-3037        *   DESC:      Generated SAS Datastep Code
-3038        *   TEMPLATE SOURCE:  (None Specified.)
-3039        ********************************************************************
-3039     ! ***/
-3040           data WORK.PIECES    ;
-3041           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3042           infile '/home/ken/pieces.txt' delimiter = ' ' MISSOVER DSD
-3042     ! lrecl=32767 firstobs=2 ;
-3043              informat year best32. ;
-3044              informat month best32. ;
-3045              informat day best32. ;
-3046              format year best12. ;
-3047              format month best12. ;
-3048              format day best12. ;
-3049           input
-3050                       year
-3051                       month
-3052                       day
-3053           ;
-3054           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3054     ! detection macro variable */
-3055           run;
+3040       data makedates;
+3041        /*******************************************************************
+3041     ! ***
+3042        *   PRODUCT:   SAS
+3043        *   VERSION:   9.4
+3044        *   CREATOR:   External File Interface
+3045        *   DATE:      23JUL17
+3046        *   DESC:      Generated SAS Datastep Code
+3047        *   TEMPLATE SOURCE:  (None Specified.)
+3048        ********************************************************************
+3048     ! ***/
+3049           data WORK.PIECES    ;
+3050           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3051           infile '/home/ken/pieces.txt' delimiter = ' ' MISSOVER DSD
+3051     ! lrecl=32767 firstobs=2 ;
+3052              informat year best32. ;
+3053              informat month best32. ;
+3054              informat day best32. ;
+3055              format year best12. ;
+3056              format month best12. ;
+3057              format day best12. ;
+3058           input
+3059                       year
+3060                       month
+3061                       day
+3062           ;
+3063           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3063     ! detection macro variable */
+3064           run;
 
 NOTE: The infile '/home/ken/pieces.txt' is:
       Filename=/home/ken/pieces.txt,
@@ -3636,23 +3660,23 @@ NOTE: PROCEDURE IMPORT used (Total process time):
       cpu time            0.04 seconds
       
 
-3056         set pieces;
-3057         sasdate=mdy(month,day,year);
-3058       
-3059       
-3060       %output(dd)
+3065         set pieces;
+3066         sasdate=mdy(month,day,year);
+3067       
+3068       
+3069       %output(dd)
 
 NOTE: There were 3 observations read from the data set WORK.PIECES.
 NOTE: The data set WORK.MAKEDATES has 3 observations and 4 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3061       proc print;
-3062         format sasdate yymmdd10.;
-3063       
-3064       %endoutput(dd)
+3070       proc print;
+3071         format sasdate yymmdd10.;
+3072       
+3073       %endoutput(dd)
 
 NOTE: There were 3 observations read from the data set WORK.MAKEDATES.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -3660,8 +3684,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-3065       
-3066       %write(ddd,store=dd,type=listing)
+3074       
+3075       %write(ddd,store=dd,type=listing)
 NOTE: Processing document dd.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/ddd.lst
@@ -3669,20 +3693,20 @@ Note: Writing Listing file  : ./lst/ddd.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3067       
-3068       %output(dda)
-3069       proc print;
-3070       
-3071       %endoutput(dda)
+3076       
+3077       %output(dda)
+3078       proc print;
+3079       
+3080       %endoutput(dda)
 
 NOTE: There were 3 observations read from the data set WORK.MAKEDATES.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3072       
-3073       %write(ddda,store=dda,type=listing)
+3081       
+3082       %write(ddda,store=dda,type=listing)
 NOTE: Processing document dda.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/ddda.lst
@@ -3690,11 +3714,11 @@ Note: Writing Listing file  : ./lst/ddda.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3074       
-3075       %output(dm)
-3076       proc print data=dates;
-3077       
-3078       %endoutput(dm)
+3083       
+3084       %output(dm)
+3085       proc print data=dates;
+3086       
+3087       %endoutput(dm)
 
 NOTE: There were 3 observations read from the data set WORK.DATES.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -3702,8 +3726,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-3079       
-3080       %write(dmm,store=dm,type=listing)
+3088       
+3089       %write(dmm,store=dm,type=listing)
 NOTE: Processing document dm.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/dmm.lst
@@ -3711,14 +3735,14 @@ Note: Writing Listing file  : ./lst/dmm.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3081       
-3082       data moredates;
-3083         set dates;
-3084         d=day(date);
-3085         m=month(date);
-3086         y=year(date);
-3087       
-3088       %output(dn)
+3090       
+3091       data moredates;
+3092         set dates;
+3093         d=day(date);
+3094         m=month(date);
+3095         y=year(date);
+3096       
+3097       %output(dn)
 
 NOTE: There were 3 observations read from the data set WORK.DATES.
 NOTE: The data set WORK.MOREDATES has 3 observations and 6 variables.
@@ -3727,18 +3751,18 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.00 seconds
       
 
-3089       proc print;
-3090       
-3091       %endoutput(dn)
+3098       proc print;
+3099       
+3100       %endoutput(dn)
 
 NOTE: There were 3 observations read from the data set WORK.MOREDATES.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
-3092       
-3093       %write(dnn,store=dn,type=listing)
+3101       
+3102       %write(dnn,store=dn,type=listing)
 NOTE: Processing document dn.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/dnn.lst
@@ -3746,41 +3770,41 @@ Note: Writing Listing file  : ./lst/dnn.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3094       
-3095       proc import
-3096         datafile='/home/ken/dt.csv'
-3097           dbms=csv
-3098           out=dt
-3099           replace;
-3100         getnames=yes;
-3101       
-3102       %output(do)
+3103       
+3104       proc import
+3105         datafile='/home/ken/dt.csv'
+3106           dbms=csv
+3107           out=dt
+3108           replace;
+3109         getnames=yes;
+3110       
+3111       %output(do)
 
-3103        /*******************************************************************
-3103     ! ***
-3104        *   PRODUCT:   SAS
-3105        *   VERSION:   9.4
-3106        *   CREATOR:   External File Interface
-3107        *   DATE:      12JUN17
-3108        *   DESC:      Generated SAS Datastep Code
-3109        *   TEMPLATE SOURCE:  (None Specified.)
-3110        ********************************************************************
-3110     ! ***/
-3111           data WORK.DT    ;
-3112           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3113           infile '/home/ken/dt.csv' delimiter = ',' MISSOVER DSD
-3113     ! lrecl=32767 firstobs=2 ;
-3114              informat occasion $6. ;
-3115              informat _when anydtdtm40. ;
-3116              format occasion $6. ;
-3117              format _when datetime. ;
-3118           input
-3119                       occasion $
-3120                       _when
-3121           ;
-3122           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3122     ! detection macro variable */
-3123           run;
+3112        /*******************************************************************
+3112     ! ***
+3113        *   PRODUCT:   SAS
+3114        *   VERSION:   9.4
+3115        *   CREATOR:   External File Interface
+3116        *   DATE:      23JUL17
+3117        *   DESC:      Generated SAS Datastep Code
+3118        *   TEMPLATE SOURCE:  (None Specified.)
+3119        ********************************************************************
+3119     ! ***/
+3120           data WORK.DT    ;
+3121           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3122           infile '/home/ken/dt.csv' delimiter = ',' MISSOVER DSD
+3122     ! lrecl=32767 firstobs=2 ;
+3123              informat occasion $6. ;
+3124              informat _when anydtdtm40. ;
+3125              format occasion $6. ;
+3126              format _when datetime. ;
+3127           input
+3128                       occasion $
+3129                       _when
+3130           ;
+3131           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3131     ! detection macro variable */
+3132           run;
 
 NOTE: The infile '/home/ken/dt.csv' is:
       Filename=/home/ken/dt.csv,
@@ -3795,7 +3819,7 @@ NOTE: 4 records were read from the infile '/home/ken/dt.csv'.
 NOTE: The data set WORK.DT has 4 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 4 rows created in WORK.DT from /home/ken/dt.csv.
@@ -3805,22 +3829,22 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.DT data set was successfully created.
 NOTE: The data set WORK.DT has 4 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
+      real time           0.07 seconds
       cpu time            0.03 seconds
       
 
-3124       proc print;
-3125       
-3126       %endoutput(do)
+3133       proc print;
+3134       
+3135       %endoutput(do)
 
 NOTE: There were 4 observations read from the data set WORK.DT.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3127       
-3128       %write(doo,store=do,type=listing)
+3136       
+3137       %write(doo,store=do,type=listing)
 NOTE: Processing document do.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/doo.lst
@@ -3828,55 +3852,55 @@ Note: Writing Listing file  : ./lst/doo.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3129       
-3130       proc import
-3131         datafile='/home/ken/manypieces.txt'
-3132           dbms=dlm
-3133           out=many
-3134           replace;
-3135         delimiter=' ';
-3136         getnames=yes;
-3137       
 3138       
+3139       proc import
+3140         datafile='/home/ken/manypieces.txt'
+3141           dbms=dlm
+3142           out=many
+3143           replace;
+3144         delimiter=' ';
+3145         getnames=yes;
+3146       
+3147       
 
-3139       data dtm;
-3140        /*******************************************************************
-3140     ! ***
-3141        *   PRODUCT:   SAS
-3142        *   VERSION:   9.4
-3143        *   CREATOR:   External File Interface
-3144        *   DATE:      12JUN17
-3145        *   DESC:      Generated SAS Datastep Code
-3146        *   TEMPLATE SOURCE:  (None Specified.)
-3147        ********************************************************************
-3147     ! ***/
-3148           data WORK.MANY    ;
-3149           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3150           infile '/home/ken/manypieces.txt' delimiter = ' ' MISSOVER DSD
-3150     ! lrecl=32767 firstobs=2 ;
-3151              informat year best32. ;
-3152              informat month best32. ;
-3153              informat day best32. ;
-3154              informat hour best32. ;
-3155              informat minute best32. ;
-3156              informat second best32. ;
-3157              format year best12. ;
-3158              format month best12. ;
-3159              format day best12. ;
-3160              format hour best12. ;
-3161              format minute best12. ;
-3162              format second best12. ;
-3163           input
-3164                       year
-3165                       month
-3166                       day
-3167                       hour
-3168                       minute
-3169                       second
-3170           ;
-3171           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3171     ! detection macro variable */
-3172           run;
+3148       data dtm;
+3149        /*******************************************************************
+3149     ! ***
+3150        *   PRODUCT:   SAS
+3151        *   VERSION:   9.4
+3152        *   CREATOR:   External File Interface
+3153        *   DATE:      23JUL17
+3154        *   DESC:      Generated SAS Datastep Code
+3155        *   TEMPLATE SOURCE:  (None Specified.)
+3156        ********************************************************************
+3156     ! ***/
+3157           data WORK.MANY    ;
+3158           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3159           infile '/home/ken/manypieces.txt' delimiter = ' ' MISSOVER DSD
+3159     ! lrecl=32767 firstobs=2 ;
+3160              informat year best32. ;
+3161              informat month best32. ;
+3162              informat day best32. ;
+3163              informat hour best32. ;
+3164              informat minute best32. ;
+3165              informat second best32. ;
+3166              format year best12. ;
+3167              format month best12. ;
+3168              format day best12. ;
+3169              format hour best12. ;
+3170              format minute best12. ;
+3171              format second best12. ;
+3172           input
+3173                       year
+3174                       month
+3175                       day
+3176                       hour
+3177                       minute
+3178                       second
+3179           ;
+3180           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3180     ! detection macro variable */
+3181           run;
 
 NOTE: The infile '/home/ken/manypieces.txt' is:
       Filename=/home/ken/manypieces.txt,
@@ -3905,14 +3929,14 @@ NOTE: PROCEDURE IMPORT used (Total process time):
       cpu time            0.03 seconds
       
 
-3173         set many;
-3174         thedate=mdy(month,day,year);
-3175         thetime=hms(hour,minute,second);
-3176         sasdt=dhms(thedate,0,0,thetime);
-3177         keep thedate thetime sasdt;
-3178       
-3179       
-3180       %output(qa)
+3182         set many;
+3183         thedate=mdy(month,day,year);
+3184         thetime=hms(hour,minute,second);
+3185         sasdt=dhms(thedate,0,0,thetime);
+3186         keep thedate thetime sasdt;
+3187       
+3188       
+3189       %output(qa)
 
 NOTE: There were 2 observations read from the data set WORK.MANY.
 NOTE: The data set WORK.DTM has 2 observations and 3 variables.
@@ -3921,32 +3945,9 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.01 seconds
       
 
-3181       proc print;
-3182       
-3183       %endoutput(qa)
-
-NOTE: There were 2 observations read from the data set WORK.DTM.
-NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
-      
-
-3184       
-3185       %write(qaa,store=qa,type=listing)
-NOTE: Processing document qa.
-Note: New page for \Print#1\Print#1
-Note: Writing Listing file  : ./lst/qaa.lst
-
-Objects       Type   Status   Group
-
-Print.Print   Report Selected   1
-3186       
-3187       %output(qab)
-3188       proc print;
-3189       format thedate yymmdd10. thetime time8.
-3190         sasdt datetime.;
+3190       proc print;
 3191       
-3192       %endoutput(qab)
+3192       %endoutput(qa)
 
 NOTE: There were 2 observations read from the data set WORK.DTM.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -3955,7 +3956,30 @@ NOTE: PROCEDURE PRINT used (Total process time):
       
 
 3193       
-3194       %write(qabb,store=qab,type=listing)
+3194       %write(qaa,store=qa,type=listing)
+NOTE: Processing document qa.
+Note: New page for \Print#1\Print#1
+Note: Writing Listing file  : ./lst/qaa.lst
+
+Objects       Type   Status   Group
+
+Print.Print   Report Selected   1
+3195       
+3196       %output(qab)
+3197       proc print;
+3198       format thedate yymmdd10. thetime time8.
+3199         sasdt datetime.;
+3200       
+3201       %endoutput(qab)
+
+NOTE: There were 2 observations read from the data set WORK.DTM.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+3202       
+3203       %write(qabb,store=qab,type=listing)
 NOTE: Processing document qab.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/qabb.lst
@@ -3963,43 +3987,43 @@ Note: Writing Listing file  : ./lst/qabb.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3195       
-3196       proc import
-3197         datafile='/home/ken/hospital.csv'
-3198           dbms=csv
-3199           out=stays
-3200           replace;
-3201         getnames=yes;
-3202       
+3204       
+3205       proc import
+3206         datafile='/home/ken/hospital.csv'
+3207           dbms=csv
+3208           out=stays
+3209           replace;
+3210         getnames=yes;
+3211       
 
-3203       data hospitalstay;
-3204        /*******************************************************************
-3204     ! ***
-3205        *   PRODUCT:   SAS
-3206        *   VERSION:   9.4
-3207        *   CREATOR:   External File Interface
-3208        *   DATE:      12JUN17
-3209        *   DESC:      Generated SAS Datastep Code
-3210        *   TEMPLATE SOURCE:  (None Specified.)
-3211        ********************************************************************
-3211     ! ***/
-3212           data WORK.STAYS    ;
-3213           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3214           infile '/home/ken/hospital.csv' delimiter = ',' MISSOVER DSD
-3214     ! lrecl=32767 firstobs=2 ;
-3215              informat admit anydtdtm40. ;
-3216              informat discharge anydtdtm40. ;
-3217              format admit datetime. ;
-3218              format discharge datetime. ;
-3219           input
-3220                       admit
-3221                       discharge
-3222           ;
-3223           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3223     ! detection macro variable */
+3212       data hospitalstay;
                                  The SAS System
 
-3224           run;
+3213        /*******************************************************************
+3213     ! ***
+3214        *   PRODUCT:   SAS
+3215        *   VERSION:   9.4
+3216        *   CREATOR:   External File Interface
+3217        *   DATE:      23JUL17
+3218        *   DESC:      Generated SAS Datastep Code
+3219        *   TEMPLATE SOURCE:  (None Specified.)
+3220        ********************************************************************
+3220     ! ***/
+3221           data WORK.STAYS    ;
+3222           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3223           infile '/home/ken/hospital.csv' delimiter = ',' MISSOVER DSD
+3223     ! lrecl=32767 firstobs=2 ;
+3224              informat admit anydtdtm40. ;
+3225              informat discharge anydtdtm40. ;
+3226              format admit datetime. ;
+3227              format discharge datetime. ;
+3228           input
+3229                       admit
+3230                       discharge
+3231           ;
+3232           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3232     ! detection macro variable */
+3233           run;
 
 NOTE: The infile '/home/ken/hospital.csv' is:
       Filename=/home/ken/hospital.csv,
@@ -4014,7 +4038,7 @@ NOTE: 3 records were read from the infile '/home/ken/hospital.csv'.
 NOTE: The data set WORK.STAYS has 3 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 3 rows created in WORK.STAYS from /home/ken/hospital.csv.
@@ -4025,25 +4049,25 @@ NOTE: WORK.STAYS data set was successfully created.
 NOTE: The data set WORK.STAYS has 3 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
       real time           0.03 seconds
-      cpu time            0.03 seconds
+      cpu time            0.04 seconds
       
 
-3225         set stays;
-3226         stay=(discharge-admit)/60/60/24;
-3227       
-3228       
-3229       %output(dq)
+3234         set stays;
+3235         stay=(discharge-admit)/60/60/24;
+3236       
+3237       
+3238       %output(dq)
 
 NOTE: There were 3 observations read from the data set WORK.STAYS.
 NOTE: The data set WORK.HOSPITALSTAY has 3 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3230       proc print;
-3231       
-3232       %endoutput(dq)
+3239       proc print;
+3240       
+3241       %endoutput(dq)
 
 NOTE: There were 3 observations read from the data set WORK.HOSPITALSTAY.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -4051,8 +4075,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-3233       
-3234       %write(dqq,store=dq,type=listing)
+3242       
+3243       %write(dqq,store=dq,type=listing)
 NOTE: Processing document dq.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/dqq.lst
@@ -4060,53 +4084,53 @@ Note: Writing Listing file  : ./lst/dqq.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3235       
-3236       proc import
-3237         datafile='/home/ken/many.txt'
-3238           dbms=dlm out=many replace;
-3239         delimiter=' ';
-3240         getnames=no;
-3241       
-3242       
-3243       %output(ma)
+3244       
+3245       proc import
+3246         datafile='/home/ken/many.txt'
+3247           dbms=dlm out=many replace;
+3248         delimiter=' ';
+3249         getnames=no;
+3250       
+3251       
+3252       %output(ma)
 
-3244        /*******************************************************************
-3244     ! ***
-3245        *   PRODUCT:   SAS
-3246        *   VERSION:   9.4
-3247        *   CREATOR:   External File Interface
-3248        *   DATE:      12JUN17
-3249        *   DESC:      Generated SAS Datastep Code
-3250        *   TEMPLATE SOURCE:  (None Specified.)
-3251        ********************************************************************
-3251     ! ***/
-3252           data WORK.MANY    ;
-3253           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3254           infile '/home/ken/many.txt' delimiter = ' ' MISSOVER DSD
-3254     ! lrecl=32767 ;
-3255              informat VAR1 best32. ;
-3256              informat VAR2 best32. ;
-3257              informat VAR3 best32. ;
-3258              informat VAR4 best32. ;
-3259              informat VAR5 best32. ;
-3260              informat VAR6 best32. ;
-3261              format VAR1 best12. ;
-3262              format VAR2 best12. ;
-3263              format VAR3 best12. ;
-3264              format VAR4 best12. ;
-3265              format VAR5 best12. ;
-3266              format VAR6 best12. ;
-3267           input
-3268                       VAR1
-3269                       VAR2
-3270                       VAR3
-3271                       VAR4
-3272                       VAR5
-3273                       VAR6
-3274           ;
-3275           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3275     ! detection macro variable */
-3276           run;
+3253        /*******************************************************************
+3253     ! ***
+3254        *   PRODUCT:   SAS
+3255        *   VERSION:   9.4
+3256        *   CREATOR:   External File Interface
+3257        *   DATE:      23JUL17
+3258        *   DESC:      Generated SAS Datastep Code
+3259        *   TEMPLATE SOURCE:  (None Specified.)
+3260        ********************************************************************
+3260     ! ***/
+3261           data WORK.MANY    ;
+3262           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3263           infile '/home/ken/many.txt' delimiter = ' ' MISSOVER DSD
+3263     ! lrecl=32767 ;
+3264              informat VAR1 best32. ;
+3265              informat VAR2 best32. ;
+3266              informat VAR3 best32. ;
+3267              informat VAR4 best32. ;
+3268              informat VAR5 best32. ;
+3269              informat VAR6 best32. ;
+3270              format VAR1 best12. ;
+3271              format VAR2 best12. ;
+3272              format VAR3 best12. ;
+3273              format VAR4 best12. ;
+3274              format VAR5 best12. ;
+3275              format VAR6 best12. ;
+3276           input
+3277                       VAR1
+3278                       VAR2
+3279                       VAR3
+3280                       VAR4
+3281                       VAR5
+3282                       VAR6
+3283           ;
+3284           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3284     ! detection macro variable */
+3285           run;
 
 NOTE: The infile '/home/ken/many.txt' is:
       Filename=/home/ken/many.txt,
@@ -4121,7 +4145,7 @@ NOTE: 2 records were read from the infile '/home/ken/many.txt'.
 NOTE: The data set WORK.MANY has 2 observations and 6 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 2 rows created in WORK.MANY from /home/ken/many.txt.
@@ -4131,13 +4155,13 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.MANY data set was successfully created.
 NOTE: The data set WORK.MANY has 2 observations and 6 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
-      cpu time            0.03 seconds
+      real time           0.05 seconds
+      cpu time            0.05 seconds
       
 
-3277       proc print;
-3278       
-3279       %endoutput(ma)
+3286       proc print;
+3287       
+3288       %endoutput(ma)
 
 NOTE: There were 2 observations read from the data set WORK.MANY.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -4145,8 +4169,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-3280       
-3281       %write(maa,store=ma,type=listing)
+3289       
+3290       %write(maa,store=ma,type=listing)
 NOTE: Processing document ma.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/maa.lst
@@ -4154,18 +4178,18 @@ Note: Writing Listing file  : ./lst/maa.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3282       
-3283       data one;
-3284         set many;
-3285         array x_array VAR1-VAR6;
-3286         do i=1 to 6;
-3287           x=x_array[i];
-3288           output;
-3289         end;
-3290         keep x;
 3291       
-3292       
-3293       %output(mb)
+3292       data one;
+3293         set many;
+3294         array x_array VAR1-VAR6;
+3295         do i=1 to 6;
+3296           x=x_array[i];
+3297           output;
+3298         end;
+3299         keep x;
+3300       
+3301       
+3302       %output(mb)
 
 NOTE: There were 2 observations read from the data set WORK.MANY.
 NOTE: The data set WORK.ONE has 12 observations and 1 variables.
@@ -4174,18 +4198,18 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.00 seconds
       
 
-3294       proc print;
-3295       
-3296       %endoutput(mb)
+3303       proc print;
+3304       
+3305       %endoutput(mb)
 
 NOTE: There were 12 observations read from the data set WORK.ONE.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3297       
-3298       %write(mbb,store=mb,type=listing)
+3306       
+3307       %write(mbb,store=mb,type=listing)
 NOTE: Processing document mb.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/mbb.lst
@@ -4193,39 +4217,39 @@ Note: Writing Listing file  : ./lst/mbb.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3299       
-3300       data two;
-3301         set many;
-3302         array xy_array VAR1-VAR6;
-3303         do i=1 to 3;
-3304           x=xy_array[2*i-1];
-3305           y=xy_array[2*i];
-3306           output;
-3307         end;
-3308         keep x y;
-3309       
-3310       
-3311       %output(mc)
+3308       
+3309       data two;
+3310         set many;
+3311         array xy_array VAR1-VAR6;
+3312         do i=1 to 3;
+3313           x=xy_array[2*i-1];
+3314           y=xy_array[2*i];
+3315           output;
+3316         end;
+3317         keep x y;
+3318       
+3319       
+3320       %output(mc)
 
 NOTE: There were 2 observations read from the data set WORK.MANY.
 NOTE: The data set WORK.TWO has 6 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3312       proc print;
-3313       
-3314       %endoutput(mc)
+3321       proc print;
+3322       
+3323       %endoutput(mc)
 
 NOTE: There were 6 observations read from the data set WORK.TWO.
 NOTE: PROCEDURE PRINT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3315       
-3316       %write(mcc,store=mc,type=listing)
+3324       
+3325       %write(mcc,store=mc,type=listing)
 NOTE: Processing document mc.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/mcc.lst
@@ -4233,55 +4257,55 @@ Note: Writing Listing file  : ./lst/mcc.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3317       
-3318       libname mydata V9 '/home/ken';
+3326       
+3327       libname mydata V9 '/home/ken';
 NOTE: Libref MYDATA was successfully assigned as follows: 
       Engine:        V9 
       Physical Name: /home/ken
-3319       proc import
-3320         datafile='/home/ken/pigs1.txt'
-3321           dbms=dlm
-3322           out=mydata.pigs1
-3323           replace;
-3324         delimiter=' ';
-3325         getnames=yes;
-3326       
-3327       %output(md)
+3328       proc import
+3329         datafile='/home/ken/pigs1.txt'
+3330           dbms=dlm
+3331           out=mydata.pigs1
+3332           replace;
+3333         delimiter=' ';
+3334         getnames=yes;
+3335       
+3336       %output(md)
 
-3328        /*******************************************************************
-3328     ! ***
-3329        *   PRODUCT:   SAS
-3330        *   VERSION:   9.4
-3331        *   CREATOR:   External File Interface
-3332        *   DATE:      12JUN17
-3333        *   DESC:      Generated SAS Datastep Code
-3334        *   TEMPLATE SOURCE:  (None Specified.)
-3335        ********************************************************************
-3335     ! ***/
-3336           data MYDATA.PIGS1    ;
-3337           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3338           infile '/home/ken/pigs1.txt' delimiter = ' ' MISSOVER DSD
-3338     ! lrecl=32767 firstobs=2 ;
-3339              informat pig best32. ;
-3340              informat feed1 best32. ;
-3341              informat feed2 best32. ;
-3342              informat feed3 best32. ;
-3343              informat feed4 best32. ;
-3344              format pig best12. ;
-3345              format feed1 best12. ;
-3346              format feed2 best12. ;
-3347              format feed3 best12. ;
-3348              format feed4 best12. ;
-3349           input
-3350                       pig
-3351                       feed1
-3352                       feed2
-3353                       feed3
-3354                       feed4
-3355           ;
-3356           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3356     ! detection macro variable */
-3357           run;
+3337        /*******************************************************************
+3337     ! ***
+3338        *   PRODUCT:   SAS
+3339        *   VERSION:   9.4
+3340        *   CREATOR:   External File Interface
+3341        *   DATE:      23JUL17
+3342        *   DESC:      Generated SAS Datastep Code
+3343        *   TEMPLATE SOURCE:  (None Specified.)
+3344        ********************************************************************
+3344     ! ***/
+3345           data MYDATA.PIGS1    ;
+3346           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3347           infile '/home/ken/pigs1.txt' delimiter = ' ' MISSOVER DSD
+3347     ! lrecl=32767 firstobs=2 ;
+3348              informat pig best32. ;
+3349              informat feed1 best32. ;
+3350              informat feed2 best32. ;
+3351              informat feed3 best32. ;
+3352              informat feed4 best32. ;
+3353              format pig best12. ;
+3354              format feed1 best12. ;
+3355              format feed2 best12. ;
+3356              format feed3 best12. ;
+3357              format feed4 best12. ;
+3358           input
+3359                       pig
+3360                       feed1
+3361                       feed2
+3362                       feed3
+3363                       feed4
+3364           ;
+3365           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3365     ! detection macro variable */
+3366           run;
 
 NOTE: The infile '/home/ken/pigs1.txt' is:
       Filename=/home/ken/pigs1.txt,
@@ -4307,21 +4331,21 @@ NOTE: MYDATA.PIGS1 data set was successfully created.
 NOTE: The data set MYDATA.PIGS1 has 5 observations and 5 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
       real time           0.04 seconds
-      cpu time            0.04 seconds
+      cpu time            0.05 seconds
       
 
-3358       proc means data='/home/ken/pigs1';
-3359       
-3360       %endoutput(md)
+3367       proc means data='/home/ken/pigs1';
+3368       
+3369       %endoutput(md)
 
 NOTE: There were 5 observations read from the data set /home/ken/pigs1.
 NOTE: PROCEDURE MEANS used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.01 seconds
+      cpu time            0.00 seconds
       
 
-3361       
-3362       %write(mdd,store=md,type=listing)
+3370       
+3371       %write(mdd,store=md,type=listing)
 NOTE: Processing document md.
 Note: New page for \Means#1\Summary#1
 Note: Writing Listing file  : ./lst/mdd.lst
@@ -4329,28 +4353,28 @@ Note: Writing Listing file  : ./lst/mdd.lst
 Objects         Type  Status   Group
 
 Means.Summary   Table Selected   1
-3363       
-3364       libname mydata V9 '/home/ken';
+3372       
+3373       libname mydata V9 '/home/ken';
 NOTE: Libref MYDATA was successfully assigned as follows: 
       Engine:        V9 
       Physical Name: /home/ken
-3365       data mydata.three; /* permanent data set to save in */
-3366         set two; /* this has variables x and y in it */
-3367         z=x+y;
-3368       
-3369       
-3370       %output(me)
+3374       data mydata.three; /* permanent data set to save in */
+3375         set two; /* this has variables x and y in it */
+3376         z=x+y;
+3377       
+3378       
+3379       %output(me)
 
 NOTE: There were 6 observations read from the data set WORK.TWO.
 NOTE: The data set MYDATA.THREE has 6 observations and 3 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.00 seconds
+      real time           0.03 seconds
       cpu time            0.01 seconds
       
 
-3371       proc print data='/home/ken/three';
-3372       
-3373       %endoutput(me)
+3380       proc print data='/home/ken/three';
+3381       
+3382       %endoutput(me)
 
 NOTE: There were 6 observations read from the data set /home/ken/three.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -4358,8 +4382,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-3374       
-3375       %write(mee,store=me,type=listing)
+3383       
+3384       %write(mee,store=me,type=listing)
 NOTE: Processing document me.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/mee.lst
@@ -4367,76 +4391,76 @@ Note: Writing Listing file  : ./lst/mee.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3376       
-3377       proc import
-3378         datafile='/home/ken/ais.txt'
-3379         dbms=dlm
-3380         out=sports
-3381         replace;
-3382         delimiter='09'x;
-3383         getnames=yes;
-3384       
 3385       
-3386       %output(mix)
+3386       proc import
+3387         datafile='/home/ken/ais.txt'
+3388         dbms=dlm
+3389         out=sports
+3390         replace;
+3391         delimiter='09'x;
+3392         getnames=yes;
+3393       
+3394       
+3395       %output(mix)
 
-3387        /*******************************************************************
-3387     ! ***
-3388        *   PRODUCT:   SAS
-3389        *   VERSION:   9.4
-3390        *   CREATOR:   External File Interface
-3391        *   DATE:      12JUN17
-3392        *   DESC:      Generated SAS Datastep Code
-3393        *   TEMPLATE SOURCE:  (None Specified.)
-3394        ********************************************************************
-3394     ! ***/
-3395           data WORK.SPORTS    ;
-3396           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3397           infile '/home/ken/ais.txt' delimiter='09'x MISSOVER DSD
-3397     ! lrecl=32767 firstobs=2 ;
-3398              informat Sex $6. ;
-3399              informat Sport $7. ;
-3400              informat RCC best32. ;
-3401              informat WCC best32. ;
-3402              informat Hc best32. ;
-3403              informat Hg best32. ;
-3404              informat Ferr best32. ;
-3405              informat BMI best32. ;
-3406              informat SSF best32. ;
-3407              informat _Bfat best32. ;
-3408              informat LBM best32. ;
-3409              informat Ht best32. ;
-3410              informat Wt best32. ;
-3411              format Sex $6. ;
-3412              format Sport $7. ;
-3413              format RCC best12. ;
-3414              format WCC best12. ;
-3415              format Hc best12. ;
-3416              format Hg best12. ;
-3417              format Ferr best12. ;
-3418              format BMI best12. ;
-3419              format SSF best12. ;
-3420              format _Bfat best12. ;
-3421              format LBM best12. ;
-3422              format Ht best12. ;
-3423              format Wt best12. ;
-3424           input
-3425                       Sex $
-3426                       Sport $
-3427                       RCC
-3428                       WCC
-3429                       Hc
-3430                       Hg
-3431                       Ferr
-3432                       BMI
-3433                       SSF
-3434                       _Bfat
-3435                       LBM
-3436                       Ht
-3437                       Wt
-3438           ;
-3439           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3439     ! detection macro variable */
-3440           run;
+3396        /*******************************************************************
+3396     ! ***
+3397        *   PRODUCT:   SAS
+3398        *   VERSION:   9.4
+3399        *   CREATOR:   External File Interface
+3400        *   DATE:      23JUL17
+3401        *   DESC:      Generated SAS Datastep Code
+3402        *   TEMPLATE SOURCE:  (None Specified.)
+3403        ********************************************************************
+3403     ! ***/
+3404           data WORK.SPORTS    ;
+3405           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3406           infile '/home/ken/ais.txt' delimiter='09'x MISSOVER DSD
+3406     ! lrecl=32767 firstobs=2 ;
+3407              informat Sex $6. ;
+3408              informat Sport $7. ;
+3409              informat RCC best32. ;
+3410              informat WCC best32. ;
+3411              informat Hc best32. ;
+3412              informat Hg best32. ;
+3413              informat Ferr best32. ;
+3414              informat BMI best32. ;
+3415              informat SSF best32. ;
+3416              informat _Bfat best32. ;
+3417              informat LBM best32. ;
+3418              informat Ht best32. ;
+3419              informat Wt best32. ;
+3420              format Sex $6. ;
+3421              format Sport $7. ;
+3422              format RCC best12. ;
+3423              format WCC best12. ;
+3424              format Hc best12. ;
+3425              format Hg best12. ;
+3426              format Ferr best12. ;
+3427              format BMI best12. ;
+3428              format SSF best12. ;
+3429              format _Bfat best12. ;
+3430              format LBM best12. ;
+3431              format Ht best12. ;
+3432              format Wt best12. ;
+3433           input
+3434                       Sex $
+3435                       Sport $
+3436                       RCC
+3437                       WCC
+3438                       Hc
+3439                       Hg
+3440                       Ferr
+3441                       BMI
+3442                       SSF
+3443                       _Bfat
+3444                       LBM
+3445                       Ht
+3446                       Wt
+3447           ;
+3448           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3448     ! detection macro variable */
+3449           run;
 
 NOTE: The infile '/home/ken/ais.txt' is:
       Filename=/home/ken/ais.txt,
@@ -4451,7 +4475,7 @@ NOTE: 202 records were read from the infile '/home/ken/ais.txt'.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
 202 rows created in WORK.SPORTS from /home/ken/ais.txt.
@@ -4461,112 +4485,112 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.SPORTS data set was successfully created.
 NOTE: The data set WORK.SPORTS has 202 observations and 13 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.04 seconds
-      cpu time            0.05 seconds
+      real time           0.03 seconds
+      cpu time            0.04 seconds
       
 
-3441       proc sgplot;
-3442         histogram Ht;
-3443         density Ht / type=kernel;
-3444       
-3445       %endoutput(mix)
+3450       proc sgplot;
+3451         histogram Ht;
+3452         density Ht / type=kernel;
+3453       
+3454       %endoutput(mix)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
+                                 The SAS System
+
       cpu time            0.01 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
-3446       
-3447       %write(mixx,store=mix,type=graphic)
+3455       
+3456       %write(mixx,store=mix,type=graphic)
 NOTE: Processing document mix.
 NOTE: Writing Graph file: ./png/mixx.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3448       
-3449       %output(miy)
-3450       proc sgplot;
-3451         histogram BMI;
-3452         density BMI / type=kernel;
-3453       
-3454       %endoutput(miy)
+3457       
+3458       %output(miy)
+3459       proc sgplot;
+3460         histogram BMI;
+3461         density BMI / type=kernel;
+3462       
+3463       %endoutput(miy)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
-                                 The SAS System
-
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
-3455       
-3456       %write(miyy,store=miy,type=graphic)
+3464       
+3465       %write(miyy,store=miy,type=graphic)
 NOTE: Processing document miy.
 NOTE: Writing Graph file: ./png/miyy.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3457       
-3458       %output(mjc)
-3459       proc sgplot;
-3460         scatter x=Ht y=Wt;
-3461         loess x=Ht y=Wt;
-3462       
-3463       %endoutput(mjc)
+3466       
+3467       %output(mjc)
+3468       proc sgplot;
+3469         scatter x=Ht y=Wt;
+3470         loess x=Ht y=Wt;
+3471       
+3472       %endoutput(mjc)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.02 seconds
-      cpu time            0.02 seconds
+      real time           0.04 seconds
+      cpu time            0.03 seconds
       
 NOTE: There were 202 observations read from the data set WORK.SPORTS.
 
-3464       
-3465       %write(mjcc,store=mjc,type=graphic)
+3473       
+3474       %write(mjcc,store=mjc,type=graphic)
 NOTE: Processing document mjc.
 NOTE: Writing Graph file: ./png/mjcc.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3466       
-3467       proc import
-3468         datafile='/home/ken/windmill.csv'
-3469           dbms=csv
-3470           out=windmill
-3471           replace;
-3472         getnames=yes;
-3473       
-3474       
-3475       %output(ng)
+3475       
+3476       proc import
+3477         datafile='/home/ken/windmill.csv'
+3478           dbms=csv
+3479           out=windmill
+3480           replace;
+3481         getnames=yes;
+3482       
+3483       
+3484       %output(ng)
 
-3476        /*******************************************************************
-3476     ! ***
-3477        *   PRODUCT:   SAS
-3478        *   VERSION:   9.4
-3479        *   CREATOR:   External File Interface
-3480        *   DATE:      12JUN17
-3481        *   DESC:      Generated SAS Datastep Code
-3482        *   TEMPLATE SOURCE:  (None Specified.)
-3483        ********************************************************************
-3483     ! ***/
-3484           data WORK.WINDMILL    ;
-3485           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3486           infile '/home/ken/windmill.csv' delimiter = ',' MISSOVER DSD
-3486     ! lrecl=32767 firstobs=2 ;
-3487              informat wind_velocity best32. ;
-3488              informat DC_output best32. ;
-3489              format wind_velocity best12. ;
-3490              format DC_output best12. ;
-3491           input
-3492                       wind_velocity
-3493                       DC_output
-3494           ;
-3495           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3495     ! detection macro variable */
-3496           run;
+3485        /*******************************************************************
+3485     ! ***
+3486        *   PRODUCT:   SAS
+3487        *   VERSION:   9.4
+3488        *   CREATOR:   External File Interface
+3489        *   DATE:      23JUL17
+3490        *   DESC:      Generated SAS Datastep Code
+3491        *   TEMPLATE SOURCE:  (None Specified.)
+3492        ********************************************************************
+3492     ! ***/
+3493           data WORK.WINDMILL    ;
+3494           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3495           infile '/home/ken/windmill.csv' delimiter = ',' MISSOVER DSD
+3495     ! lrecl=32767 firstobs=2 ;
+3496              informat wind_velocity best32. ;
+3497              informat DC_output best32. ;
+3498              format wind_velocity best12. ;
+3499              format DC_output best12. ;
+3500           input
+3501                       wind_velocity
+3502                       DC_output
+3503           ;
+3504           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3504     ! detection macro variable */
+3505           run;
 
 NOTE: The infile '/home/ken/windmill.csv' is:
       Filename=/home/ken/windmill.csv,
@@ -4581,7 +4605,7 @@ NOTE: 25 records were read from the infile '/home/ken/windmill.csv'.
 NOTE: The data set WORK.WINDMILL has 25 observations and 2 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 25 rows created in WORK.WINDMILL from /home/ken/windmill.csv.
@@ -4595,9 +4619,9 @@ NOTE: PROCEDURE IMPORT used (Total process time):
       cpu time            0.03 seconds
       
 
-3497       proc means;
-3498       
-3499       %endoutput(ng)
+3506       proc means;
+3507       
+3508       %endoutput(ng)
 
 NOTE: There were 25 observations read from the data set WORK.WINDMILL.
 NOTE: PROCEDURE MEANS used (Total process time):
@@ -4605,8 +4629,8 @@ NOTE: PROCEDURE MEANS used (Total process time):
       cpu time            0.01 seconds
       
 
-3500       
-3501       %write(ngg,store=ng,type=listing)
+3509       
+3510       %write(ngg,store=ng,type=listing)
 NOTE: Processing document ng.
 Note: New page for \Means#1\Summary#1
 Note: Writing Listing file  : ./lst/ngg.lst
@@ -4614,77 +4638,77 @@ Note: Writing Listing file  : ./lst/ngg.lst
 Objects         Type  Status   Group
 
 Means.Summary   Table Selected   1
-3502       
-3503       %output(mje)
-3504       proc sgplot;
-3505         scatter x=wind_velocity y=DC_output;
-3506         loess x=wind_velocity y=DC_output;
-3507       
-3508       %endoutput(mje)
+3511       
+3512       %output(mje)
+3513       proc sgplot;
+3514         scatter x=wind_velocity y=DC_output;
+3515         loess x=wind_velocity y=DC_output;
+3516       
+3517       %endoutput(mje)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.02 seconds
+      real time           0.01 seconds
+      cpu time            0.01 seconds
       
 NOTE: There were 25 observations read from the data set WORK.WINDMILL.
 
-3509       
-3510       %write(mjee,store=mje,type=graphic)
+3518       
+3519       %write(mjee,store=mje,type=graphic)
 NOTE: Processing document mje.
 NOTE: Writing Graph file: ./png/mjee.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3511       
-3512       proc import
-3513         datafile='/home/ken/oranges.txt'
-3514           dbms=dlm
-3515           out=trees
-3516           replace;
-3517         delimiter=' ';
-3518         getnames=yes;
-3519       
 3520       
-3521       %output(ora)
+3521       proc import
+3522         datafile='/home/ken/oranges.txt'
+3523           dbms=dlm
+3524           out=trees
+3525           replace;
+3526         delimiter=' ';
+3527         getnames=yes;
+3528       
+3529       
+3530       %output(ora)
 
-3522        /*******************************************************************
-3522     ! ***
-3523        *   PRODUCT:   SAS
-3524        *   VERSION:   9.4
-3525        *   CREATOR:   External File Interface
-3526        *   DATE:      12JUN17
-3527        *   DESC:      Generated SAS Datastep Code
-3528        *   TEMPLATE SOURCE:  (None Specified.)
-3529        ********************************************************************
-3529     ! ***/
-3530           data WORK.TREES    ;
-3531           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3532           infile '/home/ken/oranges.txt' delimiter = ' ' MISSOVER DSD
-3532     ! lrecl=32767 firstobs=2 ;
-3533              informat age best32. ;
-3534              informat A best32. ;
-3535              informat B best32. ;
-3536              informat C best32. ;
-3537              informat D best32. ;
-3538              informat E best32. ;
-3539              format age best12. ;
-3540              format A best12. ;
-3541              format B best12. ;
-3542              format C best12. ;
-3543              format D best12. ;
-3544              format E best12. ;
-3545           input
-3546                       age
-3547                       A
-3548                       B
-3549                       C
-3550                       D
-3551                       E
-3552           ;
-3553           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3553     ! detection macro variable */
-3554           run;
+3531        /*******************************************************************
+3531     ! ***
+3532        *   PRODUCT:   SAS
+3533        *   VERSION:   9.4
+3534        *   CREATOR:   External File Interface
+3535        *   DATE:      23JUL17
+3536        *   DESC:      Generated SAS Datastep Code
+3537        *   TEMPLATE SOURCE:  (None Specified.)
+3538        ********************************************************************
+3538     ! ***/
+3539           data WORK.TREES    ;
+3540           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3541           infile '/home/ken/oranges.txt' delimiter = ' ' MISSOVER DSD
+3541     ! lrecl=32767 firstobs=2 ;
+3542              informat age best32. ;
+3543              informat A best32. ;
+3544              informat B best32. ;
+3545              informat C best32. ;
+3546              informat D best32. ;
+3547              informat E best32. ;
+3548              format age best12. ;
+3549              format A best12. ;
+3550              format B best12. ;
+3551              format C best12. ;
+3552              format D best12. ;
+3553              format E best12. ;
+3554           input
+3555                       age
+3556                       A
+3557                       B
+3558                       C
+3559                       D
+3560                       E
+3561           ;
+3562           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3562     ! detection macro variable */
+3563           run;
 
 NOTE: The infile '/home/ken/oranges.txt' is:
       Filename=/home/ken/oranges.txt,
@@ -4699,7 +4723,7 @@ NOTE: 7 records were read from the infile '/home/ken/oranges.txt'.
 NOTE: The data set WORK.TREES has 7 observations and 6 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
 7 rows created in WORK.TREES from /home/ken/oranges.txt.
@@ -4709,13 +4733,13 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.TREES data set was successfully created.
 NOTE: The data set WORK.TREES has 7 observations and 6 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
-      cpu time            0.03 seconds
+      real time           0.04 seconds
+      cpu time            0.05 seconds
       
 
-3555       proc print;
-3556       
-3557       %endoutput(ora)
+3564       proc print;
+3565       
+3566       %endoutput(ora)
 
 NOTE: There were 7 observations read from the data set WORK.TREES.
 NOTE: PROCEDURE PRINT used (Total process time):
@@ -4723,8 +4747,8 @@ NOTE: PROCEDURE PRINT used (Total process time):
       cpu time            0.00 seconds
       
 
-3558       
-3559       %write(oraa,store=ora,type=listing)
+3567       
+3568       %write(oraa,store=ora,type=listing)
 NOTE: Processing document ora.
 Note: New page for \Print#1\Print#1
 Note: Writing Listing file  : ./lst/oraa.lst
@@ -4732,79 +4756,79 @@ Note: Writing Listing file  : ./lst/oraa.lst
 Objects       Type   Status   Group
 
 Print.Print   Report Selected   1
-3560       
-3561       %output(mjd)
-3562       proc sgplot;
-3563         series x=age y=a / markers;
-3564         series x=age y=b / markers;
-3565         series x=age y=c / markers;
-3566         series x=age y=d / markers;
-3567         series x=age y=e / markers;
-3568       
-3569       %endoutput(mjd)
+3569       
+3570       %output(mjd)
+3571       proc sgplot;
+3572         series x=age y=a / markers;
+3573         series x=age y=b / markers;
+3574         series x=age y=c / markers;
+3575         series x=age y=d / markers;
+3576         series x=age y=e / markers;
+3577       
+3578       %endoutput(mjd)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.01 seconds
+      cpu time            0.01 seconds
       
 NOTE: There were 7 observations read from the data set WORK.TREES.
 
-3570       
-3571       %write(mjdd,store=mjd,type=graphic)
+3579       
+3580       %write(mjdd,store=mjd,type=graphic)
 NOTE: Processing document mjd.
 NOTE: Writing Graph file: ./png/mjdd.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3572       
-3573       proc import
-3574         datafile='/home/ken/cars.csv'
-3575         dbms=csv
-3576         out=cars
-3577         replace;
-3578         getnames=yes;
-3579       
-3580       
-3581       %output(muggins)
+3581       
+3582       proc import
+3583         datafile='/home/ken/cars.csv'
+3584         dbms=csv
+3585         out=cars
+3586         replace;
+3587         getnames=yes;
+3588       
+3589       
+3590       %output(muggins)
 
-3582        /*******************************************************************
-3582     ! ***
-3583        *   PRODUCT:   SAS
-3584        *   VERSION:   9.4
-3585        *   CREATOR:   External File Interface
-3586        *   DATE:      12JUN17
-3587        *   DESC:      Generated SAS Datastep Code
-3588        *   TEMPLATE SOURCE:  (None Specified.)
-3589        ********************************************************************
-3589     ! ***/
-3590           data WORK.CARS    ;
-3591           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3592           infile '/home/ken/cars.csv' delimiter = ',' MISSOVER DSD
-3592     ! lrecl=32767 firstobs=2 ;
-3593              informat Car $18. ;
-3594              informat MPG best32. ;
-3595              informat Weight best32. ;
-3596              informat Cylinders best32. ;
-3597              informat Horsepower best32. ;
-3598              informat Country $7. ;
-3599              format Car $18. ;
-3600              format MPG best12. ;
-3601              format Weight best12. ;
-3602              format Cylinders best12. ;
-3603              format Horsepower best12. ;
-3604              format Country $7. ;
-3605           input
-3606                       Car $
-3607                       MPG
-3608                       Weight
-3609                       Cylinders
-3610                       Horsepower
-3611                       Country $
-3612           ;
-3613           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3613     ! detection macro variable */
-3614           run;
+3591        /*******************************************************************
+3591     ! ***
+3592        *   PRODUCT:   SAS
+3593        *   VERSION:   9.4
+3594        *   CREATOR:   External File Interface
+3595        *   DATE:      23JUL17
+3596        *   DESC:      Generated SAS Datastep Code
+3597        *   TEMPLATE SOURCE:  (None Specified.)
+3598        ********************************************************************
+3598     ! ***/
+3599           data WORK.CARS    ;
+3600           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3601           infile '/home/ken/cars.csv' delimiter = ',' MISSOVER DSD
+3601     ! lrecl=32767 firstobs=2 ;
+3602              informat Car $18. ;
+3603              informat MPG best32. ;
+3604              informat Weight best32. ;
+3605              informat Cylinders best32. ;
+3606              informat Horsepower best32. ;
+3607              informat Country $7. ;
+3608              format Car $18. ;
+3609              format MPG best12. ;
+3610              format Weight best12. ;
+3611              format Cylinders best12. ;
+3612              format Horsepower best12. ;
+3613              format Country $7. ;
+3614           input
+3615                       Car $
+3616                       MPG
+3617                       Weight
+3618                       Cylinders
+3619                       Horsepower
+3620                       Country $
+3621           ;
+3622           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3622     ! detection macro variable */
+3623           run;
 
 NOTE: The infile '/home/ken/cars.csv' is:
       Filename=/home/ken/cars.csv,
@@ -4833,31 +4857,31 @@ NOTE: PROCEDURE IMPORT used (Total process time):
       cpu time            0.04 seconds
       
 
-3615       proc sgplot;
-3616         scatter y=mpg x=weight / datalabel=car;
-3617       
-3618       %endoutput(muggins)
+3624       proc sgplot;
+3625         scatter y=mpg x=weight / datalabel=car;
+3626       
+3627       %endoutput(muggins)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.01 seconds
+      real time           0.02 seconds
+      cpu time            0.00 seconds
       
 NOTE: There were 39 observations read from the data set WORK.CARS.
 
-3619       
-3620       %write(mugginss,store=muggins,type=graphic)
+3628       
+3629       %write(mugginss,store=muggins,type=graphic)
 NOTE: Processing document muggins.
 NOTE: Writing Graph file: ./png/mugginss.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3621       
-3622       %output(mka)
-3623       proc sgplot;
-3624         scatter x=weight y=mpg / datalabel=country;
-3625       
-3626       %endoutput(mka)
+3630       
+3631       %output(mka)
+3632       proc sgplot;
+3633         scatter x=weight y=mpg / datalabel=country;
+3634       
+3635       %endoutput(mka)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
@@ -4865,23 +4889,23 @@ NOTE: PROCEDURE SGPLOT used (Total process time):
       
 NOTE: There were 39 observations read from the data set WORK.CARS.
 
-3627       
-3628       %write(mkaa,store=mka,type=graphic)
+3636       
+3637       %write(mkaa,store=mka,type=graphic)
 NOTE: Processing document mka.
 NOTE: Writing Graph file: ./png/mkaa.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3629       
-3630       data cars2;
-3631         set cars;
-3632         if (_n_=4 or _n_=9) then do;
-3633           newtext=car;
-3634         end;
-3635       
-3636       
-3637       %output(mwa)
+3638       
+3639       data cars2;
+3640         set cars;
+3641         if (_n_=4 or _n_=9) then do;
+3642           newtext=car;
+3643         end;
+3644       
+3645       
+3646       %output(mwa)
 
 NOTE: There were 39 observations read from the data set WORK.CARS.
 NOTE: The data set WORK.CARS2 has 39 observations and 7 variables.
@@ -4890,10 +4914,10 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.01 seconds
       
 
-3638       proc sgplot;
-3639         scatter x=weight y=mpg / datalabel=newtext;
-3640       
-3641       %endoutput(mwa)
+3647       proc sgplot;
+3648         scatter x=weight y=mpg / datalabel=newtext;
+3649       
+3650       %endoutput(mwa)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
@@ -4901,24 +4925,24 @@ NOTE: PROCEDURE SGPLOT used (Total process time):
       
 NOTE: There were 39 observations read from the data set WORK.CARS2.
 
-3642       
-3643       %write(mwaa,store=mwa,type=graphic)
+3651       
+3652       %write(mwaa,store=mwa,type=graphic)
 NOTE: Processing document mwa.
 NOTE: Writing Graph file: ./png/mwaa.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3644       
-3645       data cars3;
-3646         set cars;
-3647         if mpg>34 then do;
-3648            newtext=car;
-3649         end;
-3650       
-3651       
-3652       
-3653       %output(mjk)
+3653       
+3654       data cars3;
+3655         set cars;
+3656         if mpg>34 then do;
+3657            newtext=car;
+3658         end;
+3659       
+3660       
+3661       
+3662       %output(mjk)
 
 NOTE: There were 39 observations read from the data set WORK.CARS.
 NOTE: The data set WORK.CARS3 has 39 observations and 7 variables.
@@ -4927,44 +4951,44 @@ NOTE: DATA statement used (Total process time):
       cpu time            0.00 seconds
       
 
-3654       proc sgplot;
-3655         scatter x=weight y=mpg / datalabel=newtext;
-3656       
-3657       %endoutput(mjk)
+3663       proc sgplot;
+3664         scatter x=weight y=mpg / datalabel=newtext;
+3665       
+3666       %endoutput(mjk)
 
 NOTE: PROCEDURE SGPLOT used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 NOTE: There were 39 observations read from the data set WORK.CARS3.
 
-3658       
-3659       %write(mjkk,store=mjk,type=graphic)
+3667       
+3668       %write(mjkk,store=mjk,type=graphic)
 NOTE: Processing document mjk.
 NOTE: Writing Graph file: ./png/mjkk.png
 
 Objects         Type  Status   Group
 
 SGPlot.SGPlot   Graph Selected   1
-3660       
-3661       %output(ima)
-3662       proc iml;
+3669       
+3670       %output(ima)
+3671       proc iml;
 NOTE: IML Ready
-3663         k=2;
-3664         u={2 3 6 5 7};
-3665         ans=k+u;
-3666         print ans;
-3667       
-3668       %endoutput(ima)
+3672         k=2;
+3673         u={2 3 6 5 7};
+3674         ans=k+u;
+3675         print ans;
+3676       
+3677       %endoutput(ima)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
-      real time           0.00 seconds
+      real time           0.06 seconds
       cpu time            0.00 seconds
       
 
-3669       
-3670       %write(imaa,store=ima,type=listing)
+3678       
+3679       %write(imaa,store=ima,type=listing)
 NOTE: Processing document ima.
 Note: New page for \IML#1\ans#1
 Note: Writing Listing file  : ./lst/imaa.lst
@@ -4972,16 +4996,18 @@ Note: Writing Listing file  : ./lst/imaa.lst
 Objects   Type  Status   Group
 
 IML.ans   Table Selected   1
-3671       
-3672       %output(imb)
-3673       proc iml;
+3680       
+                                 The SAS System
+
+3681       %output(imb)
+3682       proc iml;
 NOTE: IML Ready
-3674         u={2 3 6 5 7};
-3675         v={1 8 3 4 2};
-3676         ans=u+v;
-3677         print ans;
-3678       
-3679       %endoutput(imb)
+3683         u={2 3 6 5 7};
+3684         v={1 8 3 4 2};
+3685         ans=u+v;
+3686         print ans;
+3687       
+3688       %endoutput(imb)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
@@ -4989,26 +5015,25 @@ NOTE: PROCEDURE IML used (Total process time):
       cpu time            0.00 seconds
       
 
-3680       
-3681       %write(imbb,store=imb,type=listing)
+3689       
+3690       %write(imbb,store=imb,type=listing)
 NOTE: Processing document imb.
 Note: New page for \IML#1\ans#1
 Note: Writing Listing file  : ./lst/imbb.lst
 
 Objects   Type  Status   Group
-                                 The SAS System
 
 IML.ans   Table Selected   1
-3682       
-3683       %output(imc)
-3684       proc iml;
+3691       
+3692       %output(imc)
+3693       proc iml;
 NOTE: IML Ready
-3685         k=2;
-3686         u={2 3 6 5 7};
-3687         ans=k*u;
-3688         print ans;
-3689       
-3690       %endoutput(imc)
+3694         k=2;
+3695         u={2 3 6 5 7};
+3696         ans=k*u;
+3697         print ans;
+3698       
+3699       %endoutput(imc)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
@@ -5016,8 +5041,8 @@ NOTE: PROCEDURE IML used (Total process time):
       cpu time            0.00 seconds
       
 
-3691       
-3692       %write(imcc,store=imc,type=listing)
+3700       
+3701       %write(imcc,store=imc,type=listing)
 NOTE: Processing document imc.
 Note: New page for \IML#1\ans#1
 Note: Writing Listing file  : ./lst/imcc.lst
@@ -5025,25 +5050,25 @@ Note: Writing Listing file  : ./lst/imcc.lst
 Objects   Type  Status   Group
 
 IML.ans   Table Selected   1
-3693       
-3694       %output(imea)
-3695       proc iml;
+3702       
+3703       %output(imea)
+3704       proc iml;
 NOTE: IML Ready
-3696         A={1 3,2 4};
-3697         B={5 6,7 8};
-3698         print A;
-3699         print B;
-3700       
-3701       %endoutput(imea)
+3705         A={1 3,2 4};
+3706         B={5 6,7 8};
+3707         print A;
+3708         print B;
+3709       
+3710       %endoutput(imea)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
-3702       
-3703       %write(imeaa,store=imea,type=listing)
+3711       
+3712       %write(imeaa,store=imea,type=listing)
 NOTE: Processing document imea.
 Note: New page for \IML#1\A#1
 Note: Writing Listing file  : ./lst/imeaa.lst
@@ -5053,27 +5078,27 @@ Objects Type  Status   Group
 
 IML.A   Table Selected   1
 IML.B   Table Selected   2
-3704       
-3705       %output(ime)
-3706       proc iml;
-NOTE: IML Ready
-3707         A={1 3,2 4};
-3708         B={5 6,7 8};
-3709         ans1=A+B;
-3710         print ans1;
-3711         ans2=A*B;
-3712         print ans2;
 3713       
-3714       %endoutput(ime)
+3714       %output(ime)
+3715       proc iml;
+NOTE: IML Ready
+3716         A={1 3,2 4};
+3717         B={5 6,7 8};
+3718         ans1=A+B;
+3719         print ans1;
+3720         ans2=A*B;
+3721         print ans2;
+3722       
+3723       %endoutput(ime)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
       real time           0.00 seconds
-      cpu time            0.01 seconds
+      cpu time            0.00 seconds
       
 
-3715       
-3716       %write(imee,store=ime,type=listing)
+3724       
+3725       %write(imee,store=ime,type=listing)
 NOTE: Processing document ime.
 Note: New page for \IML#1\ans1#1
 Note: Writing Listing file  : ./lst/imee.lst
@@ -5083,43 +5108,43 @@ Objects    Type  Status   Group
 
 IML.ans1   Table Selected   1
 IML.ans2   Table Selected   2
-3717       
-3718       proc import
-3719         datafile='/home/ken/m.txt'
-3720           dbms=dlm
-3721           out=mymatrix
-3722           replace;
-3723         delimiter=' ';
-3724         getnames=no;
-3725       
 3726       
-3727       %output(imf)
+3727       proc import
+3728         datafile='/home/ken/m.txt'
+3729           dbms=dlm
+3730           out=mymatrix
+3731           replace;
+3732         delimiter=' ';
+3733         getnames=no;
+3734       
+3735       
+3736       %output(imf)
 
-3728        /*******************************************************************
-3728     ! ***
-3729        *   PRODUCT:   SAS
-3730        *   VERSION:   9.4
-3731        *   CREATOR:   External File Interface
-3732        *   DATE:      12JUN17
-3733        *   DESC:      Generated SAS Datastep Code
-3734        *   TEMPLATE SOURCE:  (None Specified.)
-3735        ********************************************************************
-3735     ! ***/
-3736           data WORK.MYMATRIX    ;
-3737           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-3738           infile '/home/ken/m.txt' delimiter = ' ' MISSOVER DSD lrecl=32767
-3738     !  ;
-3739              informat VAR1 best32. ;
-3740              informat VAR2 best32. ;
-3741              format VAR1 best12. ;
-3742              format VAR2 best12. ;
-3743           input
-3744                       VAR1
-3745                       VAR2
-3746           ;
-3747           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
-3747     ! detection macro variable */
-3748           run;
+3737        /*******************************************************************
+3737     ! ***
+3738        *   PRODUCT:   SAS
+3739        *   VERSION:   9.4
+3740        *   CREATOR:   External File Interface
+3741        *   DATE:      23JUL17
+3742        *   DESC:      Generated SAS Datastep Code
+3743        *   TEMPLATE SOURCE:  (None Specified.)
+3744        ********************************************************************
+3744     ! ***/
+3745           data WORK.MYMATRIX    ;
+3746           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+3747           infile '/home/ken/m.txt' delimiter = ' ' MISSOVER DSD lrecl=32767
+3747     !  ;
+3748              informat VAR1 best32. ;
+3749              informat VAR2 best32. ;
+3750              format VAR1 best12. ;
+3751              format VAR2 best12. ;
+3752           input
+3753                       VAR1
+3754                       VAR2
+3755           ;
+3756           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR
+3756     ! detection macro variable */
+3757           run;
 
 NOTE: The infile '/home/ken/m.txt' is:
       Filename=/home/ken/m.txt,
@@ -5144,28 +5169,28 @@ NOTE: DATA statement used (Total process time):
 NOTE: WORK.MYMATRIX data set was successfully created.
 NOTE: The data set WORK.MYMATRIX has 3 observations and 2 variables.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.03 seconds
-      cpu time            0.04 seconds
+      real time           0.04 seconds
+      cpu time            0.05 seconds
       
 
-3749       proc iml;
+3758       proc iml;
 NOTE: IML Ready
-3750         use mymatrix;
-3751         read all var {VAR1 VAR2} into M;
-3752         v={1,3};
-3753         ans=M*v;
-3754         print ans;
-3755       
-3756       %endoutput(imf)
+3759         use mymatrix;
+3760         read all var {VAR1 VAR2} into M;
+3761         v={1,3};
+3762         ans=M*v;
+3763         print ans;
+3764       
+3765       %endoutput(imf)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
-      real time           0.00 seconds
+      real time           0.02 seconds
       cpu time            0.00 seconds
       
 
-3757       
-3758       %write(imff,store=imf,type=listing)
+3766       
+3767       %write(imff,store=imf,type=listing)
 NOTE: Processing document imf.
 Note: New page for \IML#1\ans#1
 Note: Writing Listing file  : ./lst/imff.lst
@@ -5173,27 +5198,27 @@ Note: Writing Listing file  : ./lst/imff.lst
 Objects   Type  Status   Group
 
 IML.ans   Table Selected   1
-3759       
-3760       %output(img)
-3761       proc iml;
-NOTE: IML Ready
-3762         A={1 3,2 4};
-3763         w={1,2};
-3764         Ainv=inv(A);
-3765         print Ainv;
-3766         ans=Ainv*w;
-3767         print ans;
 3768       
-3769       %endoutput(img)
+3769       %output(img)
+3770       proc iml;
+NOTE: IML Ready
+3771         A={1 3,2 4};
+3772         w={1,2};
+3773         Ainv=inv(A);
+3774         print Ainv;
+3775         ans=Ainv*w;
+3776         print ans;
+3777       
+3778       %endoutput(img)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.01 seconds
+      cpu time            0.01 seconds
       
 
-3770       
-3771       %write(imgg,store=img,type=listing)
+3779       
+3780       %write(imgg,store=img,type=listing)
 NOTE: Processing document img.
 Note: New page for \IML#1\Ainv#1
 Note: Writing Listing file  : ./lst/imgg.lst
@@ -5203,25 +5228,25 @@ Objects    Type  Status   Group
 
 IML.Ainv   Table Selected   1
 IML.ans    Table Selected   2
-3772       
-3773       %output(imh)
-3774       proc iml;
+3781       
+3782       %output(imh)
+3783       proc iml;
 NOTE: IML Ready
-3775         r={1 2 3};
-3776         c={4,5,6};
-3777         print r;
-3778         print c;
-3779       
-3780       %endoutput(imh)
+3784         r={1 2 3};
+3785         c={4,5,6};
+3786         print r;
+3787         print c;
+3788       
+3789       %endoutput(imh)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
       real time           0.00 seconds
-      cpu time            0.00 seconds
+      cpu time            0.01 seconds
       
 
-3781       
-3782       %write(imhh,store=imh,type=listing)
+3790       
+3791       %write(imhh,store=imh,type=listing)
 NOTE: Processing document imh.
 Note: New page for \IML#1\r#1
 Note: Writing Listing file  : ./lst/imhh.lst
@@ -5231,25 +5256,25 @@ Objects Type  Status   Group
 
 IML.r   Table Selected   1
 IML.c   Table Selected   2
-3783       
-3784       %output(imi)
-3785       proc iml;
+3792       
+3793       %output(imi)
+3794       proc iml;
 NOTE: IML Ready
-3786         a={1,2,3};
-3787         b={4,5,6};
-3788         ans=t(a)*b;
-3789         print ans;
-3790       
-3791       %endoutput(imi)
+3795         a={1,2,3};
+3796         b={4,5,6};
+3797         ans=t(a)*b;
+3798         print ans;
+3799       
+3800       %endoutput(imi)
 NOTE: Module MAIN is undefined in IML; cannot be RUN.
 NOTE: Exiting IML.
 NOTE: PROCEDURE IML used (Total process time):
-      real time           0.00 seconds
-      cpu time            0.00 seconds
+      real time           0.03 seconds
+      cpu time            0.01 seconds
       
 
-3792       
-3793       %write(imii,store=imi,type=listing)
+3801       
+3802       %write(imii,store=imi,type=listing)
 NOTE: Processing document imi.
 Note: New page for \IML#1\ans#1
 Note: Writing Listing file  : ./lst/imii.lst
@@ -5257,10 +5282,10 @@ Note: Writing Listing file  : ./lst/imii.lst
 Objects   Type  Status   Group
 
 IML.ans   Table Selected   1
-3794       
+3803       
 
 NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
 NOTE: The SAS System used:
-      real time           52.78 seconds
-      cpu time            32.76 seconds
+      real time           1:16.60
+      cpu time            39.81 seconds
       

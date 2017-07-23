@@ -771,6 +771,15 @@ proc print;
 
 %write(tii,store=ti,type=listing) 
 
+%output(zawis)
+proc means;
+  where sport="Tennis";
+  var BMI;
+    
+%endoutput(zawis)
+
+%write(zawiss,store=zawis,type=listing) 
+
 %output(tj)
 proc sort data=sports;
   by RCC;

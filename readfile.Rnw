@@ -136,6 +136,43 @@ mydata
   
 \end{frame}
 
+\begin{frame}[fragile]{\texttt{View}-ing your data frame}
+    
+    \begin{itemize}
+    \item Another way to examine your data frame is to View it, like this:
+      
+<<eval=F>>=
+View(mydata)
+@       
+
+\item This pops up a ``data frame viewer'' top left:
+  
+  \includegraphics[width=0.6\textwidth]{viewview}
+    \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{What you can and cannot do with this View}
+  
+  \begin{itemize}
+  \item Read-only: cannot edit data
+  \item Can display data satisfying conditions: click on Filter, then:
+    \begin{itemize}
+    \item for a categorical variable, type name of category you want
+    \item for a quantitative variable, use slider to describe values
+      you want.
+    \end{itemize}
+  \item Can sort a column into ascending or descending order (click
+    little arrows next to column name).
+    
+  \item Clicking the symbol left of Filter ``pops out'' View into
+    separate (bigger) window.
+  \item Cannot include in output to hand in (except by taking
+    screenshot and handing \emph{that} in).
+  \end{itemize}
+  
+\end{frame}
+
 \begin{frame}[fragile]{Summarizing what we read in}
   
   \begin{itemize}
@@ -504,6 +541,48 @@ proc print data=soap(obs=10);
   
 \Listing[store=ub,fontsize=footnotesize]{ubb}  
   
+\end{frame}
+
+\begin{frame}[fragile]{Data aligned in columns}
+  
+  \begin{itemize}
+  \item Sometimes you see data aligned in columns, thus:
+    
+    \begin{small}
+\begin{verbatim}
+DrugA DrugB DrugC
+  4     6     6
+  5     8     7
+  4     4     6
+  3     5     6
+  2     4     7
+  4     6     5
+  3     5     6
+  4     8     5
+  4     6     5
+\end{verbatim}      
+      \item \texttt{read\_delim} \emph{will not} work: values
+        separated by \emph{more than one} space.
+      \item In R, \texttt{read\_table} works for this.
+      \item In SAS, not possible with \texttt{proc import}.
+    \end{small}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading in column-aligned data}
+  
+  \begin{multicols}{2}
+<<size="small">>=
+drugs=read_table("migraine.txt")
+@   
+
+<<>>=
+drugs
+@ 
+    
+  \end{multicols}
+
 \end{frame}
 
 \begin{frame}[fragile]{Reading an Excel sheet directly}

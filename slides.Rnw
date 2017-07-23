@@ -30,11 +30,14 @@
 
 \maketitle
 
+
+
 % introduction and course outline
 
-<<intro, child="intro.Rnw">>=
-@ 
+<intro, child="intro.Rnw">>=
  
+
+
 % installing our software
 
 <<install, child="install.Rnw">>=
@@ -54,6 +57,7 @@
 
 <<script, child="script.Rnw">>=
 @  
+
 % numerical summaries
 
 <<numsum, child="numsum.Rnw">>=

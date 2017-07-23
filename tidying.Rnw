@@ -614,6 +614,91 @@ athletes %>% select(-(RCC:LBM))
   
 \end{frame}
 
+\begin{frame}[fragile]{Select-helpers}
+  
+  Other ways to \texttt{select} columns:
+  
+  \begin{itemize}
+  \item \texttt{starts\_with} something
+  \item \texttt{ends\_with} something
+  \item \texttt{contains} something
+  \item \texttt{matches} a ``regular expression''
+  \item \texttt{num\_range} like \texttt{x1} to \texttt{x3}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Columns beginning with S}
+  
+<<>>=
+athletes %>% select(starts_with("S"))
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Columns ending with C}
+  
+  either uppercase or lowercase:
+  
+<<>>=
+athletes %>% select(ends_with("c"))
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Column names containing letter R}
+  
+<<>>=
+athletes %>% select(contains("r"))
+@   
+  
+\end{frame}
+
+\begin{frame}[fragile]{Exactly two characters, ending with T}
+  
+  In regular expression terms, this is \verb=^.t$=: 
+  %$ %$ %$
+  \begin{itemize}
+  \item   \verb=^= means ``start of text''
+  \item \verb=.= means ``exactly one character, but could be
+    anything''
+    
+  \item \verb=$= %$ %$ %$
+    means ``end of text''.
+  \end{itemize}
+  
+<<>>=
+athletes %>% select(matches("^.t$"))
+@   
+%$ %$ %$
+
+\end{frame}
+
+\begin{frame}[fragile]{Displaying some numbered columns 1/2}
+  
+Make up a data frame to illustrate. This \texttt{sample} generates random
+values equally likely to be anything 0--9 (without replacement):
+
+<<>>=
+d=tibble( y=sample(0:9,5),
+          x1=sample(0:9,5),
+	  x2=sample(0:9,5),
+	  x3=sample(0:9,5))
+d	  
+@ 
+  
+\end{frame}
+
+\begin{frame}[fragile]{Displaying some numbered columns 2/2}
+  
+Just display \texttt{x2} and \texttt{x3}:
+
+<<>>=
+d %>% select(num_range("x",2:3))
+@ 
+  
+\end{frame}
+
 \begin{frame}[fragile]{Displaying more than 10 rows}
   
 <<size="footnotesize">>=
@@ -729,7 +814,7 @@ something else, eg.\ the weight of the heaviest athlete, as a number:
 
 <<>>=
 athletes %>% arrange(desc(Wt)) %>% slice(1) %>%
-  select(Wt) %>% as.numeric()
+  pull(Wt)
 @ 
 
 All of these tools can be combined, as with this example.
@@ -1016,6 +1101,30 @@ proc print;
   \end{Sascode}
   
   \Listing[store=ti,fontsize=tiny]{tii}
+\end{frame}
+
+\begin{frame}[fragile]{Using data \texttt{where} a condition is true}
+  
+  \begin{itemize}
+  \item Rather than creating a new data set containing the values that
+    satisfy a condition, we can tell SAS which data to use right in a
+    \texttt{proc}.
+  \item Key idea: put \texttt{where} and a logical condition as the
+    \emph{first} line of the \texttt{proc}.
+  \item For example, mean BMI of tennis players:
+    \begin{Sascode}[store=zawis]
+proc means;
+  where sport="Tennis";
+  var BMI;
+    \end{Sascode}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Mean and SD of BMI for tennis players}
+  
+\Listing[store=zawis, fontsize=footnotesize]{zawiss}  
+  
 \end{frame}
 
 \begin{frame}[fragile]{Arranging values in order}

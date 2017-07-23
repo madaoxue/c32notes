@@ -2141,8 +2141,9 @@ t.test(diff,mu=0)
 \begin{frame}[fragile]{Assessing normality}
 
   \begin{itemize}
-  \item Analyses assume (theoretically) that differences normally
+  \item Matched pairs analyses assume (theoretically) that differences normally
 distributed. 
+\item 1-sample and 2-sample $t$-tests assume (each) group normally distributed.
 \item Though we know that $t$-tests generally behave well even
 without normality. 
 \item How to assess normality? A normal quantile plot.

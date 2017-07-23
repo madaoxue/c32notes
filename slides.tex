@@ -80,276 +80,14 @@
 
 \maketitle
 
+
+
 % introduction and course outline
 
-
-
-\begin{frame}[plain,c]
-  \begin{center}
-    {\Huge Welcome to STAC32! \\ \vspace{0.5in} Ken Butler (instructor)}
-  \end{center}
-\end{frame}
-
-
-\begin{frame}{In this course}
-
-  \begin{itemize}
-  \item Data analysis: use mostly known (to you) statistical methods to gain
-    insight about data.
-  \item Use two software packages, SAS and R --- I assume you know
-    nothing about these.
-  \item Look at lots of examples.
-  \item ``Get your hands dirty''.
-  \item Writing reports.
-  \item Other tasks in R and SAS.
-  \end{itemize}
-  
-\end{frame}
-
-\begin{frame}[fragile]{Prerequisites}
-  
-  
-  \begin{itemize}
-  \item 
-      You \emph{need} a second Statistics course that covers statistical
-  inference, one of: 
-  
-  \begin{itemize}
-  \item STAB57 (or equivalent such as STA 261, STA 248)
-  \item STAB27 (or equivalent such as MGEB12, PSYC08, STA 221)
-  \end{itemize}
-  
-  \item I check prerequisites.
-
-  \end{itemize}
-  
-\end{frame}
-
-
-\begin{frame}[fragile]{The instructor}
-
-\begin{itemize}
-  
-\item Ken Butler, office IC 471, e-mail:
-
-    \url{mailto:butler@utsc.utoronto.ca}
-
-\item Lectures: both of Tuesday 13:00-14:00, Thursday 12:00-13:00 in
-  IC 220. Tutorial: one of Wednesday 10:00-11:00, 15:00-16:00 or
-  16:00-17:00 in BV 498.
-\item Office hours: Tuesday 14:00-15:30, Thursday 11:00-12:00. I am
-  likely also around on Monday.
-  Or by appointment (e-mail me, address above, to set one up).
-\item Link to course website: \url{http://www.utsc.utoronto.ca/~butler/c32/}
-\item I use Blackboard only for assignment handin and grades.
-\item E-mail: Use only UTSC/UToronto e-mail address. I aim
-  to respond within two working days. Non-simple questions: office hours.
-\end{itemize}
-
-  
-\end{frame}
-
-\begin{frame}[fragile]{Text(s)}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-Recommended:
-  \begin{itemize}
-\item ``SAS Essentials: Mastering SAS for research'' by Alan C.\
-  Elliott and Wayne A.\ Woodward, publ.\ Jossey-Bass. ISBN 978-0-470-46129-7.
-\item ``R for Data Science'' by Hadley Wickham and Garrett Grolemund,
-  publ.\ O'Reilly, ISBN 978-1-491-91039-9. Also available (free)
-  online at \url{http://r4ds.had.co.nz/}.
-\end{itemize}
-    \end{column}
-    \begin{column}{0.4\textwidth}
-      \includegraphics[width=1in]{sas-essentials}
-
-      \includegraphics[width=1in]{r4ds}
-    \end{column}
-  \end{columns}
-
-
-\end{frame}
-
-\begin{frame}{Structure of course}
-
-  \begin{itemize}
-  \item 3 hours/week of class time.
-  \item Of these, 1 hour in computer lab:
-    \begin{itemize}
-    \item practice what you learned from lecture
-    \item I give you lab exercises to work on, with answers, or you
-      can work on your assignment.
-    \item Get help if needed.
-    \end{itemize}
-  \end{itemize}
-  
-\end{frame}
-
-\begin{frame}{Course material}
-  
-\begin{itemize}
-\item Installation and connection
-\item Reading data files (of different sorts)
-\item Making graphs
-\item Scripts and projects
-\item Numerical summaries
-\item Statistical inference
-\item R Markdown and reports
-\item Tidying and organizing data
-\item Case studies
-\item R functions
-\item Dates and times
-\item Miscellaneous tasks in R and SAS
-\item Vector-matrix algebra
-\end{itemize}
-
-  
-\end{frame}
-
-\begin{frame}[fragile]{Laptop use}
-  
-  \begin{itemize}
-  \item If you have a laptop, you may find it useful for following
-    along with the use of the software or for taking notes.
-  \item Checking social media or other non-course-specific activity
-    distracts from your learning. If you are going to get the most
-    from this course, you need to \emph{pay full attention} in
-    class. Multi-tasking \emph{will not} help you.
-  \item Using your laptop for non-course activity will also distract
-    your neighbours and creates a worse learning experience for
-    everybody. If somebody's inappropriate laptop use is distracting
-    you, let me know. I will create laptop-free zones in class if
-    necessary. 
-  \end{itemize}
-  
-\end{frame}
-
-
-\begin{frame}{Assessment}
-
-  \begin{tabular}{p{3.5in}r}
-    \hline
-    Item & Weight\\
-    \hline
-    Assignments (every week after first). Can study with classmates, but what you hand in must
-    be \textbf{entirely your own work}. Due Thursdays at 11:59pm. & 25\\
-    \hline
-    Midterm exam, 2 hours, open book (see over) & 20\\
-    \hline
-    Group data analysis report (1--5 people/group). Data analysis on data set of your choosing,
-    using R/SAS/both, report written as described in class.
-    Due last
-    day of classes at 11:59pm. & 15 \\
-    \hline
-    Final exam, 3 hours, open book (see over). \textbf{You must pass
-      the final exam to pass the course.} & 40\\
-    \hline
-    Total & 100\\
-    \hline
-  \end{tabular}
-
-\bigskip
-
-  
-  
-\end{frame}
-
-\begin{frame}[fragile]{Open book, defined}
-  
-``Open book'' means these are permissible, written/printed versions only:
-
-\begin{itemize}
-\item the SAS text
-\item the R text
-\item my lecture notes
-\item any other notes that you have made in this course.
-\end{itemize}
-  
-  
-\end{frame}
-
-\begin{frame}[fragile]{Missed work and documentation}
-
-  \begin{itemize}
-  \item \emph{No} make-up  assignments or tests in this course.
-  \item Work handed in late may or may not be accepted (instructor's
-    discretion; instructor's decision is final).
-  \item If you miss assessed work due to illness/injury, complete form
-    at
-
-\url{ http://www.illnessverification.utoronto.ca/}
-
-    and submit to instructor \emph{within 10 working days of due date}.
-  \item Weight of missed work \emph{with appropriate documentation}
-    transferred to other assessments of same type.
-  \end{itemize}
-  
-\end{frame}
-
-
-\begin{frame}[fragile]{Academic integrity}
-
-  \begin{itemize}
-  \item Read and understand
-
-      \url{http://www.utoronto.ca/academicintegrity/}
-
-  \item Academic dishonesty devalues \emph{your} degree \emph{and}
-    those of \emph{all} other students.
-  \item Cheating and plagiarism taken very seriously.
-  \item Examples of academic offences:
-    \begin{itemize}
-    \item Using someone else's words/ideas without acknowledgement.
-    \item Obtaining or providing unauthorized assistance on an assignment.
-    \item On test/exam, looking at someone else's answers or
-      \emph{allowing someone else to look at yours.}
-    \item Pretending to be someone else.
-    \item Falsifying or altering required documentation (eg.\ doctor's notes).
-    \end{itemize}
-  \end{itemize}
-  
-\end{frame}
-
-\begin{frame}[fragile]{Penalties}
-  
-  \begin{itemize}
-  \item Penalties include (depending on seriousness of offence) a mark
-    of zero for 
-    the work concerned, a mark of zero for the entire course, or
-    suspension/expulsion from the University.
-  \item Penalties are (much) more severe for those caught a second (or
-    third) time.
-  \item ``Students who cheat and are not caught will be haunted by the
-    memory of their misdeeds for the rest of their miserable lives.''
-    (From
-    \url{https://philosophy.osu.edu/sites/philosophy.osu.edu/files/1100%20Brown_2.pdf}.)
-  \end{itemize}
-  
-\end{frame}
-
-
-\begin{frame}[fragile]{Accessibility statement}
-
-  \begin{quote}
-   Students with diverse learning styles and needs are welcome in this
-course. In particular, if you have a disability/health consideration
-that may require accommodations, please feel free to approach me
-and/or the AccessAbility Services Office as soon as possible. I will
-work with you and AccessAbility Services to ensure you can achieve
-your learning goals in this course. Enquiries are confidential. The
-UTSC AccessAbility Services staff (located in S302) are available by
-appointment to assess specific needs, provide referrals and arrange
-appropriate accommodations: (416) 287-7560 or by e-mail as below.
-  \end{quote}
-
-  \begin{semiverbatim}
-    ability@utsc.utoronto.ca
-  \end{semiverbatim}
-  
-\end{frame}
-
+<intro, child="intro.Rnw">>=
  
+
+
 % installing our software
 
 
@@ -1717,6 +1455,47 @@ file. Then type the name \texttt{f} to display what it contains:
   
 \end{frame}
 
+\begin{frame}[fragile]{\texttt{View}-ing your data frame}
+    
+    \begin{itemize}
+    \item Another way to examine your data frame is to View it, like this:
+      
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{View}\hlstd{(mydata)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+\item This pops up a ``data frame viewer'' top left:
+  
+  \includegraphics[width=0.6\textwidth]{viewview}
+    \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{What you can and cannot do with this View}
+  
+  \begin{itemize}
+  \item Read-only: cannot edit data
+  \item Can display data satisfying conditions: click on Filter, then:
+    \begin{itemize}
+    \item for a categorical variable, type name of category you want
+    \item for a quantitative variable, use slider to describe values
+      you want.
+    \end{itemize}
+  \item Can sort a column into ascending or descending order (click
+    little arrows next to column name).
+    
+  \item Clicking the symbol left of Filter ``pops out'' View into
+    separate (bigger) window.
+  \item Cannot include in output to hand in (except by taking
+    screenshot and handing \emph{that} in).
+  \end{itemize}
+  
+\end{frame}
+
 \begin{frame}[fragile]{Summarizing what we read in}
   
   \begin{itemize}
@@ -2198,6 +1977,72 @@ proc print data=soap(obs=10);
   
 \end{frame}
 
+\begin{frame}[fragile]{Data aligned in columns}
+  
+  \begin{itemize}
+  \item Sometimes you see data aligned in columns, thus:
+    
+    \begin{small}
+\begin{verbatim}
+DrugA DrugB DrugC
+  4     6     6
+  5     8     7
+  4     4     6
+  3     5     6
+  2     4     7
+  4     6     5
+  3     5     6
+  4     8     5
+  4     6     5
+\end{verbatim}      
+      \item \texttt{read\_delim} \emph{will not} work: values
+        separated by \emph{more than one} space.
+      \item In R, \texttt{read\_table} works for this.
+      \item In SAS, not possible with \texttt{proc import}.
+    \end{small}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading in column-aligned data}
+  
+  \begin{multicols}{2}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{drugs}\hlkwb{=}\hlkwd{read_table}\hlstd{(}\hlstr{"migraine.txt"}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Parsed with column specification:\\\#\# cols(\\\#\#\ \  DrugA = col\_integer(),\\\#\#\ \  DrugB = col\_integer(),\\\#\#\ \  DrugC = col\_integer()\\\#\# )}}\end{kframe}
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{drugs}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 9 x 3
+##   DrugA DrugB DrugC
+##   <int> <int> <int>
+## 1     4     6     6
+## 2     5     8     7
+## 3     4     4     6
+## 4     3     5     6
+## 5     2     4     7
+## 6     4     6     5
+## 7     3     5     6
+## 8     4     8     5
+## 9     4     6     5
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+    
+  \end{multicols}
+
+\end{frame}
+
 \begin{frame}[fragile]{Reading an Excel sheet directly}
   
   \begin{itemize}
@@ -2468,7 +2313,7 @@ proc means;
 \hlkwd{ggplot}\hlstd{(athletes,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=Sport))}\hlopt{+}\hlkwd{geom_bar}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-24-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-27-1} 
 
 \end{knitrout}
   
@@ -2505,7 +2350,7 @@ proc sgplot;
 \hlkwd{ggplot}\hlstd{(athletes,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=BMI))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-25-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-28-1} 
 
 \end{knitrout}
   
@@ -2522,7 +2367,7 @@ proc sgplot;
   \hlkwd{geom_bar}\hlstd{(}\hlkwc{position}\hlstd{=}\hlstr{"dodge"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-26-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-29-1} 
 
 \end{knitrout}
   
@@ -2559,7 +2404,7 @@ proc sgplot;
 \hlkwd{ggplot}\hlstd{(athletes,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=Sex,}\hlkwc{y}\hlstd{=BMI))}\hlopt{+}\hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-27-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-30-1} 
 
 \end{knitrout}
 \end{frame}
@@ -2574,7 +2419,7 @@ proc sgplot;
 \hlkwd{ggplot}\hlstd{(athletes,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=Ht,}\hlkwc{y}\hlstd{=Wt))}\hlopt{+}\hlkwd{geom_point}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-28-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-31-1} 
 
 \end{knitrout}
   
@@ -2613,7 +2458,7 @@ proc sgplot;
   \hlkwd{geom_point}\hlstd{()}\hlopt{+}\hlkwd{geom_smooth}\hlstd{(}\hlkwc{method}\hlstd{=}\hlstr{"lm"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-29-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-32-1} 
 
 \end{knitrout}
   
@@ -2638,7 +2483,7 @@ proc sgplot;
   \hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-30-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-33-1} 
 
 \end{knitrout}
   
@@ -2653,7 +2498,7 @@ proc sgplot;
   \hlkwd{geom_point}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-31-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-34-1} 
 
 \end{knitrout}
   
@@ -2694,7 +2539,7 @@ proc sgpanel;
   \hlkwd{geom_point}\hlstd{()}\hlopt{+}\hlkwd{facet_wrap}\hlstd{(}\hlopt{~}\hlstd{Sport)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-32-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-35-1} 
 
 \end{knitrout}
   
@@ -2713,7 +2558,7 @@ proc sgpanel;
   \hlkwd{geom_point}\hlstd{()}\hlopt{+}\hlkwd{facet_wrap}\hlstd{(}\hlopt{~}\hlstd{Sport,}\hlkwc{scales}\hlstd{=}\hlstr{"free"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-33-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-36-1} 
 
 \end{knitrout}
   
@@ -2796,6 +2641,7 @@ proc sgpanel;
   \end{itemize}
   
 \end{frame}
+
 % numerical summaries
 
 
@@ -2980,36 +2826,43 @@ Another way (which will make sense in a moment):
   
 \end{frame}
 
-\begin{frame}[fragile]{Another summary for all columns}
+\begin{frame}[fragile]{Summarizing several columns}
   
   \begin{itemize}
-  \item Standard deviation of each column:
+  \item Standard deviation of each (numeric) column:
+    
 \begin{knitrout}\footnotesize
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{athletes} \hlopt{%>%} \hlkwd{map_dbl}\hlstd{(sd)}
+\hlstd{athletes} \hlopt{%>%} \hlkwd{summarize_if}\hlstd{(is.numeric,}\hlkwd{funs}\hlstd{(sd))}
 \end{alltt}
-
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in var(if (is.vector(x) || is.factor(x)) x else as.double(x), na.rm = na.rm): NAs introduced by coercion}}
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in var(if (is.vector(x) || is.factor(x)) x else as.double(x), na.rm = na.rm): NAs introduced by coercion}}\begin{verbatim}
-##        Sex      Sport        RCC        WCC         Hc         Hg 
-##         NA         NA  0.4579764  1.8005490  3.6629894  1.3624515 
-##       Ferr        BMI        SSF      %Bfat        LBM         Ht 
-## 47.5012388  2.8639328 32.5653330  6.1898260 13.0701972  9.7344945 
-##         Wt 
-## 13.9255740
+\begin{verbatim}
+## # A tibble: 1 x 11
+##         RCC      WCC       Hc       Hg     Ferr      BMI      SSF  `%Bfat`
+##       <dbl>    <dbl>    <dbl>    <dbl>    <dbl>    <dbl>    <dbl>    <dbl>
+## 1 0.4579764 1.800549 3.662989 1.362451 47.50124 2.863933 32.56533 6.189826
+## # ... with 3 more variables: LBM <dbl>, Ht <dbl>, Wt <dbl>
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
-\item The \texttt{map\_dbl} says ``get this summary for each column''.
+
+\item Median and IQR of all columns whose name starts with H:
   
-\item Warnings: cannot calculate the SD for
-  \texttt{Sex} and \texttt{Sport} because these are categorical
-  variables.
-\item The notation \texttt{NA}  means ``missing value''.
-    
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{athletes} \hlopt{%>%} \hlkwd{summarize_at}\hlstd{(}\hlkwd{vars}\hlstd{(}\hlkwd{starts_with}\hlstd{(}\hlstr{"H"}\hlstd{)),}
+  \hlkwd{funs}\hlstd{(median,IQR))}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 1 x 6
+##   Hc_median Hg_median Ht_median Hc_IQR Hg_IQR Ht_IQR
+##       <dbl>     <dbl>     <dbl>  <dbl>  <dbl>  <dbl>
+## 1      43.5      14.7     179.7  4.975  2.075 12.175
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+      
   \end{itemize}
   
 
@@ -3270,7 +3123,7 @@ proc means stddev;
 \hlkwd{ggplot}\hlstd{(jays,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=attendance))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-46-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-50-1} 
 
 \end{knitrout}
 
@@ -3894,7 +3747,7 @@ plus a lot more output.
 \hlkwd{ggplot}\hlstd{(kids,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=group,}\hlkwc{y}\hlstd{=score))}\hlopt{+}\hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-54-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-58-1} 
 
 \end{knitrout}
   
@@ -4547,7 +4400,7 @@ by decreasing amount.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-72-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-76-1} 
 
 \end{knitrout}
   
@@ -4666,7 +4519,7 @@ by decreasing amount.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-78-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-82-1} 
 
 \end{knitrout}
 \end{frame}
@@ -4847,7 +4700,7 @@ proc means;
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-80-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-84-1} 
 
 \end{knitrout}
 \end{frame}
@@ -5974,8 +5827,9 @@ yourself and do a 1-sample $t$-test on them, over:
 \begin{frame}[fragile]{Assessing normality}
 
   \begin{itemize}
-  \item Analyses assume (theoretically) that differences normally
+  \item Matched pairs analyses assume (theoretically) that differences normally
 distributed. 
+\item 1-sample and 2-sample $t$-tests assume (each) group normally distributed.
 \item Though we know that $t$-tests generally behave well even
 without normality. 
 \item How to assess normality? A normal quantile plot.
@@ -5996,7 +5850,7 @@ without normality.
 \hlkwd{qqnorm}\hlstd{(diff) ;} \hlkwd{qqline}\hlstd{(diff)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-109-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-113-1} 
 
 \end{knitrout}
 
@@ -6013,7 +5867,7 @@ off, so normality questionable here: outlier.
 \hlkwd{ggplot}\hlstd{(pain,}\hlkwd{aes}\hlstd{(}\hlkwc{sample}\hlstd{=diff))}\hlopt{+}\hlkwd{stat_qq}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-110-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-114-1} 
 
 \end{knitrout}
   
@@ -6125,7 +5979,7 @@ so estimate of $\sigma$ is 1.455.
 \hlkwd{ggplot}\hlstd{(d,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-113-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-117-1} 
 
 \end{knitrout}
 
@@ -6141,7 +5995,7 @@ As normal as you could wish for.
 \hlkwd{qqnorm}\hlstd{(d}\hlopt{$}\hlstd{x) ;} \hlkwd{qqline}\hlstd{(d}\hlopt{$}\hlstd{x)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-114-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-118-1} 
 
 \end{knitrout}
   
@@ -6158,7 +6012,7 @@ As normal as you could wish for.
 \hlkwd{ggplot}\hlstd{(d,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{7}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-116-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-120-1} 
 
 \end{knitrout}
 
@@ -6174,7 +6028,7 @@ Not so convincingly normal, but not obviously skewed.
 \hlkwd{qqnorm}\hlstd{(d}\hlopt{$}\hlstd{x) ;} \hlkwd{qqline}\hlstd{(d}\hlopt{$}\hlstd{x)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-117-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-121-1} 
 
 \end{knitrout}
 Good, apart from the highest and lowest points being slightly off. I'd
@@ -6195,7 +6049,7 @@ call this good.
 \hlkwd{ggplot}\hlstd{(d,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-119-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-123-1} 
 
 \end{knitrout}
 
@@ -6211,7 +6065,7 @@ Somewhat skewed to right.
 \hlkwd{qqnorm}\hlstd{(d}\hlopt{$}\hlstd{x) ;} \hlkwd{qqline}\hlstd{(d}\hlopt{$}\hlstd{x)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-120-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-124-1} 
 
 \end{knitrout}
 
@@ -6231,7 +6085,7 @@ Somewhat opening-up curve.
 \hlkwd{ggplot}\hlstd{(d,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-122-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-126-1} 
 
 \end{knitrout}
   
@@ -6247,7 +6101,7 @@ Definitely skewed to right.
 \hlkwd{qqnorm}\hlstd{(d}\hlopt{$}\hlstd{x) ;} \hlkwd{qqline}\hlstd{(d}\hlopt{$}\hlstd{x)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-123-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-127-1} 
 
 \end{knitrout}
 
@@ -6270,7 +6124,7 @@ Clear upward-opening curve.
 \hlkwd{ggplot}\hlstd{(d,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_histogram}\hlstd{(}\hlkwc{bins}\hlstd{=}\hlnum{10}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-125-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-129-1} 
 
 \end{knitrout}
   
@@ -6286,7 +6140,7 @@ Long tails (or a very sharp peak).
 \hlkwd{qqnorm}\hlstd{(d}\hlopt{$}\hlstd{x) ;} \hlkwd{qqline}\hlstd{(d}\hlopt{$}\hlstd{x)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-126-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-130-1} 
 
 \end{knitrout}
 
@@ -6777,7 +6631,7 @@ proc univariate;
 \hlkwd{ggplot}\hlstd{(kids,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=group,}\hlkwc{y}\hlstd{=score))}\hlopt{+}\hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-135-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-139-1} 
 
 \end{knitrout}
   
@@ -6827,7 +6681,7 @@ from which we concluded that the new reading method really does help.
   \hlkwd{facet_wrap}\hlstd{(}\hlopt{~}\hlstd{group)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-137-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-141-1} 
 
 \end{knitrout}
   
@@ -7329,7 +7183,7 @@ proc npar1way median;
     \hlkwd{ggplot}\hlstd{(rats,}\hlkwd{aes}\hlstd{(}\hlkwc{y}\hlstd{=density,}\hlkwc{x}\hlstd{=group))}\hlopt{+}\hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-146-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-150-1} 
 
 \end{knitrout}
 
@@ -7642,7 +7496,7 @@ proc anova;
 \hlkwd{ggplot}\hlstd{(rats,}\hlkwd{aes}\hlstd{(}\hlkwc{y}\hlstd{=density,}\hlkwc{x}\hlstd{=group))}\hlopt{+}\hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-154-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-158-1} 
 
 \end{knitrout}
 
@@ -8771,7 +8625,7 @@ Feed 3 is best, feed 1 worst.
 \hlkwd{ggplot}\hlstd{(pigs2,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=feed,}\hlkwc{y}\hlstd{=weight))}\hlopt{+}\hlkwd{geom_boxplot}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-166-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-170-1} 
 
 \end{knitrout}
   
@@ -9373,7 +9227,7 @@ to distinguish max and min on graph.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-191-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-195-1} 
 
 \end{knitrout}
  
@@ -9652,6 +9506,199 @@ Following are some tasks that we might want to perform on this data frame.
   
 \end{frame}
 
+\begin{frame}[fragile]{Select-helpers}
+  
+  Other ways to \texttt{select} columns:
+  
+  \begin{itemize}
+  \item \texttt{starts\_with} something
+  \item \texttt{ends\_with} something
+  \item \texttt{contains} something
+  \item \texttt{matches} a ``regular expression''
+  \item \texttt{num\_range} like \texttt{x1} to \texttt{x3}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Columns beginning with S}
+  
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{athletes} \hlopt{%>%} \hlkwd{select}\hlstd{(}\hlkwd{starts_with}\hlstd{(}\hlstr{"S"}\hlstd{))}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 202 x 3
+##       Sex   Sport   SSF
+##     <chr>   <chr> <dbl>
+##  1 female Netball  49.0
+##  2 female Netball 110.2
+##  3 female Netball  89.0
+##  4 female Netball  98.3
+##  5 female Netball 122.1
+##  6 female Netball  90.4
+##  7 female Netball 106.9
+##  8 female Netball 156.6
+##  9 female Netball 101.1
+## 10 female Netball 126.4
+## # ... with 192 more rows
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Columns ending with C}
+  
+  either uppercase or lowercase:
+  
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{athletes} \hlopt{%>%} \hlkwd{select}\hlstd{(}\hlkwd{ends_with}\hlstd{(}\hlstr{"c"}\hlstd{))}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 202 x 3
+##      RCC   WCC    Hc
+##    <dbl> <dbl> <dbl>
+##  1  4.56  13.3  42.2
+##  2  4.15   6.0  38.0
+##  3  4.16   7.6  37.5
+##  4  4.32   6.4  37.7
+##  5  4.06   5.8  38.7
+##  6  4.12   6.1  36.6
+##  7  4.17   5.0  37.4
+##  8  3.80   6.6  36.5
+##  9  3.96   5.5  36.3
+## 10  4.44   9.7  41.4
+## # ... with 192 more rows
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Column names containing letter R}
+  
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{athletes} \hlopt{%>%} \hlkwd{select}\hlstd{(}\hlkwd{contains}\hlstd{(}\hlstr{"r"}\hlstd{))}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 202 x 3
+##      Sport   RCC  Ferr
+##      <chr> <dbl> <int>
+##  1 Netball  4.56    20
+##  2 Netball  4.15    59
+##  3 Netball  4.16    22
+##  4 Netball  4.32    30
+##  5 Netball  4.06    78
+##  6 Netball  4.12    21
+##  7 Netball  4.17   109
+##  8 Netball  3.80   102
+##  9 Netball  3.96    71
+## 10 Netball  4.44    64
+## # ... with 192 more rows
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Exactly two characters, ending with T}
+  
+  In regular expression terms, this is \verb=^.t$=: 
+  %$ %$ %$
+  \begin{itemize}
+  \item   \verb=^= means ``start of text''
+  \item \verb=.= means ``exactly one character, but could be
+    anything''
+    
+  \item \verb=$= %$ %$ %$
+    means ``end of text''.
+  \end{itemize}
+  
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{athletes} \hlopt{%>%} \hlkwd{select}\hlstd{(}\hlkwd{matches}\hlstd{(}\hlstr{"^.t$"}\hlstd{))}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 202 x 2
+##       Ht    Wt
+##    <dbl> <dbl>
+##  1 176.8  59.9
+##  2 172.6  63.0
+##  3 176.0  66.3
+##  4 169.9  60.7
+##  5 183.0  72.9
+##  6 178.2  67.9
+##  7 177.3  67.5
+##  8 174.1  74.1
+##  9 173.6  68.2
+## 10 173.7  68.8
+## # ... with 192 more rows
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+%$ %$ %$
+
+\end{frame}
+
+\begin{frame}[fragile]{Displaying some numbered columns 1/2}
+  
+Make up a data frame to illustrate. This \texttt{sample} generates random
+values equally likely to be anything 0--9 (without replacement):
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{d}\hlkwb{=}\hlkwd{tibble}\hlstd{(} \hlkwc{y}\hlstd{=}\hlkwd{sample}\hlstd{(}\hlnum{0}\hlopt{:}\hlnum{9}\hlstd{,}\hlnum{5}\hlstd{),}
+          \hlkwc{x1}\hlstd{=}\hlkwd{sample}\hlstd{(}\hlnum{0}\hlopt{:}\hlnum{9}\hlstd{,}\hlnum{5}\hlstd{),}
+          \hlkwc{x2}\hlstd{=}\hlkwd{sample}\hlstd{(}\hlnum{0}\hlopt{:}\hlnum{9}\hlstd{,}\hlnum{5}\hlstd{),}
+          \hlkwc{x3}\hlstd{=}\hlkwd{sample}\hlstd{(}\hlnum{0}\hlopt{:}\hlnum{9}\hlstd{,}\hlnum{5}\hlstd{))}
+\hlstd{d}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 5 x 4
+##       y    x1    x2    x3
+##   <int> <int> <int> <int>
+## 1     6     2     1     9
+## 2     4     1     5     1
+## 3     2     6     4     8
+## 4     5     0     2     6
+## 5     3     5     6     0
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Displaying some numbered columns 2/2}
+  
+Just display \texttt{x2} and \texttt{x3}:
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{d} \hlopt{%>%} \hlkwd{select}\hlstd{(}\hlkwd{num_range}\hlstd{(}\hlstr{"x"}\hlstd{,}\hlnum{2}\hlopt{:}\hlnum{3}\hlstd{))}
+\end{alltt}
+\begin{verbatim}
+## # A tibble: 5 x 2
+##      x2    x3
+##   <int> <int>
+## 1     1     9
+## 2     5     1
+## 3     4     8
+## 4     2     6
+## 5     6     0
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+  
+\end{frame}
+
 \begin{frame}[fragile]{Displaying more than 10 rows}
   
 \begin{knitrout}\footnotesize
@@ -9769,16 +9816,16 @@ Just for 5 rows here:
 \end{alltt}
 \begin{verbatim}
 ## # A tibble: 8 x 13
-##      Sex  Sport   RCC   WCC    Hc    Hg  Ferr   BMI   SSF
-##    <chr>  <chr> <dbl> <dbl> <dbl> <dbl> <int> <dbl> <dbl>
-## 1   male  T400m  4.71   7.2  43.6  14.0    32 20.39  30.5
-## 2 female Tennis  4.66   6.4  40.9  13.9   109 18.37  38.2
-## 3 female  Field  4.77   7.1  40.6  14.6    40 26.85 103.6
-## 4   male TSprnt  5.16   8.4  44.4  15.5   213 21.86  29.7
-## 5   male    Row  4.40   5.3  42.5  14.5   109 24.06  46.5
-## 6 female    Row  4.46   9.5  41.5  14.5    92 22.96  83.0
-## 7 female    Row  4.37   8.1  41.8  14.3    53 23.47  98.0
-## 8   male Tennis  5.66   8.3  50.2  17.7    38 23.76  56.5
+##      Sex   Sport   RCC   WCC    Hc    Hg  Ferr   BMI   SSF
+##    <chr>   <chr> <dbl> <dbl> <dbl> <dbl> <int> <dbl> <dbl>
+## 1 female Netball  4.24   8.4  37.6  12.5    58 25.64 200.8
+## 2 female   BBall  4.42   5.7  39.9  13.2    44 20.62  97.9
+## 3 female  Tennis  4.40   4.0  40.8  13.9    73 22.12  98.1
+## 4   male   T400m  5.21   7.5  47.5  16.5    20 21.89  46.7
+## 5   male     Row  5.40   6.8  49.5  17.3   183 26.07  44.7
+## 6 female    Swim  4.51   5.1  40.9  14.0   115 19.00  52.5
+## 7   male    Swim  5.32   6.0  47.5  16.3   155 23.29  54.4
+## 8   male    Swim  5.34   6.6  48.6  16.5    35 22.81  57.0
 ## # ... with 4 more variables: `%Bfat` <dbl>, LBM <dbl>, Ht <dbl>,
 ## #   Wt <dbl>
 \end{verbatim}
@@ -10022,7 +10069,7 @@ something else, eg.\ the weight of the heaviest athlete, as a number:
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlstd{athletes} \hlopt{%>%} \hlkwd{arrange}\hlstd{(}\hlkwd{desc}\hlstd{(Wt))} \hlopt{%>%} \hlkwd{slice}\hlstd{(}\hlnum{1}\hlstd{)} \hlopt{%>%}
-  \hlkwd{select}\hlstd{(Wt)} \hlopt{%>%} \hlkwd{as.numeric}\hlstd{()}
+  \hlkwd{pull}\hlstd{(Wt)}
 \end{alltt}
 \begin{verbatim}
 ## [1] 123.2
@@ -10421,6 +10468,30 @@ proc print;
   \Listing[store=ti,fontsize=tiny]{tii}
 \end{frame}
 
+\begin{frame}[fragile]{Using data \texttt{where} a condition is true}
+  
+  \begin{itemize}
+  \item Rather than creating a new data set containing the values that
+    satisfy a condition, we can tell SAS which data to use right in a
+    \texttt{proc}.
+  \item Key idea: put \texttt{where} and a logical condition as the
+    \emph{first} line of the \texttt{proc}.
+  \item For example, mean BMI of tennis players:
+    \begin{Sascode}[store=zawis]
+proc means;
+  where sport="Tennis";
+  var BMI;
+    \end{Sascode}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Mean and SD of BMI for tennis players}
+  
+\Listing[store=zawis, fontsize=footnotesize]{zawiss}  
+  
+\end{frame}
+
 \begin{frame}[fragile]{Arranging values in order}
   
   This is \texttt{proc sort}, which produces an output data set that
@@ -10739,7 +10810,7 @@ being the best and feed 1 the worst.
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-223-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-233-1} 
 
 \end{knitrout}
 
@@ -10842,7 +10913,7 @@ being the best and feed 1 the worst.
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-226-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-236-1} 
 
 \end{knitrout}
   
@@ -10966,7 +11037,7 @@ being the best and feed 1 the worst.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-230-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-240-1} 
 
 \end{knitrout}
 
@@ -10983,7 +11054,7 @@ being the best and feed 1 the worst.
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-231-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-241-1} 
 
 \end{knitrout}
   
@@ -11032,7 +11103,7 @@ being the best and feed 1 the worst.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-233-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-243-1} 
 
 \end{knitrout}
   
@@ -11111,7 +11182,7 @@ Curve clearly fits better than line.
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-236-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-246-1} 
 
 \end{knitrout}
 
@@ -11188,7 +11259,7 @@ Curve clearly fits better than line.
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-239-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-249-1} 
 
 \end{knitrout}
 
@@ -11288,7 +11359,7 @@ Curve clearly fits better than line.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-243-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-253-1} 
 
 \end{knitrout}
   
@@ -11577,7 +11648,7 @@ range of the data, doesn't necessarily mean they agree everywhere.
 \hlstd{g2}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-255-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-265-1} 
 
 \end{knitrout}
   
@@ -12127,7 +12198,7 @@ $x$-variable.''
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-264-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-274-1} 
 
 \end{knitrout}
   
@@ -12194,7 +12265,7 @@ from here on:
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-267-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-277-1} 
 
 \end{knitrout}
 
@@ -12289,7 +12360,7 @@ from here on:
 \hlkwd{ggplot}\hlstd{(rut.1,}\hlkwd{aes}\hlstd{(}\hlkwc{x}\hlstd{=.fitted,}\hlkwc{y}\hlstd{=.resid))}\hlopt{+}\hlkwd{geom_point}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-270-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-280-1} 
 
 \end{knitrout}
   
@@ -12310,7 +12381,17 @@ from here on:
 \begin{alltt}
 \hlstd{rut.1a}\hlkwb{=}\hlkwd{augment}\hlstd{(rut.1,asphalt_lv)}
 \end{alltt}
-\end{kframe}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}\end{kframe}
 \end{knitrout}
 \item This is a data frame rather than a ``tibble'', so display it as
   a tibble.
@@ -12374,7 +12455,7 @@ from here on:
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-274-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-284-1} 
 
 \end{knitrout}
   
@@ -12418,7 +12499,7 @@ from here on:
   
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-276-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-286-1} 
 
 \end{knitrout}
 
@@ -12480,7 +12561,7 @@ from here on:
 \hlstd{g3}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-280-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-290-1} 
 
 \end{knitrout}
   
@@ -12961,7 +13042,7 @@ Backward-elimination model comes out best again.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-299-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-309-1} 
 
 \end{knitrout}
   
@@ -12980,7 +13061,17 @@ Backward-elimination model comes out best again.
   \hlkwd{ggplot}\hlstd{(}\hlkwd{aes}\hlstd{(}\hlkwc{y}\hlstd{=.resid,}\hlkwc{x}\hlstd{=x))}\hlopt{+}\hlkwd{geom_point}\hlstd{()}\hlopt{+}
   \hlkwd{facet_wrap}\hlstd{(}\hlopt{~}\hlstd{xname,}\hlkwc{scales}\hlstd{=}\hlstr{"free"}\hlstd{)}
 \end{alltt}
-\end{kframe}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: Deprecated: please use `purrr::possibly()` instead}}\end{kframe}
 \end{knitrout}
   \end{itemize}
   
@@ -12994,7 +13085,7 @@ Backward-elimination model comes out best again.
 \hlstd{g2}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-301-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-311-1} 
 
 \end{knitrout}
   
@@ -13606,8 +13697,8 @@ If last line of function calculates value without saving it,
   
   
   \begin{itemize}
-  \item Get column \texttt{i} of data frame \texttt{d} as
-    \texttt{d[,i]}.
+  \item ``Pull out'' column \texttt{i} of data frame \texttt{d} as
+    \verb=d %>% pull(i)=.
   \item Create empty vector \texttt{slopes} to store the slopes.
   \item Looping variable \texttt{i} goes from 1 to 3 (3 columns, thus
     3 slopes):
@@ -13617,17 +13708,13 @@ If last line of function calculates value without saving it,
 \begin{alltt}
 \hlstd{slopes}\hlkwb{=}\hlkwd{numeric}\hlstd{(}\hlnum{3}\hlstd{)}
 \hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{3}\hlstd{) \{}
-  \hlstd{xx}\hlkwb{=}\hlstd{d[,i]}
+  \hlstd{xx}\hlkwb{=}\hlstd{d} \hlopt{%>%} \hlkwd{pull}\hlstd{(i)}
   \hlstd{slopes[i]}\hlkwb{=}\hlkwd{slope}\hlstd{(xx,yy)}
 \hlstd{\}}
-\end{alltt}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in model.frame.default(formula = y \textasciitilde{} x, drop.unused.levels = TRUE): invalid type (list) for variable 'x'}}\begin{alltt}
 \hlstd{slopes}
 \end{alltt}
 \begin{verbatim}
-## [1] 0 0 0
+## [1]  1.1000000 -1.1000000  0.5140187
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -16208,7 +16295,7 @@ Use \texttt{gather} to create columns we need, and then plot:
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-394-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-404-1} 
 
 \end{knitrout}
   
@@ -16264,7 +16351,7 @@ Use \texttt{gather} to create columns we need, and then plot:
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-397-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-407-1} 
 
 \end{knitrout}
   
@@ -16280,7 +16367,7 @@ Use \texttt{gather} to create columns we need, and then plot:
   \hlkwd{geom_density}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-398-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-408-1} 
 
 \end{knitrout}
   
@@ -16298,7 +16385,7 @@ Use \texttt{gather} to create columns we need, and then plot:
   \hlkwd{geom_density}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-399-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-409-1} 
 
 \end{knitrout}
   
@@ -16320,7 +16407,7 @@ Use \texttt{gather} to create columns we need, and then plot:
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-400-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-410-1} 
 
 \end{knitrout}
   \end{itemize}
@@ -16341,7 +16428,7 @@ Use \texttt{gather} to create columns we need, and then plot:
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# `geom\_smooth()` using method = 'loess'}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-402-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-412-1} 
 
 \end{knitrout}
   
@@ -16377,7 +16464,7 @@ Use \texttt{gather} to create columns we need, and then plot:
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-404-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-414-1} 
 
 \end{knitrout}
   
@@ -16438,7 +16525,7 @@ Use \texttt{gather} to create columns we need, and then plot:
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-406-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-416-1} 
 
 \end{knitrout}
 
@@ -16473,7 +16560,7 @@ Better, but labels still overlap. Need another solution.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-408-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-418-1} 
 
 \end{knitrout}
 
@@ -16519,7 +16606,7 @@ Much better. I recommend this approach to labelling points on a graph.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-410-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-420-1} 
 
 \end{knitrout}
   
@@ -16555,7 +16642,7 @@ Much better. I recommend this approach to labelling points on a graph.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-412-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-422-1} 
 
 \end{knitrout}
   
@@ -16592,7 +16679,7 @@ Much better. I recommend this approach to labelling points on a graph.
 \hlstd{g}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-414-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-424-1} 
 
 \end{knitrout}
   
@@ -16618,7 +16705,7 @@ Much better. I recommend this approach to labelling points on a graph.
 \hlstd{g}\hlopt{+}\hlkwd{ggtitle}\hlstd{(}\hlstr{"Gas mileage against weight"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-415-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-425-1} 
 
 \end{knitrout}
   
@@ -16632,7 +16719,7 @@ Much better. I recommend this approach to labelling points on a graph.
 \hlstd{g}\hlopt{+}\hlkwd{xlab}\hlstd{(}\hlstr{"Weight (tons)"}\hlstd{)}\hlopt{+}\hlkwd{ylab}\hlstd{(}\hlstr{"MPG (miles per US gallon)"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-416-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-426-1} 
 
 \end{knitrout}
   
@@ -16650,7 +16737,7 @@ Much better. I recommend this approach to labelling points on a graph.
        \hlkwd{geom_point}\hlstd{() ; g3}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-417-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-427-1} 
 
 \end{knitrout}
   
@@ -16704,7 +16791,7 @@ Much better. I recommend this approach to labelling points on a graph.
 \hlstd{g4}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-420-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-430-1} 
 
 \end{knitrout}
   

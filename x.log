@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.9)  12 JUN 2017 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.9)  23 JUL 2017 16:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,92 +1349,136 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 107.
+Overfull \vbox (14.12917pt too high) has occurred while \output is active []
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+[3]
+LaTeX Font Info:    Try loading font information for U+msa on input line 110.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 107.
+LaTeX Font Info:    Try loading font information for U+msb on input line 110.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 107.
+line 110.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[3
+<goodnight.png, id=93, 239.89626pt x 324.21124pt>
+File: goodnight.png Graphic file (type png)
+ <use goodnight.png>
+Package pdftex.def Info: goodnight.png used on input line 110.
+(pdftex.def)             Requested size: 101.17755pt x 136.7367pt.
 
-]
+<ihaka.jpg, id=94, 1282.7925pt x 885.3075pt>
+File: ihaka.jpg Graphic file (type jpg)
+ <use ihaka.jpg>
+Package pdftex.def Info: ihaka.jpg used on input line 110.
+(pdftex.def)             Requested size: 144.54pt x 99.74814pt.
+ [4
+
+ <./goodnight.png> <./ihaka.jpg>]
+Overfull \hbox (3.4631pt too wide) in paragraph at lines 134--134
+[][]  
+ []
+
+[5
+
+] <r30.png, id=108, 682.55pt x 160.6pt>
+File: r30.png Graphic file (type png)
+ <use r30.png>
+Package pdftex.def Info: r30.png used on input line 146.
+(pdftex.def)             Requested size: 289.07999pt x 68.02005pt.
+ [6
+
+ <./r30.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [4
 
-]
+(./x.vrb <r39.png, id=116, 726.715pt x 254.9525pt>
+File: r39.png Graphic file (type png)
+ <use r39.png>
+Package pdftex.def Info: r39.png used on input line 7.
+(pdftex.def)             Requested size: 289.07999pt x 101.41898pt.
+) [7
+
+ <./r39.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [5
+ (./x.vrb <r32.png, id=123, 537.00626pt x 142.5325pt>
+File: r32.png Graphic file (type png)
+ <use r32.png>
+Package pdftex.def Info: r32.png used on input line 6.
+(pdftex.def)             Requested size: 289.07999pt x 76.72716pt.
+) [8
 
-]
+ <./r32.png>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb <r33.png, id=129, 681.54625pt x 264.99pt>
+File: r33.png Graphic file (type png)
+ <use r33.png>
+Package pdftex.def Info: r33.png used on input line 3.
+(pdftex.def)             Requested size: 289.07999pt x 112.39484pt.
+)
+[9
+
+ <./r33.png>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb <r34.png, id=135, 726.715pt x 253.94875pt>
+File: r34.png Graphic file (type png)
+
+<use r34.png>
+Package pdftex.def Info: r34.png used on input line 6.
+(pdftex.def)             Requested size: 289.07999pt x 101.0197pt.
+) [10
+
+ <./r34.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas-essentials.png, id=110, 640.3925pt x 777.90625pt>
-File: sas-essentials.png Graphic file (type png)
+<r35.png, id=142, 474.77374pt x 399.4925pt>
+File: r35.png Graphic file (type png)
+ <use r35.png>
+Package pdftex.def Info: r35.png used on input line 7.
+(pdftex.def)             Requested size: 216.81pt x 182.4338pt.
+) [11
 
-<use sas-essentials.png>
-Package pdftex.def Info: sas-essentials.png used on input line 14.
-(pdftex.def)             Requested size: 72.26999pt x 87.77774pt.
- <r4ds.jpg, id=112, 334.24875pt x 500.87125pt>
-File: r4ds.jpg Graphic file (type jpg)
-
-<use r4ds.jpg>
-Package pdftex.def Info: r4ds.jpg used on input line 16.
-(pdftex.def)             Requested size: 72.26999pt x 108.29663pt.
-) [6
-
- <./sas-essentials.png> <./r4ds.jpg>] [7
-
-]
-Overfull \vbox (22.25616pt too high) detected at line 208
- []
-
-[8
-
-]
+ <./r35.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [9
 
-]
-Underfull \hbox (badness 5893) in paragraph at lines 256--256
-[]\OT1/cmss/m/n/10.95 Group data anal-y-sis re-port (1--5 peo-ple/group).
- []
+(./x.vrb <r37.png, id=148, 768.8725pt x 305.14pt>
+File: r37.png Graphic file (type png)
+ <use r37.png>
+Package pdftex.def Info: r37.png used on input line 6.
+(pdftex.def)             Requested size: 289.07999pt x 114.72984pt.
+) [12
 
-[10
-
-]
+ <./r37.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [11
+ (./x.vrb <r40.png, id=154, 559.08875pt x 259.97125pt>
+File: r40.png Graphic file (type png)
+ <use r40.png>
+Package pdftex.def Info: r40.png used on input line 7.
+(pdftex.def)             Requested size: 289.07999pt x 134.4242pt.
+)
+[13
 
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [12
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [13
-
-]
+ <./r40.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [14
@@ -1442,211 +1486,94 @@ Underfull \hbox (badness 5893) in paragraph at lines 256--256
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-[15
-
-] [16
-
-] <goodnight.png, id=178, 239.89626pt x 324.21124pt>
-File: goodnight.png Graphic file (type png)
-
-<use goodnight.png>
-Package pdftex.def Info: goodnight.png used on input line 372.
-(pdftex.def)             Requested size: 101.17755pt x 136.7367pt.
- <ihaka.jpg, id=179, 1282.7925pt x 885.3075pt>
-File: ihaka.jpg Graphic file (type jpg)
-
-<use ihaka.jpg>
-Package pdftex.def Info: ihaka.jpg used on input line 372.
-(pdftex.def)             Requested size: 144.54pt x 99.74814pt.
- [17
-
- <./goodnight.png> <./ihaka.jpg>]
-Overfull \hbox (3.4631pt too wide) in paragraph at lines 396--396
-[][]  
- []
-
-[18
-
-] <r30.png, id=191, 682.55pt x 160.6pt>
-File: r30.png Graphic file (type png)
- <use r30.png>
-Package pdftex.def Info: r30.png used on input line 408.
-(pdftex.def)             Requested size: 289.07999pt x 68.02005pt.
- [19
-
- <./r30.png>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb <r39.png, id=198, 726.715pt x 254.9525pt>
-File: r39.png Graphic file (type png)
- <use r39.png>
-Package pdftex.def Info: r39.png used on input line 7.
-(pdftex.def)             Requested size: 289.07999pt x 101.41898pt.
-) [20
-
- <./r39.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb <r32.png, id=204, 537.00626pt x 142.5325pt>
-File: r32.png Graphic file (type png)
- <use r32.png>
-Package pdftex.def Info: r32.png used on input line 6.
-(pdftex.def)             Requested size: 289.07999pt x 76.72716pt.
-)
-[21
-
- <./r32.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb <r33.png, id=210, 681.54625pt x 264.99pt>
-File: r33.png Graphic file (type png)
-
-<use r33.png>
-Package pdftex.def Info: r33.png used on input line 3.
-(pdftex.def)             Requested size: 289.07999pt x 112.39484pt.
-) [22
-
- <./r33.png>]
-\openout4 = `x.vrb'.
-
  (./x.vrb
-<r34.png, id=216, 726.715pt x 253.94875pt>
-File: r34.png Graphic file (type png)
- <use r34.png>
-Package pdftex.def Info: r34.png used on input line 6.
-(pdftex.def)             Requested size: 289.07999pt x 101.0197pt.
-) [23
-
- <./r34.png>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb <r35.png, id=223, 474.77374pt x 399.4925pt>
-File: r35.png Graphic file (type png)
- <use r35.png>
-Package pdftex.def Info: r35.png used on input line 7.
-(pdftex.def)             Requested size: 216.81pt x 182.4338pt.
-) [24
-
- <./r35.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb <r37.png, id=229, 768.8725pt x 305.14pt>
-File: r37.png Graphic file (type png)
- <use r37.png>
-Package pdftex.def Info: r37.png used on input line 6.
-(pdftex.def)             Requested size: 289.07999pt x 114.72984pt.
-) [25
-
- <./r37.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb <r40.png, id=236, 559.08875pt x 259.97125pt>
-File: r40.png Graphic file (type png)
- <use r40.png>
-Package pdftex.def Info: r40.png used on input line 7.
-(pdftex.def)             Requested size: 289.07999pt x 134.4242pt.
-)
-[26
-
- <./r40.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [27
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-<rstudio-startup.png, id=247, 1341.01pt x 931.48pt>
+<rstudio-startup.png, id=166, 1341.01pt x 931.48pt>
 File: rstudio-startup.png Graphic file (type png)
  <use rstudio-startup.png>
 Package pdftex.def Info: rstudio-startup.png used on input line 3.
 (pdftex.def)             Requested size: 273.83728pt x 190.20132pt.
 )
-[28
+[15
 
  <./rstudio-startup.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [29
+ (./x.vrb) [16
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas1.png, id=260, 512.91624pt x 399.4925pt>
+<sas1.png, id=181, 512.91624pt x 399.4925pt>
 File: sas1.png Graphic file (type png)
  <use sas1.png>
 Package pdftex.def Info: sas1.png used on input line 6.
 (pdftex.def)             Requested size: 201.17918pt x 156.68956pt.
-) [30
+) [17
 
  <./sas1.png>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <sas2.png, id=266, 520.94624pt x 505.89pt>
+(./x.vrb <sas2.png, id=187, 520.94624pt x 505.89pt>
 File: sas2.png Graphic file (type png)
  <use sas2.png>
 Package pdftex.def Info: sas2.png used on input line 5.
 (pdftex.def)             Requested size: 216.81pt x 210.54253pt.
-) [31
+) [18
 
  <./sas2.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas3.png, id=274, 595.22375pt x 414.54875pt>
+ (./x.vrb <sas3.png, id=194, 595.22375pt x 414.54875pt>
 File: sas3.png Graphic file (type png)
  <use sas3.png>
 Package pdftex.def Info: sas3.png used on input line 5.
 (pdftex.def)             Requested size: 216.81pt x 150.99591pt.
 )
-[32
+[19
 
  <./sas3.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas5.png, id=280, 931.48pt x 593.21625pt>
+ (./x.vrb <sas5.png, id=201, 931.48pt x 593.21625pt>
 File: sas5.png Graphic file (type png)
 
 <use sas5.png>
 Package pdftex.def Info: sas5.png used on input line 3.
 (pdftex.def)             Requested size: 287.03601pt x 182.80183pt.
 )
-Overfull \vbox (2.0579pt too high) detected at line 567
+Overfull \vbox (2.0579pt too high) detected at line 305
  []
 
-[33
+[20
 
  <./sas5.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas1b.png, id=287, 343.2825pt x 321.2pt>
+ (./x.vrb <sas1b.png, id=208, 343.2825pt x 321.2pt>
 File: sas1b.png Graphic file (type png)
 
 <use sas1b.png>
 Package pdftex.def Info: sas1b.png used on input line 5.
 (pdftex.def)             Requested size: 195.37448pt x 182.80183pt.
-) [34
+) [21
 
  <./sas1b.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas6.png, id=293, 1163.34625pt x 471.7625pt>
+<sas6.png, id=214, 1163.34625pt x 471.7625pt>
 File: sas6.png Graphic file (type png)
  <use sas6.png>
 Package pdftex.def Info: sas6.png used on input line 3.
 (pdftex.def)             Requested size: 342.2953pt x 138.80879pt.
-) [35
+) [22
 
  <./sas6.png>]
 \openout4 = `x.vrb'.
 
-(./x.vrb <sas-webed-opening.png, id=300, 1273.75874pt x 377.41pt>
+(./x.vrb <sas-webed-opening.png, id=221, 1273.75874pt x 377.41pt>
 File: sas-webed-opening.png Graphic file (type png)
 
 <use sas-webed-opening.png>
@@ -1657,171 +1584,171 @@ Overfull \hbox (39.83527pt too wide) in paragraph at lines 5--6
 [][]  
  []
 
-) [36
+) [23
 
  <./sas-webed-opening.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [37
+ (./x.vrb) [24
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas16.png, id=315, 1273.75874pt x 648.4225pt>
+<sas16.png, id=235, 1273.75874pt x 648.4225pt>
 File: sas16.png Graphic file (type png)
  <use sas16.png>
 Package pdftex.def Info: sas16.png used on input line 9.
 (pdftex.def)             Requested size: 289.07999pt x 147.15521pt.
-) [38
+) [25
 
  <./sas16.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas28.png, id=322, 787.94376pt x 475.7775pt>
+ (./x.vrb <sas28.png, id=243, 787.94376pt x 475.7775pt>
 File: sas28.png Graphic file (type png)
  <use sas28.png>
 Package pdftex.def Info: sas28.png used on input line 6.
 (pdftex.def)             Requested size: 216.81pt x 130.90817pt.
 )
-[39
+[26
 
  <./sas28.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas17.png, id=329, 1465.475pt x 798.985pt>
+ (./x.vrb <sas17.png, id=249, 1465.475pt x 798.985pt>
 File: sas17.png Graphic file (type png)
 
 <use sas17.png>
 Package pdftex.def Info: sas17.png used on input line 6.
 (pdftex.def)             Requested size: 289.07999pt x 157.59969pt.
-) [40
+) [27
 
  <./sas17.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas18.png, id=335, 679.53876pt x 578.16pt>
+<sas18.png, id=255, 679.53876pt x 578.16pt>
 File: sas18.png Graphic file (type png)
  <use sas18.png>
 Package pdftex.def Info: sas18.png used on input line 8.
 (pdftex.def)             Requested size: 252.94499pt x 215.20386pt.
 )
-Overfull \vbox (35.06825pt too high) detected at line 707
+Overfull \vbox (35.06825pt too high) detected at line 445
  []
 
-[41
+[28
 
  <./sas18.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas19.png, id=341, 1071.00125pt x 469.755pt>
+ (./x.vrb <sas19.png, id=261, 1071.00125pt x 469.755pt>
 File: sas19.png Graphic file (type png)
 
 <use sas19.png>
 Package pdftex.def Info: sas19.png used on input line 7.
 (pdftex.def)             Requested size: 289.07999pt x 126.79254pt.
-) [42
+) [29
 
  <./sas19.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas20.png, id=347, 748.7975pt x 786.94pt>
+<sas20.png, id=267, 748.7975pt x 786.94pt>
 File: sas20.png Graphic file (type png)
  <use sas20.png>
 Package pdftex.def Info: sas20.png used on input line 7.
 (pdftex.def)             Requested size: 180.67499pt x 189.8781pt.
-) [43
+) [30
 
  <./sas20.png>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <sas22.png, id=354, 917.4275pt x 613.29124pt>
+(./x.vrb <sas22.png, id=273, 917.4275pt x 613.29124pt>
 File: sas22.png Graphic file (type png)
  <use sas22.png>
 Package pdftex.def Info: sas22.png used on input line 6.
 (pdftex.def)             Requested size: 289.07999pt x 193.24391pt.
 )
-[44
+[31
 
  <./sas22.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas23.png, id=360, 724.7075pt x 149.55875pt>
+ (./x.vrb <sas23.png, id=280, 724.7075pt x 149.55875pt>
 File: sas23.png Graphic file (type png)
 
 <use sas23.png>
 Package pdftex.def Info: sas23.png used on input line 7.
 (pdftex.def)             Requested size: 289.07999pt x 59.65813pt.
-) [45
+) [32
 
  <./sas23.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sas24.png, id=366, 700.6175pt x 103.38625pt>
+<sas24.png, id=286, 700.6175pt x 103.38625pt>
 File: sas24.png Graphic file (type png)
  <use sas24.png>
 Package pdftex.def Info: sas24.png used on input line 7.
 (pdftex.def)             Requested size: 289.07999pt x 42.65839pt.
-) [46
+) [33
 
  <./sas24.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas25.png, id=372, 742.775pt x 251.94125pt>
+ (./x.vrb <sas25.png, id=292, 742.775pt x 251.94125pt>
 File: sas25.png Graphic file (type png)
  <use sas25.png>
 Package pdftex.def Info: sas25.png used on input line 7.
 (pdftex.def)             Requested size: 289.07999pt x 98.05293pt.
 )
-[47
+[34
 
  <./sas25.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <sas26.png, id=378, 722.7pt x 200.75pt>
+ (./x.vrb <sas26.png, id=298, 722.7pt x 200.75pt>
 File: sas26.png Graphic file (type png)
 
 <use sas26.png>
 Package pdftex.def Info: sas26.png used on input line 7.
 (pdftex.def)             Requested size: 289.07999pt x 80.29857pt.
-) [48
+) [35
 
  <./sas26.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [49
+ (./x.vrb) [36
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [50
+ (./x.vrb) [37
 
-] [51
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [52
+] [38
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <spreadsheet.png, id=406, 886.31125pt x 631.35875pt>
+ (./x.vrb) [39
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb <spreadsheet.png, id=327, 886.31125pt x 631.35875pt>
 File: spreadsheet.png Graphic file (type png)
 
 <use spreadsheet.png>
 Package pdftex.def Info: spreadsheet.png used on input line 3.
 (pdftex.def)             Requested size: 308.06367pt x 219.4471pt.
-) [53
+) [40
 
  <./spreadsheet.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [54
+ (./x.vrb) [41
 
 ]
 \openout4 = `x.vrb'.
@@ -1829,7 +1756,7 @@ Package pdftex.def Info: spreadsheet.png used on input line 3.
  (./x.vrb
 File: test1.csv  (verbatim)
 )
-[55
+[42
 
 ]
 \openout4 = `x.vrb'.
@@ -1839,26 +1766,42 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 26.
-) [56
+) [43
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [57
+ (./x.vrb) [44
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (11.14359pt too high) detected at line 1686
+Overfull \vbox (11.14359pt too high) detected at line 1424
  []
 
-[58
+[45
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [59
+ (./x.vrb) [46
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb <viewview.png, id=369, 384.43625pt x 298.11375pt>
+File: viewview.png Graphic file (type png)
+
+<use viewview.png>
+Package pdftex.def Info: viewview.png used on input line 16.
+(pdftex.def)             Requested size: 205.37926pt x 159.26411pt.
+) [47
+
+ <./viewview.png>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [48
 
 ]
 \openout4 = `x.vrb'.
@@ -1869,7 +1812,7 @@ Overfull \hbox (76.2642pt too wide) in paragraph at lines 20--20
 er", "lower"[] 
  []
 
-) [60
+) [49
 
 ]
 \openout4 = `x.vrb'.
@@ -1886,7 +1829,7 @@ Overfull \hbox (15.07585pt too wide) in paragraph at lines 15--15
 :character[] 
  []
 
-) [61
+) [50
 
 ]
 \openout4 = `x.vrb'.
@@ -1897,35 +1840,35 @@ Overfull \hbox (1.53127pt too wide) in paragraph at lines 12--12
 obal.csv"[][] 
  []
 
-) [62
+) [51
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [63
+ (./x.vrb) [52
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <upload.png, id=470, 529.98pt x 249.93375pt>
+ (./x.vrb <upload.png, id=402, 529.98pt x 249.93375pt>
 File: upload.png Graphic file (type png)
 
 <use upload.png>
 Package pdftex.def Info: upload.png used on input line 8.
 (pdftex.def)             Requested size: 171.14764pt x 80.71265pt.
-) [64
+) [53
 
  <./upload.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<upload-file.png, id=476, 1062.97125pt x 638.385pt>
+<upload-file.png, id=408, 1062.97125pt x 638.385pt>
 File: upload-file.png Graphic file (type png)
  <use upload-file.png>
 Package pdftex.def Info: upload-file.png used on input line 9.
 (pdftex.def)             Requested size: 171.14764pt x 102.78658pt.
 )
-[65
+[54
 
  <./upload-file.png>]
 \openout4 = `x.vrb'.
@@ -1935,33 +1878,33 @@ Package pdftex.def Info: upload-file.png used on input line 9.
 
 File: sr.tmp  (verbatim)
 Package statrep Info: Processing Sascode block ra on input line 18.
-) [66
+) [55
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<sasstudio-results.png, id=487, 850.17625pt x 528.97626pt>
+<sasstudio-results.png, id=420, 850.17625pt x 528.97626pt>
 File: sasstudio-results.png Graphic file (type png)
 
 <use sasstudio-results.png>
 Package pdftex.def Info: sasstudio-results.png used on input line 8.
 (pdftex.def)             Requested size: 239.60567pt x 149.08092pt.
 )
-Overfull \vbox (5.0745pt too high) detected at line 1901
+Overfull \vbox (5.0745pt too high) detected at line 1680
  []
 
-[67
+[56
 
  <./sasstudio-results.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [68
+ (./x.vrb) [57
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [69
+ (./x.vrb) [58
 
 ]
 \openout4 = `x.vrb'.
@@ -1973,7 +1916,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 File: lst/rbb.lst  (verbatim)
 Package statrep Info: Processing output lst/rbb.lst on input line 18.
 Package statrep Info: Processing output  on input line 18.
-) [70
+) [59
 
 ]
 \openout4 = `x.vrb'.
@@ -1987,7 +1930,7 @@ Overfull \hbox (53.2695pt too wide) in paragraph at lines 8--8
 sv";[] 
  []
 
-) [71
+) [60
 
 ]
 \openout4 = `x.vrb'.
@@ -1996,7 +1939,7 @@ sv";[]
 File: lst/uaa.lst  (verbatim)
 Package statrep Info: Processing output lst/uaa.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [72
+) [61
 
 ]
 \openout4 = `x.vrb'.
@@ -2004,10 +1947,10 @@ Package statrep Info: Processing output  on input line 3.
  (./x.vrb
 File: /home/ken/coffee.txt  (verbatim)
 )
-Overfull \vbox (7.5269pt too high) detected at line 2011
+Overfull \vbox (7.5269pt too high) detected at line 1790
  []
 
-[73
+[62
 
 ]
 \openout4 = `x.vrb'.
@@ -2016,7 +1959,7 @@ Overfull \vbox (7.5269pt too high) detected at line 2011
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [74
+) [63
 
 ]
 \openout4 = `x.vrb'.
@@ -2027,39 +1970,39 @@ File: lst/rcc.lst  (verbatim)
 Package statrep Info: Processing output lst/rcc.lst on input line 10.
 Package statrep Info: Processing output  on input line 10.
 )
-Overfull \vbox (0.42686pt too high) detected at line 2047
+Overfull \vbox (0.42686pt too high) detected at line 1826
  []
 
-[75
+[64
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [76
+ (./x.vrb) [65
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (8.54782pt too high) detected at line 2119
+Overfull \vbox (8.54782pt too high) detected at line 1898
  []
 
-[77
+[66
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [78
+ (./x.vrb) [67
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [79
+ (./x.vrb) [68
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [80
+ (./x.vrb) [69
 
 ]
 \openout4 = `x.vrb'.
@@ -2072,7 +2015,7 @@ Overfull \hbox (14.12338pt too wide) in paragraph at lines 5--5
 [] 
  []
 
-) [81
+) [70
 
 ]
 \openout4 = `x.vrb'.
@@ -2081,23 +2024,41 @@ Overfull \hbox (14.12338pt too wide) in paragraph at lines 5--5
 File: lst/ubb.lst  (verbatim)
 Package statrep Info: Processing output lst/ubb.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [82
+) [71
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <excel.png, id=572, 459.7175pt x 524.96124pt>
-File: excel.png Graphic file (type png)
+ (./x.vrb) [72
 
-<use excel.png>
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 7.
+
+Overfull \hbox (1.85089pt too wide) in paragraph at lines 7--7
+[][]\OT1/cmtt/m/n/10 drugs[][]=[][]read_table[][]([][]"migraine.txt"[][])[][] 
+ []
+
+) [73
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb <excel.png, id=516, 459.7175pt x 524.96124pt>
+File: excel.png Graphic file (type png)
+ <use excel.png>
 Package pdftex.def Info: excel.png used on input line 6.
 (pdftex.def)             Requested size: 136.91603pt x 156.34412pt.
-) [83
+)
+[74
 
  <./excel.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [84
+ (./x.vrb) [75
 
 ]
 \openout4 = `x.vrb'.
@@ -2106,7 +2067,7 @@ Package pdftex.def Info: excel.png used on input line 6.
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [85
+) [76
 
 ]
 \openout4 = `x.vrb'.
@@ -2116,32 +2077,29 @@ Package statrep Info: Processing Sascode block re on input line 7.
 File: lst/ree.lst  (verbatim)
 Package statrep Info: Processing output lst/ree.lst on input line 11.
 Package statrep Info: Processing output  on input line 11.
-)
-[86
+) [77
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [87
+ (./x.vrb)
+[78
 
-] [88
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [89
+] [79
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 13.
-)
-Overfull \vbox (14.30464pt too high) detected at line 2350
+ (./x.vrb) [80
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb)
+Overfull \vbox (14.30464pt too high) detected at line 2195
  []
 
-[90
+[81
 
 ]
 \openout4 = `x.vrb'.
@@ -2218,7 +2176,7 @@ Overfull \hbox (16.80052pt too wide) in paragraph at lines 21--21
 4   24.97 51.62[] 
  []
 
-) [91
+) [82
 
 ]
 \openout4 = `x.vrb'.
@@ -2227,7 +2185,7 @@ Overfull \hbox (16.80052pt too wide) in paragraph at lines 21--21
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [92
+) [83
 
 ]
 \openout4 = `x.vrb'.
@@ -2238,10 +2196,10 @@ File: lst/gaa.lst  (verbatim)
 Package statrep Info: Processing output lst/gaa.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
 )
-Overfull \vbox (126.41576pt too high) detected at line 2409
+Overfull \vbox (126.41576pt too high) detected at line 2254
  []
 
-[93
+[84
 
 ]
 \openout4 = `x.vrb'.
@@ -2251,51 +2209,51 @@ Package statrep Info: Processing Sascode block gb on input line 3.
 File: lst/gbb.lst  (verbatim)
 Package statrep Info: Processing output lst/gbb.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
-) [94
+) [85
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [95
+ (./x.vrb) [86
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [96
+ (./x.vrb) [87
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-24-1.pdf, id=648, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-24-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-27-1.pdf, id=591, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-27-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-24-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-24-1.pdf used on input line 9.
+<use figure/unnamed-chunk-27-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-27-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [97
+) [88
 
- <./figure/unnamed-chunk-24-1.pdf>]
+ <./figure/unnamed-chunk-27-1.pdf>]
 \openout4 = `x.vrb'.
 
 
 (./x.vrb
 Package statrep Info: Processing Sascode block gd on input line 3.
- <png/gdd.png, id=660, 481.8pt x 361.35pt>
+ <png/gdd.png, id=603, 481.8pt x 361.35pt>
 File: png/gdd.png Graphic file (type png)
  <use png/gdd.png>
 Package pdftex.def Info: png/gdd.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gdd.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [98
+) [89
 
  <./png/gdd.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block ge on input line 3.
- <png/gee.png, id=666, 481.8pt x 361.35pt>
+ <png/gee.png, id=609, 481.8pt x 361.35pt>
 File: png/gee.png Graphic file (type png)
 
 <use png/gee.png>
@@ -2303,53 +2261,53 @@ Package pdftex.def Info: png/gee.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gee.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [99
+) [90
 
  <./png/gee.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-25-1.pdf, id=672, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-25-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-28-1.pdf, id=615, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-28-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-25-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-25-1.pdf used on input line 9.
+<use figure/unnamed-chunk-28-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-28-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [100
+) [91
 
- <./figure/unnamed-chunk-25-1.pdf>]
+ <./figure/unnamed-chunk-28-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-26-1.pdf, id=683, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-26-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-29-1.pdf, id=627, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-29-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-26-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-26-1.pdf used on input line 12.
+<use figure/unnamed-chunk-29-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-29-1.pdf used on input line 12.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [101
+) [92
 
- <./figure/unnamed-chunk-26-1.pdf>]
+ <./figure/unnamed-chunk-29-1.pdf>]
 \openout4 = `x.vrb'.
 
 
 (./x.vrb
 Package statrep Info: Processing Sascode block gf on input line 3.
- <png/gff.png, id=694, 481.8pt x 361.35pt>
+ <png/gff.png, id=638, 481.8pt x 361.35pt>
 File: png/gff.png Graphic file (type png)
  <use png/gff.png>
 Package pdftex.def Info: png/gff.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gff.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [102
+) [93
 
  <./png/gff.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block gg on input line 5.
- <png/ggg.png, id=700, 481.8pt x 361.35pt>
+ <png/ggg.png, id=644, 481.8pt x 361.35pt>
 File: png/ggg.png Graphic file (type png)
 
 <use png/ggg.png>
@@ -2358,60 +2316,60 @@ Package pdftex.def Info: png/ggg.png used on input line 10.
 Package statrep Info: Processing graphic png/ggg.png on input line 10.
 Package statrep Info: Processing graphic  on input line 10.
 )
-Overfull \vbox (10.0815pt too high) detected at line 2553
+Overfull \vbox (10.0815pt too high) detected at line 2398
  []
 
-[103
+[94
 
  <./png/ggg.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-27-1.pdf, id=707, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-27-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-30-1.pdf, id=650, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-30-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-27-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-27-1.pdf used on input line 8.
+<use figure/unnamed-chunk-30-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-30-1.pdf used on input line 8.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [104
+) [95
 
- <./figure/unnamed-chunk-27-1.pdf>]
+ <./figure/unnamed-chunk-30-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-28-1.pdf, id=719, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-28-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-31-1.pdf, id=662, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-31-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-28-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-28-1.pdf used on input line 11.
+<use figure/unnamed-chunk-31-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-31-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 )
-Overfull \vbox (2.36575pt too high) detected at line 2581
+Overfull \vbox (2.36575pt too high) detected at line 2426
  []
 
-[105
+[96
 
- <./figure/unnamed-chunk-28-1.pdf>]
+ <./figure/unnamed-chunk-31-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block gh on input line 3.
 
-<png/ghh.png, id=731, 481.8pt x 361.35pt>
+<png/ghh.png, id=674, 481.8pt x 361.35pt>
 File: png/ghh.png Graphic file (type png)
  <use png/ghh.png>
 Package pdftex.def Info: png/ghh.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/ghh.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [106
+) [97
 
  <./png/ghh.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block gj on input line 3.
- <png/gjj.png, id=737, 481.8pt x 361.35pt>
+ <png/gjj.png, id=681, 481.8pt x 361.35pt>
 File: png/gjj.png Graphic file (type png)
 
 <use png/gjj.png>
@@ -2420,111 +2378,111 @@ Package pdftex.def Info: png/gjj.png used on input line 9.
 Package statrep Info: Processing graphic png/gjj.png on input line 9.
 Package statrep Info: Processing graphic  on input line 9.
 )
-Overfull \vbox (3.2815pt too high) detected at line 2605
+Overfull \vbox (3.2815pt too high) detected at line 2450
  []
 
-[107
+[98
 
  <./png/gjj.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-29-1.pdf, id=744, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-29-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-32-1.pdf, id=687, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-32-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-29-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-29-1.pdf used on input line 10.
+<use figure/unnamed-chunk-32-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-32-1.pdf used on input line 10.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [108
+) [99
 
- <./figure/unnamed-chunk-29-1.pdf>]
+ <./figure/unnamed-chunk-32-1.pdf>]
 \openout4 = `x.vrb'.
 
 
 (./x.vrb
 Package statrep Info: Processing Sascode block gi on input line 3.
- <png/gii.png, id=759, 481.8pt x 361.35pt>
+ <png/gii.png, id=702, 481.8pt x 361.35pt>
 File: png/gii.png Graphic file (type png)
  <use png/gii.png>
 Package pdftex.def Info: png/gii.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gii.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [109
+) [100
 
  <./png/gii.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-30-1.pdf, id=766, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-30-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-33-1.pdf, id=708, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-33-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-30-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-30-1.pdf used on input line 10.
+<use figure/unnamed-chunk-33-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-33-1.pdf used on input line 10.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [110
+) [101
 
- <./figure/unnamed-chunk-30-1.pdf>]
+ <./figure/unnamed-chunk-33-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-31-1.pdf, id=778, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-31-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-34-1.pdf, id=720, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-34-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-31-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-31-1.pdf used on input line 10.
+<use figure/unnamed-chunk-34-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-34-1.pdf used on input line 10.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [111
+) [102
 
- <./figure/unnamed-chunk-31-1.pdf>]
+ <./figure/unnamed-chunk-34-1.pdf>]
 \openout4 = `x.vrb'.
 
 
 (./x.vrb
 Package statrep Info: Processing Sascode block gk on input line 3.
- <png/gkk.png, id=790, 481.8pt x 361.35pt>
+ <png/gkk.png, id=732, 481.8pt x 361.35pt>
 File: png/gkk.png Graphic file (type png)
  <use png/gkk.png>
 Package pdftex.def Info: png/gkk.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gkk.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [112
+) [103
 
  <./png/gkk.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block gl on input line 5.
- <png/gll.png, id=796, 481.8pt x 361.35pt>
+ <png/gll.png, id=739, 481.8pt x 361.35pt>
 File: png/gll.png Graphic file (type png)
 
 <use png/gll.png>
 Package pdftex.def Info: png/gll.png used on input line 11.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gll.png on input line 11.
- <png/gll1.png, id=797, 481.8pt x 361.35pt>
+ <png/gll1.png, id=740, 481.8pt x 361.35pt>
 File: png/gll1.png Graphic file (type png)
 
 <use png/gll1.png>
 Package pdftex.def Info: png/gll1.png used on input line 11.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gll1.png on input line 11.
- <png/gll2.png, id=798, 481.8pt x 361.35pt>
+ <png/gll2.png, id=741, 481.8pt x 361.35pt>
 File: png/gll2.png Graphic file (type png)
 
 <use png/gll2.png>
 Package pdftex.def Info: png/gll2.png used on input line 11.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gll2.png on input line 11.
- <png/gll3.png, id=799, 481.8pt x 361.35pt>
+ <png/gll3.png, id=742, 481.8pt x 361.35pt>
 File: png/gll3.png Graphic file (type png)
 
 <use png/gll3.png>
 Package pdftex.def Info: png/gll3.png used on input line 11.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/gll3.png on input line 11.
- <png/gll4.png, id=800, 481.8pt x 361.35pt>
+ <png/gll4.png, id=743, 481.8pt x 361.35pt>
 File: png/gll4.png Graphic file (type png)
 
 <use png/gll4.png>
@@ -2533,80 +2491,80 @@ Package pdftex.def Info: png/gll4.png used on input line 11.
 Package statrep Info: Processing graphic png/gll4.png on input line 11.
 Package statrep Info: Processing graphic  on input line 11.
 )
-Overfull \vbox (762.69987pt too high) detected at line 2686
+Overfull \vbox (762.69987pt too high) detected at line 2531
  []
 
-[113
+[104
 
  <./png/gll.png (PNG copy)> <./png/gll1.png (PNG copy)> <./png/gll2.png (PNG co
 py)> <./png/gll3.png (PNG copy)> <./png/gll4.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-32-1.pdf, id=806, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-32-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-35-1.pdf, id=750, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-35-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-32-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-32-1.pdf used on input line 10.
+<use figure/unnamed-chunk-35-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-35-1.pdf used on input line 10.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [114
+) [105
 
- <./figure/unnamed-chunk-32-1.pdf>]
+ <./figure/unnamed-chunk-35-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-33-1.pdf, id=818, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-33-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-36-1.pdf, id=762, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-36-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-33-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-33-1.pdf used on input line 13.
+<use figure/unnamed-chunk-36-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-36-1.pdf used on input line 13.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 )
-Overfull \vbox (5.1156pt too high) detected at line 2721
+Overfull \vbox (5.1156pt too high) detected at line 2566
  []
 
-[115
+[106
 
- <./figure/unnamed-chunk-33-1.pdf>] [116
+ <./figure/unnamed-chunk-36-1.pdf>] [107
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [117
+ (./x.vrb) [108
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-[118
+[109
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [119
+ (./x.vrb) [110
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [120
+ (./x.vrb) [111
 
-] [121
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [122
+] [112
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [123
+ (./x.vrb) [113
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [114
 
 ]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [124
+(./x.vrb) [115
 
 ]
 \openout4 = `x.vrb'.
@@ -2617,49 +2575,43 @@ Overfull \hbox (1.85089pt too wide) in paragraph at lines 34--34
  []
 
 )
-Overfull \vbox (4.93114pt too high) detected at line 2952
+Overfull \vbox (4.93114pt too high) detected at line 2798
  []
 
-[125
+[116
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [126
+ (./x.vrb) [117
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-Overfull \hbox (0.90102pt too wide) in paragraph at lines 15--15
-[]\OT1/cmtt/m/n/9 ##        Sex      Sport        RCC        WCC         Hc    
-     Hg[] 
+Overfull \hbox (43.42552pt too wide) in paragraph at lines 13--13
+[]\OT1/cmtt/m/n/9 ##         RCC      WCC       Hc       Hg     Ferr      BMI  
+    SSF  ^^R%Bfat^^R[] 
  []
 
 
-Overfull \hbox (0.90102pt too wide) in paragraph at lines 16--16
-[]\OT1/cmtt/m/n/9 ##         NA         NA  0.4579764  1.8005490  3.6629894  1.
-3624515[] 
+Overfull \hbox (43.42552pt too wide) in paragraph at lines 14--14
+[]\OT1/cmtt/m/n/9 ##       <dbl>    <dbl>    <dbl>    <dbl>    <dbl>    <dbl>  
+  <dbl>    <dbl>[] 
  []
 
 
-Overfull \hbox (0.90102pt too wide) in paragraph at lines 17--17
-[]\OT1/cmtt/m/n/9 ##       Ferr        BMI        SSF      %Bfat        LBM    
-     Ht[] 
+Overfull \hbox (43.42552pt too wide) in paragraph at lines 15--15
+[]\OT1/cmtt/m/n/9 ## 1 0.4579764 1.800549 3.662989 1.362451 47.50124 2.863933 3
+2.56533 6.189826[] 
  []
 
-
-Overfull \hbox (0.90102pt too wide) in paragraph at lines 18--18
-[]\OT1/cmtt/m/n/9 ## 47.5012388  2.8639328 32.5653330  6.1898260 13.0701972  9.
-7344945[] 
- []
-
-) [127
+) [118
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [128
+ (./x.vrb) [119
 
 ]
 \openout4 = `x.vrb'.
@@ -2668,7 +2620,7 @@ Overfull \hbox (0.90102pt too wide) in paragraph at lines 18--18
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [129
+) [120
 
 ]
 \openout4 = `x.vrb'.
@@ -2678,7 +2630,7 @@ Package statrep Info: Processing Sascode block sa on input line 3.
 File: lst/saa.lst  (verbatim)
 Package statrep Info: Processing output lst/saa.lst on input line 8.
 Package statrep Info: Processing output  on input line 8.
-) [130
+) [121
 
 ]
 \openout4 = `x.vrb'.
@@ -2688,7 +2640,7 @@ Package statrep Info: Processing Sascode block sb on input line 6.
 File: lst/sbb.lst  (verbatim)
 Package statrep Info: Processing output lst/sbb.lst on input line 12.
 Package statrep Info: Processing output  on input line 12.
-) [131
+) [122
 
 ]
 \openout4 = `x.vrb'.
@@ -2696,7 +2648,7 @@ Package statrep Info: Processing output  on input line 12.
 
 (./x.vrb
 Package statrep Info: Processing Sascode block sc on input line 7.
-) [132
+) [123
 
 ]
 \openout4 = `x.vrb'.
@@ -2706,10 +2658,10 @@ File: lst/scc.lst  (verbatim)
 Package statrep Info: Processing output lst/scc.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
 )
-Overfull \vbox (30.01575pt too high) detected at line 3107
+Overfull \vbox (30.01575pt too high) detected at line 2960
  []
 
-[133
+[124
 
 ]
 \openout4 = `x.vrb'.
@@ -2719,7 +2671,7 @@ Package statrep Info: Processing Sascode block sd on input line 3.
 File: lst/sdd.lst  (verbatim)
 Package statrep Info: Processing output lst/sdd.lst on input line 8.
 Package statrep Info: Processing output  on input line 8.
-) [134
+) [125
 
 ]
 \openout4 = `x.vrb'.
@@ -2730,24 +2682,24 @@ File: lst/see.lst  (verbatim)
 Package statrep Info: Processing output lst/see.lst on input line 10.
 Package statrep Info: Processing output  on input line 10.
 )
-Overfull \vbox (29.61864pt too high) detected at line 3133
+Overfull \vbox (29.61864pt too high) detected at line 2986
  []
 
-[135
+[126
 
-] [136
+] [127
 
-] [137
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [138
+] [128
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [139
+ (./x.vrb) [129
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [130
 
 ]
 \openout4 = `x.vrb'.
@@ -2824,89 +2776,88 @@ Overfull \hbox (12.07558pt too wide) in paragraph at lines 21--21
 L      W     7[] 
  []
 
-) [140
+) [131
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [141
+ (./x.vrb) [132
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-46-1.pdf, id=970, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-46-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-50-1.pdf, id=913, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-50-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-46-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-46-1.pdf used on input line 8.
+<use figure/unnamed-chunk-50-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-50-1.pdf used on input line 8.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [142
+) [133
 
- <./figure/unnamed-chunk-46-1.pdf>]
+ <./figure/unnamed-chunk-50-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [143
+(./x.vrb) [134
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [144
+ (./x.vrb) [135
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [145
+ (./x.vrb) [136
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [146
+ (./x.vrb) [137
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-[147
+[138
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [148
+ (./x.vrb) [139
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [149
+ (./x.vrb) [140
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<fisher.jpg, id=1023, 81.906pt x 120.45pt>
+<fisher.jpg, id=966, 81.906pt x 120.45pt>
 File: fisher.jpg Graphic file (type jpg)
  <use fisher.jpg>
 Package pdftex.def Info: fisher.jpg used on input line 5.
 (pdftex.def)             Requested size: 144.54pt x 212.5973pt.
-) [150
+) [141
 
  <./fisher.jpg>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <fisher1.png, id=1029, 436.63126pt x 105.39375pt>
+ (./x.vrb <fisher1.png, id=972, 436.63126pt x 105.39375pt>
 File: fisher1.png Graphic file (type png)
-
-<use fisher1.png>
+ <use fisher1.png>
 Package pdftex.def Info: fisher1.png used on input line 7.
 (pdftex.def)             Requested size: 308.06367pt x 74.36049pt.
- <fisher2.png, id=1030, 438.63875pt x 145.54375pt>
-File: fisher2.png Graphic file (type png)
 
-<use fisher2.png>
+<fisher2.png, id=973, 438.63875pt x 145.54375pt>
+File: fisher2.png Graphic file (type png)
+ <use fisher2.png>
 Package pdftex.def Info: fisher2.png used on input line 11.
 (pdftex.def)             Requested size: 308.06367pt x 102.2197pt.
-) [151
+) [142
 
  <./fisher1.png> <./fisher2.png>]
 \openout4 = `x.vrb'.
@@ -2917,32 +2868,32 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 6.
 
-) [152
+) [143
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [153
+ (./x.vrb) [144
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<StudentTTable.png, id=1047, 641.39626pt x 975.645pt>
+<StudentTTable.png, id=989, 641.39626pt x 975.645pt>
 File: StudentTTable.png Graphic file (type png)
  <use StudentTTable.png>
 Package pdftex.def Info: StudentTTable.png used on input line 5.
 (pdftex.def)             Requested size: 163.089pt x 248.08849pt.
 )
-Overfull \vbox (23.61537pt too high) detected at line 3553
+Overfull \vbox (23.61537pt too high) detected at line 3406
  []
 
-[154
+[145
 
  <./StudentTTable.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [155
+ (./x.vrb) [146
 
 ]
 \openout4 = `x.vrb'.
@@ -2951,7 +2902,7 @@ Overfull \vbox (23.61537pt too high) detected at line 3553
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [156
+) [147
 
 ]
 \openout4 = `x.vrb'.
@@ -2963,7 +2914,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <6> not available
 File: lst/izaa.lst  (verbatim)
 Package statrep Info: Processing output lst/izaa.lst on input line 10.
 Package statrep Info: Processing output  on input line 10.
-) [157
+) [148
 
 ]
 \openout4 = `x.vrb'.
@@ -2978,34 +2929,34 @@ Package statrep Info: Processing output lst/iaa1.lst on input line 7.
 File: lst/iaa2.lst  (verbatim)
 Package statrep Info: Processing output lst/iaa2.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
-) [158
+) [149
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block id on input line 6.
-) [159
+) [150
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/idd.png, id=1081, 481.8pt x 361.35pt>
+<png/idd.png, id=1024, 481.8pt x 361.35pt>
 File: png/idd.png Graphic file (type png)
  <use png/idd.png>
 Package pdftex.def Info: png/idd.png used on input line 3.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/idd.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
-) [160
+) [151
 
  <./png/idd.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [161
+ (./x.vrb) [152
 
-] [162
+] [153
 
 ]
 \openout4 = `x.vrb'.
@@ -3015,7 +2966,7 @@ Package statrep Info: Processing graphic  on input line 3.
 
 File: sr.tmp  (verbatim)
 Package statrep Info: Processing Sascode block ix on input line 18.
-) [163
+) [154
 
 ]
 \openout4 = `x.vrb'.
@@ -3025,15 +2976,15 @@ File: lst/ixx.lst  (verbatim)
 Package statrep Info: Processing output lst/ixx.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
 )
-Overfull \vbox (96.79352pt too high) detected at line 3750
+Overfull \vbox (96.79352pt too high) detected at line 3603
  []
 
-[164
+[155
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [165
+ (./x.vrb) [156
 
 ]
 \openout4 = `x.vrb'.
@@ -3043,7 +2994,7 @@ Package statrep Info: Processing Sascode block if on input line 3.
 File: lst/iff.lst  (verbatim)
 Package statrep Info: Processing output lst/iff.lst on input line 9.
 Package statrep Info: Processing output  on input line 9.
-) [166
+) [157
 
 ]
 \openout4 = `x.vrb'.
@@ -3051,16 +3002,16 @@ Package statrep Info: Processing output  on input line 9.
  (./x.vrb
 Package statrep Info: Processing Sascode block ifx on input line 3.
 
-<png/ifxx.png, id=1118, 481.8pt x 361.35pt>
+<png/ifxx.png, id=1062, 481.8pt x 361.35pt>
 File: png/ifxx.png Graphic file (type png)
  <use png/ifxx.png>
 Package pdftex.def Info: png/ifxx.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/ifxx.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [167
+) [158
 
- <./png/ifxx.png (PNG copy)>] [168
+ <./png/ifxx.png (PNG copy)>] [159
 
 ]
 \openout4 = `x.vrb'.
@@ -3070,37 +3021,37 @@ Package statrep Info: Processing Sascode block ihy on input line 3.
 File: lst/ihyy.lst  (verbatim)
 Package statrep Info: Processing output lst/ihyy.lst on input line 9.
 Package statrep Info: Processing output  on input line 9.
-) [169
+) [160
 
-] [170
+] [161
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [171
+ (./x.vrb) [162
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-[172
+[163
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <figure/unnamed-chunk-54-1.pdf, id=1151, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-54-1.pdf Graphic file (type pdf)
+ (./x.vrb <figure/unnamed-chunk-58-1.pdf, id=1094, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-58-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-54-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-54-1.pdf used on input line 9.
+<use figure/unnamed-chunk-58-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-58-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [173
+) [164
 
- <./figure/unnamed-chunk-54-1.pdf>]
+ <./figure/unnamed-chunk-58-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [174
+(./x.vrb) [165
 
 ]
 \openout4 = `x.vrb'.
@@ -3111,7 +3062,7 @@ Overfull \hbox (59.01814pt too wide) in paragraph at lines 18--18
 ss than 0[] 
  []
 
-) [175
+) [166
 
 ]
 \openout4 = `x.vrb'.
@@ -3123,26 +3074,26 @@ qual to 0[]
  []
 
 )
-Overfull \vbox (1.07137pt too high) detected at line 4002
+Overfull \vbox (1.07137pt too high) detected at line 3855
  []
 
-[176
+[167
 
-] [177
+] [168
 
-] [178
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [179
-
-] [180
+] [169
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [181
+ (./x.vrb) [170
+
+] [171
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [172
 
 ]
 \openout4 = `x.vrb'.
@@ -3160,15 +3111,15 @@ Overfull \hbox (83.85123pt too wide) in paragraph at lines 15--15
  []
 
 )
-Overfull \vbox (26.44908pt too high) detected at line 4188
+Overfull \vbox (26.44908pt too high) detected at line 4041
  []
 
-[182
+[173
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [183
+ (./x.vrb) [174
 
 ]
 \openout4 = `x.vrb'.
@@ -3181,7 +3132,7 @@ File: omscmtt.fd
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-) [184
+) [175
 
 ]
 \openout4 = `x.vrb'.
@@ -3192,19 +3143,19 @@ Overfull \hbox (128.0024pt too wide) in paragraph at lines 12--12
 014665480 0.160853544[] 
  []
 
-) [185
+) [176
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [186
+ (./x.vrb) [177
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block pb on input line 9.
-) [187
+) [178
 
 ]
 \openout4 = `x.vrb'.
@@ -3215,30 +3166,30 @@ Package statrep Info: Processing output lst/pbb.lst on input line 3.
 File: lst/pbb1.lst  (verbatim)
 Package statrep Info: Processing output lst/pbb1.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [188
+) [179
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [189
+ (./x.vrb) [180
 
 ]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [190
+(./x.vrb) [181
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [191
+ (./x.vrb) [182
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block pc on input line 6.
-) [192
+) [183
 
 ]
 \openout4 = `x.vrb'.
@@ -3250,35 +3201,35 @@ File: lst/pcc1.lst  (verbatim)
 Package statrep Info: Processing output lst/pcc1.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
 )
-Overfull \vbox (7.456pt too high) detected at line 4439
+Overfull \vbox (7.456pt too high) detected at line 4292
  []
 
-[193
+[184
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [194
+ (./x.vrb) [185
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block pd on input line 4.
-) [195
+) [186
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/pdd.png, id=1276, 481.8pt x 361.35pt>
+<png/pdd.png, id=1219, 481.8pt x 361.35pt>
 File: png/pdd.png Graphic file (type png)
  <use png/pdd.png>
 Package pdftex.def Info: png/pdd.png used on input line 3.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/pdd.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
-) [196
+) [187
 
  <./png/pdd.png (PNG copy)>]
 \openout4 = `x.vrb'.
@@ -3289,82 +3240,82 @@ Overfull \hbox (122.25371pt too wide) in paragraph at lines 27--27
  0.9677886 0.9847848[] 
  []
 
-) [197
+) [188
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [198
+ (./x.vrb) [189
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-72-1.pdf, id=1293, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-72-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-76-1.pdf, id=1236, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-76-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-72-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-72-1.pdf used on input line 9.
+<use figure/unnamed-chunk-76-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-76-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [199
+) [190
 
- <./figure/unnamed-chunk-72-1.pdf>]
+ <./figure/unnamed-chunk-76-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [200
+(./x.vrb) [191
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (40.41867pt too high) detected at line 4619
+Overfull \vbox (40.41867pt too high) detected at line 4472
  []
 
-[201
+[192
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [202
+ (./x.vrb) [193
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-78-1.pdf, id=1321, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-78-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-82-1.pdf, id=1264, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-82-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-78-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-78-1.pdf used on input line 9.
+<use figure/unnamed-chunk-82-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-82-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [203
+) [194
 
- <./figure/unnamed-chunk-78-1.pdf>]
+ <./figure/unnamed-chunk-82-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [204
+(./x.vrb) [195
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block pe on input line 3.
-) [205
+) [196
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/pee.png, id=1344, 481.8pt x 361.35pt>
+<png/pee.png, id=1287, 481.8pt x 361.35pt>
 File: png/pee.png Graphic file (type png)
  <use png/pee.png>
 Package pdftex.def Info: png/pee.png used on input line 3.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/pee.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
-) [206
+) [197
 
  <./png/pee.png (PNG copy)>]
 \openout4 = `x.vrb'.
@@ -3374,30 +3325,30 @@ Package statrep Info: Processing Sascode block ph on input line 9.
 File: lst/phh.lst  (verbatim)
 Package statrep Info: Processing output lst/phh.lst on input line 15.
 Package statrep Info: Processing output  on input line 15.
-) [207
+) [198
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [208
+ (./x.vrb) [199
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block pf on input line 3.
-) [209
+) [200
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-[210
+[201
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/pff.png, id=1370, 481.8pt x 361.35pt>
+ (./x.vrb <png/pff.png, id=1314, 481.8pt x 361.35pt>
 File: png/pff.png Graphic file (type png)
  <use png/pff.png>
 Package pdftex.def Info: png/pff.png used on input line 3.
@@ -3405,37 +3356,37 @@ Package pdftex.def Info: png/pff.png used on input line 3.
 Package statrep Info: Processing graphic png/pff.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
 )
-[211
+[202
 
  <./png/pff.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [212
+ (./x.vrb) [203
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [213
+ (./x.vrb) [204
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-80-1.pdf, id=1387, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-80-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-84-1.pdf, id=1330, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-84-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-80-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-80-1.pdf used on input line 8.
+<use figure/unnamed-chunk-84-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-84-1.pdf used on input line 8.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [214
+) [205
 
- <./figure/unnamed-chunk-80-1.pdf>]
+ <./figure/unnamed-chunk-84-1.pdf>]
 \openout4 = `x.vrb'.
 
 
 (./x.vrb
 Package statrep Info: Processing Sascode block il on input line 15.
-) [215
+) [206
 
 ]
 \openout4 = `x.vrb'.
@@ -3446,14 +3397,14 @@ Package statrep Info: Processing output lst/ill.lst on input line 3.
 File: lst/ill1.lst  (verbatim)
 Package statrep Info: Processing output lst/ill1.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [216
+) [207
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block im on input line 8.
-) [217
+) [208
 
 ]
 \openout4 = `x.vrb'.
@@ -3464,13 +3415,13 @@ Package statrep Info: Processing output lst/imm.lst on input line 5.
 File: lst/imm1.lst  (verbatim)
 Package statrep Info: Processing output lst/imm1.lst on input line 5.
 Package statrep Info: Processing output  on input line 5.
-) [218
+) [209
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-[219
+[210
 
 ]
 \openout4 = `x.vrb'.
@@ -3487,7 +3438,7 @@ Overfull \hbox (2.62596pt too wide) in paragraph at lines 17--17
 , 2[] 
  []
 
-) [220
+) [211
 
 ]
 \openout4 = `x.vrb'.
@@ -3498,7 +3449,7 @@ Overfull \hbox (54.36415pt too wide) in paragraph at lines 16--16
 t equal to 0[] 
  []
 
-) [221
+) [212
 
 ]
 \openout4 = `x.vrb'.
@@ -3509,12 +3460,12 @@ Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
 t equal to 0[] 
  []
 
-) [222
+) [213
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [223
+ (./x.vrb) [214
 
 ]
 \openout4 = `x.vrb'.
@@ -3524,7 +3475,7 @@ t equal to 0[]
 
 File: sr.tmp  (verbatim)
 Package statrep Info: Processing Sascode block it on input line 13.
-) [224
+) [215
 
 ]
 \openout4 = `x.vrb'.
@@ -3533,7 +3484,7 @@ Package statrep Info: Processing Sascode block it on input line 13.
 File: lst/itt.lst  (verbatim)
 Package statrep Info: Processing output lst/itt.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [225
+) [216
 
 ]
 \openout4 = `x.vrb'.
@@ -3545,7 +3496,7 @@ Package statrep Info: Processing output lst/iuu.lst on input line 9.
 File: lst/iuu1.lst  (verbatim)
 Package statrep Info: Processing output lst/iuu1.lst on input line 9.
 Package statrep Info: Processing output  on input line 9.
-) [226
+) [217
 
 ]
 \openout4 = `x.vrb'.
@@ -3558,17 +3509,17 @@ Package statrep Info: Processing output lst/ivaa.lst on input line 9.
 File: lst/ivaa1.lst  (verbatim)
 Package statrep Info: Processing output lst/ivaa1.lst on input line 9.
 Package statrep Info: Processing output  on input line 9.
-) [227
+) [218
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [228
+ (./x.vrb) [219
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [229
+ (./x.vrb) [220
 
 ]
 \openout4 = `x.vrb'.
@@ -3577,7 +3528,7 @@ Package statrep Info: Processing output  on input line 9.
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [230
+) [221
 
 ]
 \openout4 = `x.vrb'.
@@ -3588,10 +3539,10 @@ File: lst/ijj.lst  (verbatim)
 Package statrep Info: Processing output lst/ijj.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
 )
-Overfull \vbox (19.19353pt too high) detected at line 5149
+Overfull \vbox (19.19353pt too high) detected at line 5002
  []
 
-[231
+[222
 
 ]
 \openout4 = `x.vrb'.
@@ -3605,37 +3556,37 @@ Package statrep Info: Processing output lst/ikk1.lst on input line 8.
 File: lst/ikk2.lst  (verbatim)
 Package statrep Info: Processing output lst/ikk2.lst on input line 8.
 Package statrep Info: Processing output  on input line 8.
-) [232
+) [223
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block il on input line 9.
-) [233
+) [224
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/ill.png, id=1498, 481.8pt x 361.35pt>
+<png/ill.png, id=1442, 481.8pt x 361.35pt>
 File: png/ill.png Graphic file (type png)
  <use png/ill.png>
 Package pdftex.def Info: png/ill.png used on input line 3.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/ill.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
-) [234
+) [225
 
  <./png/ill.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [235
+ (./x.vrb) [226
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [236
+ (./x.vrb) [227
 
 ]
 \openout4 = `x.vrb'.
@@ -3658,7 +3609,7 @@ Overfull \hbox (18.77733pt too wide) in paragraph at lines 27--27
 10[] 
  []
 
-) [237
+) [228
 
 ]
 \openout4 = `x.vrb'.
@@ -3670,37 +3621,37 @@ Package statrep Info: Processing output lst/imm.lst on input line 13.
 File: lst/imm1.lst  (verbatim)
 Package statrep Info: Processing output lst/imm1.lst on input line 13.
 Package statrep Info: Processing output  on input line 13.
-) [238
+) [229
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block in on input line 20.
-) [239
+) [230
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/inn.png, id=1530, 481.8pt x 361.35pt>
+<png/inn.png, id=1474, 481.8pt x 361.35pt>
 File: png/inn.png Graphic file (type png)
  <use png/inn.png>
 Package pdftex.def Info: png/inn.png used on input line 3.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/inn.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
-) [240
+) [231
 
  <./png/inn.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [241
+ (./x.vrb) [232
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [242
+ (./x.vrb) [233
 
 ]
 \openout4 = `x.vrb'.
@@ -3711,12 +3662,12 @@ Overfull \hbox (1.53127pt too wide) in paragraph at lines 31--31
 ])[] []%>%[] []select[][](n)[] []%>%[] []slice[][]([][]2[][])[] []%>%[][] 
  []
 
-) [243
+) [234
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [244
+ (./x.vrb) [235
 
 ]
 \openout4 = `x.vrb'.
@@ -3731,47 +3682,128 @@ dian)[] []%>%[] []select[][](n)[] []%>%[] []slice[][]([][]2[][])[] []%>%[][]
  []
 
 )
-Overfull \vbox (10.72691pt too high) detected at line 5512
+Overfull \vbox (10.72691pt too high) detected at line 5365
  []
 
-[245
+[236
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [246
+ (./x.vrb) [237
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (17.54565pt too high) detected at line 5590
+Overfull \vbox (17.54565pt too high) detected at line 5443
  []
 
-[247
+[238
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (23.06032pt too high) detected at line 5622
+Overfull \vbox (23.06032pt too high) detected at line 5475
  []
 
-[248
+[239
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [249
+ (./x.vrb) [240
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (0.53114pt too high) detected at line 5690
+Overfull \vbox (0.53114pt too high) detected at line 5543
  []
 
-[250
+[241
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [242
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [243
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+\openout6 = `sr.tmp'.
+
+File: sr.tmp  (verbatim)
+) [244
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Package statrep Info: Processing Sascode block iz on input line 3.
+File: lst/izz.lst  (verbatim)
+Package statrep Info: Processing output lst/izz.lst on input line 7.
+Package statrep Info: Processing output  on input line 7.
+) [245
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Package statrep Info: Processing Sascode block ic on input line 3.
+File: lst/icc.lst  (verbatim)
+Package statrep Info: Processing output lst/icc.lst on input line 8.
+File: lst/icc1.lst  (verbatim)
+Package statrep Info: Processing output lst/icc1.lst on input line 8.
+File: lst/icc2.lst  (verbatim)
+Package statrep Info: Processing output lst/icc2.lst on input line 8.
+Package statrep Info: Processing output  on input line 8.
+) [246
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [247
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+\openout6 = `sr.tmp'.
+
+File: sr.tmp  (verbatim)
+) [248
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Package statrep Info: Processing Sascode block iy on input line 2.
+File: lst/iyy.lst  (verbatim)
+Package statrep Info: Processing output lst/iyy.lst on input line 6.
+Package statrep Info: Processing output  on input line 6.
+) [249
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Package statrep Info: Processing Sascode block id on input line 4.
+File: lst/idd.lst  (verbatim)
+Package statrep Info: Processing output lst/idd.lst on input line 13.
+File: lst/idd1.lst  (verbatim)
+Package statrep Info: Processing output lst/idd1.lst on input line 13.
+File: lst/idd2.lst  (verbatim)
+Package statrep Info: Processing output lst/idd2.lst on input line 13.
+Package statrep Info: Processing output  on input line 13.
+) [250
 
 ]
 \openout4 = `x.vrb'.
@@ -3787,93 +3819,12 @@ Overfull \vbox (0.53114pt too high) detected at line 5690
 \openout4 = `x.vrb'.
 
  (./x.vrb
-\openout6 = `sr.tmp'.
-
-File: sr.tmp  (verbatim)
-) [253
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-Package statrep Info: Processing Sascode block iz on input line 3.
-File: lst/izz.lst  (verbatim)
-Package statrep Info: Processing output lst/izz.lst on input line 7.
-Package statrep Info: Processing output  on input line 7.
-) [254
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-Package statrep Info: Processing Sascode block ic on input line 3.
-File: lst/icc.lst  (verbatim)
-Package statrep Info: Processing output lst/icc.lst on input line 8.
-File: lst/icc1.lst  (verbatim)
-Package statrep Info: Processing output lst/icc1.lst on input line 8.
-File: lst/icc2.lst  (verbatim)
-Package statrep Info: Processing output lst/icc2.lst on input line 8.
-Package statrep Info: Processing output  on input line 8.
-) [255
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [256
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-\openout6 = `sr.tmp'.
-
-File: sr.tmp  (verbatim)
-) [257
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-Package statrep Info: Processing Sascode block iy on input line 2.
-File: lst/iyy.lst  (verbatim)
-Package statrep Info: Processing output lst/iyy.lst on input line 6.
-Package statrep Info: Processing output  on input line 6.
-) [258
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-Package statrep Info: Processing Sascode block id on input line 4.
-File: lst/idd.lst  (verbatim)
-Package statrep Info: Processing output lst/idd.lst on input line 13.
-File: lst/idd1.lst  (verbatim)
-Package statrep Info: Processing output lst/idd1.lst on input line 13.
-File: lst/idd2.lst  (verbatim)
-Package statrep Info: Processing output lst/idd2.lst on input line 13.
-Package statrep Info: Processing output  on input line 13.
-) [259
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [260
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [261
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
 Overfull \hbox (54.36415pt too wide) in paragraph at lines 15--15
 []\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
 t equal to 0[] 
  []
 
-) [262
+) [253
 
 ]
 \openout4 = `x.vrb'.
@@ -3885,59 +3836,59 @@ Overfull \hbox (24.52574pt too wide) in paragraph at lines 14--14
  []
 
 )
-Overfull \vbox (25.7769pt too high) detected at line 5955
+Overfull \vbox (25.7769pt too high) detected at line 5808
  []
 
-[263
+[254
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [264
+ (./x.vrb) [255
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-109-1.pdf, id=1661, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-109-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-113-1.pdf, id=1605, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-113-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-109-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-109-1.pdf used on input line 9.
+<use figure/unnamed-chunk-113-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-113-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [265
+) [256
 
- <./figure/unnamed-chunk-109-1.pdf>]
+ <./figure/unnamed-chunk-113-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-110-1.pdf, id=1675, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-110-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-114-1.pdf, id=1618, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-114-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-110-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-110-1.pdf used on input line 9.
+<use figure/unnamed-chunk-114-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-114-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [266
+) [257
 
- <./figure/unnamed-chunk-110-1.pdf>]
+ <./figure/unnamed-chunk-114-1.pdf>]
 \openout4 = `x.vrb'.
 
 
 (./x.vrb
 Package statrep Info: Processing Sascode block ie on input line 3.
- <png/iee.png, id=1688, 481.8pt x 361.35pt>
+ <png/iee.png, id=1630, 481.8pt x 361.35pt>
 File: png/iee.png Graphic file (type png)
  <use png/iee.png>
 Package pdftex.def Info: png/iee.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/iee.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [267
+) [258
 
  <./png/iee.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [268
+ (./x.vrb) [259
 
 ]
 \openout4 = `x.vrb'.
@@ -3945,19 +3896,19 @@ Package statrep Info: Processing graphic  on input line 8.
  (./x.vrb
 Package statrep Info: Processing Sascode block if on input line 3.
 
-<png/iff.png, id=1699, 481.8pt x 361.35pt>
+<png/iff.png, id=1642, 481.8pt x 361.35pt>
 File: png/iff.png Graphic file (type png)
  <use png/iff.png>
 Package pdftex.def Info: png/iff.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/iff.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [269
+) [260
 
  <./png/iff.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [270
+ (./x.vrb) [261
 
 ]
 \openout4 = `x.vrb'.
@@ -3965,160 +3916,160 @@ Package statrep Info: Processing graphic  on input line 8.
  (./x.vrb
 Package statrep Info: Processing Sascode block ig on input line 3.
 
-<png/igg.png, id=1710, 481.8pt x 361.35pt>
+<png/igg.png, id=1653, 481.8pt x 361.35pt>
 File: png/igg.png Graphic file (type png)
  <use png/igg.png>
 Package pdftex.def Info: png/igg.png used on input line 8.
 (pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
 Package statrep Info: Processing graphic png/igg.png on input line 8.
 Package statrep Info: Processing graphic  on input line 8.
-) [271
+) [262
 
  <./png/igg.png (PNG copy)>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [272
+ (./x.vrb) [263
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-113-1.pdf, id=1722, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-113-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-113-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-113-1.pdf used on input line 12.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [273
-
- <./figure/unnamed-chunk-113-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb <figure/unnamed-chunk-114-1.pdf, id=1733, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-114-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-114-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-114-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [274
-
- <./figure/unnamed-chunk-114-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb <figure/unnamed-chunk-116-1.pdf, id=1746, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-116-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-116-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-116-1.pdf used on input line 12.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [275
-
- <./figure/unnamed-chunk-116-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb <figure/unnamed-chunk-117-1.pdf, id=1757, 505.89pt x 266.9975pt>
+<figure/unnamed-chunk-117-1.pdf, id=1664, 505.89pt x 252.945pt>
 File: figure/unnamed-chunk-117-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-117-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-117-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 180.65959pt.
-)
-Overfull \vbox (3.15315pt too high) detected at line 6182
- []
-
-[276
+Package pdftex.def Info: figure/unnamed-chunk-117-1.pdf used on input line 12.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [264
 
  <./figure/unnamed-chunk-117-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-<figure/unnamed-chunk-119-1.pdf, id=1770, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-119-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-119-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-119-1.pdf used on input line 12.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [277
+(./x.vrb <figure/unnamed-chunk-118-1.pdf, id=1675, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-118-1.pdf Graphic file (type pdf)
 
- <./figure/unnamed-chunk-119-1.pdf>]
+<use figure/unnamed-chunk-118-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-118-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+) [265
+
+ <./figure/unnamed-chunk-118-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-120-1.pdf, id=1782, 505.89pt x 289.08pt>
+(./x.vrb <figure/unnamed-chunk-120-1.pdf, id=1690, 505.89pt x 252.945pt>
 File: figure/unnamed-chunk-120-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-120-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-120-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-)
-Overfull \vbox (4.49492pt too high) detected at line 6220
- []
-
-[278
+Package pdftex.def Info: figure/unnamed-chunk-120-1.pdf used on input line 12.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [266
 
  <./figure/unnamed-chunk-120-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-<figure/unnamed-chunk-122-1.pdf, id=1795, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-122-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-122-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-122-1.pdf used on input line 12.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [279
+(./x.vrb <figure/unnamed-chunk-121-1.pdf, id=1701, 505.89pt x 266.9975pt>
+File: figure/unnamed-chunk-121-1.pdf Graphic file (type pdf)
 
- <./figure/unnamed-chunk-122-1.pdf>]
+<use figure/unnamed-chunk-121-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-121-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 180.65959pt.
+)
+Overfull \vbox (3.15315pt too high) detected at line 6036
+ []
+
+[267
+
+ <./figure/unnamed-chunk-121-1.pdf>]
 \openout4 = `x.vrb'.
 
-
-(./x.vrb <figure/unnamed-chunk-123-1.pdf, id=1806, 505.89pt x 289.08pt>
+ (./x.vrb
+<figure/unnamed-chunk-123-1.pdf, id=1714, 505.89pt x 252.945pt>
 File: figure/unnamed-chunk-123-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-123-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-123-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-)
-Overfull \vbox (4.49492pt too high) detected at line 6256
- []
-
-[280
+Package pdftex.def Info: figure/unnamed-chunk-123-1.pdf used on input line 12.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [268
 
  <./figure/unnamed-chunk-123-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-<figure/unnamed-chunk-125-1.pdf, id=1820, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-125-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-125-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-125-1.pdf used on input line 12.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [281
+(./x.vrb <figure/unnamed-chunk-124-1.pdf, id=1725, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-124-1.pdf Graphic file (type pdf)
 
- <./figure/unnamed-chunk-125-1.pdf>]
+<use figure/unnamed-chunk-124-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-124-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+)
+Overfull \vbox (4.49492pt too high) detected at line 6074
+ []
+
+[269
+
+ <./figure/unnamed-chunk-124-1.pdf>]
 \openout4 = `x.vrb'.
 
-
-(./x.vrb <figure/unnamed-chunk-126-1.pdf, id=1831, 505.89pt x 289.08pt>
+ (./x.vrb
+<figure/unnamed-chunk-126-1.pdf, id=1738, 505.89pt x 252.945pt>
 File: figure/unnamed-chunk-126-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-126-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-126-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-)
-Overfull \vbox (4.49492pt too high) detected at line 6295
- []
-
-[282
+Package pdftex.def Info: figure/unnamed-chunk-126-1.pdf used on input line 12.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [270
 
  <./figure/unnamed-chunk-126-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [283
+
+(./x.vrb <figure/unnamed-chunk-127-1.pdf, id=1749, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-127-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-127-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-127-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+)
+Overfull \vbox (4.49492pt too high) detected at line 6110
+ []
+
+[271
+
+ <./figure/unnamed-chunk-127-1.pdf>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+<figure/unnamed-chunk-129-1.pdf, id=1763, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-129-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-129-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-129-1.pdf used on input line 12.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [272
+
+ <./figure/unnamed-chunk-129-1.pdf>]
+\openout4 = `x.vrb'.
+
+
+(./x.vrb <figure/unnamed-chunk-130-1.pdf, id=1774, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-130-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-130-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-130-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+)
+Overfull \vbox (4.49492pt too high) detected at line 6149
+ []
+
+[273
+
+ <./figure/unnamed-chunk-130-1.pdf>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [274
 
 ]
 \openout4 = `x.vrb'.
@@ -4128,7 +4079,83 @@ Package statrep Info: Processing Sascode block ihx on input line 9.
 File: lst/ihxx.lst  (verbatim)
 Package statrep Info: Processing output lst/ihxx.lst on input line 14.
 Package statrep Info: Processing output  on input line 14.
-) [284
+) [275
+
+]
+\openout4 = `x.vrb'.
+
+
+(./x.vrb) [276
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb)
+Overfull \vbox (10.76437pt too high) detected at line 6258
+ []
+
+[277
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb)
+Overfull \vbox (1.91162pt too high) detected at line 6608
+ []
+
+[278
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [279
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+<figure/unnamed-chunk-139-1.pdf, id=1819, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-139-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-139-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-139-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+) [280
+
+ <./figure/unnamed-chunk-139-1.pdf>]
+\openout4 = `x.vrb'.
+
+
+(./x.vrb)
+Overfull \vbox (10.9061pt too high) detected at line 6671
+ []
+
+[281
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb <figure/unnamed-chunk-141-1.pdf, id=1835, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-141-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-141-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-141-1.pdf used on input line 12.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+)
+Overfull \vbox (15.96576pt too high) detected at line 6688
+ []
+
+[282
+
+ <./figure/unnamed-chunk-141-1.pdf>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [283
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [284
 
 ]
 \openout4 = `x.vrb'.
@@ -4139,20 +4166,12 @@ Package statrep Info: Processing output  on input line 14.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-Overfull \vbox (10.76437pt too high) detected at line 6404
- []
-
-[286
+ (./x.vrb) [286
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-Overfull \vbox (1.91162pt too high) detected at line 6754
- []
-
-[287
+ (./x.vrb) [287
 
 ]
 \openout4 = `x.vrb'.
@@ -4162,60 +4181,66 @@ Overfull \vbox (1.91162pt too high) detected at line 6754
 ]
 \openout4 = `x.vrb'.
 
+ (./x.vrb)
+[289
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [290
+
+]
+\openout4 = `x.vrb'.
+
  (./x.vrb
-<figure/unnamed-chunk-135-1.pdf, id=1875, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-135-1.pdf Graphic file (type pdf)
+\openout6 = `sr.tmp'.
 
-<use figure/unnamed-chunk-135-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-135-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [289
-
- <./figure/unnamed-chunk-135-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb)
-Overfull \vbox (10.9061pt too high) detected at line 6817
- []
-
-[290
+File: sr.tmp  (verbatim)
+Package statrep Info: Processing Sascode block iw on input line 12.
+) [291
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <figure/unnamed-chunk-137-1.pdf, id=1892, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-137-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-137-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-137-1.pdf used on input line 12.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+ (./x.vrb
+File: lst/iww.lst  (verbatim)
+Package statrep Info: Processing output lst/iww.lst on input line 3.
+Package statrep Info: Processing output  on input line 3.
 )
-Overfull \vbox (15.96576pt too high) detected at line 6834
+Overfull \vbox (96.79352pt too high) detected at line 6930
  []
 
-[291
-
- <./figure/unnamed-chunk-137-1.pdf>]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [292
+[292
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [293
+ (./x.vrb
+Package statrep Info: Processing Sascode block iv on input line 3.
+File: lst/ivw.lst  (verbatim)
+Package statrep Info: Processing output lst/ivw.lst on input line 10.
+Package statrep Info: Processing output  on input line 10.
+) [293
 
 ]
 \openout4 = `x.vrb'.
 
-
-(./x.vrb) [294
+ (./x.vrb
+File: lst/ivv.lst  (verbatim)
+Package statrep Info: Processing output lst/ivv.lst on input line 3.
+File: lst/ivv1.lst  (verbatim)
+Package statrep Info: Processing output lst/ivv1.lst on input line 3.
+Package statrep Info: Processing output  on input line 3.
+) [294
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [295
+ (./x.vrb)
+Overfull \vbox (6.92697pt too high) detected at line 7151
+ []
+
+[295
 
 ]
 \openout4 = `x.vrb'.
@@ -4225,13 +4250,20 @@ Overfull \vbox (15.96576pt too high) detected at line 6834
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [297
+ (./x.vrb
+<figure/unnamed-chunk-150-1.pdf, id=1920, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-150-1.pdf Graphic file (type pdf)
 
-]
+<use figure/unnamed-chunk-150-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-150-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
+) [297
+
+ <./figure/unnamed-chunk-150-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-[298
+
+(./x.vrb) [298
 
 ]
 \openout4 = `x.vrb'.
@@ -4245,89 +4277,8 @@ Overfull \vbox (15.96576pt too high) detected at line 6834
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-Package statrep Info: Processing Sascode block iw on input line 12.
-) [300
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-File: lst/iww.lst  (verbatim)
-Package statrep Info: Processing output lst/iww.lst on input line 3.
-Package statrep Info: Processing output  on input line 3.
-)
-Overfull \vbox (96.79352pt too high) detected at line 7076
- []
-
-[301
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-Package statrep Info: Processing Sascode block iv on input line 3.
-File: lst/ivw.lst  (verbatim)
-Package statrep Info: Processing output lst/ivw.lst on input line 10.
-Package statrep Info: Processing output  on input line 10.
-) [302
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-File: lst/ivv.lst  (verbatim)
-Package statrep Info: Processing output lst/ivv.lst on input line 3.
-File: lst/ivv1.lst  (verbatim)
-Package statrep Info: Processing output lst/ivv1.lst on input line 3.
-Package statrep Info: Processing output  on input line 3.
-) [303
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb)
-Overfull \vbox (6.92697pt too high) detected at line 7297
- []
-
-[304
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [305
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-<figure/unnamed-chunk-146-1.pdf, id=1977, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-146-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-146-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-146-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
-) [306
-
- <./figure/unnamed-chunk-146-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb) [307
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [308
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-\openout6 = `sr.tmp'.
-
-File: sr.tmp  (verbatim)
 Package statrep Info: Processing Sascode block ih on input line 17.
-) [309
+) [300
 
 ]
 \openout4 = `x.vrb'.
@@ -4338,46 +4289,112 @@ Package statrep Info: Processing output lst/ihh.lst on input line 3.
 File: lst/ihh1.lst  (verbatim)
 Package statrep Info: Processing output lst/ihh1.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [310
+) [301
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
+[302
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
+[]\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
+t equal to 0[] 
+ []
+
+) [303
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
+[]\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
+t equal to 0[] 
+ []
+
+) [304
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
+[]\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
+t equal to 0[] 
+ []
+
+) [305
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [306
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+<John_Tukey.jpg, id=1979, 220.825pt x 269.005pt>
+File: John_Tukey.jpg Graphic file (type jpg)
+ <use John_Tukey.jpg>
+Package pdftex.def Info: John_Tukey.jpg used on input line 5.
+(pdftex.def)             Requested size: 136.91603pt x 166.79369pt.
+) [307
+
+ <./John_Tukey.jpg>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [308
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [309
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [310
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Package statrep Info: Processing Sascode block ii on input line 3.
+)
 [311
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
-[]\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
-t equal to 0[] 
- []
-
+File: lst/iii.lst  (verbatim)
+Package statrep Info: Processing output lst/iii.lst on input line 3.
+Package statrep Info: Processing output  on input line 3.
 ) [312
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
-[]\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
-t equal to 0[] 
- []
+<figure/unnamed-chunk-158-1.pdf, id=2011, 505.89pt x 216.81pt>
+File: figure/unnamed-chunk-158-1.pdf Graphic file (type pdf)
 
+<use figure/unnamed-chunk-158-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-158-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 146.70102pt.
 ) [313
 
-]
+ <./figure/unnamed-chunk-158-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-Overfull \hbox (54.36415pt too wide) in paragraph at lines 14--14
-[]\OT1/cmtt/m/n/10.95 ## alternative hypothesis: true difference in means is no
-t equal to 0[] 
- []
 
-) [314
+(./x.vrb) [314
 
 ]
 \openout4 = `x.vrb'.
@@ -4387,78 +4404,12 @@ t equal to 0[]
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-<John_Tukey.jpg, id=2036, 220.825pt x 269.005pt>
-File: John_Tukey.jpg Graphic file (type jpg)
- <use John_Tukey.jpg>
-Package pdftex.def Info: John_Tukey.jpg used on input line 5.
-(pdftex.def)             Requested size: 136.91603pt x 166.79369pt.
-) [316
+ (./x.vrb) [316
 
- <./John_Tukey.jpg>]
+]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [317
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [318
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [319
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-Package statrep Info: Processing Sascode block ii on input line 3.
-)
-[320
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-File: lst/iii.lst  (verbatim)
-Package statrep Info: Processing output lst/iii.lst on input line 3.
-Package statrep Info: Processing output  on input line 3.
-) [321
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb
-<figure/unnamed-chunk-154-1.pdf, id=2068, 505.89pt x 216.81pt>
-File: figure/unnamed-chunk-154-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-154-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-154-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 146.70102pt.
-) [322
-
- <./figure/unnamed-chunk-154-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb) [323
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [324
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [325
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [326
 
 ]
 \openout4 = `x.vrb'.
@@ -4469,10 +4420,10 @@ File: lst/jaa.lst  (verbatim)
 Package statrep Info: Processing output lst/jaa.lst on input line 12.
 Package statrep Info: Processing output  on input line 12.
 )
-Overfull \vbox (1.35605pt too high) detected at line 7805
+Overfull \vbox (1.35605pt too high) detected at line 7659
  []
 
-[327
+[318
 
 ]
 \openout4 = `x.vrb'.
@@ -4481,14 +4432,14 @@ Overfull \vbox (1.35605pt too high) detected at line 7805
 File: lst/jab.lst  (verbatim)
 Package statrep Info: Processing output lst/jab.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [328
+) [319
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
 Package statrep Info: Processing Sascode block jc on input line 7.
-) [329
+) [320
 
 ]
 \openout4 = `x.vrb'.
@@ -4499,94 +4450,94 @@ Package statrep Info: Processing output lst/jcc.lst on input line 3.
 File: lst/jcc1.lst  (verbatim)
 Package statrep Info: Processing output lst/jcc1.lst on input line 3.
 Package statrep Info: Processing output  on input line 3.
-) [330
+) [321
 
-] [331
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [332
+] [322
 
 ]
 \openout4 = `x.vrb'.
 
+ (./x.vrb) [323
 
-(./x.vrb) [333
+]
+\openout4 = `x.vrb'.
+
+
+(./x.vrb) [324
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (1.85616pt too high) detected at line 8078
+Overfull \vbox (1.85616pt too high) detected at line 7932
  []
 
-[334
+[325
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <titlebar.pdf, id=2145, 1237.42305pt x 146.14601pt>
+ (./x.vrb <titlebar.pdf, id=2089, 1237.42305pt x 146.14601pt>
 File: titlebar.pdf Graphic file (type pdf)
 
 <use titlebar.pdf>
 Package pdftex.def Info: titlebar.pdf used on input line 5.
 (pdftex.def)             Requested size: 342.2953pt x 40.42554pt.
-) [335
+) [326
 
  <./titlebar.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<abstract.pdf, id=2155, 817.45403pt x 549.25201pt>
+<abstract.pdf, id=2099, 817.45403pt x 549.25201pt>
 File: abstract.pdf Graphic file (type pdf)
  <use abstract.pdf>
 Package pdftex.def Info: abstract.pdf used on input line 6.
 (pdftex.def)             Requested size: 239.60567pt x 160.98871pt.
-) [336
+) [327
 
  <./abstract.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <intro.pdf, id=2165, 797.37903pt x 421.575pt>
+ (./x.vrb <intro.pdf, id=2109, 797.37903pt x 421.575pt>
 File: intro.pdf Graphic file (type pdf)
 
 <use intro.pdf>
 Package pdftex.def Info: intro.pdf used on input line 3.
 (pdftex.def)             Requested size: 342.2953pt x 180.97137pt.
-) [337
+) [328
 
  <./intro.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<matmeth.pdf, id=2176, 785.33403pt x 546.04pt>
+<matmeth.pdf, id=2119, 785.33403pt x 546.04pt>
 File: matmeth.pdf Graphic file (type pdf)
  <use matmeth.pdf>
 Package pdftex.def Info: matmeth.pdf used on input line 3.
 (pdftex.def)             Requested size: 273.83728pt x 190.40031pt.
-) [338
+) [329
 
  <./matmeth.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <measurements.pdf, id=2186, 768.47098pt x 212.795pt>
+ (./x.vrb <measurements.pdf, id=2129, 768.47098pt x 212.795pt>
 File: measurements.pdf Graphic file (type pdf)
 
 <use measurements.pdf>
 Package pdftex.def Info: measurements.pdf used on input line 3.
 (pdftex.def)             Requested size: 308.06367pt x 85.30481pt.
- <measurementb.pdf, id=2187, 760.44098pt x 329.23pt>
+ <measurementb.pdf, id=2130, 760.44098pt x 329.23pt>
 File: measurementb.pdf Graphic file (type pdf)
 
 <use measurementb.pdf>
 Package pdftex.def Info: measurementb.pdf used on input line 7.
 (pdftex.def)             Requested size: 308.06367pt x 133.37257pt.
 )
-Overfull \vbox (9.60428pt too high) detected at line 8127
+Overfull \vbox (9.60428pt too high) detected at line 7981
  []
 
-[339
+[330
 
  <./measurements.pdf> <./measurementb.pdf
 
@@ -4595,50 +4546,50 @@ s with page group included in a single page
 >]
 \openout4 = `x.vrb'.
 
- (./x.vrb <resultsa.pdf, id=2200, 796.57597pt x 303.534pt>
+ (./x.vrb <resultsa.pdf, id=2143, 796.57597pt x 303.534pt>
 File: resultsa.pdf Graphic file (type pdf)
 
 <use resultsa.pdf>
 Package pdftex.def Info: resultsa.pdf used on input line 3.
 (pdftex.def)             Requested size: 342.2953pt x 130.42906pt.
-) [340
+) [331
 
  <./resultsa.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<resultsb.pdf, id=2210, 1020.61299pt x 730.73pt>
+<resultsb.pdf, id=2154, 1020.61299pt x 730.73pt>
 File: resultsb.pdf Graphic file (type pdf)
  <use resultsb.pdf>
 Package pdftex.def Info: resultsb.pdf used on input line 3.
 (pdftex.def)             Requested size: 273.83728pt x 196.06207pt.
-) [341
+) [332
 
  <./resultsb.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb <conc1.pdf, id=2221, 794.167pt x 298.716pt>
+ (./x.vrb <conc1.pdf, id=2164, 794.167pt x 298.716pt>
 File: conc1.pdf Graphic file (type pdf)
 
 <use conc1.pdf>
 Package pdftex.def Info: conc1.pdf used on input line 3.
 (pdftex.def)             Requested size: 273.83728pt x 102.99786pt.
- <conc2.pdf, id=2222, 748.39598pt x 55.407pt>
+ <conc2.pdf, id=2165, 748.39598pt x 55.407pt>
 File: conc2.pdf Graphic file (type pdf)
  <use conc2.pdf>
 Package pdftex.def Info: conc2.pdf used on input line 7.
 (pdftex.def)             Requested size: 273.83728pt x 20.27368pt.
 
-<conc3.pdf, id=2223, 761.24402pt x 93.951pt>
+<conc3.pdf, id=2166, 761.24402pt x 93.951pt>
 File: conc3.pdf Graphic file (type pdf)
  <use conc3.pdf>
 Package pdftex.def Info: conc3.pdf used on input line 11.
 (pdftex.def)             Requested size: 273.83728pt x 33.79652pt.
 )
-Overfull \vbox (12.32416pt too high) detected at line 8162
+Overfull \vbox (12.32416pt too high) detected at line 8016
  []
 
-[342
+[333
 
  <./conc1.pdf> <./conc2.pdf
 
@@ -4651,18 +4602,67 @@ page group included in a single page
 >]
 \openout4 = `x.vrb'.
 
- (./x.vrb <refs.pdf, id=2239, 794.167pt x 638.385pt>
+ (./x.vrb <refs.pdf, id=2182, 794.167pt x 638.385pt>
 File: refs.pdf Graphic file (type pdf)
  <use refs.pdf>
 Package pdftex.def Info: refs.pdf used on input line 3.
 (pdftex.def)             Requested size: 308.06367pt x 247.63463pt.
 )
-Overfull \vbox (10.36151pt too high) detected at line 8169
+Overfull \vbox (10.36151pt too high) detected at line 8023
  []
 
-[343
+[334
 
  <./refs.pdf>]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [335
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [336
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [337
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb)
+Overfull \vbox (8.0478pt too high) detected at line 8124
+ []
+
+[338
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [339
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [340
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [341
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [342
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [343
+
+]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [344
@@ -4680,23 +4680,30 @@ Overfull \vbox (10.36151pt too high) detected at line 8169
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-Overfull \vbox (8.0478pt too high) detected at line 8270
- []
-
-[347
+ (./x.vrb) [347
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [348
+ (./x.vrb <W1090.png, id=2264, 815.045pt x 295.1025pt>
+File: W1090.png Graphic file (type png)
+ <use W1090.png>
+Package pdftex.def Info: W1090.png used on input line 10.
+(pdftex.def)             Requested size: 239.60567pt x 86.75278pt.
+) [348
 
-]
+ <./W1090.png>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [349
+ (./x.vrb <W1091.png, id=2270, 733.74126pt x 392.46625pt>
+File: W1091.png Graphic file (type png)
+ <use W1091.png>
+Package pdftex.def Info: W1091.png used on input line 6.
+(pdftex.def)             Requested size: 205.37926pt x 109.85385pt.
+)
+[349
 
-]
+ <./W1091.png>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [350
@@ -4711,15 +4718,15 @@ Overfull \vbox (8.0478pt too high) detected at line 8270
 
  (./x.vrb) [352
 
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [353
+] [353
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [354
+
+(./x.vrb
+File: /home/ken/teaching/c32/notes/2017/pigs1.txt  (verbatim)
+) [354
 
 ]
 \openout4 = `x.vrb'.
@@ -4730,62 +4737,6 @@ Overfull \vbox (8.0478pt too high) detected at line 8270
 \openout4 = `x.vrb'.
 
  (./x.vrb) [356
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb <W1090.png, id=2321, 815.045pt x 295.1025pt>
-File: W1090.png Graphic file (type png)
- <use W1090.png>
-Package pdftex.def Info: W1090.png used on input line 10.
-(pdftex.def)             Requested size: 239.60567pt x 86.75278pt.
-) [357
-
- <./W1090.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb <W1091.png, id=2327, 733.74126pt x 392.46625pt>
-File: W1091.png Graphic file (type png)
- <use W1091.png>
-Package pdftex.def Info: W1091.png used on input line 6.
-(pdftex.def)             Requested size: 205.37926pt x 109.85385pt.
-)
-[358
-
- <./W1091.png>]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [359
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [360
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [361
-
-] [362
-
-]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb
-File: /home/ken/teaching/c32/notes/2017/pigs1.txt  (verbatim)
-) [363
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [364
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [365
 
 ]
 \openout4 = `x.vrb'.
@@ -4809,9 +4760,63 @@ Overfull \hbox (30.2747pt too wide) in paragraph at lines 18--18
  []
 
 )
-Overfull \vbox (5.70197pt too high) detected at line 8679
+Overfull \vbox (5.70197pt too high) detected at line 8533
  []
 
+[357
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [358
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [359
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [360
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+<figure/unnamed-chunk-170-1.pdf, id=2334, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-170-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-170-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-170-1.pdf used on input line 9.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [361
+
+ <./figure/unnamed-chunk-170-1.pdf>]
+\openout4 = `x.vrb'.
+
+
+(./x.vrb) [362
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [363
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [364
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [365
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb)
 [366
 
 ]
@@ -4827,30 +4832,42 @@ Overfull \vbox (5.70197pt too high) detected at line 8679
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [369
+ (./x.vrb
+Overfull \hbox (2.81728pt too wide) in paragraph at lines 18--18
+[]\OT1/cmtt/m/n/10 ## # A tibble: 10 x 2[] 
+ []
+
+
+Overfull \hbox (2.81728pt too wide) in paragraph at lines 41--41
+[]\OT1/cmtt/m/n/10 ## # A tibble: 10 x 2[] 
+ []
+
+)
+Overfull \vbox (2.438pt too high) detected at line 8899
+ []
+
+[369
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [370
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [371
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-166-1.pdf, id=2392, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-166-1.pdf Graphic file (type pdf)
+Overfull \hbox (2.62596pt too wide) in paragraph at lines 18--18
+[][]\OT1/cmtt/m/n/10.95 weather2[][]=[] []weather[] []%>%[] []gather[][](day,te
+mperature,d1[][]:[][]d31,[][]na.rm[][]=T)[][] 
+ []
 
-<use figure/unnamed-chunk-166-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-166-1.pdf used on input line 9.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [370
-
- <./figure/unnamed-chunk-166-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb) [371
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [372
+) [372
 
 ]
 \openout4 = `x.vrb'.
@@ -4865,8 +4882,7 @@ Package pdftex.def Info: figure/unnamed-chunk-166-1.pdf used on input line 9.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-[375
+ (./x.vrb) [375
 
 ]
 \openout4 = `x.vrb'.
@@ -4876,26 +4892,13 @@ Package pdftex.def Info: figure/unnamed-chunk-166-1.pdf used on input line 9.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [377
+
+(./x.vrb) [377
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-Overfull \hbox (2.81728pt too wide) in paragraph at lines 18--18
-[]\OT1/cmtt/m/n/10 ## # A tibble: 10 x 2[] 
- []
-
-
-Overfull \hbox (2.81728pt too wide) in paragraph at lines 41--41
-[]\OT1/cmtt/m/n/10 ## # A tibble: 10 x 2[] 
- []
-
-)
-Overfull \vbox (2.438pt too high) detected at line 9045
- []
-
-[378
+ (./x.vrb) [378
 
 ]
 \openout4 = `x.vrb'.
@@ -4910,23 +4913,25 @@ Overfull \vbox (2.438pt too high) detected at line 9045
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 18--18
-[][]\OT1/cmtt/m/n/10.95 weather2[][]=[] []weather[] []%>%[] []gather[][](day,te
-mperature,d1[][]:[][]d31,[][]na.rm[][]=T)[][] 
- []
-
-) [381
+ (./x.vrb)
+[381
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [382
+ (./x.vrb <figure/unnamed-chunk-195-1.pdf, id=2451, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-195-1.pdf Graphic file (type pdf)
 
-]
+<use figure/unnamed-chunk-195-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-195-1.pdf used on input line 10.
+(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
+) [382
+
+ <./figure/unnamed-chunk-195-1.pdf>]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [383
+
+(./x.vrb) [383
 
 ]
 \openout4 = `x.vrb'.
@@ -4941,13 +4946,13 @@ mperature,d1[][]:[][]d31,[][]na.rm[][]=T)[][]
 ]
 \openout4 = `x.vrb'.
 
-
-(./x.vrb) [386
+ (./x.vrb) [386
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [387
+ (./x.vrb)
+[387
 
 ]
 \openout4 = `x.vrb'.
@@ -4962,30 +4967,26 @@ mperature,d1[][]:[][]d31,[][]na.rm[][]=T)[][]
 ]
 \openout4 = `x.vrb'.
 
+ (./x.vrb) [390
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [391
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [392
+
+]
+\openout4 = `x.vrb'.
+
  (./x.vrb)
-[390
+Overfull \vbox (54.93117pt too high) detected at line 9647
+ []
 
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb <figure/unnamed-chunk-191-1.pdf, id=2508, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-191-1.pdf Graphic file (type pdf)
-
-<use figure/unnamed-chunk-191-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-191-1.pdf used on input line 10.
-(pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
-) [391
-
- <./figure/unnamed-chunk-191-1.pdf>]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb) [392
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [393
+[393
 
 ]
 \openout4 = `x.vrb'.
@@ -5000,18 +5001,7 @@ Package pdftex.def Info: figure/unnamed-chunk-191-1.pdf used on input line 10.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-[396
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [397
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [398
+ (./x.vrb) [396
 
 ]
 \openout4 = `x.vrb'.
@@ -5058,7 +5048,7 @@ Overfull \hbox (68.77492pt too wide) in paragraph at lines 18--18
    23.11 56.05 183.0  72.9[] 
  []
 
-) [399
+) [397
 
 ]
 \openout4 = `x.vrb'.
@@ -5141,7 +5131,7 @@ Overfull \hbox (42.86678pt too wide) in paragraph at lines 22--22
 bl>, Ht <dbl>,[] 
  []
 
-) [400
+) [398
 
 ]
 \openout4 = `x.vrb'.
@@ -5188,69 +5178,69 @@ Overfull \hbox (42.86678pt too wide) in paragraph at lines 16--16
 bl>, Ht <dbl>,[] 
  []
 
-) [401
+) [399
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 10--10
-[]\OT1/cmtt/m/n/10.95 ##      Sex  Sport   RCC   WCC    Hc    Hg  Ferr   BMI   
-SSF[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 10--10
+[]\OT1/cmtt/m/n/10.95 ##      Sex   Sport   RCC   WCC    Hc    Hg  Ferr   BMI  
+ SSF[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 11--11
-[]\OT1/cmtt/m/n/10.95 ##    <chr>  <chr> <dbl> <dbl> <dbl> <dbl> <int> <dbl> <d
-bl>[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 11--11
+[]\OT1/cmtt/m/n/10.95 ##    <chr>   <chr> <dbl> <dbl> <dbl> <dbl> <int> <dbl> <
+dbl>[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 12--12
-[]\OT1/cmtt/m/n/10.95 ## 1   male  T400m  4.71   7.2  43.6  14.0    32 20.39  3
-0.5[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 12--12
+[]\OT1/cmtt/m/n/10.95 ## 1 female Netball  4.24   8.4  37.6  12.5    58 25.64 2
+00.8[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 13--13
-[]\OT1/cmtt/m/n/10.95 ## 2 female Tennis  4.66   6.4  40.9  13.9   109 18.37  3
-8.2[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 13--13
+[]\OT1/cmtt/m/n/10.95 ## 2 female   BBall  4.42   5.7  39.9  13.2    44 20.62  
+97.9[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 14--14
-[]\OT1/cmtt/m/n/10.95 ## 3 female  Field  4.77   7.1  40.6  14.6    40 26.85 10
-3.6[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 14--14
+[]\OT1/cmtt/m/n/10.95 ## 3 female  Tennis  4.40   4.0  40.8  13.9    73 22.12  
+98.1[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 15--15
-[]\OT1/cmtt/m/n/10.95 ## 4   male TSprnt  5.16   8.4  44.4  15.5   213 21.86  2
-9.7[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 15--15
+[]\OT1/cmtt/m/n/10.95 ## 4   male   T400m  5.21   7.5  47.5  16.5    20 21.89  
+46.7[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 16--16
-[]\OT1/cmtt/m/n/10.95 ## 5   male    Row  4.40   5.3  42.5  14.5   109 24.06  4
-6.5[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 16--16
+[]\OT1/cmtt/m/n/10.95 ## 5   male     Row  5.40   6.8  49.5  17.3   183 26.07  
+44.7[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 17--17
-[]\OT1/cmtt/m/n/10.95 ## 6 female    Row  4.46   9.5  41.5  14.5    92 22.96  8
-3.0[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 17--17
+[]\OT1/cmtt/m/n/10.95 ## 6 female    Swim  4.51   5.1  40.9  14.0   115 19.00  
+52.5[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 18--18
-[]\OT1/cmtt/m/n/10.95 ## 7 female    Row  4.37   8.1  41.8  14.3    53 23.47  9
-8.0[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 18--18
+[]\OT1/cmtt/m/n/10.95 ## 7   male    Swim  5.32   6.0  47.5  16.3   155 23.29  
+54.4[] 
  []
 
 
-Overfull \hbox (2.62596pt too wide) in paragraph at lines 19--19
-[]\OT1/cmtt/m/n/10.95 ## 8   male Tennis  5.66   8.3  50.2  17.7    38 23.76  5
-6.5[] 
+Overfull \hbox (8.37465pt too wide) in paragraph at lines 19--19
+[]\OT1/cmtt/m/n/10.95 ## 8   male    Swim  5.34   6.6  48.6  16.5    35 22.81  
+57.0[] 
  []
 
 
@@ -5259,7 +5249,7 @@ Overfull \hbox (42.86678pt too wide) in paragraph at lines 20--20
 bl>, Ht <dbl>,[] 
  []
 
-) [402
+) [400
 
 ]
 \openout4 = `x.vrb'.
@@ -5270,7 +5260,7 @@ Overfull \hbox (9.45163pt too wide) in paragraph at lines 23--23
 , Ht <dbl>,[] 
  []
 
-) [403
+) [401
 
 ]
 \openout4 = `x.vrb'.
@@ -5335,7 +5325,7 @@ Overfull \hbox (42.86678pt too wide) in paragraph at lines 19--19
 bl>, Ht <dbl>,[] 
  []
 
-) [404
+) [402
 
 ]
 \openout4 = `x.vrb'.
@@ -5418,7 +5408,7 @@ Overfull \hbox (25.62071pt too wide) in paragraph at lines 22--22
 t^^R <dbl>,[] 
  []
 
-) [405
+) [403
 
 ]
 \openout4 = `x.vrb'.
@@ -5501,7 +5491,7 @@ Overfull \hbox (31.3694pt too wide) in paragraph at lines 22--22
 at^^R <dbl>,[] 
  []
 
-) [406
+) [404
 
 ]
 \openout4 = `x.vrb'.
@@ -5584,7 +5574,7 @@ Overfull \hbox (31.3694pt too wide) in paragraph at lines 22--22
 at^^R <dbl>,[] 
  []
 
-) [407
+) [405
 
 ]
 \openout4 = `x.vrb'.
@@ -5667,22 +5657,22 @@ Overfull \hbox (31.3694pt too wide) in paragraph at lines 22--22
 at^^R <dbl>,[] 
  []
 
-) [408
+) [406
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [407
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [408
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [409
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [410
-
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [411
 
 ]
 \openout4 = `x.vrb'.
@@ -5693,7 +5683,17 @@ Overfull \hbox (2.62596pt too wide) in paragraph at lines 25--25
 [])[] []%>%[] []summarize[][]([][]m[][]=[][]mean[][](Ht))[][] 
  []
 
-) [412
+) [410
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [411
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb) [412
 
 ]
 \openout4 = `x.vrb'.
@@ -5708,27 +5708,17 @@ Overfull \hbox (2.62596pt too wide) in paragraph at lines 25--25
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [415
 
-]
-\openout4 = `x.vrb'.
-
- (./x.vrb) [416
-
-]
-\openout4 = `x.vrb'.
-
-
-(./x.vrb) [417
+(./x.vrb) [415
 
 ]
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (0.53114pt too high) detected at line 10228
+Overfull \vbox (0.53114pt too high) detected at line 10275
  []
 
-[418
+[416
 
 ]
 \openout4 = `x.vrb'.
@@ -5737,7 +5727,7 @@ Overfull \vbox (0.53114pt too high) detected at line 10228
 \openout6 = `sr.tmp'.
 
 File: sr.tmp  (verbatim)
-) [419
+) [417
 
 ]
 \openout4 = `x.vrb'.
@@ -5748,10 +5738,10 @@ File: lst/taa.lst  (verbatim)
 Package statrep Info: Processing output lst/taa.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
 )
-Overfull \vbox (61.19353pt too high) detected at line 10263
+Overfull \vbox (61.19353pt too high) detected at line 10310
  []
 
-[420
+[418
 
 ]
 \openout4 = `x.vrb'.
@@ -5765,10 +5755,10 @@ File: lst/tbb.lst  (verbatim)
 Package statrep Info: Processing output lst/tbb.lst on input line 15.
 Package statrep Info: Processing output  on input line 15.
 )
-Overfull \vbox (9.21863pt too high) detected at line 10281
+Overfull \vbox (9.21863pt too high) detected at line 10328
  []
 
-[421
+[419
 
 ]
 \openout4 = `x.vrb'.
@@ -5782,15 +5772,15 @@ File: lst/tcc.lst  (verbatim)
 Package statrep Info: Processing output lst/tcc.lst on input line 16.
 Package statrep Info: Processing output  on input line 16.
 )
-Overfull \vbox (7.83803pt too high) detected at line 10301
+Overfull \vbox (7.83803pt too high) detected at line 10348
  []
 
-[422
+[420
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb) [423
+ (./x.vrb) [421
 
 ]
 \openout4 = `x.vrb'.
@@ -5804,10 +5794,10 @@ File: lst/tdd.lst  (verbatim)
 Package statrep Info: Processing output lst/tdd.lst on input line 16.
 Package statrep Info: Processing output  on input line 16.
 )
-Overfull \vbox (22.81863pt too high) detected at line 10335
+Overfull \vbox (22.81863pt too high) detected at line 10382
  []
 
-[424
+[422
 
 ]
 \openout4 = `x.vrb'.
@@ -5821,10 +5811,10 @@ File: lst/tee.lst  (verbatim)
 Package statrep Info: Processing output lst/tee.lst on input line 15.
 Package statrep Info: Processing output  on input line 15.
 )
-Overfull \vbox (279.02689pt too high) detected at line 10354
+Overfull \vbox (279.02689pt too high) detected at line 10401
  []
 
-[425
+[423
 
 ]
 \openout4 = `x.vrb'.
@@ -5838,10 +5828,10 @@ File: lst/tff.lst  (verbatim)
 Package statrep Info: Processing output lst/tff.lst on input line 13.
 Package statrep Info: Processing output  on input line 13.
 )
-Overfull \vbox (74.22688pt too high) detected at line 10369
+Overfull \vbox (74.22688pt too high) detected at line 10416
  []
 
-[426
+[424
 
 ]
 \openout4 = `x.vrb'.
@@ -5855,10 +5845,10 @@ File: lst/tgg.lst  (verbatim)
 Package statrep Info: Processing output lst/tgg.lst on input line 15.
 Package statrep Info: Processing output  on input line 15.
 )
-Overfull \vbox (278.6158pt too high) detected at line 10387
+Overfull \vbox (278.6158pt too high) detected at line 10434
  []
 
-[427
+[425
 
 ]
 \openout4 = `x.vrb'.
@@ -5872,10 +5862,10 @@ File: lst/thh.lst  (verbatim)
 Package statrep Info: Processing output lst/thh.lst on input line 16.
 Package statrep Info: Processing output  on input line 16.
 )
-Overfull \vbox (9.21863pt too high) detected at line 10406
+Overfull \vbox (9.21863pt too high) detected at line 10453
  []
 
-[428
+[426
 
 ]
 \openout4 = `x.vrb'.
@@ -5889,10 +5879,26 @@ File: lst/tii.lst  (verbatim)
 Package statrep Info: Processing output lst/tii.lst on input line 14.
 Package statrep Info: Processing output  on input line 14.
 )
-Overfull \vbox (345.99356pt too high) detected at line 10422
+Overfull \vbox (345.99356pt too high) detected at line 10469
  []
 
-[429
+[427
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+Package statrep Info: Processing Sascode block zawis on input line 10.
+) [428
+
+]
+\openout4 = `x.vrb'.
+
+ (./x.vrb
+File: lst/zawiss.lst  (verbatim)
+Package statrep Info: Processing output lst/zawiss.lst on input line 3.
+Package statrep Info: Processing output  on input line 3.
+) [429
 
 ]
 \openout4 = `x.vrb'.
@@ -5903,7 +5909,7 @@ File: lst/tjj.lst  (verbatim)
 Package statrep Info: Processing output lst/tjj.lst on input line 14.
 Package statrep Info: Processing output  on input line 14.
 )
-Overfull \vbox (2127.4269pt too high) detected at line 10439
+Overfull \vbox (2127.4269pt too high) detected at line 10510
  []
 
 [430
@@ -5917,7 +5923,7 @@ File: lst/tkk.lst  (verbatim)
 Package statrep Info: Processing output lst/tkk.lst on input line 12.
 Package statrep Info: Processing output  on input line 12.
 )
-Overfull \vbox (2093.42688pt too high) detected at line 10454
+Overfull \vbox (2093.42688pt too high) detected at line 10525
  []
 
 [431
@@ -5931,7 +5937,7 @@ File: lst/tll.lst  (verbatim)
 Package statrep Info: Processing output lst/tll.lst on input line 12.
 Package statrep Info: Processing output  on input line 12.
 )
-Overfull \vbox (2091.42688pt too high) detected at line 10469
+Overfull \vbox (2091.42688pt too high) detected at line 10540
  []
 
 [432
@@ -5945,7 +5951,7 @@ File: lst/tmm.lst  (verbatim)
 Package statrep Info: Processing output lst/tmm.lst on input line 15.
 Package statrep Info: Processing output  on input line 15.
 )
-Overfull \vbox (0.8269pt too high) detected at line 10487
+Overfull \vbox (0.8269pt too high) detected at line 10558
  []
 
 [433
@@ -5962,7 +5968,7 @@ File: lst/tnn.lst  (verbatim)
 Package statrep Info: Processing output lst/tnn.lst on input line 21.
 Package statrep Info: Processing output  on input line 21.
 )
-Overfull \vbox (3.21582pt too high) detected at line 10513
+Overfull \vbox (3.21582pt too high) detected at line 10584
  []
 
 [434
@@ -5985,7 +5991,7 @@ File: lst/too.lst  (verbatim)
 Package statrep Info: Processing output lst/too.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
 )
-Overfull \vbox (2.91576pt too high) detected at line 10545
+Overfull \vbox (2.91576pt too high) detected at line 10616
  []
 
 [436
@@ -6008,7 +6014,7 @@ File: lst/tpp.lst  (verbatim)
 Package statrep Info: Processing output lst/tpp.lst on input line 7.
 Package statrep Info: Processing output  on input line 7.
 )
-Overfull \vbox (2.91576pt too high) detected at line 10582
+Overfull \vbox (2.91576pt too high) detected at line 10653
  []
 
 [438
@@ -6024,7 +6030,7 @@ File: lst/trs1.lst  (verbatim)
 Package statrep Info: Processing output lst/trs1.lst on input line 10.
 Package statrep Info: Processing output  on input line 10.
 )
-Overfull \vbox (1.93382pt too high) detected at line 10597
+Overfull \vbox (1.93382pt too high) detected at line 10668
  []
 
 [439
@@ -6070,15 +6076,15 @@ Package statrep Info: Processing output  on input line 3.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-223-1.pdf, id=2807, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-223-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-233-1.pdf, id=2797, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-233-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-223-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-223-1.pdf used on input line 11.
+<use figure/unnamed-chunk-233-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-233-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [447
 
- <./figure/unnamed-chunk-223-1.pdf>]
+ <./figure/unnamed-chunk-233-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6088,7 +6094,7 @@ Package pdftex.def Info: figure/unnamed-chunk-223-1.pdf used on input line 11.
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (7.77689pt too high) detected at line 10802
+Overfull \vbox (7.77689pt too high) detected at line 10873
  []
 
 [449
@@ -6102,15 +6108,15 @@ Overfull \vbox (7.77689pt too high) detected at line 10802
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-226-1.pdf, id=2834, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-226-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-236-1.pdf, id=2824, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-236-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-226-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-226-1.pdf used on input line 11.
+<use figure/unnamed-chunk-236-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-236-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [451
 
- <./figure/unnamed-chunk-226-1.pdf>]
+ <./figure/unnamed-chunk-236-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6125,7 +6131,7 @@ Package pdftex.def Info: figure/unnamed-chunk-226-1.pdf used on input line 11.
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (0.97688pt too high) detected at line 10936
+Overfull \vbox (0.97688pt too high) detected at line 11007
  []
 
 [454
@@ -6139,31 +6145,31 @@ Overfull \vbox (0.97688pt too high) detected at line 10936
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-230-1.pdf, id=2868, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-230-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-240-1.pdf, id=2858, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-240-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-230-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-230-1.pdf used on input line 9.
+<use figure/unnamed-chunk-240-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-240-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [456
 
- <./figure/unnamed-chunk-230-1.pdf>]
+ <./figure/unnamed-chunk-240-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-231-1.pdf, id=2881, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-231-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-241-1.pdf, id=2870, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-241-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-231-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-231-1.pdf used on input line 11.
+<use figure/unnamed-chunk-241-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-241-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 )
-Overfull \vbox (2.36575pt too high) detected at line 10990
+Overfull \vbox (2.36575pt too high) detected at line 11061
  []
 
 [457
 
- <./figure/unnamed-chunk-231-1.pdf>]
+ <./figure/unnamed-chunk-241-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [458
@@ -6172,15 +6178,15 @@ Overfull \vbox (2.36575pt too high) detected at line 10990
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-233-1.pdf, id=2899, 505.89pt x 266.9975pt>
-File: figure/unnamed-chunk-233-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-243-1.pdf, id=2889, 505.89pt x 266.9975pt>
+File: figure/unnamed-chunk-243-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-233-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-233-1.pdf used on input line 9.
+<use figure/unnamed-chunk-243-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-243-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 180.65959pt.
 ) [459
 
- <./figure/unnamed-chunk-233-1.pdf>]
+ <./figure/unnamed-chunk-243-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6200,19 +6206,19 @@ Overfull \hbox (21.90005pt too wide) in paragraph at lines 5--11
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-236-1.pdf, id=2921, 505.89pt x 266.9975pt>
-File: figure/unnamed-chunk-236-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-246-1.pdf, id=2911, 505.89pt x 266.9975pt>
+File: figure/unnamed-chunk-246-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-236-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-236-1.pdf used on input line 11.
+<use figure/unnamed-chunk-246-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-246-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 180.65959pt.
 )
-Overfull \vbox (7.06357pt too high) detected at line 11122
+Overfull \vbox (7.06357pt too high) detected at line 11193
  []
 
 [462
 
- <./figure/unnamed-chunk-236-1.pdf>]
+ <./figure/unnamed-chunk-246-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [463
@@ -6226,15 +6232,15 @@ Overfull \vbox (7.06357pt too high) detected at line 11122
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-239-1.pdf, id=2944, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-239-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-249-1.pdf, id=2934, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-249-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-239-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-239-1.pdf used on input line 11.
+<use figure/unnamed-chunk-249-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-249-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [465
 
- <./figure/unnamed-chunk-239-1.pdf>]
+ <./figure/unnamed-chunk-249-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6254,19 +6260,19 @@ Package pdftex.def Info: figure/unnamed-chunk-239-1.pdf used on input line 11.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-243-1.pdf, id=2971, 505.89pt x 325.215pt>
-File: figure/unnamed-chunk-243-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-253-1.pdf, id=2961, 505.89pt x 325.215pt>
+File: figure/unnamed-chunk-253-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-243-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-243-1.pdf used on input line 9.
+<use figure/unnamed-chunk-253-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-253-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 220.05154pt.
 )
-Overfull \vbox (3.52634pt too high) detected at line 11295
+Overfull \vbox (3.52634pt too high) detected at line 11366
  []
 
 [469
 
- <./figure/unnamed-chunk-243-1.pdf>]
+ <./figure/unnamed-chunk-253-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [470
@@ -6340,15 +6346,15 @@ Overfull \hbox (7.27995pt too wide) in paragraph at lines 20--20
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-255-1.pdf, id=3036, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-255-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-265-1.pdf, id=3026, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-265-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-255-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-255-1.pdf used on input line 9.
+<use figure/unnamed-chunk-265-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-265-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [480
 
- <./figure/unnamed-chunk-255-1.pdf>]
+ <./figure/unnamed-chunk-265-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6358,7 +6364,7 @@ Package pdftex.def Info: figure/unnamed-chunk-255-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (4.50613pt too high) detected at line 11646
+Overfull \vbox (4.50613pt too high) detected at line 11717
  []
 
 [482
@@ -6389,7 +6395,7 @@ Package statrep Info: Processing output lst/caa.lst on input line 8.
 Package statrep Info: Processing output  on input line 8.
 Package statrep Info: Processing Sascode block dda on input line 12.
 )
-Overfull \vbox (2.41862pt too high) detected at line 11707
+Overfull \vbox (2.41862pt too high) detected at line 11778
  []
 
 [486
@@ -6397,7 +6403,7 @@ Overfull \vbox (2.41862pt too high) detected at line 11707
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/ddaa.png, id=3080, 481.8pt x 361.35pt>
+ (./x.vrb <png/ddaa.png, id=3070, 481.8pt x 361.35pt>
 File: png/ddaa.png Graphic file (type png)
  <use png/ddaa.png>
 Package pdftex.def Info: png/ddaa.png used on input line 3.
@@ -6434,7 +6440,7 @@ Package statrep Info: Processing output  on input line 4.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/ddbd.png, id=3102, 481.8pt x 481.8pt>
+ (./x.vrb <png/ddbd.png, id=3092, 481.8pt x 481.8pt>
 File: png/ddbd.png Graphic file (type png)
  <use png/ddbd.png>
 Package pdftex.def Info: png/ddbd.png used on input line 3.
@@ -6442,7 +6448,7 @@ Package pdftex.def Info: png/ddbd.png used on input line 3.
 Package statrep Info: Processing graphic png/ddbd.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
 )
-Overfull \vbox (15.90631pt too high) detected at line 11759
+Overfull \vbox (15.90631pt too high) detected at line 11830
  []
 
 [491
@@ -6451,7 +6457,7 @@ Overfull \vbox (15.90631pt too high) detected at line 11759
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (9.26448pt too high) detected at line 11781
+Overfull \vbox (9.26448pt too high) detected at line 11852
  []
 
 [492
@@ -6459,7 +6465,7 @@ Overfull \vbox (9.26448pt too high) detected at line 11781
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/ddbe.png, id=3113, 481.8pt x 361.35pt>
+ (./x.vrb <png/ddbe.png, id=3103, 481.8pt x 361.35pt>
 File: png/ddbe.png Graphic file (type png)
  <use png/ddbe.png>
 Package pdftex.def Info: png/ddbe.png used on input line 3.
@@ -6490,7 +6496,7 @@ Package statrep Info: Processing Sascode block dde on input line 11.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/ddef.png, id=3135, 481.8pt x 361.35pt>
+ (./x.vrb <png/ddef.png, id=3125, 481.8pt x 361.35pt>
 File: png/ddef.png Graphic file (type png)
  <use png/ddef.png>
 Package pdftex.def Info: png/ddef.png used on input line 3.
@@ -6514,7 +6520,7 @@ Package statrep Info: Processing Sascode block ddf on input line 17.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/ddff.png, id=3147, 481.8pt x 361.35pt>
+<png/ddff.png, id=3136, 481.8pt x 361.35pt>
 File: png/ddff.png Graphic file (type png)
  <use png/ddff.png>
 Package pdftex.def Info: png/ddff.png used on input line 3.
@@ -6550,7 +6556,7 @@ Package statrep Info: Processing output  on input line 4.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/ddhh.png, id=3169, 481.8pt x 481.8pt>
+<png/ddhh.png, id=3159, 481.8pt x 481.8pt>
 File: png/ddhh.png Graphic file (type png)
  <use png/ddhh.png>
 Package pdftex.def Info: png/ddhh.png used on input line 3.
@@ -6558,7 +6564,7 @@ Package pdftex.def Info: png/ddhh.png used on input line 3.
 Package statrep Info: Processing graphic png/ddhh.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
 )
-Overfull \vbox (15.90631pt too high) detected at line 11927
+Overfull \vbox (15.90631pt too high) detected at line 11998
  []
 
 [503
@@ -6572,7 +6578,7 @@ Overfull \vbox (15.90631pt too high) detected at line 11927
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/ddii.png, id=3180, 481.8pt x 361.35pt>
+<png/ddii.png, id=3170, 481.8pt x 361.35pt>
 File: png/ddii.png Graphic file (type png)
  <use png/ddii.png>
 Package pdftex.def Info: png/ddii.png used on input line 3.
@@ -6618,15 +6624,15 @@ Package statrep Info: Processing graphic  on input line 3.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-264-1.pdf, id=3224, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-264-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-274-1.pdf, id=3214, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-274-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-264-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-264-1.pdf used on input line 9.
+<use figure/unnamed-chunk-274-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-274-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [513
 
- <./figure/unnamed-chunk-264-1.pdf>]
+ <./figure/unnamed-chunk-274-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6647,15 +6653,15 @@ og.viscosity[][]=[][]log[][](viscosity))[][]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-267-1.pdf, id=3246, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-267-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-277-1.pdf, id=3236, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-277-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-267-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-267-1.pdf used on input line 12.
+<use figure/unnamed-chunk-277-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-277-1.pdf used on input line 12.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [516
 
- <./figure/unnamed-chunk-267-1.pdf>]
+ <./figure/unnamed-chunk-277-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6665,7 +6671,7 @@ Package pdftex.def Info: figure/unnamed-chunk-267-1.pdf used on input line 12.
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (16.06021pt too high) detected at line 12262
+Overfull \vbox (16.06021pt too high) detected at line 12333
  []
 
 [518
@@ -6679,19 +6685,23 @@ Overfull \vbox (16.06021pt too high) detected at line 12262
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-270-1.pdf, id=3274, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-270-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-280-1.pdf, id=3264, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-280-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-270-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-270-1.pdf used on input line 9.
+<use figure/unnamed-chunk-280-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-280-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [520
 
- <./figure/unnamed-chunk-270-1.pdf>]
+ <./figure/unnamed-chunk-280-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [521
+(./x.vrb)
+Overfull \vbox (52.69366pt too high) detected at line 12400
+ []
+
+[521
 
 ]
 \openout4 = `x.vrb'.
@@ -6707,15 +6717,15 @@ Package pdftex.def Info: figure/unnamed-chunk-270-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-274-1.pdf, id=3303, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-274-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-284-1.pdf, id=3293, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-284-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-274-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-274-1.pdf used on input line 9.
+<use figure/unnamed-chunk-284-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-284-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [524
 
- <./figure/unnamed-chunk-274-1.pdf>]
+ <./figure/unnamed-chunk-284-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6730,15 +6740,15 @@ Package pdftex.def Info: figure/unnamed-chunk-274-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-276-1.pdf, id=3325, 505.89pt x 325.215pt>
-File: figure/unnamed-chunk-276-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-286-1.pdf, id=3315, 505.89pt x 325.215pt>
+File: figure/unnamed-chunk-286-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-276-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-276-1.pdf used on input line 6.
+<use figure/unnamed-chunk-286-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-286-1.pdf used on input line 6.
 (pdftex.def)             Requested size: 342.2953pt x 220.05154pt.
 ) [527
 
- <./figure/unnamed-chunk-276-1.pdf>]
+ <./figure/unnamed-chunk-286-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6753,15 +6763,15 @@ Package pdftex.def Info: figure/unnamed-chunk-276-1.pdf used on input line 6.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-280-1.pdf, id=3348, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-280-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-290-1.pdf, id=3338, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-290-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-280-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-280-1.pdf used on input line 9.
+<use figure/unnamed-chunk-290-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-290-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [530
 
- <./figure/unnamed-chunk-280-1.pdf>]
+ <./figure/unnamed-chunk-290-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -6854,37 +6864,40 @@ Overfull \hbox (81.22508pt too wide) in paragraph at lines 29--29
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-299-1.pdf, id=3443, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-299-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-309-1.pdf, id=3433, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-309-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-299-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-299-1.pdf used on input line 9.
+<use figure/unnamed-chunk-309-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-309-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [547
 
- <./figure/unnamed-chunk-299-1.pdf>]
+ <./figure/unnamed-chunk-309-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb) [548
+(./x.vrb)
+Overfull \vbox (23.36449pt too high) detected at line 13078
+ []
+
+[548
 
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb
-<figure/unnamed-chunk-301-1.pdf, id=3461, 505.89pt x 325.215pt>
-File: figure/unnamed-chunk-301-1.pdf Graphic file (type pdf)
+ (./x.vrb <figure/unnamed-chunk-311-1.pdf, id=3451, 505.89pt x 325.215pt>
+File: figure/unnamed-chunk-311-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-301-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-301-1.pdf used on input line 9.
+<use figure/unnamed-chunk-311-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-311-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 220.05154pt.
 )
-Overfull \vbox (5.50343pt too high) detected at line 13001
+Overfull \vbox (5.50343pt too high) detected at line 13092
  []
 
 [549
 
- <./figure/unnamed-chunk-301-1.pdf>]
+ <./figure/unnamed-chunk-311-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [550
@@ -6901,7 +6914,7 @@ Overfull \vbox (5.50343pt too high) detected at line 13001
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (68.53114pt too high) detected at line 13094
+Overfull \vbox (68.53114pt too high) detected at line 13185
  []
 
 [553
@@ -6910,7 +6923,7 @@ Overfull \vbox (68.53114pt too high) detected at line 13094
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (28.42696pt too high) detected at line 13134
+Overfull \vbox (28.42696pt too high) detected at line 13225
  []
 
 [554
@@ -6979,7 +6992,7 @@ Overfull \vbox (28.42696pt too high) detected at line 13134
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (2.96448pt too high) detected at line 13603
+Overfull \vbox (2.96448pt too high) detected at line 13694
  []
 
 [567
@@ -6987,11 +7000,7 @@ Overfull \vbox (2.96448pt too high) detected at line 13603
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb)
-Overfull \vbox (3.57277pt too high) detected at line 13637
- []
-
-[568
+ (./x.vrb) [568
 
 ]
 \openout4 = `x.vrb'.
@@ -7034,7 +7043,7 @@ Overfull \hbox (10.3509pt too wide) in paragraph at lines 30--30
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (10.4866pt too high) detected at line 13869
+Overfull \vbox (10.4866pt too high) detected at line 13956
  []
 
 [575
@@ -7068,7 +7077,7 @@ Overfull \vbox (10.4866pt too high) detected at line 13869
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (12.08939pt too high) detected at line 14042
+Overfull \vbox (12.08939pt too high) detected at line 14129
  []
 
 [581
@@ -7097,7 +7106,7 @@ Overfull \vbox (12.08939pt too high) detected at line 14042
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (18.84357pt too high) detected at line 14254
+Overfull \vbox (18.84357pt too high) detected at line 14341
  []
 
 [586
@@ -7116,7 +7125,7 @@ Overfull \vbox (18.84357pt too high) detected at line 14254
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (11.71019pt too high) detected at line 14376
+Overfull \vbox (11.71019pt too high) detected at line 14463
  []
 
 [589
@@ -7139,7 +7148,7 @@ Overfull \vbox (11.71019pt too high) detected at line 14376
  (./x.vrb
 File: mydates.csv  (verbatim)
 )
-Overfull \vbox (3.57277pt too high) detected at line 14476
+Overfull \vbox (3.57277pt too high) detected at line 14563
  []
 
 [593
@@ -7177,7 +7186,7 @@ File: lst/daa.lst  (verbatim)
 Package statrep Info: Processing output lst/daa.lst on input line 4.
 Package statrep Info: Processing output  on input line 4.
 )
-Overfull \vbox (2.1811pt too high) detected at line 14627
+Overfull \vbox (2.1811pt too high) detected at line 14714
  []
 
 [598
@@ -7214,7 +7223,7 @@ File: lst/ddda.lst  (verbatim)
 Package statrep Info: Processing output lst/ddda.lst on input line 16.
 Package statrep Info: Processing output  on input line 16.
 )
-Overfull \vbox (6.87828pt too high) detected at line 14695
+Overfull \vbox (6.87828pt too high) detected at line 14782
  []
 
 [601
@@ -7334,7 +7343,7 @@ Overfull \hbox (19.8008pt too wide) in paragraph at lines 15--15
  (./x.vrb
 File: hospital.csv  (verbatim)
 )
-Overfull \vbox (3.57277pt too high) detected at line 15095
+Overfull \vbox (3.57277pt too high) detected at line 15182
  []
 
 [614
@@ -7343,7 +7352,7 @@ Overfull \vbox (3.57277pt too high) detected at line 15095
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (4.8158pt too high) detected at line 15140
+Overfull \vbox (4.8158pt too high) detected at line 15227
  []
 
 [615
@@ -7365,7 +7374,7 @@ File: sr.tmp  (verbatim)
 File: sr.tmp  (verbatim)
 Package statrep Info: Processing Sascode block dq on input line 28.
 )
-Overfull \vbox (3.72696pt too high) detected at line 15194
+Overfull \vbox (3.72696pt too high) detected at line 15281
  []
 
 [617
@@ -7525,7 +7534,7 @@ Package statrep Info: Processing Sascode block mix on input line 7.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/mixx.png, id=3930, 481.8pt x 361.35pt>
+ (./x.vrb <png/mixx.png, id=3919, 481.8pt x 361.35pt>
 File: png/mixx.png Graphic file (type png)
  <use png/mixx.png>
 Package pdftex.def Info: png/mixx.png used on input line 3.
@@ -7545,7 +7554,7 @@ Package statrep Info: Processing Sascode block miy on input line 3.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/miyy.png, id=3942, 481.8pt x 361.35pt>
+<png/miyy.png, id=3932, 481.8pt x 361.35pt>
 File: png/miyy.png Graphic file (type png)
  <use png/miyy.png>
 Package pdftex.def Info: png/miyy.png used on input line 3.
@@ -7565,7 +7574,7 @@ Package statrep Info: Processing Sascode block mjc on input line 5.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/mjcc.png, id=3953, 481.8pt x 361.35pt>
+<png/mjcc.png, id=3943, 481.8pt x 361.35pt>
 File: png/mjcc.png Graphic file (type png)
  <use png/mjcc.png>
 Package pdftex.def Info: png/mjcc.png used on input line 3.
@@ -7598,7 +7607,7 @@ Package statrep Info: Processing Sascode block mje on input line 3.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/mjee.png, id=3970, 481.8pt x 361.35pt>
+<png/mjee.png, id=3960, 481.8pt x 361.35pt>
 File: png/mjee.png Graphic file (type png)
  <use png/mjee.png>
 Package pdftex.def Info: png/mjee.png used on input line 3.
@@ -7644,7 +7653,7 @@ Package statrep Info: Processing Sascode block mjd on input line 8.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/mjdd.png, id=3996, 481.8pt x 361.35pt>
+ (./x.vrb <png/mjdd.png, id=3986, 481.8pt x 361.35pt>
 File: png/mjdd.png Graphic file (type png)
  <use png/mjdd.png>
 Package pdftex.def Info: png/mjdd.png used on input line 3.
@@ -7684,7 +7693,7 @@ Package statrep Info: Processing Sascode block muggins on input line 9.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/mugginss.png, id=4023, 481.8pt x 361.35pt>
+ (./x.vrb <png/mugginss.png, id=4013, 481.8pt x 361.35pt>
 File: png/mugginss.png Graphic file (type png)
 
 <use png/mugginss.png>
@@ -7710,7 +7719,7 @@ Package statrep Info: Processing Sascode block mka on input line 5.
 ]
 \openout4 = `x.vrb'.
 
- (./x.vrb <png/mkaa.png, id=4040, 481.8pt x 361.35pt>
+ (./x.vrb <png/mkaa.png, id=4030, 481.8pt x 361.35pt>
 File: png/mkaa.png Graphic file (type png)
 
 <use png/mkaa.png>
@@ -7719,7 +7728,7 @@ Package pdftex.def Info: png/mkaa.png used on input line 3.
 Package statrep Info: Processing graphic png/mkaa.png on input line 3.
 Package statrep Info: Processing graphic  on input line 3.
 )
-Overfull \vbox (27.95018pt too high) detected at line 15797
+Overfull \vbox (27.95018pt too high) detected at line 15884
  []
 
 [657
@@ -7738,7 +7747,7 @@ Package statrep Info: Processing Sascode block mwa on input line 22.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<png/mwaa.png, id=4051, 481.8pt x 361.35pt>
+<png/mwaa.png, id=4041, 481.8pt x 361.35pt>
 File: png/mwaa.png Graphic file (type png)
  <use png/mwaa.png>
 Package pdftex.def Info: png/mwaa.png used on input line 3.
@@ -7757,14 +7766,14 @@ File: sr.tmp  (verbatim)
 Package statrep Info: Processing Sascode block mjk on input line 11.
 ) [660
 
-] <png/mjkk.png, id=4063, 481.8pt x 361.35pt>
+] <png/mjkk.png, id=4052, 481.8pt x 361.35pt>
 File: png/mjkk.png Graphic file (type png)
 
 <use png/mjkk.png>
-Package pdftex.def Info: png/mjkk.png used on input line 15858.
+Package pdftex.def Info: png/mjkk.png used on input line 15945.
 (pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
-Package statrep Info: Processing graphic png/mjkk.png on input line 15858.
-Package statrep Info: Processing graphic  on input line 15858.
+Package statrep Info: Processing graphic png/mjkk.png on input line 15945.
+Package statrep Info: Processing graphic  on input line 15945.
  [661
 
  <./png/mjkk.png (PNG copy)>]
@@ -7811,7 +7820,7 @@ s_chunked"[]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-</home/ken/Pictures/W1_010.pdf, id=4085, 441.65pt x 388.65201pt>
+</home/ken/Pictures/W1_010.pdf, id=4075, 441.65pt x 388.65201pt>
 File: /home/ken/Pictures/W1_010.pdf Graphic file (type pdf)
 
 <use /home/ken/Pictures/W1_010.pdf>
@@ -7823,7 +7832,7 @@ Package pdftex.def Info: /home/ken/Pictures/W1_010.pdf used on input line 3.
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <read-fwf.png, id=4095, 728.7225pt x 439.6425pt>
+(./x.vrb <read-fwf.png, id=4085, 728.7225pt x 439.6425pt>
 File: read-fwf.png Graphic file (type png)
  <use read-fwf.png>
 Package pdftex.def Info: read-fwf.png used on input line 7.
@@ -7890,15 +7899,15 @@ File: rats7.txt  (verbatim)
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-394-1.pdf, id=4153, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-394-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-404-1.pdf, id=4143, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-404-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-394-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-394-1.pdf used on input line 9.
+<use figure/unnamed-chunk-404-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-404-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [677
 
- <./figure/unnamed-chunk-394-1.pdf>]
+ <./figure/unnamed-chunk-404-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -7913,71 +7922,71 @@ Package pdftex.def Info: figure/unnamed-chunk-394-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-397-1.pdf, id=4176, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-397-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-407-1.pdf, id=4166, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-407-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-397-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-397-1.pdf used on input line 9.
+<use figure/unnamed-chunk-407-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-407-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [680
 
- <./figure/unnamed-chunk-397-1.pdf>]
+ <./figure/unnamed-chunk-407-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-398-1.pdf, id=4187, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-398-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-408-1.pdf, id=4177, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-408-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-398-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-398-1.pdf used on input line 11.
+<use figure/unnamed-chunk-408-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-408-1.pdf used on input line 11.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 )
-Overfull \vbox (9.16576pt too high) detected at line 16287
+Overfull \vbox (9.16576pt too high) detected at line 16374
  []
 
 [681
 
- <./figure/unnamed-chunk-398-1.pdf>]
+ <./figure/unnamed-chunk-408-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-399-1.pdf, id=4199, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-399-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-409-1.pdf, id=4188, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-409-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-399-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-399-1.pdf used on input line 13.
+<use figure/unnamed-chunk-409-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-409-1.pdf used on input line 13.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 )
-Overfull \vbox (5.1156pt too high) detected at line 16306
+Overfull \vbox (5.1156pt too high) detected at line 16393
  []
 
 [682
 
- <./figure/unnamed-chunk-399-1.pdf>]
+ <./figure/unnamed-chunk-409-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-400-1.pdf, id=4210, 505.89pt x 216.81pt>
-File: figure/unnamed-chunk-400-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-410-1.pdf, id=4200, 505.89pt x 216.81pt>
+File: figure/unnamed-chunk-410-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-400-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-400-1.pdf used on input line 15.
+<use figure/unnamed-chunk-410-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-410-1.pdf used on input line 15.
 (pdftex.def)             Requested size: 320.39525pt x 137.31552pt.
 ) [683
 
- <./figure/unnamed-chunk-400-1.pdf>]
+ <./figure/unnamed-chunk-410-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-402-1.pdf, id=4225, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-402-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-412-1.pdf, id=4215, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-412-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-402-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-402-1.pdf used on input line 15.
+<use figure/unnamed-chunk-412-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-412-1.pdf used on input line 15.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 ) [684
 
- <./figure/unnamed-chunk-402-1.pdf>]
+ <./figure/unnamed-chunk-412-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -7987,15 +7996,15 @@ Package pdftex.def Info: figure/unnamed-chunk-402-1.pdf used on input line 15.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-404-1.pdf, id=4246, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-404-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-414-1.pdf, id=4236, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-414-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-404-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-404-1.pdf used on input line 9.
+<use figure/unnamed-chunk-414-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-414-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 ) [686
 
- <./figure/unnamed-chunk-404-1.pdf>]
+ <./figure/unnamed-chunk-414-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8015,15 +8024,15 @@ Package pdftex.def Info: figure/unnamed-chunk-404-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-406-1.pdf, id=4273, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-406-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-416-1.pdf, id=4263, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-416-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-406-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-406-1.pdf used on input line 9.
+<use figure/unnamed-chunk-416-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-416-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 ) [690
 
- <./figure/unnamed-chunk-406-1.pdf>]
+ <./figure/unnamed-chunk-416-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8033,15 +8042,15 @@ Package pdftex.def Info: figure/unnamed-chunk-406-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-408-1.pdf, id=4291, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-408-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-418-1.pdf, id=4281, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-418-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-408-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-408-1.pdf used on input line 9.
+<use figure/unnamed-chunk-418-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-418-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 ) [692
 
- <./figure/unnamed-chunk-408-1.pdf>]
+ <./figure/unnamed-chunk-418-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8051,15 +8060,15 @@ Package pdftex.def Info: figure/unnamed-chunk-408-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-410-1.pdf, id=4308, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-410-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-420-1.pdf, id=4298, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-420-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-410-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-410-1.pdf used on input line 9.
+<use figure/unnamed-chunk-420-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-420-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [694
 
- <./figure/unnamed-chunk-410-1.pdf>]
+ <./figure/unnamed-chunk-420-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8069,15 +8078,15 @@ Package pdftex.def Info: figure/unnamed-chunk-410-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-412-1.pdf, id=4325, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-412-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-422-1.pdf, id=4315, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-422-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-412-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-412-1.pdf used on input line 9.
+<use figure/unnamed-chunk-422-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-422-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [696
 
- <./figure/unnamed-chunk-412-1.pdf>]
+ <./figure/unnamed-chunk-422-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8087,15 +8096,15 @@ Package pdftex.def Info: figure/unnamed-chunk-412-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-414-1.pdf, id=4344, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-414-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-424-1.pdf, id=4334, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-424-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-414-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-414-1.pdf used on input line 9.
+<use figure/unnamed-chunk-424-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-424-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [698
 
- <./figure/unnamed-chunk-414-1.pdf>]
+ <./figure/unnamed-chunk-424-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8105,43 +8114,43 @@ Package pdftex.def Info: figure/unnamed-chunk-414-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-415-1.pdf, id=4361, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-415-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-425-1.pdf, id=4351, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-425-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-415-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-415-1.pdf used on input line 9.
+<use figure/unnamed-chunk-425-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-425-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [700
 
- <./figure/unnamed-chunk-415-1.pdf>]
+ <./figure/unnamed-chunk-425-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-416-1.pdf, id=4373, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-416-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-426-1.pdf, id=4363, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-426-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-416-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-416-1.pdf used on input line 9.
+<use figure/unnamed-chunk-426-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-426-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [701
 
- <./figure/unnamed-chunk-416-1.pdf>]
+ <./figure/unnamed-chunk-426-1.pdf>]
 \openout4 = `x.vrb'.
 
 
-(./x.vrb <figure/unnamed-chunk-417-1.pdf, id=4385, 505.89pt x 252.945pt>
-File: figure/unnamed-chunk-417-1.pdf Graphic file (type pdf)
+(./x.vrb <figure/unnamed-chunk-427-1.pdf, id=4375, 505.89pt x 252.945pt>
+File: figure/unnamed-chunk-427-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-417-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-417-1.pdf used on input line 13.
+<use figure/unnamed-chunk-427-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-427-1.pdf used on input line 13.
 (pdftex.def)             Requested size: 342.2953pt x 171.1512pt.
 )
-Overfull \vbox (5.1156pt too high) detected at line 16657
+Overfull \vbox (5.1156pt too high) detected at line 16744
  []
 
 [702
 
- <./figure/unnamed-chunk-417-1.pdf>]
+ <./figure/unnamed-chunk-427-1.pdf>]
 \openout4 = `x.vrb'.
 
  (./x.vrb) [703
@@ -8150,15 +8159,15 @@ Overfull \vbox (5.1156pt too high) detected at line 16657
 \openout4 = `x.vrb'.
 
  (./x.vrb
-<figure/unnamed-chunk-420-1.pdf, id=4403, 505.89pt x 289.08pt>
-File: figure/unnamed-chunk-420-1.pdf Graphic file (type pdf)
+<figure/unnamed-chunk-430-1.pdf, id=4393, 505.89pt x 289.08pt>
+File: figure/unnamed-chunk-430-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-420-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-420-1.pdf used on input line 9.
+<use figure/unnamed-chunk-430-1.pdf>
+Package pdftex.def Info: figure/unnamed-chunk-430-1.pdf used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 195.60136pt.
 ) [704
 
- <./figure/unnamed-chunk-420-1.pdf>]
+ <./figure/unnamed-chunk-430-1.pdf>]
 \openout4 = `x.vrb'.
 
 
@@ -8168,7 +8177,7 @@ Package pdftex.def Info: figure/unnamed-chunk-420-1.pdf used on input line 9.
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (2.47139pt too high) detected at line 16755
+Overfull \vbox (2.47139pt too high) detected at line 16842
  []
 
 [706
@@ -8179,7 +8188,7 @@ Overfull \vbox (2.47139pt too high) detected at line 16755
  (./x.vrb
 File: many.txt  (verbatim)
 )
-Overfull \vbox (96.67139pt too high) detected at line 16794
+Overfull \vbox (96.67139pt too high) detected at line 16881
  []
 
 [707
@@ -8220,7 +8229,7 @@ Overfull \vbox (96.67139pt too high) detected at line 16794
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (3.00812pt too high) detected at line 17010
+Overfull \vbox (3.00812pt too high) detected at line 17097
  []
 
 [715
@@ -8239,7 +8248,7 @@ Overfull \vbox (3.00812pt too high) detected at line 17010
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (0.68318pt too high) detected at line 17109
+Overfull \vbox (0.68318pt too high) detected at line 17196
  []
 
 [718
@@ -8317,7 +8326,7 @@ File: lst/imee1.lst  (verbatim)
 Package statrep Info: Processing output lst/imee1.lst on input line 17.
 Package statrep Info: Processing output  on input line 17.
 )
-Overfull \vbox (15.91028pt too high) detected at line 17402
+Overfull \vbox (15.91028pt too high) detected at line 17489
  []
 
 [727
@@ -8346,7 +8355,7 @@ Package statrep Info: Processing output  on input line 15.
 \openout4 = `x.vrb'.
 
  (./x.vrb)
-Overfull \vbox (4.81036pt too high) detected at line 17485
+Overfull \vbox (4.81036pt too high) detected at line 17572
  []
 
 [730
@@ -8372,7 +8381,7 @@ File: lst/imgg1.lst  (verbatim)
 Package statrep Info: Processing output lst/imgg1.lst on input line 17.
 Package statrep Info: Processing output  on input line 17.
 )
-Overfull \vbox (20.73318pt too high) detected at line 17598
+Overfull \vbox (20.73318pt too high) detected at line 17685
  []
 
 [733
@@ -8414,12 +8423,12 @@ Package statrep Info: Processing output  on input line 15.
 \tf@snm=\write10
 \openout10 = `x.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17676.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 17676.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17763.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 17763.
  (./x.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17676.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17763.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17676
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17763
 .
 Package rerunfilecheck Info: File `x.out' has not changed.
 (rerunfilecheck)             Checksum: A07714AB6230A1806B417DD9913E3F5A;924.
@@ -8428,38 +8437,37 @@ Package rerunfilecheck Info: File `x.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17676.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17763.
  ) 
 Here is how much of TeX's memory you used:
- 23656 strings out of 493029
- 396115 string characters out of 6136235
- 733327 words of memory out of 5000000
- 23417 multiletter control sequences out of 15000+600000
- 19183 words of font info for 73 fonts, out of 8000000 for 9000
+ 23658 strings out of 493029
+ 396052 string characters out of 6136235
+ 733216 words of memory out of 5000000
+ 23411 multiletter control sequences out of 15000+600000
+ 18877 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,592b,686s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,55p,592b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on x.pdf (736 pages, 9614674 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on x.pdf (736 pages, 9083545 bytes).
 PDF statistics:
- 4977 PDF objects out of 5155 (max. 8388607)
- 3924 compressed objects within 40 object streams
+ 4964 PDF objects out of 5155 (max. 8388607)
+ 3914 compressed objects within 40 object streams
  1488 named destinations out of 1728 (max. 500000)
- 973 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 968 words of extra memory for PDF output out of 10000 (max. 10000000)
 
