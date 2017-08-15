@@ -34,8 +34,8 @@
 
 % introduction and course outline
 
-<intro, child="intro.Rnw">>=
- 
+<<intro, child="intro.Rnw">>=
+
 
 
 % installing our software
@@ -62,6 +62,7 @@
 
 <<numsum, child="numsum.Rnw">>=
 @  
+
 
 % statistical inference
 

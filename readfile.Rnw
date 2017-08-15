@@ -165,8 +165,8 @@ View(mydata)
   \item Can sort a column into ascending or descending order (click
     little arrows next to column name).
     
-  \item Clicking the symbol left of Filter ``pops out'' View into
-    separate (bigger) window.
+  \item Clicking the symbol with arrow on it left of Filter ``pops
+    out'' View into separate (bigger) window.
   \item Cannot include in output to hand in (except by taking
     screenshot and handing \emph{that} in).
   \end{itemize}
@@ -371,9 +371,11 @@ proc means;
   \begin{itemize}
   \item A little extra setup:
     
+    \begin{small}
     \begin{Sascode}[store=ua]
 filename myurl 
-  url "http://www.utsc.utoronto.ca/~butler/c32/global.csv";
+  url 
+  "http://www.utsc.utoronto.ca/~butler/c32/global.csv";
 
 proc import 
   datafile=myurl 
@@ -384,6 +386,8 @@ proc import
   
 proc print;
     \end{Sascode}
+      
+    \end{small}
     
     
   \item The \texttt{filename} line says that the piece of text is
@@ -521,7 +525,8 @@ soap
   
   \begin{Sascode}[store=ub]
 filename myurl 
- url "http://www.utsc.utoronto.ca/~butler/c32/soap.txt";
+ url 
+ "http://www.utsc.utoronto.ca/~butler/c32/soap.txt";
 
 proc import 
   datafile=myurl 
@@ -663,12 +668,13 @@ proc print;
 \begin{frame}[fragile]{Reading Excel files from the Web}
   
   \begin{itemize}
-  \item No surprises here.
-  \item In R, \texttt{read\_excel} will take a URL rather than a filename,
-    in the same way that \texttt{read\_csv} and \texttt{read\_delim}
-    do.
+  \item SAS has no surprises here.
   \item In SAS, define a \texttt{filename} as before, and use it in
     the appropriate \texttt{proc import}.
+  \item In R, \texttt{read\_excel} will \emph{not} take a URL rather
+    than a filename. 
+  \item So download the spreadsheet to your computer
+    first, then find it with \texttt{f=file.choose()} if needed.
   \end{itemize}
   
 \end{frame}

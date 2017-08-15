@@ -1,0 +1,155 @@
+1                                                          The SAS System                                13:54 Monday, July 10, 2017
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M3) 
+      Licensed to UNIVERSITY OF TORONTO/COMPUTING & COMMUNICATIONS, Site 70117891.
+NOTE: This session is executing on the Linux 4.4.0-83-generic (LIN X64) platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 14.1
+      SAS/ETS 14.1
+      SAS/OR 14.1
+      SAS/IML 14.1
+      SAS/QC 14.1
+
+NOTE: Additional host information:
+
+ Linux LIN X64 4.4.0-83-generic #106-Ubuntu SMP Mon Jun 26 17:54:43 UTC 2017 x86_64 Unrecognized Linux Distribution 
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.10 seconds
+      cpu time            0.01 seconds
+      
+1          proc import datafile="migraine.txt" out=mig dbms=dlm replace;
+2              getnames=yes;
+
+Number of names found is less than number of variables found. 
+Number of names found is less than number of variables found. 
+3          proc print;
+4           /**********************************************************************
+5           *   PRODUCT:   SAS
+6           *   VERSION:   9.4
+7           *   CREATOR:   External File Interface
+2                                                          The SAS System                                13:54 Monday, July 10, 2017
+
+8           *   DATE:      10JUL17
+9           *   DESC:      Generated SAS Datastep Code
+10          *   TEMPLATE SOURCE:  (None Specified.)
+11          ***********************************************************************/
+12             data WORK.MIG    ;
+13             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+14             infile 'migraine.txt' delimiter = ' ' MISSOVER DSD lrecl=32767 firstobs=2 ;
+15                informat DrugA $1. ;
+16                informat DrugB $1. ;
+17                informat DrugC best32. ;
+18                informat VAR4 $1. ;
+19                informat VAR5 $1. ;
+20                informat VAR6 $1. ;
+21                informat VAR7 $1. ;
+22                informat VAR8 best32. ;
+23                informat VAR9 $1. ;
+24                informat VAR10 $1. ;
+25                informat VAR11 $1. ;
+26                informat VAR12 $1. ;
+27                informat VAR13 best32. ;
+28                format DrugA $1. ;
+29                format DrugB $1. ;
+30                format DrugC best12. ;
+31                format VAR4 $1. ;
+32                format VAR5 $1. ;
+33                format VAR6 $1. ;
+34                format VAR7 $1. ;
+35                format VAR8 best12. ;
+36                format VAR9 $1. ;
+37                format VAR10 $1. ;
+38                format VAR11 $1. ;
+39                format VAR12 $1. ;
+40                format VAR13 best12. ;
+41             input
+42                         DrugA $
+43                         DrugB $
+44                         DrugC
+45                         VAR4 $
+46                         VAR5 $
+47                         VAR6 $
+48                         VAR7 $
+49                         VAR8
+50                         VAR9 $
+51                         VAR10 $
+52                         VAR11 $
+53                         VAR12 $
+54                         VAR13
+55             ;
+56             if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+57             run;
+
+NOTE: The infile 'migraine.txt' is:
+      Filename=/home/ken/teaching/c32/notes/2017/migraine.txt,
+      Owner Name=ken,Group Name=ken,
+      Access Permission=-rw-------,
+      Last Modified=November 09, 2015 13:12:04 o'clock,
+      File Size (bytes)=162
+
+3                                                          The SAS System                                13:54 Monday, July 10, 2017
+
+NOTE: 9 records were read from the infile 'migraine.txt'.
+      The minimum record length was 15.
+      The maximum record length was 15.
+NOTE: The data set WORK.MIG has 9 observations and 13 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+9 rows created in WORK.MIG from migraine.txt.
+  
+  
+  
+NOTE: WORK.MIG data set was successfully created.
+NOTE: The data set WORK.MIG has 9 observations and 13 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+
+58         
+NOTE: There were 9 observations read from the data set WORK.MIG.
+NOTE: The PROCEDURE PRINT printed page 1.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           0.15 seconds
+      cpu time            0.06 seconds
+      

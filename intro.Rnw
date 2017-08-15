@@ -128,11 +128,11 @@ Recommended:
   \item If you have a laptop, you may find it useful for following
     along with the use of the software or for taking notes.
   \item Checking social media or other non-course-specific activity
-    distracts from your learning. If you are going to get the most
+    during class distracts from your learning. If you are going to get the most
     from this course, you need to \emph{pay full attention} in
     class. Multi-tasking \emph{will not} help you.
   \item Using your laptop for non-course activity will also distract
-    your neighbours and creates a worse learning experience for
+    those around you and creates a worse learning experience for
     everybody. If somebody's inappropriate laptop use is distracting
     you, let me know. I will create laptop-free zones in class if
     necessary. 
@@ -148,17 +148,17 @@ Recommended:
     Item & Weight\\
     \hline
     Assignments (every week after first). Can study with classmates, but what you hand in must
-    be \textbf{entirely your own work}. Due Thursdays at 11:59pm. & 25\\
+    be \textbf{entirely your own work}. Due Thursdays at 11:59pm. & 20\\
     \hline
-    Midterm exam, 2 hours, open book (see over) & 20\\
+    Midterm exam, 2 hours, open book (see over) & 25\\
     \hline
     Group data analysis report (1--5 people/group). Data analysis on data set of your choosing,
     using R/SAS/both, report written as described in class.
     Due last
-    day of classes at 11:59pm. & 15 \\
+    day of classes at 11:59pm. & 10 \\
     \hline
     Final exam, 3 hours, open book (see over). \textbf{You must pass
-      the final exam to pass the course.} & 40\\
+      the final exam to pass the course.} & 45\\
     \hline
     Total & 100\\
     \hline

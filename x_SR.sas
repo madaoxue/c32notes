@@ -40,7 +40,8 @@ proc means;
 
 %output(ua)
 filename myurl
-  url "http://www.utsc.utoronto.ca/~butler/c32/global.csv";
+  url
+  "http://www.utsc.utoronto.ca/~butler/c32/global.csv";
 
 proc import
   datafile=myurl
@@ -73,7 +74,8 @@ proc print data=coffee(obs=15);
 
 %output(ub)
 filename myurl
- url "http://www.utsc.utoronto.ca/~butler/c32/soap.txt";
+ url
+ "http://www.utsc.utoronto.ca/~butler/c32/soap.txt";
 
 proc import
   datafile=myurl
@@ -1015,6 +1017,65 @@ proc print;
 %endoutput(dda)
 
 %write(ddda,store=dda,type=listing) 
+
+%output(jahaq)
+proc import
+  datafile='/home/ken/monthly.csv'
+  out=sales1
+  dbms=csv
+  replace;
+  getnames=yes;
+
+proc print;
+    
+%endoutput(jahaq)
+
+%write(jahaqq,store=jahaq,type=listing) 
+
+%output(ceral)
+proc print;
+  format month dtwkdatx20.;
+    
+%endoutput(ceral)
+
+%write(cerall,store=ceral,type=listing) 
+
+%output(hotoc)
+proc import
+  datafile='/home/ken/monthly2.csv'
+  out=sales1
+  dbms=csv
+  replace;
+  getnames=yes;
+
+proc print;
+    
+%endoutput(hotoc)
+
+%write(hotocc,store=hotoc,type=listing) 
+
+%output(nubiv)
+data sales2;
+  set sales1;
+  date_text=cat('16 ',month,' 2014');
+  real_date=input(date_text,anydtdte20.);
+
+proc print;
+  var sales date_text real_date;
+  format real_date yymmdd10.;
+    
+%endoutput(nubiv)
+
+%write(nubivv,store=nubiv,type=listing) 
+
+%output(komav)
+proc sgplot;
+  series x=real_date y=sales / markers;
+  format real_date monyy7.;
+  
+%endoutput(komav)
+
+%write(komavv,store=komav,type=graphic) 
 
 %output(dm)
 proc print data=dates;

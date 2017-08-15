@@ -1,0 +1,46 @@
+\question Hand this one in. Forty students were about to graduate high
+school and go to college. They had all taken college entrance verbal
+and math tests, and the score on each of these out of 100 was
+recorded. At the end of each student's first year in college, their
+college GPA was recorded (on the same 4-point scale that U of T
+uses). To save space, the data values were saved as follows: some
+verbal scores, some mathematics scores (for the same students) and
+some college GPAs. Then some more verbal scores, some more mathematics
+scores, and so on. The data as recorded were in nine columns, with the
+verbal scores being in columns 1, 4, and 7, the mathematics scores in
+columns 2, 5 and 8, and the college GPAs in columns 3, 6 and 9. The
+data file is at
+\url{http://www.utsc.utoronto.ca/~butler/c32/verbmath.txt}. There are
+no column names.
+
+\begin{parts}
+  \part[2] Read in and display the data as read in from the
+  file. Verify that you have 9 columns and fewer than 40 rows. What
+  did the columns end up being called?
+  
+  \begin{select}
+    \begin{solution}
+      The values are separated by spaces. There are no column names,
+      so remember \texttt{getnames=no} below:
+      
+      \begin{Sascode}[store=wabin]
+filename myurl url "http://www.utsc.utoronto.ca/~butler/c32/verbmath.txt";
+        
+proc import
+  datafile=myurl
+  out=verbmath
+  dbms=dlm
+  replace;
+  getnames=no;
+  delimiter=' ';
+  
+proc print;
+      \end{Sascode}
+      
+      \Listing[store=wabin, fontsize=footnotesize]{wabinn}
+      
+      There are indeed nine columns, labelled \texttt{X1} through
+      \texttt{X9}, and ** rows, less than 40.
+    \end{solution}
+  \end{select}
+\end{parts}

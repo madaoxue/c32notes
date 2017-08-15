@@ -1,0 +1,11 @@
+\question Hand this one in. Forty students were about to graduate high
+school and go to college. They had all taken college entrance verbal
+and math tests, and the score on each of these out of 100 was
+recorded. At the end of each student's first year in college, their
+college GPA was recorded (on the same 4-point scale that U of T
+uses). To save space, the data values were saved as follows: some
+verbal scores, some mathematics scores (for the same students) and
+some college GPAs. Then some more verbal scores, some more mathematics
+scores, and so on. The data as recorded were in nine columns, with the
+verbal scores being in columns 1, 4, and 7, the mathematics scores in
+columns 2, 5 and 8, and the college GPAs in columns 3, 6 and 9.

@@ -187,7 +187,7 @@ proc print;
     
   \item You might have separate columns containing year, month, day.
   \item Strategy (both R and SAS): glue them together into something
-    that can be recogized as date:
+    that can be recognized as date:
     \begin{Datastep}
 proc import
   datafile='/home/ken/pieces.txt'
@@ -225,6 +225,163 @@ proc print;
 
 you get \emph{days since Jan 1, 1960}.
   
+  
+\end{frame}
+
+
+\begin{frame}[fragile]{Month names}
+  
+  \begin{itemize}
+  \item If your data file contains month \emph{names}, may need to
+    organize as text that SAS can read as a date. Or may not.
+    Example, monthly sales of a product:
+    
+    \verbatiminput{monthly.csv}
+    
+  \item Read data as is, see how it came out.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading in}
+  \begin{itemize}
+    
+    \item Try it:
+    
+    \begin{Sascode}[store=jahaq]
+proc import
+  datafile='/home/ken/monthly.csv'
+  out=sales1
+  dbms=csv
+  replace;
+  getnames=yes;
+  
+proc print;  
+    \end{Sascode}
+
+  \item \textbf{SAS recognized that the month and year belonged together:}
+
+    \Listing[store=jahaq, fontsize=footnotesize]{jahaqq}
+    
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Displaying those as dates}
+  
+  \begin{itemize}
+  \item These are SAS ``datetimes'', stored as \emph{seconds} since
+    Jan 1, 1960.
+  \item To display them as dates, we have to use a date-time format
+    that displays the date part. See
+    \url{http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a001263753.htm}. One
+    such is \texttt{dtwkdatx20.}:
+    
+    \begin{Sascode}[store=ceral]
+proc print;
+  format month dtwkdatx20.;
+    \end{Sascode}
+    
+    \item with output
+      
+      \Listing[store=ceral, fontsize=footnotesize]{cerall}
+    
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Months only, no years}
+  
+  \begin{itemize}
+  \item Another data file:
+    
+\verbatiminput{/home/ken/monthly2.csv}    
+
+  \item Try now:
+    
+    \begin{Sascode}[store=hotoc]
+proc import
+  datafile='/home/ken/monthly2.csv'
+  out=sales1
+  dbms=csv
+  replace;
+  getnames=yes;
+  
+proc print;
+    \end{Sascode}
+
+
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Reading the month names}
+  
+  \begin{itemize}
+    
+    \item Month names are just text now (see Log tab: informat is
+      \texttt{\$8.}, meaning ``text of length 8 characters''):
+      
+%$ %$ 
+      
+      \Listing[store=hotoc, fontsize=footnotesize]{hotocc}
+      
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making dates of these}
+  
+  \begin{itemize}
+  \item Two-step process:
+    \begin{itemize}
+    \item construct a piece of text that looks like a date (\texttt{cat})
+    \item turn that into a genuine date (\texttt{input})
+    \end{itemize}
+  \item All done in a \texttt{data} step (creating new variables)
+  \item Have to invent a year and day-of-month.
+    
+  \item Here pretend 16th of month, in year 2014.
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}[fragile]{Making it work}
+  \begin{itemize}
+  \item Something like this. Can use any format for output, but in
+    \texttt{input} must use format respecting the text you made:
+    
+    \begin{small}
+    \begin{Sascode}[store=nubiv]
+data sales2;
+  set sales1;
+  date_text=cat('16 ',month,' 2014');
+  real_date=input(date_text,anydtdte20.);
+  
+proc print;  
+  var sales date_text real_date;
+  format real_date yymmdd10.;
+    \end{Sascode}
+      
+    \end{small}
+    
+    \item Results:
+      
+      \Listing[store=nubiv, fontsize=footnotesize]{nubivv}      
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Plotting sales against time}
+  
+  Now that we have real dates, this is easy. \texttt{series} joins
+  points by lines:
+  
+  \begin{Sascode}[store=komav]
+proc sgplot;
+  series x=real_date y=sales / markers;
+  format real_date monyy7.;
+  \end{Sascode}
+  
+  \Graphic[store=komav, scale=0.5]{komavv}
   
 \end{frame}
 
@@ -420,6 +577,7 @@ format thedate yymmdd10. thetime time8.
 
   
 \end{frame}
+
 
 \begin{frame}[fragile]{Dates and times in R}
   

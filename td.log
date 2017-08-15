@@ -1,0 +1,147 @@
+1                                                          The SAS System                               10:05 Friday, August 4, 2017
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M3) 
+      Licensed to UNIVERSITY OF TORONTO/COMPUTING & COMMUNICATIONS, Site 70117891.
+NOTE: This session is executing on the Linux 4.4.0-89-generic (LIN X64) platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 14.1
+      SAS/ETS 14.1
+      SAS/OR 14.1
+      SAS/IML 14.1
+      SAS/QC 14.1
+
+WARNING: Your system is scheduled to expire on August 29, 2017, which is 25 days from now. The SAS System will no longer function 
+         on or after that date. Please contact your SAS Installation Representative to obtain your updated SAS Installation Data 
+         (SID) file, which includes SETINIT information.
+To locate the name of your SAS Installation Representative go to http://support.sas.com/repfinder and provide your site number 
+70117891 and company name as UNIVERSITY OF TORONTO/COMPUTING & COMMUNICATIONS. On the SAS REP list provided, locate the REP for 
+operating system LIN X64.
+NOTE: Additional host information:
+
+ Linux LIN X64 4.4.0-89-generic #112-Ubuntu SMP Mon Jul 31 19:38:41 UTC 2017 x86_64 Unrecognized Linux Distribution 
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.10 seconds
+      cpu time            0.02 seconds
+      
+1          proc import
+WARNING: The Base SAS Software product with which IMPORT is associated will be expiring soon, and is currently in warning mode to 
+         indicate this upcoming expiration. Please run PROC SETINIT to obtain more information on your warning period.
+2            datafile='/home/ken/monthly.csv'
+2                                                          The SAS System                               10:05 Friday, August 4, 2017
+
+3            out=sales1
+4            dbms=csv
+5            replace;
+6            getnames=yes;
+7          
+
+8          proc print;
+9           /**********************************************************************
+10          *   PRODUCT:   SAS
+11          *   VERSION:   9.4
+12          *   CREATOR:   External File Interface
+13          *   DATE:      04AUG17
+14          *   DESC:      Generated SAS Datastep Code
+15          *   TEMPLATE SOURCE:  (None Specified.)
+16          ***********************************************************************/
+17             data WORK.SALES1    ;
+18             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+19             infile '/home/ken/monthly.csv' delimiter = ',' MISSOVER DSD lrecl=32767 firstobs=2 ;
+20                informat month anydtdtm40. ;
+21                informat sales best32. ;
+22                format month datetime. ;
+23                format sales best12. ;
+24             input
+25                         month
+26                         sales
+27             ;
+28             if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+29             run;
+
+NOTE: The infile '/home/ken/monthly.csv' is:
+      Filename=/home/ken/monthly.csv,
+      Owner Name=ken,Group Name=ken,
+      Access Permission=-rw-rw-r--,
+      Last Modified=August 03, 2017 16:10:49 o'clock,
+      File Size (bytes)=76
+
+NOTE: 5 records were read from the infile '/home/ken/monthly.csv'.
+      The minimum record length was 11.
+      The maximum record length was 12.
+NOTE: The data set WORK.SALES1 has 5 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+5 rows created in WORK.SALES1 from /home/ken/monthly.csv.
+  
+  
+  
+NOTE: WORK.SALES1 data set was successfully created.
+NOTE: The data set WORK.SALES1 has 5 observations and 2 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+30           format month date20.;
+ERROR: Format DATE specified with width out of range.
+3                                                          The SAS System                               10:05 Friday, August 4, 2017
+
+31         
+
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+32         proc print;
+33         
+NOTE: There were 5 observations read from the data set WORK.SALES1.
+NOTE: The PROCEDURE PRINT printed page 1.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+ERROR: Errors printed on page 2.
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           0.15 seconds
+      cpu time            0.07 seconds
+      

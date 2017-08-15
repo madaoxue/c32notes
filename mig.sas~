@@ -1,0 +1,4 @@
+proc import datafile="migrainr.txt" out=mig dbms=dlm replace;
+    getnames=yes;
+proc print;    
+    
